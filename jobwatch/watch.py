@@ -15,6 +15,7 @@ after that only roles never seen before alert. Aggregator copies of a role alrea
 direct board (or another aggregator) are suppressed. Dated items older than max_age_days never alert.
 """
 import html as htmllib
+import threading
 import json
 import os
 import re
@@ -35,6 +36,7 @@ P = {n: os.path.join(DIR, f) for n, f in (("config", "config.json"), ("state", "
 BROWSER_UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
 UA = {"User-Agent": BROWSER_UA, "Accept": "application/json, text/html;q=0.9, */*;q=0.8"}
 DRY = "--dry-run" in sys.argv
+_TL = threading.local()   # registry boards run in "fast" mode: short timeout, single attempt
 MODE = sys.argv[sys.argv.index("--mode") + 1] if "--mode" in sys.argv else "api"
 NOW = datetime.now(timezone.utc)
 TODAY = NOW.strftime("%Y-%m-%d")
@@ -46,8 +48,10 @@ def http(url, data=None, timeout=25, text=False):
     headers = dict(UA)
     if body:
         headers["Content-Type"] = "application/json"
+    fast = getattr(_TL, "fast", False)
+    timeout = min(timeout, 12) if fast else timeout
     err = None
-    for attempt in range(3):
+    for attempt in range(1 if fast else 3):
         try:
             req = urllib.request.Request(url, data=body, headers=headers)
             with urllib.request.urlopen(req, timeout=timeout) as r:
@@ -781,11 +785,27 @@ def collect(cfg, st, mode):
         except Exception as e:
             tasks, S["zshah101 registry"] = [], {"jobs": [], "err": f"could not load company list: {e}", "agg": False,
                                                  "group": "registry", "res": "-"}
-        ok = 0
-        with ThreadPoolExecutor(reg.get("workers", 24)) as pool:
-            futs = {pool.submit(run, k, fn): (k, n) for k, n, fn in tasks}
+        ok, skipped = 0, 0
+        last = st.setdefault("reg_polled", {})
+        tasks.sort(key=lambda t: last.get(t[0], ""))          # least recently polled first
+        deadline = time.time() + 60 * reg.get("max_minutes", 45)
+
+        def reg_run(k, fn):
+            if time.time() > deadline:
+                return k, None, "skipped (time budget)", {}
+            _TL.fast = True
+            try:
+                return run(k, fn)
+            finally:
+                _TL.fast = False
+        with ThreadPoolExecutor(reg.get("workers", 32)) as pool:
+            futs = [pool.submit(reg_run, k, fn) for k, n, fn in tasks]
             for f in futs:
                 key, jobs, err, _ = f.result()
+                if jobs is None:
+                    skipped += 1
+                    continue
+                last[key] = TODAY
                 if err and not jobs:
                     continue   # dead/empty boards are normal at this scale; not reported individually
                 ok += 1
@@ -794,7 +814,7 @@ def collect(cfg, st, mode):
                 put(key, jobs, None, group="registry", res=key[4:])
         if tasks:
             S["zshah101 registry"] = {"jobs": [], "err": None if ok else "no registry board answered", "agg": False,
-                                      "group": "registry", "res": f"{ok}/{len(tasks)} boards answered"}
+                                      "group": "registry", "res": f"{ok}/{len(tasks)} boards answered" + (f", {skipped} deferred to next run (time budget)" if skipped else "")}
     if mode in ("render", "all"):
         agg_r = {r["name"] for r in cfg.get("render", []) if r.get("fallback")}
         for name, (jobs, err) in render_all(cfg.get("render", [])).items():

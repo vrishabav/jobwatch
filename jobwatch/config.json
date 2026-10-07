@@ -2045,7 +2045,8 @@
  "registry": {
   "url": "https://raw.githubusercontent.com/zshah101/Automated-List-Of-Summer-2027-and-Fall-2026-Tech-Internships/main/data/companies.json",
   "role_filter": "tech",
-  "workers": 24,
-  "_note": "Polls every employer board in zshah101's ~5,000-company list (no US/season limits). role_filter 'tech' keeps SWE/data/ML/quant/security intern titles; set to 'all' for every intern role."
+  "workers": 32,
+  "_note": "Polls every employer board in zshah101's ~5,000-company list (no US/season limits). role_filter 'tech' keeps SWE/data/ML/quant/security intern titles; set to 'all' for every intern role.",
+  "max_minutes": 45
  }
 }
