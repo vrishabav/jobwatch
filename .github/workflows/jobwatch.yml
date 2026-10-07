@@ -1,35 +1,35 @@
 name: jobwatch
 on:
   schedule:
-    - cron: "*/30 * * * *"   # private repo with the free 2,000 min/month? change to "7 * * * *" (hourly)
+    - cron: "7 * * * *"   # hourly. PUBLIC repo (unlimited free minutes)? use "*/20 * * * *" for faster alerts
   workflow_dispatch:
 permissions:
   contents: write
   issues: write
 concurrency:
-  group: jobwatch-state
+  group: jobwatch-state        # both workflows share state, so they never run at the same time
   cancel-in-progress: false
 jobs:
   poll:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 15
+    env:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+      SMTP_USER: ${{ secrets.SMTP_USER }}
+      SMTP_PASS: ${{ secrets.SMTP_PASS }}
+      SMTP_TO: ${{ secrets.SMTP_TO }}
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
         with:
           python-version: "3.12"
-      - name: Poll job boards (API mode)
+      - name: Collect new roles (queued in outbox, nothing sent yet)
         run: python jobwatch/watch.py --mode api
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
-          SMTP_USER: ${{ secrets.SMTP_USER }}
-          SMTP_PASS: ${{ secrets.SMTP_PASS }}
-          SMTP_TO: ${{ secrets.SMTP_TO }}
-      - name: Save state
+      - name: Save state BEFORE alerting (so an alert can never be sent twice)
+        run: bash jobwatch/save_state.sh "jobwatch: api run"
+      - name: Send queued alerts
+        run: python jobwatch/watch.py --notify
+      - name: Save cleared outbox
         if: always()
-        run: |
-          git config user.name "jobwatch"
-          git config user.email "jobwatch@users.noreply.github.com"
-          git add jobwatch/state.json jobwatch/coverage.md
-          git diff --cached --quiet || (git commit -m "jobwatch: update state" && git pull --rebase -q && git push)
+        run: bash jobwatch/save_state.sh "jobwatch: alerts sent"

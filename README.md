@@ -1,62 +1,40 @@
-# jobwatch v2: free intern-role alerts (quant, AI labs, SWE, big tech)
+# jobwatch v3: free intern alerts (quant, AI labs, big tech, SWE)
 
-Two GitHub Actions workflows poll ~130 firms' job boards, direct career sites, open job datasets and
-aggregators, then alert you the moment a **new** intern / co-op / campus / off-cycle role appears
-(any term, not just Summer 2027).
+Runs by itself on GitHub Actions and emails you (via a GitHub Issue that @-mentions you) **once** for every
+new intern / co-op / off-cycle / residency role, any term.
 
-| Workflow | Cadence | Covers |
+## What it watches
+| Layer | Sources | Speed |
 |---|---|---|
-| `jobwatch` | every 30 min | Greenhouse (US **and EU**), Lever, Ashby, Workable, SmartRecruiters, Recruitee, Workday, Eightfold (Microsoft, Netflix), Amazon, Jane Street, SIG (iCIMS), Citadel (sitemap), Simplify feed, QuantRoles + Kadoa Quant datasets |
-| `jobwatch-render` | every 3 h | JS-only career sites rendered in headless Chromium: Google, Meta, Apple, Citadel Securities, Two Sigma, Optiver, Mako |
+| Company boards (direct) | ~260 firms: 170 on verified boards (Greenhouse US+EU, Ashby, Lever, Workable, SmartRecruiters, Recruitee, Rippling), incl. separate campus/intern boards (CTC, Radix, DRW, Marshall Wace, Walleye, Maven …) and AI labs (OpenAI, Anthropic, Perplexity, Mistral, Cohere, xAI, Cursor, Cognition, ElevenLabs …); the rest are auto-resolved guesses | each run |
+| Career sites (direct) | Amazon, Microsoft & Netflix (Eightfold), Millennium (Eightfold), NVIDIA, Salesforce, Intel, Qualcomm, Adobe, AMD, G-Research, Arrowstreet, PEAK6, Jain Global (Workday), SIG (iCIMS), Citadel, Citadel Securities, Optiver, D. E. Shaw, G-Research (sitemaps) | each run |
+| JS-only sites (headless browser) | Google, Meta, Apple, Two Sigma, Mako | render workflow |
+| Aggregators | **Kadoa Quant** (77 quant firms, daily), **QuantRoles** (400+ quant firms), **zshah101 Intern Engine** (~5,000 employers' ATS feeds, every 30 min), **Simplify** (Summer + off-season list), **SpeedyApply** US + International tables | each run |
 
-## Setup (about 10 minutes)
-1. Create a GitHub repo and push this folder to it.
-   **Make it public** (nothing sensitive is stored: only job postings; secrets stay encrypted) to get unlimited
-   free Actions minutes. If you keep it **private**, free minutes are 2,000/month: edit the two `cron:` lines
-   to hourly (`7 * * * *`) and every 6 h (`23 */6 * * *`).
-   ```bash
-   git init -b main && git add . && git commit -m "jobwatch"
-   gh repo create jobwatch --public --source . --push
-   ```
-2. Settings -> Actions -> General -> Workflow permissions -> **Read and write**.
-3. Actions tab -> enable workflows -> run **jobwatch**, then **jobwatch-render** once each.
-4. GitHub Settings -> Notifications: keep Email on for "Participating, @mentions". Each alert is an Issue that
-   @-mentions you; that is what sends the email. Install the GitHub mobile app for push.
-5. Optional channels (repo Settings -> Secrets and variables -> Actions): `NTFY_TOPIC` (free push via the ntfy app,
-   no account), or `SMTP_USER` + `SMTP_PASS` (+ `SMTP_TO`) for Gmail with an App Password.
+Aggregator copies of a role you were already alerted about are suppressed; alerts say "via …" when the role came from an aggregator.
 
-## First thing after the first runs: read `jobwatch/coverage.md`
-Every source is listed as OK or NOT COVERED with the reason. I could not run this against the live sites from my
-sandbox, so these are **unverified until your first run**: Greenhouse EU endpoint, Kadoa's raw `jobs.json` path/fields,
-the Eightfold (Microsoft/Netflix) and Workday tenant endpoints, the Citadel sitemap pattern, and the link patterns
-for the rendered sites (Google, Meta, Apple, Two Sigma, Optiver, Mako). Anything that fails shows up in coverage.md
-and in one warning issue; fix the pattern in `config.json` or rely on the aggregators below for that firm.
-Guessed slugs are identity-checked against Greenhouse's board name so a wrong guess cannot silently track another company.
+## Guarantees
+- **Only new roles.** Every role ID is remembered (for a year, or as long as it stays posted). A role alerts once, ever.
+- **No floods.** A source's first successful run is a silent baseline; adding new firms never spams you with their existing roles. Dated postings older than `max_age_days` (21) never alert.
+- **Never twice.** Roles are queued in `outbox.json`, the state is committed and pushed, and only then are alerts sent. If sending fails, they stay queued for the next run.
+- **Automatic.** The `schedule:` in both workflows runs them on GitHub's clock; you never need to click Run. State is committed every run, so GitHub never pauses the schedule for inactivity.
+- **Browse everything open:** `jobwatch/OPEN_ROLES.md` lists every currently open matching role (all sources, merged).
 
-## Tuning (`jobwatch/config.json`)
-`keywords` / `exclude` / `locations` are regexes; `simplify.categories` picks Software / AI/ML/Data / Quant / Hardware / Product;
-add firms under `companies` with slug guesses (pin with `"ats"`, use `"all": true` to merge several boards);
-other sections: `workday`, `eightfold`, `html`, `sitemaps`, `render`, `feeds`.
-Aggregator hits are de-duplicated against direct sources and labelled "(via ...)".
+## Schedule and free minutes
+- Defaults: API poll **hourly**, browser render **every 8 h**. These fit inside a **private** repo's 2,000 free minutes per month.
+- If you make the repo **public** (Settings → General → Danger Zone), Actions minutes are unlimited. Then switch to `*/20 * * * *` and `41 */2 * * *` (the comments in the two workflow files say where).
+- A public repo exposes only job links and config, but your alert issues become publicly visible.
 
-## Sign up for these too (free)
-| Service | What it adds | Notes |
-|---|---|---|
-| **QuantRoles** (quantroles.com) | 410+ quant firms incl. "hidden gem" ones | Free weekly email by region; also feeds jobwatch via `openings.json` |
-| **Kadoa Quant** (kadoa.com/quant) | ~2,900 roles, 71 quant firms, daily | CSV export; open MIT dataset at github.com/kadoa-org/quant-jobs (feeds jobwatch); no email alerts that I could confirm |
-| **WallStreetQuants** (thewallstreetquants.com/jobs) | ~2,300 roles, 60+ firms, Intern/New Grad filter | Email is required to unlock the full list |
-| **OpenQuant** (openquant.co + openquant.substack.com) | Quant board + large newsletter | Free |
-| **TraderMath jobs** (tradermath.org/jobs) | ~1,400 roles, filters for firm/type/country | Free account for saved searches; email alerts unconfirmed |
-| **HiringCafe** (hiring.cafe) | Search engine over company career pages (millions of jobs) | Free; daily email digest for saved searches (per a third-party review, I could not open the site) |
-| **UptimeRobot job-page monitor** (uptimerobot.com/free-tools/job-alert-job-page-monitoring) | Email when any career page changes (Citadel, Google, Mako ... anything) | Free: 50 pages, 5-min checks; visual change detection, not keyword-based |
-| **LinkedIn / Handshake / Indeed saved searches** | Catch custom sites | Standard feature: save a search for "intern" and turn on email alerts |
+## Checking health
+- `jobwatch/coverage.md` shows every source and board as OK or NOT COVERED, with the reason.
+- A broken source sends one "need attention" issue.
+- To fix a firm, put its board as `"boards": ["greenhouse:<slug>"]` in `config.json`. You can read the slug off any job link: `job-boards.greenhouse.io/<slug>/…`, `jobs.ashbyhq.com/<slug>/…`, `jobs.lever.co/<slug>/…`.
 
-## Known gaps
-- Firms with custom sites and no public feed rely on the rendered-page watcher, the aggregators, or UptimeRobot.
-- Cloudflare or bot-protection can block GitHub's IP ranges for some sites (Citadel, Google); coverage.md will show it.
-- Listings that exist only behind a login or application portal are not visible to any of this.
+## Tuning `jobwatch/config.json`
+- `keywords` / `exclude` / `locations`: regexes. For example, `"locations": "India|Remote|Singapore|London|Hong Kong"` limits alerts to those places. Leave it empty for worldwide.
+- `companies`: `{"name": "X", "boards": ["ashby:x"]}` (verified) or `{"name": "X", "slugs": ["x", "xai"]}` (auto-resolved with a name check).
+- `workday`, `eightfold`, `sitemaps`, `render`, `feeds`, `markdown`, `simplify`: see the existing entries for the format.
 
-## Notes
-- State is committed daily, which also stops GitHub pausing the schedule after 60 idle days.
-- If no alert channel succeeds, state is not saved, so the role is retried next run.
-- Reset: delete `jobwatch/state.json` and re-run (you'll get a fresh snapshot).
+## Optional channels (repo Settings → Secrets → Actions)
+- `NTFY_TOPIC`: free phone push via the ntfy app.
+- `SMTP_USER` + `SMTP_PASS` (+ `SMTP_TO`): send direct email through Gmail with an App Password.

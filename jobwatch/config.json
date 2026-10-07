@@ -1,21 +1,60 @@
 {
- "_help": "keywords/exclude/locations are regexes (case-insensitive). 'companies': add {name, slugs:[guesses]}; slug = last part of boards.greenhouse.io/<slug>, job-boards.eu.greenhouse.io/<slug>, jobs.lever.co/<slug>, jobs.ashbyhq.com/<slug>. Pin with 'ats' (string or list) to skip the identity check; 'all': true merges every matching board. Other sections: workday, eightfold, html, sitemaps, render (JS pages, needs the render workflow), feeds, simplify.",
- "keywords": "\\b(intern|interns|internship|internships|co-?op|campus|off-?cycle|placement|trainee|apprentice(ship)?|summer 20\\d\\d|winter 20\\d\\d|spring 20\\d\\d|fall 20\\d\\d|working student|werkstudent)\\b",
- "exclude": "",
+ "_help": "See README. 'boards' = verified boards (ats:slug), all polled. 'slugs' = guesses auto-resolved across Greenhouse US/EU, Ashby, Lever with a name check.",
+ "keywords": "\\b(intern|interns|internship|internships|co-?op|campus|off-?cycle|placement|trainee|apprentice(ship)?|residen(cy|t)|fellow(ship)?|summer 20\\d\\d|winter 20\\d\\d|spring 20\\d\\d|fall 20\\d\\d|autumn 20\\d\\d|working student|werkstudent|undergrad(uate)?|student)\\b",
+ "exclude": "\\b(senior|sr\\.?|staff|principal|director|manager|head of|vp|lead)\\b|\\bstudent (loan|success)|residential|campus[^,]*full[- ]?time|\\bnew[- ]?grad|\\(full[- ]?time\\)|\\bgraduate (program|programme|analyst|trader)\\b",
  "locations": "",
+ "max_age_days": 21,
+ "first_run": "silent",
  "simplify": {
   "urls": [
-   "https://raw.githubusercontent.com/SimplifyJobs/Summer2027-Internships/dev/.github/scripts/listings.json",
-   "https://raw.githubusercontent.com/SimplifyJobs/Summer2026-Internships/dev/.github/scripts/listings.json"
+   "https://raw.githubusercontent.com/SimplifyJobs/Summer2027-Internships/dev/.github/scripts/listings.json"
   ],
-  "categories": [
-   "Software",
-   "AI/ML/Data",
-   "Quant"
-  ]
+  "category_regex": "software|ai|ml|data|quant"
  },
+ "feeds": [
+  {
+   "name": "QuantRoles",
+   "url": "https://quantroles.com/openings.json"
+  },
+  {
+   "name": "Kadoa Quant",
+   "url": "https://raw.githubusercontent.com/kadoa-org/quant-jobs/main/public/data/jobs.json",
+   "title_keys": [
+    "jobTitle"
+   ],
+   "company_keys": [
+    "firmName"
+   ],
+   "extra_keys": [
+    "seniorityLevel",
+    "jobType"
+   ],
+   "date_keys": [
+    "datePosted"
+   ]
+  },
+  {
+   "name": "Intern Engine (zshah101)",
+   "url": "https://raw.githubusercontent.com/zshah101/Automated-List-Of-Summer-2027-and-Fall-2026-Tech-Internships/main/docs/api/jobs.json",
+   "category_regex": "software|data|ml|ai|quant|security",
+   "pre": true,
+   "date_keys": [
+    "first_seen_at",
+    "posted_at"
+   ]
+  }
+ ],
+ "markdown": [
+  {
+   "name": "SpeedyApply US",
+   "url": "https://raw.githubusercontent.com/speedyapply/2027-SWE-College-Jobs/main/README.md"
+  },
+  {
+   "name": "SpeedyApply Intl",
+   "url": "https://raw.githubusercontent.com/speedyapply/2027-SWE-College-Jobs/main/INTERN_INTL.md"
+  }
+ ],
  "amazon": true,
- "janestreet": true,
  "workday": [
   {
    "name": "NVIDIA",
@@ -52,876 +91,30 @@
    "host": "amd.wd1.myworkdayjobs.com",
    "tenant": "amd",
    "site": "External"
-  }
- ],
- "companies": [
-  {
-   "name": "IMC Trading",
-   "slugs": [
-    "imc"
-   ],
-   "ats": [
-    "greenhouse",
-    "greenhouse_eu"
-   ],
-   "all": true
-  },
-  {
-   "name": "Optiver",
-   "slugs": [
-    "optiver"
-   ],
-   "ats": [
-    "greenhouse",
-    "greenhouse_eu"
-   ],
-   "all": true,
-   "aliases": [
-    "optiver"
-   ]
-  },
-  {
-   "name": "Qube Research & Technologies",
-   "slugs": [
-    "quberesearchandtechnologies"
-   ],
-   "ats": "greenhouse"
-  },
-  {
-   "name": "XTX Markets",
-   "slugs": [
-    "xtxmarketstechnologies"
-   ],
-   "ats": "greenhouse"
-  },
-  {
-   "name": "Flow Traders",
-   "slugs": [
-    "flowtraders"
-   ],
-   "ats": "greenhouse"
-  },
-  {
-   "name": "Mako Trading",
-   "slugs": [
-    "mako",
-    "makotrading",
-    "makogroup"
-   ],
-   "aliases": [
-    "mako"
-   ]
-  },
-  {
-   "name": "Hudson River Trading",
-   "slugs": [
-    "wehrtyou"
-   ],
-   "ats": "greenhouse"
-  },
-  {
-   "name": "Jump Trading",
-   "slugs": [
-    "jumptrading"
-   ],
-   "ats": "greenhouse"
-  },
-  {
-   "name": "DRW",
-   "slugs": [
-    "drweng",
-    "drw"
-   ],
-   "ats": "greenhouse"
-  },
-  {
-   "name": "D. E. Shaw",
-   "slugs": [
-    "deshaw",
-    "deshawgroup"
-   ]
-  },
-  {
-   "name": "Millennium",
-   "slugs": [
-    "millennium",
-    "mlp"
-   ]
-  },
-  {
-   "name": "Point72",
-   "slugs": [
-    "point72"
-   ]
-  },
-  {
-   "name": "Balyasny",
-   "slugs": [
-    "balyasny",
-    "bamfunds"
-   ]
-  },
-  {
-   "name": "Akuna Capital",
-   "slugs": [
-    "akunacapital",
-    "akuna"
-   ]
-  },
-  {
-   "name": "Virtu Financial",
-   "slugs": [
-    "virtu",
-    "virtufinancial"
-   ]
-  },
-  {
-   "name": "CFM",
-   "slugs": [
-    "cfm",
-    "capitalfundmanagement"
-   ]
-  },
-  {
-   "name": "Tower Research Capital",
-   "slugs": [
-    "towerresearchcapital",
-    "tower",
-    "towerresearch"
-   ]
-  },
-  {
-   "name": "Graviton Research Capital",
-   "slugs": [
-    "gravitonresearchcapital",
-    "graviton"
-   ]
-  },
-  {
-   "name": "AlphaGrep",
-   "slugs": [
-    "alphagrep"
-   ]
-  },
-  {
-   "name": "Quadeye",
-   "slugs": [
-    "quadeye"
-   ]
-  },
-  {
-   "name": "DV Trading",
-   "slugs": [
-    "dvtrading"
-   ]
-  },
-  {
-   "name": "PEAK6",
-   "slugs": [
-    "peak6",
-    "peak6group"
-   ]
-  },
-  {
-   "name": "Five Rings",
-   "slugs": [
-    "fiverings",
-    "fiveringscapital"
-   ]
-  },
-  {
-   "name": "Squarepoint Capital",
-   "slugs": [
-    "squarepointcapital",
-    "squarepoint"
-   ]
-  },
-  {
-   "name": "WorldQuant",
-   "slugs": [
-    "worldquant"
-   ]
-  },
-  {
-   "name": "Xantium",
-   "slugs": [
-    "xantium"
-   ],
-   "ats": "greenhouse"
-  },
-  {
-   "name": "Gelber Group",
-   "slugs": [
-    "gelbergroup"
-   ]
-  },
-  {
-   "name": "3Red Partners",
-   "slugs": [
-    "3redpartners"
-   ]
-  },
-  {
-   "name": "Old Mission Capital",
-   "slugs": [
-    "oldmissioncapital",
-    "oldmission"
-   ]
-  },
-  {
-   "name": "Trillium Trading",
-   "slugs": [
-    "trilliumtrading",
-    "trillium"
-   ]
-  },
-  {
-   "name": "Geneva Trading",
-   "slugs": [
-    "genevatrading"
-   ]
-  },
-  {
-   "name": "Schonfeld",
-   "slugs": [
-    "schonfeld"
-   ]
-  },
-  {
-   "name": "Radix Trading",
-   "slugs": [
-    "radixtrading",
-    "radix"
-   ]
-  },
-  {
-   "name": "Headlands Technologies",
-   "slugs": [
-    "headlandstech",
-    "headlands"
-   ]
-  },
-  {
-   "name": "Tibra",
-   "slugs": [
-    "tibra"
-   ]
-  },
-  {
-   "name": "Wolverine Trading",
-   "slugs": [
-    "wolverinetrading",
-    "wolverine"
-   ]
-  },
-  {
-   "name": "Chicago Trading Company",
-   "slugs": [
-    "chicagotradingcompany",
-    "chicagotrading",
-    "ctc"
-   ]
-  },
-  {
-   "name": "Vatic Labs",
-   "slugs": [
-    "vaticlabs"
-   ]
-  },
-  {
-   "name": "Arrowstreet Capital",
-   "slugs": [
-    "arrowstreetcapital",
-    "arrowstreet"
-   ]
-  },
-  {
-   "name": "AQR",
-   "slugs": [
-    "aqr",
-    "aqrcapital"
-   ]
   },
   {
    "name": "G-Research",
-   "slugs": [
-    "gresearch"
-   ]
+   "host": "gresearch.wd103.myworkdayjobs.com",
+   "tenant": "gresearch",
+   "site": "G-Research"
   },
   {
-   "name": "Man Group",
-   "slugs": [
-    "mangroup",
-    "man"
-   ]
+   "name": "Arrowstreet Capital",
+   "host": "arrowstreetcapital.wd5.myworkdayjobs.com",
+   "tenant": "arrowstreetcapital",
+   "site": "Campus_Careers"
   },
   {
-   "name": "Maven Securities",
-   "slugs": [
-    "maven",
-    "mavensecurities"
-   ]
-  },
-  {
-   "name": "Eisler Capital",
-   "slugs": [
-    "eislercapital"
-   ]
-  },
-  {
-   "name": "ExodusPoint",
-   "slugs": [
-    "exoduspoint"
-   ]
-  },
-  {
-   "name": "Voleon",
-   "slugs": [
-    "voleon"
-   ]
-  },
-  {
-   "name": "Rokos Capital",
-   "slugs": [
-    "rokoscapital",
-    "rokos"
-   ]
-  },
-  {
-   "name": "Marshall Wace",
-   "slugs": [
-    "marshallwace"
-   ]
-  },
-  {
-   "name": "Bridgewater",
-   "slugs": [
-    "bridgewater",
-    "bridgewaterassociates"
-   ]
+   "name": "PEAK6",
+   "host": "peak6group.wd1.myworkdayjobs.com",
+   "tenant": "peak6group",
+   "site": "CapMan"
   },
   {
    "name": "Jain Global",
-   "slugs": [
-    "jainglobal"
-   ]
-  },
-  {
-   "name": "Prop Trading Group (PDT)",
-   "slugs": [
-    "pdtpartners"
-   ]
-  },
-  {
-   "name": "Belvedere Trading",
-   "slugs": [
-    "belvederetrading"
-   ]
-  },
-  {
-   "name": "Hap Capital",
-   "slugs": [
-    "hapcapital"
-   ]
-  },
-  {
-   "name": "Ansatz Capital",
-   "slugs": [
-    "ansatzcapital"
-   ]
-  },
-  {
-   "name": "Quantlab",
-   "slugs": [
-    "quantlab",
-    "quantlabfinancial"
-   ]
-  },
-  {
-   "name": "Anthropic",
-   "slugs": [
-    "anthropic"
-   ],
-   "ats": "greenhouse"
-  },
-  {
-   "name": "OpenAI",
-   "slugs": [
-    "openai"
-   ],
-   "ats": "ashby"
-  },
-  {
-   "name": "Google DeepMind",
-   "slugs": [
-    "deepmind",
-    "googledeepmind"
-   ]
-  },
-  {
-   "name": "Cohere",
-   "slugs": [
-    "cohere"
-   ]
-  },
-  {
-   "name": "Mistral AI",
-   "slugs": [
-    "mistral",
-    "mistralai"
-   ]
-  },
-  {
-   "name": "Perplexity",
-   "slugs": [
-    "perplexity",
-    "perplexityai"
-   ]
-  },
-  {
-   "name": "xAI",
-   "slugs": [
-    "xai"
-   ]
-  },
-  {
-   "name": "Scale AI",
-   "slugs": [
-    "scaleai"
-   ]
-  },
-  {
-   "name": "Databricks",
-   "slugs": [
-    "databricks"
-   ]
-  },
-  {
-   "name": "Hugging Face",
-   "slugs": [
-    "huggingface"
-   ]
-  },
-  {
-   "name": "Together AI",
-   "slugs": [
-    "togetherai",
-    "together"
-   ]
-  },
-  {
-   "name": "Character.AI",
-   "slugs": [
-    "character",
-    "characterai"
-   ]
-  },
-  {
-   "name": "ElevenLabs",
-   "slugs": [
-    "elevenlabs"
-   ]
-  },
-  {
-   "name": "Runway",
-   "slugs": [
-    "runwayml",
-    "runway"
-   ]
-  },
-  {
-   "name": "Cursor (Anysphere)",
-   "slugs": [
-    "anysphere",
-    "cursor"
-   ]
-  },
-  {
-   "name": "Cognition",
-   "slugs": [
-    "cognition",
-    "cognitionai"
-   ]
-  },
-  {
-   "name": "Thinking Machines",
-   "slugs": [
-    "thinkingmachines",
-    "thinkingmachineslab"
-   ]
-  },
-  {
-   "name": "Safe Superintelligence",
-   "slugs": [
-    "ssi",
-    "safesuperintelligence"
-   ]
-  },
-  {
-   "name": "Sierra",
-   "slugs": [
-    "sierra",
-    "sierraai"
-   ]
-  },
-  {
-   "name": "Glean",
-   "slugs": [
-    "glean",
-    "gleanwork"
-   ]
-  },
-  {
-   "name": "Harvey",
-   "slugs": [
-    "harvey"
-   ]
-  },
-  {
-   "name": "Weights & Biases",
-   "slugs": [
-    "wandb",
-    "weightsandbiases"
-   ]
-  },
-  {
-   "name": "Pinecone",
-   "slugs": [
-    "pinecone"
-   ]
-  },
-  {
-   "name": "Modal",
-   "slugs": [
-    "modal",
-    "modallabs"
-   ]
-  },
-  {
-   "name": "Fireworks AI",
-   "slugs": [
-    "fireworksai",
-    "fireworks"
-   ]
-  },
-  {
-   "name": "Groq",
-   "slugs": [
-    "groq"
-   ]
-  },
-  {
-   "name": "Cerebras",
-   "slugs": [
-    "cerebras",
-    "cerebrassystems"
-   ]
-  },
-  {
-   "name": "SambaNova",
-   "slugs": [
-    "sambanova"
-   ]
-  },
-  {
-   "name": "Stability AI",
-   "slugs": [
-    "stabilityai"
-   ]
-  },
-  {
-   "name": "Midjourney",
-   "slugs": [
-    "midjourney"
-   ]
-  },
-  {
-   "name": "Poolside",
-   "slugs": [
-    "poolside"
-   ]
-  },
-  {
-   "name": "Reka",
-   "slugs": [
-    "reka",
-    "rekaai"
-   ]
-  },
-  {
-   "name": "AI21 Labs",
-   "slugs": [
-    "ai21",
-    "ai21labs"
-   ]
-  },
-  {
-   "name": "Sakana AI",
-   "slugs": [
-    "sakanaai",
-    "sakana"
-   ]
-  },
-  {
-   "name": "Black Forest Labs",
-   "slugs": [
-    "blackforestlabs"
-   ]
-  },
-  {
-   "name": "Physical Intelligence",
-   "slugs": [
-    "physicalintelligence",
-    "pi"
-   ]
-  },
-  {
-   "name": "Figure AI",
-   "slugs": [
-    "figureai",
-    "figure"
-   ]
-  },
-  {
-   "name": "Waymo",
-   "slugs": [
-    "waymo"
-   ]
-  },
-  {
-   "name": "Applied Intuition",
-   "slugs": [
-    "appliedintuition"
-   ]
-  },
-  {
-   "name": "Anduril",
-   "slugs": [
-    "anduril",
-    "andurilindustries"
-   ]
-  },
-  {
-   "name": "Palantir",
-   "slugs": [
-    "palantir"
-   ],
-   "ats": "lever"
-  },
-  {
-   "name": "SpaceX",
-   "slugs": [
-    "spacex"
-   ]
-  },
-  {
-   "name": "Stripe",
-   "slugs": [
-    "stripe"
-   ]
-  },
-  {
-   "name": "Figma",
-   "slugs": [
-    "figma"
-   ]
-  },
-  {
-   "name": "Coinbase",
-   "slugs": [
-    "coinbase"
-   ]
-  },
-  {
-   "name": "Robinhood",
-   "slugs": [
-    "robinhood"
-   ]
-  },
-  {
-   "name": "Plaid",
-   "slugs": [
-    "plaid"
-   ]
-  },
-  {
-   "name": "Ramp",
-   "slugs": [
-    "ramp"
-   ]
-  },
-  {
-   "name": "Brex",
-   "slugs": [
-    "brex"
-   ]
-  },
-  {
-   "name": "Datadog",
-   "slugs": [
-    "datadog"
-   ]
-  },
-  {
-   "name": "Cloudflare",
-   "slugs": [
-    "cloudflare"
-   ]
-  },
-  {
-   "name": "Airbnb",
-   "slugs": [
-    "airbnb"
-   ]
-  },
-  {
-   "name": "Dropbox",
-   "slugs": [
-    "dropbox"
-   ]
-  },
-  {
-   "name": "Notion",
-   "slugs": [
-    "notion"
-   ]
-  },
-  {
-   "name": "Vercel",
-   "slugs": [
-    "vercel"
-   ]
-  },
-  {
-   "name": "Linear",
-   "slugs": [
-    "linear"
-   ]
-  },
-  {
-   "name": "Snowflake",
-   "slugs": [
-    "snowflake"
-   ]
-  },
-  {
-   "name": "MongoDB",
-   "slugs": [
-    "mongodb"
-   ]
-  },
-  {
-   "name": "Roblox",
-   "slugs": [
-    "roblox"
-   ]
-  },
-  {
-   "name": "Pinterest",
-   "slugs": [
-    "pinterest"
-   ]
-  },
-  {
-   "name": "Reddit",
-   "slugs": [
-    "reddit"
-   ]
-  },
-  {
-   "name": "Discord",
-   "slugs": [
-    "discord"
-   ]
-  },
-  {
-   "name": "Lyft",
-   "slugs": [
-    "lyft"
-   ]
-  },
-  {
-   "name": "DoorDash",
-   "slugs": [
-    "doordashusa",
-    "doordash"
-   ]
-  },
-  {
-   "name": "Instacart",
-   "slugs": [
-    "instacart"
-   ]
-  },
-  {
-   "name": "Duolingo",
-   "slugs": [
-    "duolingo"
-   ]
-  },
-  {
-   "name": "Samsara",
-   "slugs": [
-    "samsara"
-   ]
-  },
-  {
-   "name": "Rippling",
-   "slugs": [
-    "rippling"
-   ]
-  },
-  {
-   "name": "Gusto",
-   "slugs": [
-    "gusto"
-   ]
-  },
-  {
-   "name": "Asana",
-   "slugs": [
-    "asana"
-   ]
-  },
-  {
-   "name": "Twilio",
-   "slugs": [
-    "twilio"
-   ]
-  },
-  {
-   "name": "Okta",
-   "slugs": [
-    "okta"
-   ]
-  },
-  {
-   "name": "Elastic",
-   "slugs": [
-    "elastic"
-   ]
-  },
-  {
-   "name": "Confluent",
-   "slugs": [
-    "confluent"
-   ]
-  },
-  {
-   "name": "HashiCorp",
-   "slugs": [
-    "hashicorp"
-   ]
-  }
- ],
- "feeds": [
-  {
-   "name": "QuantRoles",
-   "url": "https://quantroles.com/openings.json"
-  },
-  {
-   "name": "Kadoa Quant",
-   "url": "https://raw.githubusercontent.com/kadoa-org/quant-jobs/main/public/data/jobs.json"
+   "host": "jainglobal.wd5.myworkdayjobs.com",
+   "tenant": "jainglobal",
+   "site": "ExternalSite"
   }
  ],
  "eightfold": [
@@ -934,6 +127,11 @@
    "name": "Netflix",
    "host": "explore.jobs.netflix.net",
    "domain": "netflix.com"
+  },
+  {
+   "name": "Millennium",
+   "host": "mlp.eightfold.ai",
+   "domain": "mlp.com"
   }
  ],
  "html": [
@@ -953,6 +151,21 @@
    "name": "Citadel (sitemap)",
    "url": "https://www.citadel.com/sitemap.xml",
    "url_regex": "/careers/(details|open-opportunities/job)"
+  },
+  {
+   "name": "Optiver (sitemap)",
+   "url": "https://www.optiver.com/sitemap.xml",
+   "url_regex": "/join-us/jobs/[^/]+/[^/]+/[^/]+"
+  },
+  {
+   "name": "D. E. Shaw (sitemap)",
+   "url": "https://www.deshaw.com/sitemap.xml",
+   "url_regex": "/careers/[a-z0-9-]+-\\d+/?$"
+  },
+  {
+   "name": "G-Research (sitemap)",
+   "url": "https://www.gresearch.com/vacancies-sitemap.xml",
+   "url_regex": "/vacancies/[a-z0-9-]+/?$"
   }
  ],
  "render": [
@@ -975,24 +188,1767 @@
    "link_regex": "/details/\\d+"
   },
   {
-   "name": "Citadel Securities (rendered)",
-   "url": "https://www.citadelsecurities.com/careers/open-opportunities/?experience-filter=internships",
-   "link_regex": "/careers/(details|open-opportunities/job)"
-  },
-  {
    "name": "Two Sigma (rendered)",
    "url": "https://careers.twosigma.com/careers/SearchJobs/intern?jobRecordsPerPage=50",
    "link_regex": "/careers/JobDetail/"
   },
   {
-   "name": "Optiver (rendered)",
-   "url": "https://optiver.com/working-at-optiver/career-opportunities/",
-   "link_regex": "career-opportunities/\\d+|/join-us/jobs/[^/]+/[^/]+/[^/]+"
+   "name": "Mako (rendered)",
+   "url": "https://mako.com/early-careers",
+   "link_regex": "mako\\.com/(job|jobs|career|careers|early-careers)/[\\w-]+"
+  }
+ ],
+ "companies": [
+  {
+   "name": "1X",
+   "boards": [
+    "recruitee:1x",
+    "ashby:1x"
+   ]
   },
   {
-   "name": "Mako (rendered)",
-   "url": "https://mako.com/career",
-   "link_regex": "mako\\.com/(job|jobs|career)/[\\w-]+/[\\w-]+"
+   "name": "3Red Partners",
+   "boards": [
+    "greenhouse:3redpartners"
+   ]
+  },
+  {
+   "name": "Abridge",
+   "boards": [
+    "ashby:abridge"
+   ]
+  },
+  {
+   "name": "Adept",
+   "slugs": [
+    "adept",
+    "adeptai",
+    "adeptlabs"
+   ]
+  },
+  {
+   "name": "AI21 Labs",
+   "slugs": [
+    "ai21",
+    "ai21labs"
+   ]
+  },
+  {
+   "name": "Airbnb",
+   "boards": [
+    "greenhouse:airbnb"
+   ]
+  },
+  {
+   "name": "Airtable",
+   "boards": [
+    "greenhouse:airtable"
+   ]
+  },
+  {
+   "name": "Akuna Capital",
+   "boards": [
+    "greenhouse:akunacapital"
+   ]
+  },
+  {
+   "name": "Aleph Alpha",
+   "slugs": [
+    "alephalpha",
+    "alephalphaai",
+    "alephalphalabs",
+    "aleph-alpha"
+   ]
+  },
+  {
+   "name": "AlphaGrep",
+   "boards": [
+    "greenhouse:alphagrepsecurities"
+   ]
+  },
+  {
+   "name": "Anduril",
+   "boards": [
+    "greenhouse:andurilindustries"
+   ]
+  },
+  {
+   "name": "Ansatz Capital",
+   "boards": [
+    "lever:ansatzcapital"
+   ]
+  },
+  {
+   "name": "Anthropic",
+   "boards": [
+    "greenhouse:anthropic"
+   ]
+  },
+  {
+   "name": "Anyscale",
+   "boards": [
+    "lever:anyscale"
+   ]
+  },
+  {
+   "name": "Applied Intuition",
+   "boards": [
+    "ashby:applied",
+    "greenhouse:appliedintuition"
+   ]
+  },
+  {
+   "name": "Apptronik",
+   "boards": [
+    "greenhouse:apptronik"
+   ]
+  },
+  {
+   "name": "AQR",
+   "boards": [
+    "greenhouse:aqr"
+   ]
+  },
+  {
+   "name": "Aquatic Capital",
+   "boards": [
+    "greenhouse:aquaticcapitalmanagement"
+   ]
+  },
+  {
+   "name": "Arize AI",
+   "boards": [
+    "greenhouse:arizeai"
+   ]
+  },
+  {
+   "name": "Asana",
+   "boards": [
+    "greenhouse:asana"
+   ]
+  },
+  {
+   "name": "AssemblyAI",
+   "boards": [
+    "greenhouse:assemblyai"
+   ]
+  },
+  {
+   "name": "Ather Energy",
+   "slugs": [
+    "atherenergy",
+    "atherenergyai",
+    "atherenergylabs",
+    "ather-energy"
+   ]
+  },
+  {
+   "name": "Atlan",
+   "slugs": [
+    "atlan",
+    "atlanai",
+    "atlanlabs"
+   ]
+  },
+  {
+   "name": "Atlassian",
+   "slugs": [
+    "atlassian",
+    "atlassianai",
+    "atlassianlabs"
+   ]
+  },
+  {
+   "name": "Augment Code",
+   "slugs": [
+    "augmentcode",
+    "augmentcodeai",
+    "augmentcodelabs",
+    "augment-code"
+   ]
+  },
+  {
+   "name": "Aurora",
+   "boards": [
+    "greenhouse:aurorainnovation"
+   ]
+  },
+  {
+   "name": "Balyasny",
+   "slugs": [
+    "balyasny",
+    "bamfunds"
+   ]
+  },
+  {
+   "name": "Baseten",
+   "boards": [
+    "ashby:baseten"
+   ]
+  },
+  {
+   "name": "Belvedere Trading",
+   "boards": [
+    "lever:belvederetrading"
+   ]
+  },
+  {
+   "name": "Benchling",
+   "boards": [
+    "ashby:benchling"
+   ]
+  },
+  {
+   "name": "Black Forest Labs",
+   "slugs": [
+    "blackforestlabs"
+   ]
+  },
+  {
+   "name": "Bloomberg",
+   "slugs": [
+    "bloomberg",
+    "bloombergai",
+    "bloomberglabs"
+   ]
+  },
+  {
+   "name": "Brex",
+   "boards": [
+    "greenhouse:brex"
+   ]
+  },
+  {
+   "name": "Bridgewater",
+   "boards": [
+    "greenhouse:bridgewater89"
+   ]
+  },
+  {
+   "name": "BrowserStack",
+   "slugs": [
+    "browserstack",
+    "browserstackai",
+    "browserstacklabs"
+   ]
+  },
+  {
+   "name": "Canva",
+   "boards": [
+    "smartrecruiters:canva"
+   ]
+  },
+  {
+   "name": "Capstone Investment Advisors",
+   "boards": [
+    "greenhouse:capstoneinvestmentadvisors"
+   ]
+  },
+  {
+   "name": "Cerebras",
+   "boards": [
+    "ashby:cerebras"
+   ]
+  },
+  {
+   "name": "CFM",
+   "slugs": [
+    "cfm",
+    "capitalfundmanagement"
+   ]
+  },
+  {
+   "name": "Character.AI",
+   "boards": [
+    "ashby:character"
+   ]
+  },
+  {
+   "name": "Chargebee",
+   "slugs": [
+    "chargebee",
+    "chargebeeai",
+    "chargebeelabs"
+   ]
+  },
+  {
+   "name": "Chicago Trading Company",
+   "boards": [
+    "greenhouse:ctccampusboard",
+    "greenhouse:chicagotradingcampus",
+    "greenhouse:chicagotrading"
+   ]
+  },
+  {
+   "name": "Clay",
+   "boards": [
+    "ashby:claylabs"
+   ]
+  },
+  {
+   "name": "Cloudflare",
+   "boards": [
+    "greenhouse:cloudflare"
+   ]
+  },
+  {
+   "name": "Cognition",
+   "boards": [
+    "ashby:cognition"
+   ]
+  },
+  {
+   "name": "Cohere",
+   "boards": [
+    "ashby:cohere"
+   ]
+  },
+  {
+   "name": "Cohesity",
+   "slugs": [
+    "cohesity",
+    "cohesityai",
+    "cohesitylabs"
+   ]
+  },
+  {
+   "name": "Coinbase",
+   "boards": [
+    "greenhouse:coinbase"
+   ]
+  },
+  {
+   "name": "Confluent",
+   "boards": [
+    "ashby:confluent"
+   ]
+  },
+  {
+   "name": "Contextual AI",
+   "slugs": [
+    "contextualai",
+    "contextual",
+    "contextualaiai",
+    "contextualailabs",
+    "contextual-ai"
+   ]
+  },
+  {
+   "name": "CoreWeave",
+   "boards": [
+    "greenhouse:coreweave"
+   ]
+  },
+  {
+   "name": "CRED",
+   "slugs": [
+    "cred",
+    "credai",
+    "credlabs"
+   ]
+  },
+  {
+   "name": "Crusoe",
+   "boards": [
+    "ashby:crusoe"
+   ]
+  },
+  {
+   "name": "Cursor (Anysphere)",
+   "boards": [
+    "ashby:cursor"
+   ]
+  },
+  {
+   "name": "d-Matrix",
+   "boards": [
+    "ashby:d-matrix"
+   ]
+  },
+  {
+   "name": "Databricks",
+   "boards": [
+    "greenhouse:databricks"
+   ]
+  },
+  {
+   "name": "Datadog",
+   "boards": [
+    "greenhouse:datadog"
+   ]
+  },
+  {
+   "name": "Decagon",
+   "boards": [
+    "ashby:decagon"
+   ]
+  },
+  {
+   "name": "Deel",
+   "slugs": [
+    "deel",
+    "deelai",
+    "deellabs"
+   ]
+  },
+  {
+   "name": "Deepgram",
+   "boards": [
+    "ashby:deepgram"
+   ]
+  },
+  {
+   "name": "Descript",
+   "boards": [
+    "greenhouse:descript"
+   ]
+  },
+  {
+   "name": "Discord",
+   "boards": [
+    "greenhouse:discord"
+   ]
+  },
+  {
+   "name": "DoorDash",
+   "boards": [
+    "greenhouse:doordashusa"
+   ]
+  },
+  {
+   "name": "Dream11",
+   "slugs": [
+    "dream11",
+    "dream11ai",
+    "dream11labs"
+   ]
+  },
+  {
+   "name": "Dropbox",
+   "boards": [
+    "greenhouse:dropbox"
+   ]
+  },
+  {
+   "name": "Druva",
+   "slugs": [
+    "druva",
+    "druvaai",
+    "druvalabs"
+   ]
+  },
+  {
+   "name": "DRW",
+   "boards": [
+    "greenhouse:drweng",
+    "greenhouse:drwuniversityjobs"
+   ]
+  },
+  {
+   "name": "Duolingo",
+   "boards": [
+    "greenhouse:duolingo"
+   ]
+  },
+  {
+   "name": "DV Trading",
+   "boards": [
+    "greenhouse:dvtrading"
+   ]
+  },
+  {
+   "name": "Eisler Capital",
+   "slugs": [
+    "eislercapital"
+   ]
+  },
+  {
+   "name": "Elastic",
+   "boards": [
+    "greenhouse:elastic"
+   ]
+  },
+  {
+   "name": "ElevenLabs",
+   "boards": [
+    "ashby:elevenlabs"
+   ]
+  },
+  {
+   "name": "Engineers Gate",
+   "boards": [
+    "greenhouse:engineersgate"
+   ]
+  },
+  {
+   "name": "Etched",
+   "boards": [
+    "ashby:etched"
+   ]
+  },
+  {
+   "name": "ExodusPoint",
+   "boards": [
+    "greenhouse:exoduspoint"
+   ]
+  },
+  {
+   "name": "Faire",
+   "boards": [
+    "greenhouse:faire"
+   ]
+  },
+  {
+   "name": "Figma",
+   "boards": [
+    "greenhouse:figma"
+   ]
+  },
+  {
+   "name": "Figure AI",
+   "boards": [
+    "greenhouse:figure",
+    "greenhouse:figureai"
+   ]
+  },
+  {
+   "name": "Fireworks AI",
+   "boards": [
+    "greenhouse:fireworksai",
+    "ashby:fireworks"
+   ]
+  },
+  {
+   "name": "Five Rings",
+   "boards": [
+    "greenhouse:fiveringsllc"
+   ]
+  },
+  {
+   "name": "Flexport",
+   "boards": [
+    "greenhouse:flexport"
+   ]
+  },
+  {
+   "name": "Flipkart",
+   "slugs": [
+    "flipkart",
+    "flipkartai",
+    "flipkartlabs"
+   ]
+  },
+  {
+   "name": "Flow Traders",
+   "boards": [
+    "greenhouse:flowtraders"
+   ]
+  },
+  {
+   "name": "Freshworks",
+   "boards": [
+    "smartrecruiters:Freshworks"
+   ]
+  },
+  {
+   "name": "Garda Capital Partners",
+   "boards": [
+    "greenhouse:gardacp"
+   ]
+  },
+  {
+   "name": "Gelber Group",
+   "boards": [
+    "greenhouse:gelbergroup",
+    "greenhouse:gelberhandshake"
+   ]
+  },
+  {
+   "name": "Geneva Trading",
+   "boards": [
+    "greenhouse:genevatrading"
+   ]
+  },
+  {
+   "name": "Glean",
+   "boards": [
+    "greenhouse:gleanwork",
+    "smartrecruiters:glean"
+   ]
+  },
+  {
+   "name": "Google DeepMind",
+   "slugs": [
+    "deepmind",
+    "googledeepmind"
+   ],
+   "aliases": [
+    "DeepMind"
+   ]
+  },
+  {
+   "name": "Graham Capital",
+   "boards": [
+    "greenhouse:grahamcapitalmanagement"
+   ]
+  },
+  {
+   "name": "Grammarly",
+   "slugs": [
+    "grammarly",
+    "grammarlyai",
+    "grammarlylabs"
+   ]
+  },
+  {
+   "name": "Graviton Research Capital",
+   "slugs": [
+    "gravitonresearchcapital",
+    "graviton"
+   ]
+  },
+  {
+   "name": "Groq",
+   "slugs": [
+    "groq"
+   ]
+  },
+  {
+   "name": "Groww",
+   "slugs": [
+    "groww",
+    "growwai",
+    "growwlabs"
+   ]
+  },
+  {
+   "name": "GSA Capital",
+   "boards": [
+    "greenhouse:gsacapital"
+   ]
+  },
+  {
+   "name": "Gupshup",
+   "slugs": [
+    "gupshup",
+    "gupshupai",
+    "gupshuplabs"
+   ]
+  },
+  {
+   "name": "Gusto",
+   "boards": [
+    "greenhouse:gusto"
+   ]
+  },
+  {
+   "name": "H Company",
+   "boards": [
+    "ashby:hcompany"
+   ]
+  },
+  {
+   "name": "Hap Capital",
+   "slugs": [
+    "hapcapital"
+   ]
+  },
+  {
+   "name": "Harvey",
+   "boards": [
+    "ashby:harvey"
+   ]
+  },
+  {
+   "name": "HashiCorp",
+   "slugs": [
+    "hashicorp"
+   ]
+  },
+  {
+   "name": "Headlands Technologies",
+   "boards": [
+    "greenhouse:headlandstechnologiesllc"
+   ]
+  },
+  {
+   "name": "Hebbia",
+   "slugs": [
+    "hebbia",
+    "hebbiaai",
+    "hebbialabs"
+   ]
+  },
+  {
+   "name": "Hex",
+   "boards": [
+    "ashby:hex"
+   ]
+  },
+  {
+   "name": "HeyGen",
+   "boards": [
+    "greenhouse:heygen"
+   ]
+  },
+  {
+   "name": "HighRadius",
+   "slugs": [
+    "highradius",
+    "highradiusai",
+    "highradiuslabs"
+   ]
+  },
+  {
+   "name": "Hippocratic AI",
+   "boards": [
+    "ashby:hippocratic"
+   ]
+  },
+  {
+   "name": "Hudson River Trading",
+   "boards": [
+    "greenhouse:wehrtyou"
+   ]
+  },
+  {
+   "name": "Hugging Face",
+   "boards": [
+    "workable:huggingface"
+   ]
+  },
+  {
+   "name": "Hume AI",
+   "slugs": [
+    "humeai",
+    "hume",
+    "humeaiai",
+    "humeailabs",
+    "hume-ai"
+   ]
+  },
+  {
+   "name": "Ideogram",
+   "boards": [
+    "ashby:ideogram"
+   ]
+  },
+  {
+   "name": "Imbue",
+   "boards": [
+    "greenhouse:imbue"
+   ]
+  },
+  {
+   "name": "IMC Trading",
+   "boards": [
+    "greenhouse:imc",
+    "greenhouse_eu:imc"
+   ]
+  },
+  {
+   "name": "InMobi",
+   "slugs": [
+    "inmobi",
+    "inmobiai",
+    "inmobilabs"
+   ]
+  },
+  {
+   "name": "Innovaccer",
+   "boards": [
+    "workable:innovaccer-analytics"
+   ]
+  },
+  {
+   "name": "Instacart",
+   "boards": [
+    "greenhouse:instacart"
+   ]
+  },
+  {
+   "name": "Isomorphic Labs",
+   "slugs": [
+    "isomorphiclabs",
+    "isomorphiclabsai",
+    "isomorphiclabslabs",
+    "isomorphic-labs"
+   ]
+  },
+  {
+   "name": "Jane Street",
+   "boards": [
+    "greenhouse:janestreet"
+   ]
+  },
+  {
+   "name": "Jump Trading",
+   "boards": [
+    "greenhouse:jumptrading"
+   ]
+  },
+  {
+   "name": "Juspay",
+   "slugs": [
+    "juspay",
+    "juspayai",
+    "juspaylabs"
+   ]
+  },
+  {
+   "name": "Krutrim",
+   "slugs": [
+    "krutrim",
+    "krutrimai",
+    "krutrimlabs"
+   ]
+  },
+  {
+   "name": "Labelbox",
+   "boards": [
+    "greenhouse:labelbox"
+   ]
+  },
+  {
+   "name": "Lambda",
+   "boards": [
+    "ashby:lambda"
+   ]
+  },
+  {
+   "name": "LangChain",
+   "boards": [
+    "ashby:langchain"
+   ]
+  },
+  {
+   "name": "Licious",
+   "slugs": [
+    "licious",
+    "liciousai",
+    "liciouslabs"
+   ]
+  },
+  {
+   "name": "Lightmatter",
+   "boards": [
+    "greenhouse:lightmatter"
+   ]
+  },
+  {
+   "name": "Linear",
+   "boards": [
+    "ashby:linear"
+   ]
+  },
+  {
+   "name": "Liquid AI",
+   "boards": [
+    "ashby:liquid"
+   ]
+  },
+  {
+   "name": "LlamaIndex",
+   "slugs": [
+    "llamaindex",
+    "llamaindexai",
+    "llamaindexlabs"
+   ]
+  },
+  {
+   "name": "Lovable",
+   "boards": [
+    "ashby:lovable"
+   ]
+  },
+  {
+   "name": "Luma AI",
+   "boards": [
+    "ashby:lumaai"
+   ]
+  },
+  {
+   "name": "Lyft",
+   "boards": [
+    "greenhouse:lyft"
+   ]
+  },
+  {
+   "name": "Man Group",
+   "boards": [
+    "greenhouse_eu:mangroup"
+   ]
+  },
+  {
+   "name": "Marshall Wace",
+   "boards": [
+    "greenhouse:marshallwace",
+    "greenhouse:mwnaintern",
+    "greenhouse:mwinternshipprogram",
+    "greenhouse:mwam-imperial-placements"
+   ]
+  },
+  {
+   "name": "MatX",
+   "boards": [
+    "greenhouse:matx"
+   ]
+  },
+  {
+   "name": "Maven Securities",
+   "boards": [
+    "greenhouse:mavensecuritiesholdingltd",
+    "greenhouse:emergingtalent"
+   ]
+  },
+  {
+   "name": "Meesho",
+   "slugs": [
+    "meesho",
+    "meeshoai",
+    "meesholabs"
+   ]
+  },
+  {
+   "name": "Mercor",
+   "boards": [
+    "ashby:mercor"
+   ]
+  },
+  {
+   "name": "Mercury",
+   "boards": [
+    "greenhouse:mercury"
+   ]
+  },
+  {
+   "name": "Midjourney",
+   "slugs": [
+    "midjourney"
+   ]
+  },
+  {
+   "name": "Mindtickle",
+   "slugs": [
+    "mindtickle",
+    "mindtickleai",
+    "mindticklelabs"
+   ]
+  },
+  {
+   "name": "Mistral AI",
+   "boards": [
+    "lever:mistral",
+    "ashby:mistral"
+   ]
+  },
+  {
+   "name": "Modal",
+   "boards": [
+    "ashby:modal"
+   ]
+  },
+  {
+   "name": "MongoDB",
+   "boards": [
+    "greenhouse:mongodb"
+   ]
+  },
+  {
+   "name": "Notion",
+   "boards": [
+    "ashby:notion"
+   ]
+  },
+  {
+   "name": "Nuro",
+   "boards": [
+    "greenhouse:nuro"
+   ]
+  },
+  {
+   "name": "Nutanix",
+   "slugs": [
+    "nutanix",
+    "nutanixai",
+    "nutanixlabs"
+   ]
+  },
+  {
+   "name": "Nykaa",
+   "slugs": [
+    "nykaa",
+    "nykaaai",
+    "nykaalabs"
+   ]
+  },
+  {
+   "name": "Observe.AI",
+   "slugs": [
+    "observeai",
+    "observe",
+    "observeaiai",
+    "observeailabs",
+    "observe-ai"
+   ]
+  },
+  {
+   "name": "Okta",
+   "boards": [
+    "greenhouse:okta"
+   ]
+  },
+  {
+   "name": "Ola Electric",
+   "slugs": [
+    "olaelectric",
+    "olaelectricai",
+    "olaelectriclabs",
+    "ola-electric"
+   ]
+  },
+  {
+   "name": "Old Mission Capital",
+   "boards": [
+    "greenhouse:oldmissioncapital"
+   ]
+  },
+  {
+   "name": "OpenAI",
+   "boards": [
+    "ashby:openai"
+   ]
+  },
+  {
+   "name": "OpenEvidence",
+   "slugs": [
+    "openevidence",
+    "openevidenceai",
+    "openevidencelabs"
+   ]
+  },
+  {
+   "name": "Palantir",
+   "boards": [
+    "lever:palantir"
+   ]
+  },
+  {
+   "name": "Paytm",
+   "slugs": [
+    "paytm",
+    "paytmai",
+    "paytmlabs"
+   ]
+  },
+  {
+   "name": "PDT Partners",
+   "boards": [
+    "greenhouse:pdtpartners"
+   ]
+  },
+  {
+   "name": "Periodic Labs",
+   "boards": [
+    "ashby:periodic-labs"
+   ]
+  },
+  {
+   "name": "Perplexity",
+   "boards": [
+    "ashby:perplexity"
+   ]
+  },
+  {
+   "name": "PhonePe",
+   "slugs": [
+    "phonepe",
+    "phonepeai",
+    "phonepelabs"
+   ]
+  },
+  {
+   "name": "Physical Intelligence",
+   "boards": [
+    "ashby:physicalintelligence"
+   ]
+  },
+  {
+   "name": "PhysicsWallah",
+   "slugs": [
+    "physicswallah",
+    "physicswallahai",
+    "physicswallahlabs"
+   ]
+  },
+  {
+   "name": "Pika",
+   "boards": [
+    "ashby:pika"
+   ]
+  },
+  {
+   "name": "Pinecone",
+   "boards": [
+    "ashby:pinecone"
+   ]
+  },
+  {
+   "name": "Pinterest",
+   "boards": [
+    "greenhouse:pinterest"
+   ]
+  },
+  {
+   "name": "Plaid",
+   "boards": [
+    "ashby:plaid"
+   ]
+  },
+  {
+   "name": "Point72",
+   "boards": [
+    "greenhouse:point72"
+   ]
+  },
+  {
+   "name": "PolyAI",
+   "slugs": [
+    "polyai",
+    "poly",
+    "polyaiai",
+    "polyailabs"
+   ]
+  },
+  {
+   "name": "Poolside",
+   "boards": [
+    "ashby:poolside"
+   ]
+  },
+  {
+   "name": "Postman",
+   "boards": [
+    "greenhouse:postman"
+   ]
+  },
+  {
+   "name": "Qdrant",
+   "slugs": [
+    "qdrant",
+    "qdrantai",
+    "qdrantlabs"
+   ]
+  },
+  {
+   "name": "Quadeye",
+   "slugs": [
+    "quadeye"
+   ]
+  },
+  {
+   "name": "Quantlab",
+   "slugs": [
+    "quantlab",
+    "quantlabfinancial"
+   ]
+  },
+  {
+   "name": "Qube Research & Technologies",
+   "boards": [
+    "greenhouse:quberesearchandtechnologies"
+   ]
+  },
+  {
+   "name": "Radix Trading",
+   "boards": [
+    "greenhouse:radixuniversity",
+    "greenhouse:radixtrading"
+   ]
+  },
+  {
+   "name": "Ramp",
+   "boards": [
+    "ashby:ramp"
+   ]
+  },
+  {
+   "name": "Rapido",
+   "slugs": [
+    "rapido",
+    "rapidoai",
+    "rapidolabs"
+   ]
+  },
+  {
+   "name": "Razorpay",
+   "slugs": [
+    "razorpay",
+    "razorpayai",
+    "razorpaylabs"
+   ]
+  },
+  {
+   "name": "Reddit",
+   "boards": [
+    "greenhouse:reddit"
+   ]
+  },
+  {
+   "name": "Reflection AI",
+   "slugs": [
+    "reflectionai",
+    "reflection",
+    "reflectionaiai",
+    "reflectionailabs",
+    "reflection-ai"
+   ]
+  },
+  {
+   "name": "Reka",
+   "slugs": [
+    "reka",
+    "rekaai"
+   ]
+  },
+  {
+   "name": "Replicate",
+   "slugs": [
+    "replicate",
+    "replicateai",
+    "replicatelabs"
+   ]
+  },
+  {
+   "name": "Replit",
+   "boards": [
+    "ashby:replit"
+   ]
+  },
+  {
+   "name": "Retool",
+   "slugs": [
+    "retool",
+    "retoolai",
+    "retoollabs"
+   ]
+  },
+  {
+   "name": "Rippling",
+   "boards": [
+    "rippling:rippling"
+   ]
+  },
+  {
+   "name": "Robinhood",
+   "boards": [
+    "greenhouse:robinhood"
+   ]
+  },
+  {
+   "name": "Roblox",
+   "boards": [
+    "greenhouse:roblox"
+   ]
+  },
+  {
+   "name": "Rokos Capital",
+   "slugs": [
+    "rokoscapital",
+    "rokos"
+   ]
+  },
+  {
+   "name": "Rubrik",
+   "slugs": [
+    "rubrik",
+    "rubrikai",
+    "rubriklabs"
+   ]
+  },
+  {
+   "name": "Runway",
+   "boards": [
+    "ashby:runway"
+   ]
+  },
+  {
+   "name": "Safe Superintelligence",
+   "slugs": [
+    "ssi",
+    "safesuperintelligence"
+   ]
+  },
+  {
+   "name": "Sakana AI",
+   "slugs": [
+    "sakanaai",
+    "sakana"
+   ]
+  },
+  {
+   "name": "SambaNova",
+   "slugs": [
+    "sambanova"
+   ]
+  },
+  {
+   "name": "Samsara",
+   "boards": [
+    "greenhouse:samsara"
+   ]
+  },
+  {
+   "name": "Sarvam AI",
+   "slugs": [
+    "sarvamai",
+    "sarvam",
+    "sarvamaiai",
+    "sarvamailabs",
+    "sarvam-ai"
+   ]
+  },
+  {
+   "name": "Scale",
+   "boards": [
+    "greenhouse:scaleai"
+   ]
+  },
+  {
+   "name": "Scale AI",
+   "boards": [
+    "greenhouse:scaleai"
+   ]
+  },
+  {
+   "name": "Schonfeld",
+   "boards": [
+    "greenhouse:schonfeld"
+   ]
+  },
+  {
+   "name": "Sharechat",
+   "slugs": [
+    "sharechat",
+    "sharechatai",
+    "sharechatlabs"
+   ]
+  },
+  {
+   "name": "Shopify",
+   "slugs": [
+    "shopify",
+    "shopifyai",
+    "shopifylabs"
+   ]
+  },
+  {
+   "name": "Sierra",
+   "boards": [
+    "ashby:sierra"
+   ]
+  },
+  {
+   "name": "Skild AI",
+   "boards": [
+    "greenhouse:skildai-careers"
+   ]
+  },
+  {
+   "name": "Snorkel AI",
+   "boards": [
+    "greenhouse:snorkelai"
+   ]
+  },
+  {
+   "name": "Snowflake",
+   "boards": [
+    "ashby:snowflake"
+   ]
+  },
+  {
+   "name": "Sourcegraph",
+   "slugs": [
+    "sourcegraph",
+    "sourcegraphai",
+    "sourcegraphlabs"
+   ]
+  },
+  {
+   "name": "SpaceX",
+   "boards": [
+    "greenhouse:spacex"
+   ]
+  },
+  {
+   "name": "Speechmatics",
+   "slugs": [
+    "speechmatics",
+    "speechmaticsai",
+    "speechmaticslabs"
+   ]
+  },
+  {
+   "name": "Spotify",
+   "boards": [
+    "lever:spotify"
+   ]
+  },
+  {
+   "name": "Sprinklr",
+   "slugs": [
+    "sprinklr",
+    "sprinklrai",
+    "sprinklrlabs"
+   ]
+  },
+  {
+   "name": "Squarepoint Capital",
+   "boards": [
+    "greenhouse:squarepointcapital"
+   ]
+  },
+  {
+   "name": "Stability AI",
+   "slugs": [
+    "stabilityai"
+   ]
+  },
+  {
+   "name": "StackBlitz",
+   "slugs": [
+    "stackblitz",
+    "stackblitzai",
+    "stackblitzlabs"
+   ]
+  },
+  {
+   "name": "Stevens Capital Management",
+   "boards": [
+    "greenhouse:scm"
+   ]
+  },
+  {
+   "name": "Stripe",
+   "boards": [
+    "greenhouse:stripe"
+   ]
+  },
+  {
+   "name": "Suno",
+   "boards": [
+    "ashby:suno"
+   ]
+  },
+  {
+   "name": "Supabase",
+   "boards": [
+    "ashby:supabase"
+   ]
+  },
+  {
+   "name": "Surge AI",
+   "boards": [
+    "ashby:surge-ai"
+   ]
+  },
+  {
+   "name": "Swiggy",
+   "slugs": [
+    "swiggy",
+    "swiggyai",
+    "swiggylabs"
+   ]
+  },
+  {
+   "name": "Synthesia",
+   "boards": [
+    "ashby:synthesia"
+   ]
+  },
+  {
+   "name": "Tata 1mg",
+   "slugs": [
+    "tata1mg",
+    "tata1mgai",
+    "tata1mglabs",
+    "tata-1mg"
+   ]
+  },
+  {
+   "name": "Tavus",
+   "slugs": [
+    "tavus",
+    "tavusai",
+    "tavuslabs"
+   ]
+  },
+  {
+   "name": "Temporal",
+   "boards": [
+    "ashby:temporal",
+    "greenhouse:temporaltechnologies"
+   ]
+  },
+  {
+   "name": "Tenstorrent",
+   "boards": [
+    "greenhouse:tenstorrentuniversity",
+    "greenhouse:tenstorrent"
+   ]
+  },
+  {
+   "name": "Tesla",
+   "slugs": [
+    "tesla",
+    "teslaai",
+    "teslalabs"
+   ]
+  },
+  {
+   "name": "Teza Technologies",
+   "boards": [
+    "ashby:teza-technologies"
+   ]
+  },
+  {
+   "name": "Thinking Machines",
+   "slugs": [
+    "thinkingmachines",
+    "thinkingmachineslab",
+    "thinking-machines"
+   ]
+  },
+  {
+   "name": "ThoughtSpot",
+   "slugs": [
+    "thoughtspot",
+    "thoughtspotai",
+    "thoughtspotlabs"
+   ]
+  },
+  {
+   "name": "Tibra",
+   "slugs": [
+    "tibra"
+   ]
+  },
+  {
+   "name": "Together AI",
+   "boards": [
+    "greenhouse:togetherai"
+   ]
+  },
+  {
+   "name": "Tower Research Capital",
+   "boards": [
+    "greenhouse:towerresearchcapital"
+   ]
+  },
+  {
+   "name": "TransMarket Group",
+   "boards": [
+    "greenhouse:transmarketgroup"
+   ]
+  },
+  {
+   "name": "Trexquant",
+   "boards": [
+    "workable:trexquant"
+   ]
+  },
+  {
+   "name": "Twilio",
+   "boards": [
+    "greenhouse:twilio"
+   ]
+  },
+  {
+   "name": "Uber",
+   "slugs": [
+    "uber",
+    "uberai",
+    "uberlabs"
+   ]
+  },
+  {
+   "name": "Unacademy",
+   "slugs": [
+    "unacademy",
+    "unacademyai",
+    "unacademylabs"
+   ]
+  },
+  {
+   "name": "Uniphore",
+   "slugs": [
+    "uniphore",
+    "uniphoreai",
+    "uniphorelabs"
+   ]
+  },
+  {
+   "name": "upGrad",
+   "slugs": [
+    "upgrad",
+    "upgradai",
+    "upgradlabs"
+   ]
+  },
+  {
+   "name": "Valkyrie Trading",
+   "boards": [
+    "lever:valkyrietrading"
+   ]
+  },
+  {
+   "name": "Vanta",
+   "boards": [
+    "ashby:vanta"
+   ]
+  },
+  {
+   "name": "Vatic Labs",
+   "slugs": [
+    "vaticlabs"
+   ]
+  },
+  {
+   "name": "Vercel",
+   "boards": [
+    "greenhouse:vercel"
+   ]
+  },
+  {
+   "name": "Verkada",
+   "boards": [
+    "greenhouse:verkada"
+   ]
+  },
+  {
+   "name": "Virtu Financial",
+   "boards": [
+    "greenhouse:virtu"
+   ]
+  },
+  {
+   "name": "Voleon",
+   "boards": [
+    "ashby:voleon"
+   ]
+  },
+  {
+   "name": "Walleye Capital",
+   "boards": [
+    "greenhouse:walleyecapital-external-students",
+    "greenhouse:walleyecapital-external-fulltime"
+   ]
+  },
+  {
+   "name": "Waymo",
+   "boards": [
+    "greenhouse:waymo"
+   ]
+  },
+  {
+   "name": "Wayve",
+   "boards": [
+    "greenhouse:wayve"
+   ]
+  },
+  {
+   "name": "Weaviate",
+   "boards": [
+    "ashby:weaviate"
+   ]
+  },
+  {
+   "name": "Weights & Biases",
+   "slugs": [
+    "wandb",
+    "weightsandbiases"
+   ]
+  },
+  {
+   "name": "Whatfix",
+   "slugs": [
+    "whatfix",
+    "whatfixai",
+    "whatfixlabs"
+   ]
+  },
+  {
+   "name": "Windsurf",
+   "slugs": [
+    "windsurf",
+    "windsurfai",
+    "windsurflabs"
+   ]
+  },
+  {
+   "name": "Wintermute",
+   "boards": [
+    "lever:wintermute-trading"
+   ]
+  },
+  {
+   "name": "Wolverine Trading",
+   "slugs": [
+    "wolverinetrading",
+    "wolverine"
+   ]
+  },
+  {
+   "name": "WorldQuant",
+   "boards": [
+    "greenhouse:worldquant"
+   ]
+  },
+  {
+   "name": "Writer",
+   "boards": [
+    "ashby:writer"
+   ]
+  },
+  {
+   "name": "xAI",
+   "boards": [
+    "greenhouse:xai"
+   ]
+  },
+  {
+   "name": "Xantium",
+   "boards": [
+    "greenhouse:xantium"
+   ]
+  },
+  {
+   "name": "XTX Markets",
+   "boards": [
+    "greenhouse:xtxmarketstechnologies"
+   ]
+  },
+  {
+   "name": "You.com",
+   "boards": [
+    "greenhouse:youcom"
+   ]
+  },
+  {
+   "name": "Zepto",
+   "slugs": [
+    "zepto",
+    "zeptoai",
+    "zeptolabs"
+   ]
+  },
+  {
+   "name": "Zomato",
+   "slugs": [
+    "zomato",
+    "zomatoai",
+    "zomatolabs"
+   ]
   }
  ]
 }

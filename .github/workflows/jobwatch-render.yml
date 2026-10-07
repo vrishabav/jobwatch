@@ -1,39 +1,39 @@
 name: jobwatch-render
 on:
   schedule:
-    - cron: "23 */3 * * *"   # every 3 hours; private repo on the free tier: use "23 */6 * * *"
+    - cron: "41 */8 * * *"   # every 8 h. PUBLIC repo? use "41 */2 * * *"
   workflow_dispatch:
 permissions:
   contents: write
   issues: write
 concurrency:
-  group: jobwatch-state
+  group: jobwatch-state        # both workflows share state, so they never run at the same time
   cancel-in-progress: false
 jobs:
   render:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 25
+    env:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+      SMTP_USER: ${{ secrets.SMTP_USER }}
+      SMTP_PASS: ${{ secrets.SMTP_PASS }}
+      SMTP_TO: ${{ secrets.SMTP_TO }}
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
         with:
           python-version: "3.12"
       - name: Install headless Chromium
         run: |
           pip install playwright
           playwright install --with-deps chromium
-      - name: Poll JS-rendered career sites
+      - name: Collect new roles (queued in outbox, nothing sent yet)
         run: python jobwatch/watch.py --mode render
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
-          SMTP_USER: ${{ secrets.SMTP_USER }}
-          SMTP_PASS: ${{ secrets.SMTP_PASS }}
-          SMTP_TO: ${{ secrets.SMTP_TO }}
-      - name: Save state
+      - name: Save state BEFORE alerting (so an alert can never be sent twice)
+        run: bash jobwatch/save_state.sh "jobwatch: render run"
+      - name: Send queued alerts
+        run: python jobwatch/watch.py --notify
+      - name: Save cleared outbox
         if: always()
-        run: |
-          git config user.name "jobwatch"
-          git config user.email "jobwatch@users.noreply.github.com"
-          git add jobwatch/state.json jobwatch/coverage.md
-          git diff --cached --quiet || (git commit -m "jobwatch: update state (render)" && git pull --rebase -q && git push)
+        run: bash jobwatch/save_state.sh "jobwatch: alerts sent"
