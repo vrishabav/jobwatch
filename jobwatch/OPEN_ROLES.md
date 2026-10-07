@@ -1,4 +1,4 @@
-# Open intern roles (4729, updated 2026-10-07 20:53 UTC)
+# Open intern roles (4722, updated 2026-10-07 20:57 UTC)
 
 Every currently open role matching your filters across all sources (duplicates merged). Alerts only fire for new ones.
 
@@ -2822,18 +2822,12 @@ Every currently open role matching your filters across all sources (duplicates m
 - [Data Scientist Intern - Product](https://www.google.com/about/careers/applications/jobs/results/119184035237765830) — Palo Alto, CA, Cambridge, MA, Madison, WI, Seattle, WA, Washington, DC, SF, Austin, TX, LA, San Jose, CA, Irvine, CA, South SF, Redwood City, CA, Raleigh, NC, San Bruno, CA, Redmond, WA, Durham, NC, Ann Arbor, MI, Santa Cruz, CA, Chicago, IL, Goleta, CA, Pittsburgh, PA, Kirkland, WA, Reston, VA, NYC, Bellevue, WA, Sunnyvale, CA, Mountain View, CA, Portland, OR, Boulder, CO, Atlanta, GA, San Diego, CA · via Simplify · 2026-09-14
 - [Data Scientist Product Intern Ms Summer](https://www.google.com/about/careers/applications/jobs/results/jobs/results/119184035237765830-data-scientist-product-intern-ms-summer-2027?target_level=INTERN_AND_APPRENTICE&sort_by=date&page=2)
 - [Data Scientist Product Ms Intern](https://www.google.com/about/careers/applications/jobs/results/jobs/results/84561862556820166-data-scientist-product-ms-intern-2027?target_level=INTERN_AND_APPRENTICE&sort_by=date&page=1)
-- [Learn more about Customer and Partner Solutions Engineering Intern, BS/MS, Summer 2027](https://www.google.com/about/careers/applications/jobs/results/114405557703451334-customer-and-partner-solutions-engineering-intern-bsms-summer-2027?target_level=INTERN_AND_APPRENTICE&sort_by=date&page=2)
-- [Learn more about Data Center Engineering Intern, BS/MS, Summer 2027](https://www.google.com/about/careers/applications/jobs/results/115313754307994310-data-center-engineering-intern-bsms-summer-2027?target_level=INTERN_AND_APPRENTICE&sort_by=date&page=2)
 - [Learn more about Data Scientist Product MS Intern, 2027](https://www.google.com/about/careers/applications/jobs/results/84561862556820166-data-scientist-product-ms-intern-2027?target_level=INTERN_AND_APPRENTICE&sort_by=date&page=1)
 - [Learn more about Data Scientist, Product Intern, MS, Summer 2027](https://www.google.com/about/careers/applications/jobs/results/119184035237765830-data-scientist-product-intern-ms-summer-2027?target_level=INTERN_AND_APPRENTICE&sort_by=date&page=2)
-- [Learn more about Forward Deployed Engineering Intern, BS/MS, 2027](https://www.google.com/about/careers/applications/jobs/results/135156989620560582-forward-deployed-engineering-intern-bsms-2027?target_level=INTERN_AND_APPRENTICE&sort_by=date&page=1)
 - [Learn more about Part-Time Software Engineering BS/MS Intern, 2027](https://www.google.com/about/careers/applications/jobs/results/103632882076918470-parttime-software-engineering-bsms-intern-2027?target_level=INTERN_AND_APPRENTICE&sort_by=date&page=3)
 - [Learn more about Security Engineering Intern, BS/MS, Summer 2027](https://www.google.com/about/careers/applications/jobs/results/136826798817059526-security-engineering-intern-bsms-summer-2027?target_level=INTERN_AND_APPRENTICE&sort_by=date&page=1)
 - [Learn more about Software Engineering BS/MS Intern, 2027](https://www.google.com/about/careers/applications/jobs/results/83199557986329286-software-engineering-bsms-intern-2027?target_level=INTERN_AND_APPRENTICE&sort_by=date&page=3)
 - [Learn more about Software Engineering, Site Reliability Engineering BS/MS Intern, 2027](https://www.google.com/about/careers/applications/jobs/results/142747733357142726-software-engineering-site-reliability-engineering-bsms-intern-2027?target_level=INTERN_AND_APPRENTICE&sort_by=date&page=3)
-- [Learn more about Student Researcher, 2027](https://www.google.com/about/careers/applications/jobs/results/120211620121977542-student-researcher-2027?target_level=INTERN_AND_APPRENTICE&sort_by=date&page=1)
-- [Learn more about Student Researcher, BS/MS, Winter-Summer 2027](https://www.google.com/about/careers/applications/jobs/results/114416552819729094-student-researcher-bsms-wintersummer-2027?target_level=INTERN_AND_APPRENTICE&sort_by=date&page=2)
-- [Learn more about User Experience Research Intern, MS, Summer 2027](https://www.google.com/about/careers/applications/jobs/results/89541201752924870-user-experience-research-intern-ms-summer-2027?target_level=INTERN_AND_APPRENTICE&sort_by=date&page=2)
 - [Parttime Software Engineering Bsms Intern](https://www.google.com/about/careers/applications/jobs/results/jobs/results/103632882076918470-parttime-software-engineering-bsms-intern-2027?target_level=INTERN_AND_APPRENTICE&sort_by=date&page=3)
 - [Security Engineering Intern Bsms Summer](https://www.google.com/about/careers/applications/jobs/results/jobs/results/136826798817059526-security-engineering-intern-bsms-summer-2027?target_level=INTERN_AND_APPRENTICE&sort_by=date&page=1)
 - [Software Developer Intern](https://www.google.com/about/careers/applications/jobs/results/112518690523488966) — Montreal, QC, Canada, Toronto, ON, Canada, Waterloo, ON, Canada · via Simplify · 2026-08-24
@@ -4063,7 +4057,6 @@ Every currently open role matching your filters across all sources (duplicates m
 ### Meta
 - [Data Scientist Intern - Product Analytics](https://www.metacareers.com/jobs/1633096478817942) — Menlo Park, CA, NYC · via Simplify · 2026-10-06
 - [Data Scientist Intern, Product Analytics (Summer 2027)](https://www.metacareers.com/profile/job_details/1633096478817942)
-- [DFX Engineering Intern](https://www.metacareers.com/profile/job_details/1095054769939445)
 - [Research Scientist Intern - Robotics](https://www.metacareers.com/jobs/1940312740718917) — Menlo Park, CA · via Simplify · 2026-10-01
 - [Software Engineer Intern](https://www.metacareers.com/jobs/1952991802037374) — Seattle, WA, Menlo Park, CA, NYC, Bellevue, WA · via Simplify · 2026-10-06
 - [Software Engineer Intern - Machine Learning](https://www.metacareers.com/jobs/2180490782513668) — Seattle, WA, Burlingame, CA, Redmond, WA, Menlo Park, CA, NYC, Bellevue, WA, Sunnyvale, CA · via Simplify · 2026-10-06
