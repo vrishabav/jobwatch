@@ -1,18 +1,18 @@
 name: jobwatch-render
 on:
   schedule:
-    - cron: "41 */8 * * *"   # every 8 h. PUBLIC repo? use "41 */2 * * *"
+    - cron: "17 3 * * *"   # daily 03:17 UTC = 08:47 IST
   workflow_dispatch:
 permissions:
   contents: write
   issues: write
 concurrency:
-  group: jobwatch-state        # both workflows share state, so they never run at the same time
+  group: jobwatch-state
   cancel-in-progress: false
 jobs:
   render:
     runs-on: ubuntu-latest
-    timeout-minutes: 25
+    timeout-minutes: 30
     env:
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
@@ -28,12 +28,16 @@ jobs:
         run: |
           pip install playwright
           playwright install --with-deps chromium
-      - name: Collect new roles (queued in outbox, nothing sent yet)
-        run: python jobwatch/watch.py --mode render
-      - name: Save state BEFORE alerting (so an alert can never be sent twice)
-        run: bash jobwatch/save_state.sh "jobwatch: render run"
+      - name: Collect new roles into the outbox (nothing is sent yet)
+        run: |
+          python jobwatch/watch.py --mode render
+      - name: Save state before alerting, so no alert is ever sent twice
+        run: |
+          bash jobwatch/save_state.sh "jobwatch render run"
       - name: Send queued alerts
-        run: python jobwatch/watch.py --notify
-      - name: Save cleared outbox
+        run: |
+          python jobwatch/watch.py --notify
+      - name: Save the cleared outbox
         if: always()
-        run: bash jobwatch/save_state.sh "jobwatch: alerts sent"
+        run: |
+          bash jobwatch/save_state.sh "jobwatch alerts sent"

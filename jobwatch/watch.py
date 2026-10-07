@@ -113,6 +113,32 @@ def to_date(v):
     return None
 
 
+# ------------------------------------------------------------------ tech-role filter (ported from zshah101, + quant/trading)
+_TECH_INC = re.compile(
+    r"\b(software|developer|swe|full[\s-]?stack|front[\s-]?end|back[\s-]?end|web developer|web engineer|ios|android|devops|"
+    r"devsecops|sre|site reliability|infrastructure|platform engineer|platform engineering|distributed systems|operating system|"
+    r"compiler|embedded|firmware|cloud engineer|cloud engineering|database engineer|database developer|cyber|cybersecurity|"
+    r"appsec|application security|information security|infosec|security engineer|data science|data scientist|data engineer|"
+    r"data analyst|analytics engineer|machine learning|ml|deep learning|ai|artificial intelligence|nlp|computer vision|"
+    r"research scientist|applied scientist|research engineer|ml engineer|ai engineer|quant|quantitative|trading|trader|"
+    r"algorithm|algorithmic|computer science|programming|engineering intern|technology intern|tech intern)\b", re.I)
+_TECH_EXC = re.compile(
+    r"\b(recruit|recruiting|recruiter|sales|account executive|account manager|marketing|marketer|unpaid|legal|counsel|"
+    r"accounting|human resources|people operations|talent acquisition|communications|supply chain|business development|"
+    r"product design|product designer|ux design|graphic design|industrial design|tv|television|radio|broadcast)\b", re.I)
+_HW_EXC = re.compile(
+    r"\b(mechanical|aerospace|aeronautical|propulsion|avionics|naval|civil engineer|chemical|chemistry|biology|biological|"
+    r"materials|structural|thermal|manufacturing|industrial engineer|electrical|pcb|analog|photonics|optical|hardware|"
+    r"physical design|silicon|semiconductor|vlsi|rtl)\b", re.I)
+_SW_FIRST = re.compile(r"\b(software|developer|swe|devops|sre|embedded|firmware|compiler|security engineer|machine learning|ml|ai|data)\b", re.I)
+
+
+def is_tech(title):
+    if not title or _TECH_EXC.search(title) or not _TECH_INC.search(title):
+        return False
+    return not (_HW_EXC.search(title) and not _SW_FIRST.search(title))
+
+
 # ------------------------------------------------------------------ ATS adapters
 def gh(slug, name, region=""):
     d = http(f"https://boards-api{region}.greenhouse.io/v1/boards/{slug}/jobs")
@@ -261,6 +287,24 @@ def workday(w):
     return list(out.values())
 
 
+def oracle(o):
+    host, site = o["host"], o.get("site", "CX_1")
+    base = f"https://{host}/hcmUI/CandidateExperience/en/sites/{site}/job"
+    out = {}
+    for kw in ("intern", "co-op"):
+        for off in range(0, 200, 25):
+            d = http(f"https://{host}/hcmRestApi/resources/latest/recruitingCEJobRequisitions?onlyData=true"
+                     f"&finder=findReqs;siteNumber={site},keyword={quote(kw)},sortBy=POSTING_DATES_DESC,offset={off}&limit=25")
+            items = d.get("items") or []
+            reqs = (items[0].get("requisitionList") or []) if items else []
+            for r in reqs:
+                out[r.get("Id")] = J(f"or:{host}:{r.get('Id')}", o["name"], r.get("Title"), f"{base}/{r.get('Id')}",
+                                     r.get("PrimaryLocation") or "", date=to_date(r.get("PostedDate")))
+            if len(reqs) < 25:
+                break
+    return list(out.values())
+
+
 def eightfold(e):
     base, dom, q = f"https://{e['host']}", e["domain"], e.get("query", "intern")
     out = {}
@@ -303,15 +347,28 @@ def amazon():
 
 
 def html_links(h):
-    page = http(h["url"], text=True)
     pat, out = re.compile(h["link_regex"]), {}
+    urls = [h["url"].replace("{page}", str(n)) for n in range(1, h.get("pages", 1) + 1)] if "{page}" in h["url"] else [h["url"]]
+    for u in urls:
+        try:
+            page = http(u, text=True)
+        except Exception:
+            if u == urls[0]:
+                raise
+            break
+        _html_collect(page, u, pat, out)
+    return [J(f"ht:{h['name']}:{k}", h["name"], t, u) for k, (t, u) in out.items()]
+
+
+def _html_collect(page, base_url, pat, out):
     for m in re.finditer(r'<a\b[^>]*?href=["\']([^"\']+)["\'][^>]*>(.*?)</a>', page, re.S | re.I):
-        href = urljoin(h["url"], htmllib.unescape(m.group(1))).split("#")[0]
+        href = urljoin(base_url, htmllib.unescape(m.group(1))).split("#")[0]
         if not pat.search(href):
             continue
         txt = htmllib.unescape(re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", m.group(2)))).strip()
-        out.setdefault(href.split("?")[0], (txt or slug_title(href), href))
-    return [J(f"ht:{h['name']}:{k}", h["name"], t, u) for k, (t, u) in out.items()]
+        key = href.split("?")[0]
+        if key not in out or (len(txt) > 3 and len(out[key][0]) <= 3):
+            out[key] = (txt if len(txt) > 3 else slug_title(href), href)
 
 
 def sitemap(s):
@@ -464,6 +521,27 @@ def render_all(items):
             res[r["name"]] = ([J(f"rd:{r['name']}:{k}", company, t, u, pre=bool(r.get("pre"))) for k, (t, u) in out.items()], err)
         browser.close()
     return res
+
+
+def registry_tasks(reg, skip):
+    """Turn zshah101's companies.json (≈5,000 employers + their ATS) into (key, name, fetch-fn) tasks."""
+    comps = http(reg["url"], timeout=60)
+    tasks = []
+    for c in comps if isinstance(comps, list) else []:
+        ats, slug, name = c.get("ats"), c.get("slug"), c.get("name") or c.get("slug")
+        if not (ats and slug) or (ats, slug) in skip or ats in set(reg.get("skip_ats", [])):
+            continue
+        key = f"reg|{ats}:{slug}"
+        if ats in ATS:
+            tasks.append((key, name, (lambda a=ats, s_=slug, n=name: ATS[a](s_, n))))
+        elif ats == "workday" and c.get("site"):
+            host = c.get("host") or f"{slug}.{c.get('wd', 'wd1')}.myworkdayjobs.com"
+            tasks.append((key, name, (lambda w={"name": name, "host": host, "tenant": slug, "site": c["site"]}: workday(w))))
+        elif ats == "oracle" and c.get("host"):
+            tasks.append((key, name, (lambda o={"name": name, "host": c["host"], "site": c.get("site", "CX_1")}: oracle(o))))
+        elif ats == "eightfold" and c.get("host"):
+            tasks.append((key, name, (lambda e={"name": name, "host": c["host"], "domain": c.get("domain", "")}: eightfold(e))))
+    return tasks
 
 
 # ------------------------------------------------------------------ state / files
@@ -671,6 +749,8 @@ def collect(cfg, st, mode):
                 other_f.append(pool.submit(run, h["name"], lambda h=h: html_links(h), pre=h.get("pre")))
             for s in cfg.get("sitemaps", []):
                 other_f.append(pool.submit(run, s["name"], lambda s=s: sitemap(s)))
+            for o in cfg.get("oracle", []):
+                other_f.append(pool.submit(run, o["name"], lambda o=o: oracle(o)))
             for t in comp_f:
                 name, boards, fails = t.result()
                 if boards:
@@ -688,9 +768,37 @@ def collect(cfg, st, mode):
                     for j in jobs:
                         j["pre"] = True
                 put(label, jobs, err, agg=bool(meta.get("agg")))
+    if mode in ("api", "all") and cfg.get("registry"):
+        reg = cfg["registry"]
+        skip = set()
+        for c in cfg["companies"]:
+            for b in c.get("boards", []):
+                skip.add(tuple(b.split(":", 1)))
+            for p in st["resolved"].get(c["name"]) or []:
+                skip.add(tuple(p))
+        try:
+            tasks = registry_tasks(reg, skip)
+        except Exception as e:
+            tasks, S["zshah101 registry"] = [], {"jobs": [], "err": f"could not load company list: {e}", "agg": False,
+                                                 "group": "registry", "res": "-"}
+        ok = 0
+        with ThreadPoolExecutor(reg.get("workers", 24)) as pool:
+            futs = {pool.submit(run, k, fn): (k, n) for k, n, fn in tasks}
+            for f in futs:
+                key, jobs, err, _ = f.result()
+                if err and not jobs:
+                    continue   # dead/empty boards are normal at this scale; not reported individually
+                ok += 1
+                for j in jobs:
+                    j["tech"] = reg.get("role_filter", "tech") == "tech"
+                put(key, jobs, None, group="registry", res=key[4:])
+        if tasks:
+            S["zshah101 registry"] = {"jobs": [], "err": None if ok else "no registry board answered", "agg": False,
+                                      "group": "registry", "res": f"{ok}/{len(tasks)} boards answered"}
     if mode in ("render", "all"):
+        agg_r = {r["name"] for r in cfg.get("render", []) if r.get("fallback")}
         for name, (jobs, err) in render_all(cfg.get("render", [])).items():
-            put(name, jobs, err)
+            put(name, jobs, err, agg=name in agg_r)
     return S
 
 
@@ -722,6 +830,8 @@ def main():
         first, matched = key not in boot, []
         for j in s["jobs"]:
             if not j["pre"] and not kw.search(f"{j['title']} {j['extra']}"):
+                continue
+            if j.get("tech") and not is_tech(j["title"]):
                 continue
             if (ex and ex.search(j["title"])) or (loc and j["loc"] and not loc.search(j["loc"])):
                 continue
@@ -760,7 +870,8 @@ def main():
     outbox["jobs"] += new_jobs
     st["bootstrapped"] = sorted(boot)
     for key, s in S.items():
-        st["coverage"][key] = {"res": s["res"], "n": len(s["jobs"]), "status": "OK" if not s["err"] else s["err"]}
+        if not key.startswith("reg|"):
+            st["coverage"][key] = {"res": s["res"], "n": len(s["jobs"]), "status": "OK" if not s["err"] else s["err"]}
     live = {j["id"] for s in S.values() for j in s["jobs"]}
     cutoff = (NOW - timedelta(days=365)).strftime("%Y-%m-%d")
     st["seen"] = {k: v for k, v in seen.items() if k in live or v >= cutoff}

@@ -1,18 +1,18 @@
 name: jobwatch
 on:
   schedule:
-    - cron: "7 * * * *"   # hourly. PUBLIC repo (unlimited free minutes)? use "*/20 * * * *" for faster alerts
+    - cron: "37 1 * * *"   # daily 01:37 UTC = 07:07 IST
   workflow_dispatch:
 permissions:
   contents: write
   issues: write
 concurrency:
-  group: jobwatch-state        # both workflows share state, so they never run at the same time
+  group: jobwatch-state
   cancel-in-progress: false
 jobs:
   poll:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 120
     env:
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
@@ -24,12 +24,16 @@ jobs:
       - uses: actions/setup-python@v6
         with:
           python-version: "3.12"
-      - name: Collect new roles (queued in outbox, nothing sent yet)
-        run: python jobwatch/watch.py --mode api
-      - name: Save state BEFORE alerting (so an alert can never be sent twice)
-        run: bash jobwatch/save_state.sh "jobwatch: api run"
+      - name: Collect new roles into the outbox (nothing is sent yet)
+        run: |
+          python jobwatch/watch.py --mode api
+      - name: Save state before alerting, so no alert is ever sent twice
+        run: |
+          bash jobwatch/save_state.sh "jobwatch api run"
       - name: Send queued alerts
-        run: python jobwatch/watch.py --notify
-      - name: Save cleared outbox
+        run: |
+          python jobwatch/watch.py --notify
+      - name: Save the cleared outbox
         if: always()
-        run: bash jobwatch/save_state.sh "jobwatch: alerts sent"
+        run: |
+          bash jobwatch/save_state.sh "jobwatch alerts sent"

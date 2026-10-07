@@ -6,10 +6,13 @@ new intern / co-op / off-cycle / residency role, any term.
 ## What it watches
 | Layer | Sources | Speed |
 |---|---|---|
-| Company boards (direct) | ~260 firms: 170 on verified boards (Greenhouse US+EU, Ashby, Lever, Workable, SmartRecruiters, Recruitee, Rippling), incl. separate campus/intern boards (CTC, Radix, DRW, Marshall Wace, Walleye, Maven …) and AI labs (OpenAI, Anthropic, Perplexity, Mistral, Cohere, xAI, Cursor, Cognition, ElevenLabs …); the rest are auto-resolved guesses | each run |
-| Career sites (direct) | Amazon, Microsoft & Netflix (Eightfold), Millennium (Eightfold), NVIDIA, Salesforce, Intel, Qualcomm, Adobe, AMD, G-Research, Arrowstreet, PEAK6, Jain Global (Workday), SIG (iCIMS), Citadel, Citadel Securities, Optiver, D. E. Shaw, G-Research (sitemaps) | each run |
-| JS-only sites (headless browser) | Google, Meta, Apple, Two Sigma, Mako | render workflow |
-| Aggregators | **Kadoa Quant** (77 quant firms, daily), **QuantRoles** (400+ quant firms), **zshah101 Intern Engine** (~5,000 employers' ATS feeds, every 30 min), **Simplify** (Summer + off-season list), **SpeedyApply** US + International tables | each run |
+| Company boards (direct) | ~260 firms: 170 on verified boards (Greenhouse US+EU, Ashby, Lever, Workable, SmartRecruiters, Recruitee, Rippling), incl. separate campus/intern boards (CTC, Radix, DRW, Marshall Wace, Walleye, Maven …) and AI labs (OpenAI, Anthropic, Perplexity, Mistral, Cohere, xAI, Cursor, Cognition, ElevenLabs …); the rest are auto-resolved guesses | daily |
+| Career sites (direct) | Amazon, Microsoft & Netflix (Eightfold), Millennium (Eightfold), NVIDIA, Salesforce, Intel, Qualcomm, Adobe, AMD, G-Research, Arrowstreet, PEAK6, Jain Global (Workday), SIG (iCIMS), Citadel, Citadel Securities, Optiver, D. E. Shaw, G-Research (sitemaps) | daily |
+| JS-only sites (headless browser) | Meta, Two Sigma, Mako, Google (fallback) | daily (render workflow) |
+| zshah101 registry | Every board in zshah101's ~5,000-employer list (Greenhouse, Ashby, Lever, Workday, Oracle, SmartRecruiters, Workable, Rippling…), polled by *your* engine with **no US/season limits**; tech-role filter (SWE / data / ML / quant / security) | daily |
+| Big tech | Amazon, Microsoft, Netflix (APIs); NVIDIA, Salesforce, Intel, Qualcomm, Adobe, AMD (Workday); Google, Apple (career-page HTML); Meta, Google fallback (headless browser) | daily |
+| Research | CERN (SmartRecruiters) + auto-resolved guesses for AI2, Simons/Flatiron, Isomorphic, Arc, CZI, Mila, Vector, EMBL, Turing Institute | daily |
+| Aggregators | **Kadoa Quant** (77 quant firms, daily), **QuantRoles** (400+ quant firms), **zshah101 Intern Engine** (~5,000 employers' ATS feeds, every 30 min), **Simplify** (Summer + off-season list), **SpeedyApply** US + International tables | daily |
 
 Aggregator copies of a role you were already alerted about are suppressed; alerts say "via …" when the role came from an aggregator.
 
@@ -20,10 +23,9 @@ Aggregator copies of a role you were already alerted about are suppressed; alert
 - **Automatic.** The `schedule:` in both workflows runs them on GitHub's clock; you never need to click Run. State is committed every run, so GitHub never pauses the schedule for inactivity.
 - **Browse everything open:** `jobwatch/OPEN_ROLES.md` lists every currently open matching role (all sources, merged).
 
-## Schedule and free minutes
-- Defaults: API poll **hourly**, browser render **every 8 h**. These fit inside a **private** repo's 2,000 free minutes per month.
-- If you make the repo **public** (Settings → General → Danger Zone), Actions minutes are unlimited. Then switch to `*/20 * * * *` and `41 */2 * * *` (the comments in the two workflow files say where).
-- A public repo exposes only job links and config, but your alert issues become publicly visible.
+## Schedule
+Both workflows run **once a day** (API 07:07 IST, browser 08:47 IST) — change the `cron:` line to adjust.
+A daily run fits easily inside free minutes whether the repo is public or private.
 
 ## Checking health
 - `jobwatch/coverage.md` shows every source and board as OK or NOT COVERED, with the reason.
