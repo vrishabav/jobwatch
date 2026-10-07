@@ -1,0 +1,39 @@
+name: jobwatch-render
+on:
+  schedule:
+    - cron: "23 */3 * * *"   # every 3 hours; private repo on the free tier: use "23 */6 * * *"
+  workflow_dispatch:
+permissions:
+  contents: write
+  issues: write
+concurrency:
+  group: jobwatch-state
+  cancel-in-progress: false
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install headless Chromium
+        run: |
+          pip install playwright
+          playwright install --with-deps chromium
+      - name: Poll JS-rendered career sites
+        run: python jobwatch/watch.py --mode render
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+          SMTP_USER: ${{ secrets.SMTP_USER }}
+          SMTP_PASS: ${{ secrets.SMTP_PASS }}
+          SMTP_TO: ${{ secrets.SMTP_TO }}
+      - name: Save state
+        if: always()
+        run: |
+          git config user.name "jobwatch"
+          git config user.email "jobwatch@users.noreply.github.com"
+          git add jobwatch/state.json jobwatch/coverage.md
+          git diff --cached --quiet || (git commit -m "jobwatch: update state (render)" && git pull --rebase -q && git push)

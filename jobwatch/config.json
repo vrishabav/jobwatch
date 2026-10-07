@@ -1,0 +1,998 @@
+{
+ "_help": "keywords/exclude/locations are regexes (case-insensitive). 'companies': add {name, slugs:[guesses]}; slug = last part of boards.greenhouse.io/<slug>, job-boards.eu.greenhouse.io/<slug>, jobs.lever.co/<slug>, jobs.ashbyhq.com/<slug>. Pin with 'ats' (string or list) to skip the identity check; 'all': true merges every matching board. Other sections: workday, eightfold, html, sitemaps, render (JS pages, needs the render workflow), feeds, simplify.",
+ "keywords": "\\b(intern|interns|internship|internships|co-?op|campus|off-?cycle|placement|trainee|apprentice(ship)?|summer 20\\d\\d|winter 20\\d\\d|spring 20\\d\\d|fall 20\\d\\d|working student|werkstudent)\\b",
+ "exclude": "",
+ "locations": "",
+ "simplify": {
+  "urls": [
+   "https://raw.githubusercontent.com/SimplifyJobs/Summer2027-Internships/dev/.github/scripts/listings.json",
+   "https://raw.githubusercontent.com/SimplifyJobs/Summer2026-Internships/dev/.github/scripts/listings.json"
+  ],
+  "categories": [
+   "Software",
+   "AI/ML/Data",
+   "Quant"
+  ]
+ },
+ "amazon": true,
+ "janestreet": true,
+ "workday": [
+  {
+   "name": "NVIDIA",
+   "host": "nvidia.wd5.myworkdayjobs.com",
+   "tenant": "nvidia",
+   "site": "NVIDIAExternalCareerSite"
+  },
+  {
+   "name": "Salesforce",
+   "host": "salesforce.wd12.myworkdayjobs.com",
+   "tenant": "salesforce",
+   "site": "External_Career_Site"
+  },
+  {
+   "name": "Intel",
+   "host": "intel.wd1.myworkdayjobs.com",
+   "tenant": "intel",
+   "site": "External"
+  },
+  {
+   "name": "Qualcomm",
+   "host": "qualcomm.wd5.myworkdayjobs.com",
+   "tenant": "qualcomm",
+   "site": "External"
+  },
+  {
+   "name": "Adobe",
+   "host": "adobe.wd5.myworkdayjobs.com",
+   "tenant": "adobe",
+   "site": "external_experienced"
+  },
+  {
+   "name": "AMD",
+   "host": "amd.wd1.myworkdayjobs.com",
+   "tenant": "amd",
+   "site": "External"
+  }
+ ],
+ "companies": [
+  {
+   "name": "IMC Trading",
+   "slugs": [
+    "imc"
+   ],
+   "ats": [
+    "greenhouse",
+    "greenhouse_eu"
+   ],
+   "all": true
+  },
+  {
+   "name": "Optiver",
+   "slugs": [
+    "optiver"
+   ],
+   "ats": [
+    "greenhouse",
+    "greenhouse_eu"
+   ],
+   "all": true,
+   "aliases": [
+    "optiver"
+   ]
+  },
+  {
+   "name": "Qube Research & Technologies",
+   "slugs": [
+    "quberesearchandtechnologies"
+   ],
+   "ats": "greenhouse"
+  },
+  {
+   "name": "XTX Markets",
+   "slugs": [
+    "xtxmarketstechnologies"
+   ],
+   "ats": "greenhouse"
+  },
+  {
+   "name": "Flow Traders",
+   "slugs": [
+    "flowtraders"
+   ],
+   "ats": "greenhouse"
+  },
+  {
+   "name": "Mako Trading",
+   "slugs": [
+    "mako",
+    "makotrading",
+    "makogroup"
+   ],
+   "aliases": [
+    "mako"
+   ]
+  },
+  {
+   "name": "Hudson River Trading",
+   "slugs": [
+    "wehrtyou"
+   ],
+   "ats": "greenhouse"
+  },
+  {
+   "name": "Jump Trading",
+   "slugs": [
+    "jumptrading"
+   ],
+   "ats": "greenhouse"
+  },
+  {
+   "name": "DRW",
+   "slugs": [
+    "drweng",
+    "drw"
+   ],
+   "ats": "greenhouse"
+  },
+  {
+   "name": "D. E. Shaw",
+   "slugs": [
+    "deshaw",
+    "deshawgroup"
+   ]
+  },
+  {
+   "name": "Millennium",
+   "slugs": [
+    "millennium",
+    "mlp"
+   ]
+  },
+  {
+   "name": "Point72",
+   "slugs": [
+    "point72"
+   ]
+  },
+  {
+   "name": "Balyasny",
+   "slugs": [
+    "balyasny",
+    "bamfunds"
+   ]
+  },
+  {
+   "name": "Akuna Capital",
+   "slugs": [
+    "akunacapital",
+    "akuna"
+   ]
+  },
+  {
+   "name": "Virtu Financial",
+   "slugs": [
+    "virtu",
+    "virtufinancial"
+   ]
+  },
+  {
+   "name": "CFM",
+   "slugs": [
+    "cfm",
+    "capitalfundmanagement"
+   ]
+  },
+  {
+   "name": "Tower Research Capital",
+   "slugs": [
+    "towerresearchcapital",
+    "tower",
+    "towerresearch"
+   ]
+  },
+  {
+   "name": "Graviton Research Capital",
+   "slugs": [
+    "gravitonresearchcapital",
+    "graviton"
+   ]
+  },
+  {
+   "name": "AlphaGrep",
+   "slugs": [
+    "alphagrep"
+   ]
+  },
+  {
+   "name": "Quadeye",
+   "slugs": [
+    "quadeye"
+   ]
+  },
+  {
+   "name": "DV Trading",
+   "slugs": [
+    "dvtrading"
+   ]
+  },
+  {
+   "name": "PEAK6",
+   "slugs": [
+    "peak6",
+    "peak6group"
+   ]
+  },
+  {
+   "name": "Five Rings",
+   "slugs": [
+    "fiverings",
+    "fiveringscapital"
+   ]
+  },
+  {
+   "name": "Squarepoint Capital",
+   "slugs": [
+    "squarepointcapital",
+    "squarepoint"
+   ]
+  },
+  {
+   "name": "WorldQuant",
+   "slugs": [
+    "worldquant"
+   ]
+  },
+  {
+   "name": "Xantium",
+   "slugs": [
+    "xantium"
+   ],
+   "ats": "greenhouse"
+  },
+  {
+   "name": "Gelber Group",
+   "slugs": [
+    "gelbergroup"
+   ]
+  },
+  {
+   "name": "3Red Partners",
+   "slugs": [
+    "3redpartners"
+   ]
+  },
+  {
+   "name": "Old Mission Capital",
+   "slugs": [
+    "oldmissioncapital",
+    "oldmission"
+   ]
+  },
+  {
+   "name": "Trillium Trading",
+   "slugs": [
+    "trilliumtrading",
+    "trillium"
+   ]
+  },
+  {
+   "name": "Geneva Trading",
+   "slugs": [
+    "genevatrading"
+   ]
+  },
+  {
+   "name": "Schonfeld",
+   "slugs": [
+    "schonfeld"
+   ]
+  },
+  {
+   "name": "Radix Trading",
+   "slugs": [
+    "radixtrading",
+    "radix"
+   ]
+  },
+  {
+   "name": "Headlands Technologies",
+   "slugs": [
+    "headlandstech",
+    "headlands"
+   ]
+  },
+  {
+   "name": "Tibra",
+   "slugs": [
+    "tibra"
+   ]
+  },
+  {
+   "name": "Wolverine Trading",
+   "slugs": [
+    "wolverinetrading",
+    "wolverine"
+   ]
+  },
+  {
+   "name": "Chicago Trading Company",
+   "slugs": [
+    "chicagotradingcompany",
+    "chicagotrading",
+    "ctc"
+   ]
+  },
+  {
+   "name": "Vatic Labs",
+   "slugs": [
+    "vaticlabs"
+   ]
+  },
+  {
+   "name": "Arrowstreet Capital",
+   "slugs": [
+    "arrowstreetcapital",
+    "arrowstreet"
+   ]
+  },
+  {
+   "name": "AQR",
+   "slugs": [
+    "aqr",
+    "aqrcapital"
+   ]
+  },
+  {
+   "name": "G-Research",
+   "slugs": [
+    "gresearch"
+   ]
+  },
+  {
+   "name": "Man Group",
+   "slugs": [
+    "mangroup",
+    "man"
+   ]
+  },
+  {
+   "name": "Maven Securities",
+   "slugs": [
+    "maven",
+    "mavensecurities"
+   ]
+  },
+  {
+   "name": "Eisler Capital",
+   "slugs": [
+    "eislercapital"
+   ]
+  },
+  {
+   "name": "ExodusPoint",
+   "slugs": [
+    "exoduspoint"
+   ]
+  },
+  {
+   "name": "Voleon",
+   "slugs": [
+    "voleon"
+   ]
+  },
+  {
+   "name": "Rokos Capital",
+   "slugs": [
+    "rokoscapital",
+    "rokos"
+   ]
+  },
+  {
+   "name": "Marshall Wace",
+   "slugs": [
+    "marshallwace"
+   ]
+  },
+  {
+   "name": "Bridgewater",
+   "slugs": [
+    "bridgewater",
+    "bridgewaterassociates"
+   ]
+  },
+  {
+   "name": "Jain Global",
+   "slugs": [
+    "jainglobal"
+   ]
+  },
+  {
+   "name": "Prop Trading Group (PDT)",
+   "slugs": [
+    "pdtpartners"
+   ]
+  },
+  {
+   "name": "Belvedere Trading",
+   "slugs": [
+    "belvederetrading"
+   ]
+  },
+  {
+   "name": "Hap Capital",
+   "slugs": [
+    "hapcapital"
+   ]
+  },
+  {
+   "name": "Ansatz Capital",
+   "slugs": [
+    "ansatzcapital"
+   ]
+  },
+  {
+   "name": "Quantlab",
+   "slugs": [
+    "quantlab",
+    "quantlabfinancial"
+   ]
+  },
+  {
+   "name": "Anthropic",
+   "slugs": [
+    "anthropic"
+   ],
+   "ats": "greenhouse"
+  },
+  {
+   "name": "OpenAI",
+   "slugs": [
+    "openai"
+   ],
+   "ats": "ashby"
+  },
+  {
+   "name": "Google DeepMind",
+   "slugs": [
+    "deepmind",
+    "googledeepmind"
+   ]
+  },
+  {
+   "name": "Cohere",
+   "slugs": [
+    "cohere"
+   ]
+  },
+  {
+   "name": "Mistral AI",
+   "slugs": [
+    "mistral",
+    "mistralai"
+   ]
+  },
+  {
+   "name": "Perplexity",
+   "slugs": [
+    "perplexity",
+    "perplexityai"
+   ]
+  },
+  {
+   "name": "xAI",
+   "slugs": [
+    "xai"
+   ]
+  },
+  {
+   "name": "Scale AI",
+   "slugs": [
+    "scaleai"
+   ]
+  },
+  {
+   "name": "Databricks",
+   "slugs": [
+    "databricks"
+   ]
+  },
+  {
+   "name": "Hugging Face",
+   "slugs": [
+    "huggingface"
+   ]
+  },
+  {
+   "name": "Together AI",
+   "slugs": [
+    "togetherai",
+    "together"
+   ]
+  },
+  {
+   "name": "Character.AI",
+   "slugs": [
+    "character",
+    "characterai"
+   ]
+  },
+  {
+   "name": "ElevenLabs",
+   "slugs": [
+    "elevenlabs"
+   ]
+  },
+  {
+   "name": "Runway",
+   "slugs": [
+    "runwayml",
+    "runway"
+   ]
+  },
+  {
+   "name": "Cursor (Anysphere)",
+   "slugs": [
+    "anysphere",
+    "cursor"
+   ]
+  },
+  {
+   "name": "Cognition",
+   "slugs": [
+    "cognition",
+    "cognitionai"
+   ]
+  },
+  {
+   "name": "Thinking Machines",
+   "slugs": [
+    "thinkingmachines",
+    "thinkingmachineslab"
+   ]
+  },
+  {
+   "name": "Safe Superintelligence",
+   "slugs": [
+    "ssi",
+    "safesuperintelligence"
+   ]
+  },
+  {
+   "name": "Sierra",
+   "slugs": [
+    "sierra",
+    "sierraai"
+   ]
+  },
+  {
+   "name": "Glean",
+   "slugs": [
+    "glean",
+    "gleanwork"
+   ]
+  },
+  {
+   "name": "Harvey",
+   "slugs": [
+    "harvey"
+   ]
+  },
+  {
+   "name": "Weights & Biases",
+   "slugs": [
+    "wandb",
+    "weightsandbiases"
+   ]
+  },
+  {
+   "name": "Pinecone",
+   "slugs": [
+    "pinecone"
+   ]
+  },
+  {
+   "name": "Modal",
+   "slugs": [
+    "modal",
+    "modallabs"
+   ]
+  },
+  {
+   "name": "Fireworks AI",
+   "slugs": [
+    "fireworksai",
+    "fireworks"
+   ]
+  },
+  {
+   "name": "Groq",
+   "slugs": [
+    "groq"
+   ]
+  },
+  {
+   "name": "Cerebras",
+   "slugs": [
+    "cerebras",
+    "cerebrassystems"
+   ]
+  },
+  {
+   "name": "SambaNova",
+   "slugs": [
+    "sambanova"
+   ]
+  },
+  {
+   "name": "Stability AI",
+   "slugs": [
+    "stabilityai"
+   ]
+  },
+  {
+   "name": "Midjourney",
+   "slugs": [
+    "midjourney"
+   ]
+  },
+  {
+   "name": "Poolside",
+   "slugs": [
+    "poolside"
+   ]
+  },
+  {
+   "name": "Reka",
+   "slugs": [
+    "reka",
+    "rekaai"
+   ]
+  },
+  {
+   "name": "AI21 Labs",
+   "slugs": [
+    "ai21",
+    "ai21labs"
+   ]
+  },
+  {
+   "name": "Sakana AI",
+   "slugs": [
+    "sakanaai",
+    "sakana"
+   ]
+  },
+  {
+   "name": "Black Forest Labs",
+   "slugs": [
+    "blackforestlabs"
+   ]
+  },
+  {
+   "name": "Physical Intelligence",
+   "slugs": [
+    "physicalintelligence",
+    "pi"
+   ]
+  },
+  {
+   "name": "Figure AI",
+   "slugs": [
+    "figureai",
+    "figure"
+   ]
+  },
+  {
+   "name": "Waymo",
+   "slugs": [
+    "waymo"
+   ]
+  },
+  {
+   "name": "Applied Intuition",
+   "slugs": [
+    "appliedintuition"
+   ]
+  },
+  {
+   "name": "Anduril",
+   "slugs": [
+    "anduril",
+    "andurilindustries"
+   ]
+  },
+  {
+   "name": "Palantir",
+   "slugs": [
+    "palantir"
+   ],
+   "ats": "lever"
+  },
+  {
+   "name": "SpaceX",
+   "slugs": [
+    "spacex"
+   ]
+  },
+  {
+   "name": "Stripe",
+   "slugs": [
+    "stripe"
+   ]
+  },
+  {
+   "name": "Figma",
+   "slugs": [
+    "figma"
+   ]
+  },
+  {
+   "name": "Coinbase",
+   "slugs": [
+    "coinbase"
+   ]
+  },
+  {
+   "name": "Robinhood",
+   "slugs": [
+    "robinhood"
+   ]
+  },
+  {
+   "name": "Plaid",
+   "slugs": [
+    "plaid"
+   ]
+  },
+  {
+   "name": "Ramp",
+   "slugs": [
+    "ramp"
+   ]
+  },
+  {
+   "name": "Brex",
+   "slugs": [
+    "brex"
+   ]
+  },
+  {
+   "name": "Datadog",
+   "slugs": [
+    "datadog"
+   ]
+  },
+  {
+   "name": "Cloudflare",
+   "slugs": [
+    "cloudflare"
+   ]
+  },
+  {
+   "name": "Airbnb",
+   "slugs": [
+    "airbnb"
+   ]
+  },
+  {
+   "name": "Dropbox",
+   "slugs": [
+    "dropbox"
+   ]
+  },
+  {
+   "name": "Notion",
+   "slugs": [
+    "notion"
+   ]
+  },
+  {
+   "name": "Vercel",
+   "slugs": [
+    "vercel"
+   ]
+  },
+  {
+   "name": "Linear",
+   "slugs": [
+    "linear"
+   ]
+  },
+  {
+   "name": "Snowflake",
+   "slugs": [
+    "snowflake"
+   ]
+  },
+  {
+   "name": "MongoDB",
+   "slugs": [
+    "mongodb"
+   ]
+  },
+  {
+   "name": "Roblox",
+   "slugs": [
+    "roblox"
+   ]
+  },
+  {
+   "name": "Pinterest",
+   "slugs": [
+    "pinterest"
+   ]
+  },
+  {
+   "name": "Reddit",
+   "slugs": [
+    "reddit"
+   ]
+  },
+  {
+   "name": "Discord",
+   "slugs": [
+    "discord"
+   ]
+  },
+  {
+   "name": "Lyft",
+   "slugs": [
+    "lyft"
+   ]
+  },
+  {
+   "name": "DoorDash",
+   "slugs": [
+    "doordashusa",
+    "doordash"
+   ]
+  },
+  {
+   "name": "Instacart",
+   "slugs": [
+    "instacart"
+   ]
+  },
+  {
+   "name": "Duolingo",
+   "slugs": [
+    "duolingo"
+   ]
+  },
+  {
+   "name": "Samsara",
+   "slugs": [
+    "samsara"
+   ]
+  },
+  {
+   "name": "Rippling",
+   "slugs": [
+    "rippling"
+   ]
+  },
+  {
+   "name": "Gusto",
+   "slugs": [
+    "gusto"
+   ]
+  },
+  {
+   "name": "Asana",
+   "slugs": [
+    "asana"
+   ]
+  },
+  {
+   "name": "Twilio",
+   "slugs": [
+    "twilio"
+   ]
+  },
+  {
+   "name": "Okta",
+   "slugs": [
+    "okta"
+   ]
+  },
+  {
+   "name": "Elastic",
+   "slugs": [
+    "elastic"
+   ]
+  },
+  {
+   "name": "Confluent",
+   "slugs": [
+    "confluent"
+   ]
+  },
+  {
+   "name": "HashiCorp",
+   "slugs": [
+    "hashicorp"
+   ]
+  }
+ ],
+ "feeds": [
+  {
+   "name": "QuantRoles",
+   "url": "https://quantroles.com/openings.json"
+  },
+  {
+   "name": "Kadoa Quant",
+   "url": "https://raw.githubusercontent.com/kadoa-org/quant-jobs/main/public/data/jobs.json"
+  }
+ ],
+ "eightfold": [
+  {
+   "name": "Microsoft",
+   "host": "apply.careers.microsoft.com",
+   "domain": "microsoft.com"
+  },
+  {
+   "name": "Netflix",
+   "host": "explore.jobs.netflix.net",
+   "domain": "netflix.com"
+  }
+ ],
+ "html": [
+  {
+   "name": "SIG",
+   "url": "https://careers-sig.icims.com/jobs/search?ss=1&searchKeyword=intern&in_iframe=1",
+   "link_regex": "/jobs/\\d+/"
+  }
+ ],
+ "sitemaps": [
+  {
+   "name": "Citadel Securities (sitemap)",
+   "url": "https://www.citadelsecurities.com/sitemap.xml",
+   "url_regex": "/careers/(details|open-opportunities/job)"
+  },
+  {
+   "name": "Citadel (sitemap)",
+   "url": "https://www.citadel.com/sitemap.xml",
+   "url_regex": "/careers/(details|open-opportunities/job)"
+  }
+ ],
+ "render": [
+  {
+   "name": "Google (rendered)",
+   "url": "https://www.google.com/about/careers/applications/jobs/results/?q=intern&target_level=INTERN&sort_by=date&page={page}",
+   "pages": 3,
+   "link_regex": "/jobs/results/\\d+",
+   "pre": true
+  },
+  {
+   "name": "Meta (rendered)",
+   "url": "https://www.metacareers.com/jobsearch?q=intern",
+   "link_regex": "metacareers\\.com/(profile/job_details|jobs)/\\d+"
+  },
+  {
+   "name": "Apple (rendered)",
+   "url": "https://jobs.apple.com/en-us/search?search=intern&sort=newest&page={page}",
+   "pages": 3,
+   "link_regex": "/details/\\d+"
+  },
+  {
+   "name": "Citadel Securities (rendered)",
+   "url": "https://www.citadelsecurities.com/careers/open-opportunities/?experience-filter=internships",
+   "link_regex": "/careers/(details|open-opportunities/job)"
+  },
+  {
+   "name": "Two Sigma (rendered)",
+   "url": "https://careers.twosigma.com/careers/SearchJobs/intern?jobRecordsPerPage=50",
+   "link_regex": "/careers/JobDetail/"
+  },
+  {
+   "name": "Optiver (rendered)",
+   "url": "https://optiver.com/working-at-optiver/career-opportunities/",
+   "link_regex": "career-opportunities/\\d+|/join-us/jobs/[^/]+/[^/]+/[^/]+"
+  },
+  {
+   "name": "Mako (rendered)",
+   "url": "https://mako.com/career",
+   "link_regex": "mako\\.com/(job|jobs|career)/[\\w-]+/[\\w-]+"
+  }
+ ]
+}
