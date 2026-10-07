@@ -1,7 +1,7 @@
 {
  "_help": "See README. 'boards' = verified boards (ats:slug), all polled. 'slugs' = guesses auto-resolved across Greenhouse US/EU, Ashby, Lever with a name check.",
- "keywords": "\\b(intern|interns|internship|internships|co-?op|off-?cycle|placement|trainee|apprentice(ship)?|residency|resident|fellow(ship)?|summer 20\\d\\d|winter 20\\d\\d|spring 20\\d\\d|fall 20\\d\\d|autumn 20\\d\\d|working student|werkstudent|student (worker|intern|programme|program)|technical student|summer student|undergrad(uate)? (intern|researcher|research|engineer))\\b",
- "exclude": "\\b(senior|sr\\.?|staff|principal|director|manager|head of|vp|lead|recruit(er|ing|ment)?|talent|hr|human resources|payroll|content design|solutions architect|resident solutions|phd|ph\\.d|doctoral|post-?doc(toral)?|ms/phd|mba)\\b|\\bstudent (loan|success)|residential|campus[^,]*full[- ]?time|\\bnew[- ]?grad|\\(full[- ]?time\\)|\\bgraduate (program|programme|analyst|trader)\\b",
+ "keywords": "\\b(intern|interns|internship|internships|co-?op|off-?cycle|placement|apprentice(ship)?|residency|fellow(ship)?|summer 20\\d\\d|winter 20\\d\\d|spring 20\\d\\d|fall 20\\d\\d|autumn 20\\d\\d|working student|werkstudent|student (worker|intern|programme|program)|technical student|summer student|undergrad(uate)? (intern|researcher|research|engineer))\\b",
+ "exclude": "\\b(senior|sr\\.?|staff|principal|director|manager|head of|vp|lead|recruit(er|ing|ment)?|talent|hr|human resources|payroll|content design|solutions architect|phd|ph\\.d|doctoral|post-?doc(toral)?|ms/phd|mba)\\b|\\bstudent (loan|success)|residential|campus[^,]*full[- ]?time|\\bnew[- ]?grad|\\(full[- ]?time\\)|\\bgraduate (program|programme|analyst|trader)\\b",
  "locations": "",
  "max_age_days": 21,
  "first_run": "silent",
@@ -14,8 +14,7 @@
  "feeds": [
   {
    "name": "QuantRoles",
-   "url": "https://quantroles.com/openings.json",
-   "all_roles": true
+   "url": "https://quantroles.com/openings.json"
   },
   {
    "name": "Kadoa Quant",
@@ -195,18 +194,6 @@
    "name": "Meta (rendered)",
    "url": "https://www.metacareers.com/jobs?q=intern",
    "link_regex": "metacareers\\.com/(profile/job_details|jobs)/\\d+"
-  },
-  {
-   "name": "Two Sigma (rendered)",
-   "url": "https://careers.twosigma.com/careers/SearchJobs/intern?jobRecordsPerPage=50",
-   "link_regex": "/careers/JobDetail/",
-   "all_roles": true
-  },
-  {
-   "name": "Mako (rendered)",
-   "url": "https://mako.com/early-careers",
-   "link_regex": "mako\\.com/(job|jobs|career|careers|early-careers)/[\\w-]+",
-   "all_roles": true
   }
  ],
  "companies": [
@@ -242,7 +229,8 @@
    "slugs": [
     "ai21",
     "ai21labs"
-   ]
+   ],
+   "all_roles": true
   },
   {
    "name": "Airbnb",
@@ -296,7 +284,8 @@
    "name": "Anthropic",
    "boards": [
     "greenhouse:anthropic"
-   ]
+   ],
+   "all_roles": true
   },
   {
    "name": "Anyscale",
@@ -419,7 +408,8 @@
    "name": "Black Forest Labs",
    "slugs": [
     "blackforestlabs"
-   ]
+   ],
+   "all_roles": true
   },
   {
    "name": "Bloomberg",
@@ -481,7 +471,8 @@
    "name": "Character.AI",
    "boards": [
     "ashby:character"
-   ]
+   ],
+   "all_roles": true
   },
   {
    "name": "Chargebee",
@@ -516,13 +507,15 @@
    "name": "Cognition",
    "boards": [
     "ashby:cognition"
-   ]
+   ],
+   "all_roles": true
   },
   {
    "name": "Cohere",
    "boards": [
     "ashby:cohere"
-   ]
+   ],
+   "all_roles": true
   },
   {
    "name": "Cohesity",
@@ -578,7 +571,8 @@
    "name": "Cursor (Anysphere)",
    "boards": [
     "ashby:cursor"
-   ]
+   ],
+   "all_roles": true
   },
   {
    "name": "d-Matrix",
@@ -696,7 +690,8 @@
    "name": "ElevenLabs",
    "boards": [
     "ashby:elevenlabs"
-   ]
+   ],
+   "all_roles": true
   },
   {
    "name": "Engineers Gate",
@@ -709,7 +704,8 @@
    "name": "Etched",
    "boards": [
     "ashby:etched"
-   ]
+   ],
+   "all_roles": true
   },
   {
    "name": "ExodusPoint",
@@ -804,7 +800,8 @@
    "boards": [
     "greenhouse:gleanwork",
     "smartrecruiters:glean"
-   ]
+   ],
+   "all_roles": true
   },
   {
    "name": "Google DeepMind",
@@ -814,7 +811,8 @@
    ],
    "aliases": [
     "DeepMind"
-   ]
+   ],
+   "all_roles": true
   },
   {
    "name": "Graham Capital",
@@ -891,7 +889,8 @@
    "name": "Harvey",
    "boards": [
     "ashby:harvey"
-   ]
+   ],
+   "all_roles": true
   },
   {
    "name": "HashiCorp",
@@ -951,7 +950,8 @@
    "name": "Hugging Face",
    "boards": [
     "workable:huggingface"
-   ]
+   ],
+   "all_roles": true
   },
   {
    "name": "Hume AI",
@@ -973,13 +973,13 @@
    "name": "Imbue",
    "boards": [
     "greenhouse:imbue"
-   ]
+   ],
+   "all_roles": true
   },
   {
    "name": "IMC Trading",
    "boards": [
-    "greenhouse:imc",
-    "greenhouse_eu:imc"
+    "greenhouse:imc"
    ],
    "all_roles": true
   },
@@ -1010,7 +1010,8 @@
     "isomorphiclabsai",
     "isomorphiclabslabs",
     "isomorphic-labs"
-   ]
+   ],
+   "all_roles": true
   },
   {
    "name": "Jane Street",
@@ -1084,7 +1085,8 @@
    "name": "Liquid AI",
    "boards": [
     "ashby:liquid"
-   ]
+   ],
+   "all_roles": true
   },
   {
    "name": "LlamaIndex",
@@ -1181,7 +1183,8 @@
    "name": "Mistral AI",
    "boards": [
     "lever_html:mistral"
-   ]
+   ],
+   "all_roles": true
   },
   {
    "name": "Modal",
@@ -1259,7 +1262,8 @@
    "name": "OpenAI",
    "boards": [
     "ashby:openai"
-   ]
+   ],
+   "all_roles": true
   },
   {
    "name": "OpenEvidence",
@@ -1294,13 +1298,15 @@
    "name": "Periodic Labs",
    "boards": [
     "ashby:periodic-labs"
-   ]
+   ],
+   "all_roles": true
   },
   {
    "name": "Perplexity",
    "boards": [
     "ashby:perplexity"
-   ]
+   ],
+   "all_roles": true
   },
   {
    "name": "PhonePe",
@@ -1314,7 +1320,8 @@
    "name": "Physical Intelligence",
    "boards": [
     "ashby:physicalintelligence"
-   ]
+   ],
+   "all_roles": true
   },
   {
    "name": "PhysicsWallah",
@@ -1368,7 +1375,8 @@
    "name": "Poolside",
    "boards": [
     "ashby:poolside"
-   ]
+   ],
+   "all_roles": true
   },
   {
    "name": "Postman",
@@ -1449,14 +1457,16 @@
     "reflectionaiai",
     "reflectionailabs",
     "reflection-ai"
-   ]
+   ],
+   "all_roles": true
   },
   {
    "name": "Reka",
    "slugs": [
     "reka",
     "rekaai"
-   ]
+   ],
+   "all_roles": true
   },
   {
    "name": "Replicate",
@@ -1518,21 +1528,24 @@
    "name": "Runway",
    "boards": [
     "ashby:runway"
-   ]
+   ],
+   "all_roles": true
   },
   {
    "name": "Safe Superintelligence",
    "slugs": [
     "ssi",
     "safesuperintelligence"
-   ]
+   ],
+   "all_roles": true
   },
   {
    "name": "Sakana AI",
    "slugs": [
     "sakanaai",
     "sakana"
-   ]
+   ],
+   "all_roles": true
   },
   {
    "name": "SambaNova",
@@ -1566,7 +1579,8 @@
    "name": "Scale AI",
    "boards": [
     "greenhouse:scaleai"
-   ]
+   ],
+   "all_roles": true
   },
   {
    "name": "Schonfeld",
@@ -1595,7 +1609,8 @@
    "name": "Sierra",
    "boards": [
     "ashby:sierra"
-   ]
+   ],
+   "all_roles": true
   },
   {
    "name": "Skild AI",
@@ -1768,7 +1783,8 @@
     "thinkingmachines",
     "thinkingmachineslab",
     "thinking-machines"
-   ]
+   ],
+   "all_roles": true
   },
   {
    "name": "ThoughtSpot",
@@ -1789,7 +1805,8 @@
    "name": "Together AI",
    "boards": [
     "greenhouse:togetherai"
-   ]
+   ],
+   "all_roles": true
   },
   {
    "name": "Tower Research Capital",
@@ -1977,7 +1994,8 @@
    "name": "xAI",
    "boards": [
     "greenhouse:xai"
-   ]
+   ],
+   "all_roles": true
   },
   {
    "name": "Xantium",
@@ -2032,7 +2050,8 @@
    "aliases": [
     "AI2",
     "Allen Institute"
-   ]
+   ],
+   "all_roles": true
   },
   {
    "name": "Simons Foundation (Flatiron Institute)",

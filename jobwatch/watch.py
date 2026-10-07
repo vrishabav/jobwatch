@@ -120,24 +120,30 @@ def to_date(v):
 # ------------------------------------------------------------------ tech-role filter (ported from zshah101, + quant/trading)
 _TECH_INC = re.compile(
     r"\b(software|developer|swe|full[\s-]?stack|front[\s-]?end|back[\s-]?end|web developer|web engineer|ios|android|devops|"
-    r"devsecops|sre|site reliability|infrastructure|platform engineer|platform engineering|distributed systems|operating system|"
-    r"compiler|embedded|firmware|cloud engineer|cloud engineering|database engineer|database developer|cyber|cybersecurity|"
-    r"appsec|application security|information security|infosec|security engineer|data science|data scientist|data engineer|"
-    r"data analyst|analytics engineer|machine learning|ml|deep learning|ai|artificial intelligence|nlp|computer vision|"
-    r"research scientist|applied scientist|research engineer|ml engineer|ai engineer|quant|quantitative|trading|trader|"
-    r"algorithm|algorithmic|computer science|programming|engineering intern|technology intern|tech intern|neural|llm|"
-    r"researcher|research (?:fellow|fellowship|resident|residency|intern|internship|program|programme|associate)|"
-    r"robotics software|autonomy|perception|reinforcement learning|generative|statistics|mathematics|"
-    r"optimization|backend|frontend|mobile|cloud|kernel|hpc|gpu|cuda)\b", re.I)
+    r"devsecops|sre|site reliability|infrastructure engineer|platform engineer|platform engineering|distributed systems|"
+    r"operating systems?|compiler|embedded software|firmware|cloud engineer|cloud engineering|database engineer|database developer|"
+    r"cybersecurity|application security|information security|infosec|security engineer|security research|"
+    r"data science|data scientist|data engineer|data analytics|analytics engineer|machine learning|ml|deep learning|ai|"
+    r"artificial intelligence|nlp|computer vision|llm|neural networks?|reinforcement learning|"
+    r"research scientist|applied scientist|research engineer|ml engineer|ai engineer|ai research|ml research|"
+    r"quant|quantitative|trading|trader|algorithmic|computer science|programming|programmer|coding|"
+    r"gpu|cuda|hpc|kernel engineer|robotics software|java|python|c\+\+|rust|golang|vulnerability|"
+    r"(?:cloud|cyber|network|application|software|product|offensive|ai|systems?) security|security (?:engineer|engineering|research|analyst|intern)|"
+    r"rl|ai agents?|agent (?:rl|training|infrastructure|systems?)|agentic|crypto researcher|cryptograph\w*|autonomous driving|neural|ai/ml)(?!\w)", re.I)
 _TECH_EXC = re.compile(
     r"\b(recruit|recruiting|recruiter|sales|account executive|account manager|marketing|marketer|unpaid|legal|counsel|"
     r"accounting|human resources|people operations|talent acquisition|communications|supply chain|business development|"
-    r"product design|product designer|ux design|graphic design|industrial design|tv|television|radio|broadcast)\b", re.I)
+    r"product design|product designer|ux design|ux research|graphic design|industrial design|tv|television|radio|broadcast|"
+    r"technician|clinical|market research|policy|packaging|landfill|nursing|pharmac\w*|agronom\w*|geoscien\w*|"
+    r"advisor|sales engineer|customer|support engineer|tech support)\b", re.I)
 _HW_EXC = re.compile(
     r"\b(mechanical|aerospace|aeronautical|propulsion|avionics|naval|civil engineer|chemical|chemistry|biology|biological|"
     r"materials|structural|thermal|manufacturing|industrial engineer|electrical|pcb|analog|photonics|optical|hardware|"
     r"physical design|silicon|semiconductor|vlsi|rtl)\b", re.I)
 _SW_FIRST = re.compile(r"\b(software|developer|swe|devops|sre|embedded|firmware|compiler|security engineer|machine learning|ml|ai|data)\b", re.I)
+
+
+_STRICT_INTERN = re.compile(r"\b(intern|interns|internship|internships|co[\s-]?op|cooperative education)\b", re.I)
 
 
 def is_tech(title):
@@ -897,8 +903,15 @@ def main():
     age_cut = (NOW - timedelta(days=max_age)).strftime("%Y-%m-%d") if max_age else ""
     silent_first = cfg.get("first_run", "silent") == "silent"
     role_filter = cfg.get("role_filter", "tech")
+    import hashlib
+    sig = hashlib.sha1(json.dumps([cfg.get("keywords"), cfg.get("exclude"), cfg.get("locations"), role_filter,
+                                   _TECH_INC.pattern, _TECH_EXC.pattern, _STRICT_INTERN.pattern,
+                                   sorted(c["name"] for c in cfg["companies"] if c.get("all_roles"))]).encode()).hexdigest()[:12]
+    filters_changed = st.get("filter_sig") != sig and bool(st.get("bootstrapped"))
+    recent_cut = (NOW - timedelta(days=2)).strftime("%Y-%m-%d")
     S = collect(cfg, st, MODE)
     outbox = load(P["outbox"], {"jobs": [], "notes": []})
+    alert_keys = set()
     open_roles = load(P["open"], {})
     seen, new_jobs, run_dk = st["seen"], [], set()
     boot = set(st["bootstrapped"])
@@ -910,6 +923,8 @@ def main():
         for j in s["jobs"]:
             if not j["pre"] and not kw.search(f"{j['title']} {j['extra']}"):
                 continue
+            if j["src"].startswith("reg|") and not _STRICT_INTERN.search(j["title"]):
+                continue   # registry boards: only titles that literally say intern / internship / co-op
             if role_filter == "tech" and not j.get("all") and not is_tech(j["title"]):
                 continue   # non-quant sources: keep SWE / data / ML / AI / quant / security roles only
             if (ex and ex.search(j["title"])) or (loc and j["loc"] and not loc.search(j["loc"])):
@@ -926,6 +941,12 @@ def main():
             seen.setdefault("dk:" + dk, TODAY)
             if (first and silent_first) or (j["date"] and age_cut and j["date"] < age_cut):
                 continue  # baseline or stale posting: remember silently
+            if filters_changed and not (j["date"] and j["date"] >= recent_cut):
+                continue  # filters were edited: old roles that newly match are absorbed silently, not alerted
+            ak = (norm(j["company"])[:8], norm(j["title"]), norm(j["loc"]))
+            if ak in alert_keys:
+                continue
+            alert_keys.add(ak)
             new_jobs.append({k: j[k] for k in ("company", "title", "url", "loc", "via")})
         if not s["err"]:
             open_roles[key] = matched
@@ -955,6 +976,7 @@ def main():
     cutoff = (NOW - timedelta(days=365)).strftime("%Y-%m-%d")
     st["seen"] = {k: v for k, v in seen.items() if k in live or v >= cutoff}
     st["last_run"] = TODAY
+    st["filter_sig"] = sig
     if MODE in ("api", "all"):
         rnames = {r["name"] for r in cfg.get("render", [])}
         st["coverage"] = {k: v for k, v in st["coverage"].items() if k in S or k in rnames}

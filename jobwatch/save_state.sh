@@ -1,14 +1,19 @@
 #!/usr/bin/env bash
-# Commit jobwatch's state files and push, retrying if another run pushed first.
+# Commit jobwatch's state and push. Never auto-resolves conflicts in state files:
+# if another run pushed first and the state conflicts, stop (nothing gets sent; the next run redoes the work).
 set -e
 git config user.name "jobwatch"
 git config user.email "jobwatch@users.noreply.github.com"
 git add -A jobwatch/
 git diff --cached --quiet && exit 0
 git commit -q -m "$1"
-for i in 1 2 3 4; do
+for i in 1 2 3; do
   git push -q && exit 0
   sleep $((i * 5))
-  git pull --rebase -q -X theirs || { git rebase --abort; exit 1; }
+  if ! git pull --rebase -q; then
+    git rebase --abort || true
+    echo "State conflict with another run; not pushing (no alerts will be sent this run)." >&2
+    exit 1
+  fi
 done
 exit 1

@@ -21,6 +21,8 @@ jobs:
       SMTP_TO: ${{ secrets.SMTP_TO }}
     steps:
       - uses: actions/checkout@v5
+        with:
+          ref: ${{ github.ref_name }}   # latest branch head, not the (possibly older) triggering commit
       - uses: actions/setup-python@v6
         with:
           python-version: "3.12"
