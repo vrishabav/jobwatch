@@ -128,6 +128,7 @@
   "Glean|greenhouse:gleanwork",
   "Glean|smartrecruiters:glean",
   "Google",
+  "Google (rendered)",
   "Graham Capital|greenhouse:grahamcapitalmanagement",
   "Graviton Research Capital",
   "Graviton Research Capital|greenhouse:gravitonresearchcapital",
@@ -191,6 +192,7 @@
   "Meesho|lever:meesho",
   "Mercor|ashby:mercor",
   "Mercury|greenhouse:mercury",
+  "Meta (rendered)",
   "Microsoft",
   "Midjourney",
   "Midjourney|ashby:midjourney",
@@ -4926,6 +4928,17 @@
    "res": "-",
    "status": "OK"
   },
+  "Google (rendered)": {
+   "n": 60,
+   "res": "-",
+   "status": "OK"
+  },
+  "Google DeepMind": {
+   "mode": "api",
+   "n": 0,
+   "res": "-",
+   "status": "no board with jobs found"
+  },
   "Google DeepMind|!": {
    "n": 0,
    "res": "-",
@@ -5166,7 +5179,19 @@
    "res": "greenhouse:lyft",
    "status": "OK"
   },
-  "Man Group|greenhouse_eu:mangroup": {
+  "Mako (rendered)": {
+   "n": 0,
+   "res": "-",
+   "status": "page rendered but no job links matched (site may block bots or changed layout)"
+  },
+  "Mako Trading": {
+   "mode": "api",
+   "n": 5,
+   "res": "greenhouse/mako",
+   "status": "OK"
+  },
+  "Man Group": {
+   "mode": "api",
    "n": 54,
    "res": "greenhouse_eu:mangroup",
    "status": "OK"
@@ -5219,6 +5244,11 @@
   "Mercury|greenhouse:mercury": {
    "n": 64,
    "res": "greenhouse:mercury",
+   "status": "OK"
+  },
+  "Meta (rendered)": {
+   "n": 10,
+   "res": "-",
    "status": "OK"
   },
   "Microsoft": {
@@ -5771,6 +5801,11 @@
    "res": "greenhouse:twilio",
    "status": "OK"
   },
+  "Two Sigma (rendered)": {
+   "n": 0,
+   "res": "-",
+   "status": "page rendered but no job links matched (site may block bots or changed layout)"
+  },
   "Uber|smartrecruiters:uber": {
    "n": 1,
    "res": "smartrecruiters:uber",
@@ -5981,9 +6016,10 @@
   "Hippocratic AI|!": 2,
   "Hugging Face": 1,
   "IMC Trading|!": 1,
-  "Juspay|!": 2,
-  "Krutrim|!": 2,
-  "Licious|!": 2,
+  "Juspay|!": 1,
+  "Krutrim|!": 1,
+  "Licious|!": 1,
+  "Mako (rendered)": 1,
   "Man Group|!": 1,
   "Marshall Wace": 1,
   "Marshall Wace|greenhouse:marshallwace": 1,
@@ -6037,9 +6073,10 @@
   "Tibra": 1,
   "Tibra|!": 2,
   "Trillium Trading": 1,
-  "Uniphore|!": 2,
-  "Vector Institute|!": 2,
-  "Wayve|!": 2,
+  "Two Sigma (rendered)": 1,
+  "Uniphore|!": 1,
+  "Vector Institute|!": 1,
+  "Wayve|!": 1,
   "Weights & Biases": 1,
   "Weights & Biases|!": 2,
   "Windsurf|!": 2,
@@ -16997,6 +17034,18 @@
   "dk:googl|hardwareengineeringinternbsmssummer": "2026-10-07",
   "dk:googl|hardwareengineeringinternphdsummer": "2026-10-07",
   "dk:googl|hardwaresiliconengineeringphdintern": "2026-10-07",
+  "dk:googl|learnmoreaboutcustomerandpartnersolutionsengineeringinternbsms": "2026-10-07",
+  "dk:googl|learnmoreaboutdatacenterengineeringinternbsms": "2026-10-07",
+  "dk:googl|learnmoreaboutdatascientistproductinternms": "2026-10-07",
+  "dk:googl|learnmoreaboutdatascientistproductmsintern": "2026-10-07",
+  "dk:googl|learnmoreaboutforwarddeployedengineeringinternbsms": "2026-10-07",
+  "dk:googl|learnmoreaboutparttimesoftwareengineeringbsmsintern": "2026-10-07",
+  "dk:googl|learnmoreaboutsecurityengineeringinternbsms": "2026-10-07",
+  "dk:googl|learnmoreaboutsoftwareengineeringbsmsintern": "2026-10-07",
+  "dk:googl|learnmoreaboutsoftwareengineeringsitereliabilityengineeringbsmsintern": "2026-10-07",
+  "dk:googl|learnmoreaboutstudentresearcher": "2026-10-07",
+  "dk:googl|learnmoreaboutstudentresearcherbsmswinter": "2026-10-07",
+  "dk:googl|learnmoreaboutuserexperienceresearchinternms": "2026-10-07",
   "dk:googl|newbusinesssalesbsmsinternmultiplelanguages": "2026-10-07",
   "dk:googl|openengineeringcareeropportunitiescapitalgportfoliocompanies": "2026-10-07",
   "dk:googl|openmarketingcommunicationscareeropportunitiescapitalgportfoliocompanies": "2026-10-07",
@@ -17747,6 +17796,8 @@
   "dk:meshy|datainfraengineerintern": "2026-10-07",
   "dk:meshy|generativeairesearcherintern": "2026-10-07",
   "dk:metap|softwareengineerintern": "2026-10-07",
+  "dk:meta|datascientistinternproductanalytics": "2026-10-07",
+  "dk:meta|dfxengineeringintern": "2026-10-07",
   "dk:meta|softwareengineeringintern": "2026-10-07",
   "dk:meta|softwareengineerinternmachinelearningphd": "2026-10-07",
   "dk:metec|summersoftwareinternship": "2026-10-07",
@@ -22444,6 +22495,25 @@
   "md:SpeedyApply US:https://www.zipline.com/open-roles/7978843003?gh_jid=7978843003": "2026-10-07",
   "md:SpeedyApply US:https://www.zipline.com/open-roles/7986810003?gh_jid=7986810003": "2026-10-07",
   "md:SpeedyApply US:https://www.zipline.com/open-roles/7986848003?gh_jid=7986848003": "2026-10-07",
+  "rd:Google (rendered):https://www.google.com/about/careers/applications/jobs/results/100028133205254854-software-engineering-site-reliability-engineering-bsms-intern-2027": "2026-10-07",
+  "rd:Google (rendered):https://www.google.com/about/careers/applications/jobs/results/103632882076918470-parttime-software-engineering-bsms-intern-2027": "2026-10-07",
+  "rd:Google (rendered):https://www.google.com/about/careers/applications/jobs/results/104405499448828614-student-researcher-bsms-wintersummer-2027": "2026-10-07",
+  "rd:Google (rendered):https://www.google.com/about/careers/applications/jobs/results/114405557703451334-customer-and-partner-solutions-engineering-intern-bsms-summer-2027": "2026-10-07",
+  "rd:Google (rendered):https://www.google.com/about/careers/applications/jobs/results/114416552819729094-student-researcher-bsms-wintersummer-2027": "2026-10-07",
+  "rd:Google (rendered):https://www.google.com/about/careers/applications/jobs/results/115313754307994310-data-center-engineering-intern-bsms-summer-2027": "2026-10-07",
+  "rd:Google (rendered):https://www.google.com/about/careers/applications/jobs/results/119184035237765830-data-scientist-product-intern-ms-summer-2027": "2026-10-07",
+  "rd:Google (rendered):https://www.google.com/about/careers/applications/jobs/results/120211620121977542-student-researcher-2027": "2026-10-07",
+  "rd:Google (rendered):https://www.google.com/about/careers/applications/jobs/results/121543376737575622-software-engineering-site-reliability-engineering-bsms-intern-2027": "2026-10-07",
+  "rd:Google (rendered):https://www.google.com/about/careers/applications/jobs/results/131518356678156998-student-researcher-bsms-wintersummer-2027": "2026-10-07",
+  "rd:Google (rendered):https://www.google.com/about/careers/applications/jobs/results/135156989620560582-forward-deployed-engineering-intern-bsms-2027": "2026-10-07",
+  "rd:Google (rendered):https://www.google.com/about/careers/applications/jobs/results/136826798817059526-security-engineering-intern-bsms-summer-2027": "2026-10-07",
+  "rd:Google (rendered):https://www.google.com/about/careers/applications/jobs/results/142747733357142726-software-engineering-site-reliability-engineering-bsms-intern-2027": "2026-10-07",
+  "rd:Google (rendered):https://www.google.com/about/careers/applications/jobs/results/83199557986329286-software-engineering-bsms-intern-2027": "2026-10-07",
+  "rd:Google (rendered):https://www.google.com/about/careers/applications/jobs/results/84561862556820166-data-scientist-product-ms-intern-2027": "2026-10-07",
+  "rd:Google (rendered):https://www.google.com/about/careers/applications/jobs/results/86733690079453894-student-researcher-2027": "2026-10-07",
+  "rd:Google (rendered):https://www.google.com/about/careers/applications/jobs/results/89541201752924870-user-experience-research-intern-ms-summer-2027": "2026-10-07",
+  "rd:Meta (rendered):https://www.metacareers.com/profile/job_details/1095054769939445": "2026-10-07",
+  "rd:Meta (rendered):https://www.metacareers.com/profile/job_details/1633096478817942": "2026-10-07",
   "rp:4ag:71d97d10-87f2-4f53-88b7-97f27f392d24": "2026-10-07",
   "rp:4ag:921801f5-ae83-4a49-a234-221a87d94fe7": "2026-10-07",
   "rp:apexanalytix-careers:0cfde729-9d23-4186-91a7-464a4b87af53": "2026-10-07",
@@ -27668,6 +27738,8 @@
   "Simons Foundation (Flatiron Institute)|!",
   "Mila|!",
   "Vector Institute|!",
-  "EMBL|!"
+  "EMBL|!",
+  "Two Sigma (rendered)",
+  "Mako (rendered)"
  ]
 }

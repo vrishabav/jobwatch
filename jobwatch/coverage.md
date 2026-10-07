@@ -115,6 +115,8 @@ Last API run / render run results per source. Boards are `name|ats:slug`.
 | Glean|greenhouse:gleanwork | greenhouse:gleanwork | 131 | OK |
 | Glean|smartrecruiters:glean | smartrecruiters:glean | 1 | OK |
 | Google | - | 80 | OK |
+| Google (rendered) | - | 60 | OK |
+| Google DeepMind | - | 0 | NOT COVERED: no board with jobs found |
 | Google DeepMind|! | - | 0 | NOT COVERED: unresolved (retried daily) |
 | Graham Capital|greenhouse:grahamcapitalmanagement | greenhouse:grahamcapitalmanagement | 11 | OK |
 | Grammarly|! | - | 0 | NOT COVERED: no board with jobs found (add the right slug under 'boards') |
@@ -163,9 +165,13 @@ Last API run / render run results per source. Boards are `name|ats:slug`.
 | Lovable|ashby:lovable | ashby:lovable | 81 | OK |
 | Luma AI|ashby:lumaai | ashby:lumaai | 29 | OK |
 | Lyft|greenhouse:lyft | greenhouse:lyft | 191 | OK |
-| Man Group|greenhouse_eu:mangroup | greenhouse_eu:mangroup | 54 | OK |
-| Marshall Wace|greenhouse:marshallwace | greenhouse:marshallwace | 0 | OK |
-| Marshall Wace|greenhouse:mwam-imperial-placements | greenhouse:mwam-imperial-placements | 0 | OK |
+| Mako (rendered) | - | 0 | NOT COVERED: page rendered but no job links matched (site may block bots or changed layout) |
+| Mako Trading | greenhouse/mako | 5 | OK |
+| Man Group | greenhouse/mangroup | 54 | OK |
+| Man Group|! | - | 0 | NOT COVERED: greenhouse_eu:mangroup: <urlopen error [Errno -2] Name or service not known> |
+| Marshall Wace | - | 0 | NOT COVERED: no board with jobs found |
+| Marshall Wace|greenhouse:marshallwace | greenhouse:marshallwace | 0 | NOT COVERED: board returned 0 jobs |
+| Marshall Wace|greenhouse:mwam-imperial-placements | greenhouse:mwam-imperial-placements | 0 | NOT COVERED: board returned 0 jobs |
 | Marshall Wace|greenhouse:mwinternshipprogram | greenhouse:mwinternshipprogram | 8 | OK |
 | Marshall Wace|greenhouse:mwnaintern | greenhouse:mwnaintern | 1 | OK |
 | MatX|! | - | 0 | NOT COVERED: greenhouse:matx: HTTP Error 404: Not Found |
@@ -174,7 +180,9 @@ Last API run / render run results per source. Boards are `name|ats:slug`.
 | Meesho|lever:meesho | lever:meesho | 60 | OK |
 | Mercor|ashby:mercor | ashby:mercor | 117 | OK |
 | Mercury|greenhouse:mercury | greenhouse:mercury | 64 | OK |
-| Microsoft | - | 0 | NOT COVERED: HTTP Error 429: Too Many Requests |
+| Meta (rendered) | - | 10 | OK |
+| Microsoft | - | 99 | OK |
+| Midjourney | ashby/midjourney | 17 | OK |
 | Midjourney|ashby:midjourney | ashby:midjourney | 17 | OK |
 | Mila|! | - | 0 | NOT COVERED: no board with jobs found (add the right slug under 'boards') |
 | Millennium | - | 1 | OK |
@@ -284,6 +292,7 @@ Last API run / render run results per source. Boards are `name|ats:slug`.
 | TransMarket Group|greenhouse:transmarketgroup | greenhouse:transmarketgroup | 18 | OK |
 | Trexquant|workable:trexquant | workable:trexquant | 35 | OK |
 | Twilio|greenhouse:twilio | greenhouse:twilio | 130 | OK |
+| Two Sigma (rendered) | - | 0 | NOT COVERED: page rendered but no job links matched (site may block bots or changed layout) |
 | Uber|smartrecruiters:uber | smartrecruiters:uber | 1 | OK |
 | Unacademy|smartrecruiters:unacademy | smartrecruiters:unacademy | 3 | OK |
 | Uniphore|! | - | 0 | NOT COVERED: no board with jobs found (add the right slug under 'boards') |
