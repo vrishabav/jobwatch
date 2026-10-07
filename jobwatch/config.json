@@ -1,7 +1,7 @@
 {
  "_help": "See README. 'boards' = verified boards (ats:slug), all polled. 'slugs' = guesses auto-resolved across Greenhouse US/EU, Ashby, Lever with a name check.",
- "keywords": "\\b(intern|interns|internship|internships|co-?op|campus|off-?cycle|placement|trainee|apprentice(ship)?|residen(cy|t)|fellow(ship)?|summer 20\\d\\d|winter 20\\d\\d|spring 20\\d\\d|fall 20\\d\\d|autumn 20\\d\\d|working student|werkstudent|undergrad(uate)?|student)\\b",
- "exclude": "\\b(senior|sr\\.?|staff|principal|director|manager|head of|vp|lead)\\b|\\bstudent (loan|success)|residential|campus[^,]*full[- ]?time|\\bnew[- ]?grad|\\(full[- ]?time\\)|\\bgraduate (program|programme|analyst|trader)\\b",
+ "keywords": "\\b(intern|interns|internship|internships|co-?op|off-?cycle|placement|trainee|apprentice(ship)?|residency|resident|fellow(ship)?|summer 20\\d\\d|winter 20\\d\\d|spring 20\\d\\d|fall 20\\d\\d|autumn 20\\d\\d|working student|werkstudent|student (worker|intern|programme|program)|technical student|summer student|undergrad(uate)? (intern|researcher|research|engineer))\\b",
+ "exclude": "\\b(senior|sr\\.?|staff|principal|director|manager|head of|vp|lead|recruit(er|ing|ment)?|talent|hr|human resources|payroll|content design|solutions architect|resident solutions|phd|ph\\.d|doctoral|post-?doc(toral)?|ms/phd|mba)\\b|\\bstudent (loan|success)|residential|campus[^,]*full[- ]?time|\\bnew[- ]?grad|\\(full[- ]?time\\)|\\bgraduate (program|programme|analyst|trader)\\b",
  "locations": "",
  "max_age_days": 21,
  "first_run": "silent",
@@ -14,7 +14,8 @@
  "feeds": [
   {
    "name": "QuantRoles",
-   "url": "https://quantroles.com/openings.json"
+   "url": "https://quantroles.com/openings.json",
+   "all_roles": true
   },
   {
    "name": "Kadoa Quant",
@@ -31,7 +32,8 @@
    ],
    "date_keys": [
     "datePosted"
-   ]
+   ],
+   "all_roles": true
   },
   {
    "name": "Intern Engine (zshah101)",
@@ -75,46 +77,38 @@
    "site": "External"
   },
   {
-   "name": "Qualcomm",
-   "host": "qualcomm.wd5.myworkdayjobs.com",
-   "tenant": "qualcomm",
-   "site": "External"
-  },
-  {
    "name": "Adobe",
    "host": "adobe.wd5.myworkdayjobs.com",
    "tenant": "adobe",
    "site": "external_experienced"
   },
   {
-   "name": "AMD",
-   "host": "amd.wd1.myworkdayjobs.com",
-   "tenant": "amd",
-   "site": "External"
-  },
-  {
    "name": "G-Research",
    "host": "gresearch.wd103.myworkdayjobs.com",
    "tenant": "gresearch",
-   "site": "G-Research"
+   "site": "G-Research",
+   "all_roles": true
   },
   {
    "name": "Arrowstreet Capital",
    "host": "arrowstreetcapital.wd5.myworkdayjobs.com",
    "tenant": "arrowstreetcapital",
-   "site": "Campus_Careers"
+   "site": "Campus_Careers",
+   "all_roles": true
   },
   {
    "name": "PEAK6",
    "host": "peak6group.wd1.myworkdayjobs.com",
    "tenant": "peak6group",
-   "site": "CapMan"
+   "site": "CapMan",
+   "all_roles": true
   },
   {
    "name": "Jain Global",
    "host": "jainglobal.wd5.myworkdayjobs.com",
    "tenant": "jainglobal",
-   "site": "ExternalSite"
+   "site": "ExternalSite",
+   "all_roles": true
   }
  ],
  "eightfold": [
@@ -131,15 +125,16 @@
   {
    "name": "Millennium",
    "host": "mlp.eightfold.ai",
-   "domain": "mlp.com"
+   "domain": "mlp.com",
+   "all_roles": true
+  },
+  {
+   "name": "Qualcomm",
+   "host": "careers.qualcomm.com",
+   "domain": "qualcomm.com"
   }
  ],
  "html": [
-  {
-   "name": "SIG",
-   "url": "https://careers-sig.icims.com/jobs/search?ss=1&searchKeyword=intern&in_iframe=1",
-   "link_regex": "/jobs/\\d+/"
-  },
   {
    "name": "Google",
    "url": "https://www.google.com/about/careers/applications/jobs/results/?target_level=INTERN_AND_APPRENTICE&sort_by=date&page={page}",
@@ -159,27 +154,32 @@
   {
    "name": "Citadel Securities (sitemap)",
    "url": "https://www.citadelsecurities.com/sitemap.xml",
-   "url_regex": "/careers/(details|open-opportunities/job)"
+   "url_regex": "/careers/(details|open-opportunities/job)",
+   "all_roles": true
   },
   {
    "name": "Citadel (sitemap)",
    "url": "https://www.citadel.com/sitemap.xml",
-   "url_regex": "/careers/(details|open-opportunities/job)"
+   "url_regex": "/careers/(details|open-opportunities/job)",
+   "all_roles": true
   },
   {
    "name": "Optiver (sitemap)",
    "url": "https://www.optiver.com/sitemap.xml",
-   "url_regex": "/join-us/jobs/[^/]+/[^/]+/[^/]+"
+   "url_regex": "/join-us/jobs/[^/]+/[^/]+/[^/]+",
+   "all_roles": true
   },
   {
    "name": "D. E. Shaw (sitemap)",
    "url": "https://www.deshaw.com/sitemap.xml",
-   "url_regex": "/careers/[a-z0-9-]+-\\d+/?$"
+   "url_regex": "/careers/[a-z0-9-]+-\\d+/?$",
+   "all_roles": true
   },
   {
    "name": "G-Research (sitemap)",
    "url": "https://www.gresearch.com/vacancies-sitemap.xml",
-   "url_regex": "/vacancies/[a-z0-9-]+/?$"
+   "url_regex": "/vacancies/[a-z0-9-]+/?$",
+   "all_roles": true
   }
  ],
  "render": [
@@ -199,19 +199,20 @@
   {
    "name": "Two Sigma (rendered)",
    "url": "https://careers.twosigma.com/careers/SearchJobs/intern?jobRecordsPerPage=50",
-   "link_regex": "/careers/JobDetail/"
+   "link_regex": "/careers/JobDetail/",
+   "all_roles": true
   },
   {
    "name": "Mako (rendered)",
    "url": "https://mako.com/early-careers",
-   "link_regex": "mako\\.com/(job|jobs|career|careers|early-careers)/[\\w-]+"
+   "link_regex": "mako\\.com/(job|jobs|career|careers|early-careers)/[\\w-]+",
+   "all_roles": true
   }
  ],
  "companies": [
   {
    "name": "1X",
    "boards": [
-    "recruitee:1x",
     "ashby:1x"
    ]
   },
@@ -219,7 +220,8 @@
    "name": "3Red Partners",
    "boards": [
     "greenhouse:3redpartners"
-   ]
+   ],
+   "all_roles": true
   },
   {
    "name": "Abridge",
@@ -258,7 +260,8 @@
    "name": "Akuna Capital",
    "boards": [
     "greenhouse:akunacapital"
-   ]
+   ],
+   "all_roles": true
   },
   {
    "name": "Aleph Alpha",
@@ -273,7 +276,8 @@
    "name": "AlphaGrep",
    "boards": [
     "greenhouse:alphagrepsecurities"
-   ]
+   ],
+   "all_roles": true
   },
   {
    "name": "Anduril",
@@ -285,7 +289,8 @@
    "name": "Ansatz Capital",
    "boards": [
     "lever:ansatzcapital"
-   ]
+   ],
+   "all_roles": true
   },
   {
    "name": "Anthropic",
@@ -302,8 +307,7 @@
   {
    "name": "Applied Intuition",
    "boards": [
-    "ashby:applied",
-    "greenhouse:appliedintuition"
+    "ashby:applied"
    ]
   },
   {
@@ -316,13 +320,15 @@
    "name": "AQR",
    "boards": [
     "greenhouse:aqr"
-   ]
+   ],
+   "all_roles": true
   },
   {
    "name": "Aquatic Capital",
    "boards": [
     "greenhouse:aquaticcapitalmanagement"
-   ]
+   ],
+   "all_roles": true
   },
   {
    "name": "Arize AI",
@@ -378,8 +384,8 @@
   },
   {
    "name": "Aurora",
-   "boards": [
-    "greenhouse:aurorainnovation"
+   "slugs": [
+    "aurora"
    ]
   },
   {
@@ -387,7 +393,8 @@
    "slugs": [
     "balyasny",
     "bamfunds"
-   ]
+   ],
+   "all_roles": true
   },
   {
    "name": "Baseten",
@@ -399,7 +406,8 @@
    "name": "Belvedere Trading",
    "boards": [
     "lever:belvederetrading"
-   ]
+   ],
+   "all_roles": true
   },
   {
    "name": "Benchling",
@@ -431,7 +439,8 @@
    "name": "Bridgewater",
    "boards": [
     "greenhouse:bridgewater89"
-   ]
+   ],
+   "all_roles": true
   },
   {
    "name": "BrowserStack",
@@ -451,7 +460,8 @@
    "name": "Capstone Investment Advisors",
    "boards": [
     "greenhouse:capstoneinvestmentadvisors"
-   ]
+   ],
+   "all_roles": true
   },
   {
    "name": "Cerebras",
@@ -464,7 +474,8 @@
    "slugs": [
     "cfm",
     "capitalfundmanagement"
-   ]
+   ],
+   "all_roles": true
   },
   {
    "name": "Character.AI",
@@ -486,7 +497,8 @@
     "greenhouse:ctccampusboard",
     "greenhouse:chicagotradingcampus",
     "greenhouse:chicagotrading"
-   ]
+   ],
+   "all_roles": true
   },
   {
    "name": "Clay",
@@ -651,7 +663,8 @@
    "boards": [
     "greenhouse:drweng",
     "greenhouse:drwuniversityjobs"
-   ]
+   ],
+   "all_roles": true
   },
   {
    "name": "Duolingo",
@@ -663,13 +676,15 @@
    "name": "DV Trading",
    "boards": [
     "greenhouse:dvtrading"
-   ]
+   ],
+   "all_roles": true
   },
   {
    "name": "Eisler Capital",
    "slugs": [
     "eislercapital"
-   ]
+   ],
+   "all_roles": true
   },
   {
    "name": "Elastic",
@@ -687,7 +702,8 @@
    "name": "Engineers Gate",
    "boards": [
     "greenhouse:engineersgate"
-   ]
+   ],
+   "all_roles": true
   },
   {
    "name": "Etched",
@@ -699,7 +715,8 @@
    "name": "ExodusPoint",
    "boards": [
     "greenhouse:exoduspoint"
-   ]
+   ],
+   "all_roles": true
   },
   {
    "name": "Faire",
@@ -723,7 +740,6 @@
   {
    "name": "Fireworks AI",
    "boards": [
-    "greenhouse:fireworksai",
     "ashby:fireworks"
    ]
   },
@@ -731,7 +747,8 @@
    "name": "Five Rings",
    "boards": [
     "greenhouse:fiveringsllc"
-   ]
+   ],
+   "all_roles": true
   },
   {
    "name": "Flexport",
@@ -751,7 +768,8 @@
    "name": "Flow Traders",
    "boards": [
     "greenhouse:flowtraders"
-   ]
+   ],
+   "all_roles": true
   },
   {
    "name": "Freshworks",
@@ -763,20 +781,23 @@
    "name": "Garda Capital Partners",
    "boards": [
     "greenhouse:gardacp"
-   ]
+   ],
+   "all_roles": true
   },
   {
    "name": "Gelber Group",
    "boards": [
     "greenhouse:gelbergroup",
     "greenhouse:gelberhandshake"
-   ]
+   ],
+   "all_roles": true
   },
   {
    "name": "Geneva Trading",
    "boards": [
     "greenhouse:genevatrading"
-   ]
+   ],
+   "all_roles": true
   },
   {
    "name": "Glean",
@@ -799,7 +820,8 @@
    "name": "Graham Capital",
    "boards": [
     "greenhouse:grahamcapitalmanagement"
-   ]
+   ],
+   "all_roles": true
   },
   {
    "name": "Grammarly",
@@ -814,7 +836,8 @@
    "slugs": [
     "gravitonresearchcapital",
     "graviton"
-   ]
+   ],
+   "all_roles": true
   },
   {
    "name": "Groq",
@@ -834,7 +857,8 @@
    "name": "GSA Capital",
    "boards": [
     "greenhouse:gsacapital"
-   ]
+   ],
+   "all_roles": true
   },
   {
    "name": "Gupshup",
@@ -860,7 +884,8 @@
    "name": "Hap Capital",
    "slugs": [
     "hapcapital"
-   ]
+   ],
+   "all_roles": true
   },
   {
    "name": "Harvey",
@@ -878,7 +903,8 @@
    "name": "Headlands Technologies",
    "boards": [
     "greenhouse:headlandstechnologiesllc"
-   ]
+   ],
+   "all_roles": true
   },
   {
    "name": "Hebbia",
@@ -910,15 +936,16 @@
   },
   {
    "name": "Hippocratic AI",
-   "boards": [
-    "ashby:hippocratic"
+   "slugs": [
+    "hippocraticai"
    ]
   },
   {
    "name": "Hudson River Trading",
    "boards": [
     "greenhouse:wehrtyou"
-   ]
+   ],
+   "all_roles": true
   },
   {
    "name": "Hugging Face",
@@ -953,7 +980,8 @@
    "boards": [
     "greenhouse:imc",
     "greenhouse_eu:imc"
-   ]
+   ],
+   "all_roles": true
   },
   {
    "name": "InMobi",
@@ -988,13 +1016,15 @@
    "name": "Jane Street",
    "boards": [
     "greenhouse:janestreet"
-   ]
+   ],
+   "all_roles": true
   },
   {
    "name": "Jump Trading",
    "boards": [
     "greenhouse:jumptrading"
-   ]
+   ],
+   "all_roles": true
   },
   {
    "name": "Juspay",
@@ -1086,7 +1116,8 @@
    "name": "Man Group",
    "boards": [
     "greenhouse_eu:mangroup"
-   ]
+   ],
+   "all_roles": true
   },
   {
    "name": "Marshall Wace",
@@ -1095,12 +1126,13 @@
     "greenhouse:mwnaintern",
     "greenhouse:mwinternshipprogram",
     "greenhouse:mwam-imperial-placements"
-   ]
+   ],
+   "all_roles": true
   },
   {
    "name": "MatX",
-   "boards": [
-    "greenhouse:matx"
+   "slugs": [
+    "matx"
    ]
   },
   {
@@ -1108,7 +1140,8 @@
    "boards": [
     "greenhouse:mavensecuritiesholdingltd",
     "greenhouse:emergingtalent"
-   ]
+   ],
+   "all_roles": true
   },
   {
    "name": "Meesho",
@@ -1147,8 +1180,7 @@
   {
    "name": "Mistral AI",
    "boards": [
-    "lever:mistral",
-    "ashby:mistral"
+    "lever_html:mistral"
    ]
   },
   {
@@ -1220,7 +1252,8 @@
    "name": "Old Mission Capital",
    "boards": [
     "greenhouse:oldmissioncapital"
-   ]
+   ],
+   "all_roles": true
   },
   {
    "name": "OpenAI",
@@ -1254,7 +1287,8 @@
    "name": "PDT Partners",
    "boards": [
     "greenhouse:pdtpartners"
-   ]
+   ],
+   "all_roles": true
   },
   {
    "name": "Periodic Labs",
@@ -1318,7 +1352,8 @@
    "name": "Point72",
    "boards": [
     "greenhouse:point72"
-   ]
+   ],
+   "all_roles": true
   },
   {
    "name": "PolyAI",
@@ -1337,8 +1372,8 @@
   },
   {
    "name": "Postman",
-   "boards": [
-    "greenhouse:postman"
+   "slugs": [
+    "postman"
    ]
   },
   {
@@ -1353,27 +1388,30 @@
    "name": "Quadeye",
    "slugs": [
     "quadeye"
-   ]
+   ],
+   "all_roles": true
   },
   {
    "name": "Quantlab",
    "slugs": [
     "quantlab",
     "quantlabfinancial"
-   ]
+   ],
+   "all_roles": true
   },
   {
    "name": "Qube Research & Technologies",
    "boards": [
     "greenhouse:quberesearchandtechnologies"
-   ]
+   ],
+   "all_roles": true
   },
   {
    "name": "Radix Trading",
    "boards": [
-    "greenhouse:radixuniversity",
-    "greenhouse:radixtrading"
-   ]
+    "greenhouse:radixuniversity"
+   ],
+   "all_roles": true
   },
   {
    "name": "Ramp",
@@ -1465,7 +1503,8 @@
    "slugs": [
     "rokoscapital",
     "rokos"
-   ]
+   ],
+   "all_roles": true
   },
   {
    "name": "Rubrik",
@@ -1533,7 +1572,8 @@
    "name": "Schonfeld",
    "boards": [
     "greenhouse:schonfeld"
-   ]
+   ],
+   "all_roles": true
   },
   {
    "name": "Sharechat",
@@ -1615,7 +1655,8 @@
    "name": "Squarepoint Capital",
    "boards": [
     "greenhouse:squarepointcapital"
-   ]
+   ],
+   "all_roles": true
   },
   {
    "name": "Stability AI",
@@ -1635,7 +1676,8 @@
    "name": "Stevens Capital Management",
    "boards": [
     "greenhouse:scm"
-   ]
+   ],
+   "all_roles": true
   },
   {
    "name": "Stripe",
@@ -1695,8 +1737,7 @@
   {
    "name": "Temporal",
    "boards": [
-    "ashby:temporal",
-    "greenhouse:temporaltechnologies"
+    "ashby:temporal"
    ]
   },
   {
@@ -1718,7 +1759,8 @@
    "name": "Teza Technologies",
    "boards": [
     "ashby:teza-technologies"
-   ]
+   ],
+   "all_roles": true
   },
   {
    "name": "Thinking Machines",
@@ -1740,7 +1782,8 @@
    "name": "Tibra",
    "slugs": [
     "tibra"
-   ]
+   ],
+   "all_roles": true
   },
   {
    "name": "Together AI",
@@ -1752,19 +1795,22 @@
    "name": "Tower Research Capital",
    "boards": [
     "greenhouse:towerresearchcapital"
-   ]
+   ],
+   "all_roles": true
   },
   {
    "name": "TransMarket Group",
    "boards": [
     "greenhouse:transmarketgroup"
-   ]
+   ],
+   "all_roles": true
   },
   {
    "name": "Trexquant",
    "boards": [
     "workable:trexquant"
-   ]
+   ],
+   "all_roles": true
   },
   {
    "name": "Twilio",
@@ -1808,7 +1854,8 @@
    "name": "Valkyrie Trading",
    "boards": [
     "lever:valkyrietrading"
-   ]
+   ],
+   "all_roles": true
   },
   {
    "name": "Vanta",
@@ -1820,7 +1867,8 @@
    "name": "Vatic Labs",
    "slugs": [
     "vaticlabs"
-   ]
+   ],
+   "all_roles": true
   },
   {
    "name": "Vercel",
@@ -1838,20 +1886,23 @@
    "name": "Virtu Financial",
    "boards": [
     "greenhouse:virtu"
-   ]
+   ],
+   "all_roles": true
   },
   {
    "name": "Voleon",
    "boards": [
     "ashby:voleon"
-   ]
+   ],
+   "all_roles": true
   },
   {
    "name": "Walleye Capital",
    "boards": [
     "greenhouse:walleyecapital-external-students",
     "greenhouse:walleyecapital-external-fulltime"
-   ]
+   ],
+   "all_roles": true
   },
   {
    "name": "Waymo",
@@ -1861,8 +1912,8 @@
   },
   {
    "name": "Wayve",
-   "boards": [
-    "greenhouse:wayve"
+   "slugs": [
+    "wayve"
    ]
   },
   {
@@ -1898,20 +1949,23 @@
    "name": "Wintermute",
    "boards": [
     "lever:wintermute-trading"
-   ]
+   ],
+   "all_roles": true
   },
   {
    "name": "Wolverine Trading",
    "slugs": [
     "wolverinetrading",
     "wolverine"
-   ]
+   ],
+   "all_roles": true
   },
   {
    "name": "WorldQuant",
    "boards": [
     "greenhouse:worldquant"
-   ]
+   ],
+   "all_roles": true
   },
   {
    "name": "Writer",
@@ -1929,13 +1983,15 @@
    "name": "Xantium",
    "boards": [
     "greenhouse:xantium"
-   ]
+   ],
+   "all_roles": true
   },
   {
    "name": "XTX Markets",
    "boards": [
     "greenhouse:xtxmarketstechnologies"
-   ]
+   ],
+   "all_roles": true
   },
   {
    "name": "You.com",
@@ -1963,7 +2019,8 @@
    "name": "CERN",
    "boards": [
     "smartrecruiters:CERN"
-   ]
+   ],
+   "all_roles": true
   },
   {
    "name": "Allen Institute for AI",
@@ -2048,5 +2105,13 @@
   "workers": 32,
   "_note": "Polls every employer board in zshah101's ~5,000-company list (no US/season limits). role_filter 'tech' keeps SWE/data/ML/quant/security intern titles; set to 'all' for every intern role.",
   "max_minutes": 45
- }
+ },
+ "jibe": [
+  {
+   "name": "AMD",
+   "host": "careers.amd.com"
+  }
+ ],
+ "role_filter": "tech",
+ "_filters_help": "role_filter 'tech' keeps SWE/data/ML/AI/quant/security roles for non-quant sources; sources/companies with \"all_roles\": true (quant firms, quant feeds, CERN) keep every intern role. Remove phd from 'exclude' if you want PhD internships."
 }

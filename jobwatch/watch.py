@@ -125,7 +125,10 @@ _TECH_INC = re.compile(
     r"appsec|application security|information security|infosec|security engineer|data science|data scientist|data engineer|"
     r"data analyst|analytics engineer|machine learning|ml|deep learning|ai|artificial intelligence|nlp|computer vision|"
     r"research scientist|applied scientist|research engineer|ml engineer|ai engineer|quant|quantitative|trading|trader|"
-    r"algorithm|algorithmic|computer science|programming|engineering intern|technology intern|tech intern)\b", re.I)
+    r"algorithm|algorithmic|computer science|programming|engineering intern|technology intern|tech intern|neural|llm|"
+    r"researcher|research (?:fellow|fellowship|resident|residency|intern|internship|program|programme|associate)|"
+    r"robotics software|autonomy|perception|reinforcement learning|generative|statistics|mathematics|"
+    r"optimization|backend|frontend|mobile|cloud|kernel|hpc|gpu|cuda)\b", re.I)
 _TECH_EXC = re.compile(
     r"\b(recruit|recruiting|recruiter|sales|account executive|account manager|marketing|marketer|unpaid|legal|counsel|"
     r"accounting|human resources|people operations|talent acquisition|communications|supply chain|business development|"
@@ -220,7 +223,45 @@ def rippling(slug, name):
               ((j.get("workLocation") or {}).get("label") or "")) for j in (d if isinstance(d, list) else [])]
 
 
-ATS = {"greenhouse": lambda s, n: gh(s, n), "greenhouse_eu": lambda s, n: gh(s, n, ".eu"),
+def gh_eu(slug, name):
+    """EU Greenhouse has no public JSON API; read the embeddable board page (paginated)."""
+    out, pat = {}, re.compile(rf"/{re.escape(slug)}/jobs/(\d+)")
+    for page in range(1, 11):
+        html = http(f"https://job-boards.eu.greenhouse.io/embed/job_board?for={slug}&page={page}", text=True)
+        before = len(out)
+        _html_collect(html, "https://job-boards.eu.greenhouse.io/", pat, out)
+        if len(out) == before:
+            break
+    return [J(f"gh.eu:{slug}:{pat.search(k).group(1)}", name, t, u, loc) for k, (t, u, *rest) in out.items()
+            for loc in [rest[0] if rest else ""]]
+
+
+def lever_html(slug, name):
+    """Some Lever boards (e.g. Mistral) return [] from the API but list jobs on the public page."""
+    pat, out = re.compile(rf"jobs\.lever\.co/{re.escape(slug)}/[0-9a-f-]{{36}}"), {}
+    _html_collect(http(f"https://jobs.lever.co/{slug}", text=True), f"https://jobs.lever.co/{slug}", pat, out)
+    return [J(f"lv:{slug}:{k.rstrip('/').split('/')[-1]}", name, t, u, rest[0] if rest else "") for k, (t, u, *rest) in out.items()]
+
+
+def jibe(j):
+    """Jibe careers sites (careers.<company>.com/api/jobs), e.g. AMD."""
+    out = {}
+    for page in range(1, 6):
+        d = http(f"https://{j['host']}/api/jobs?keywords={quote(j.get('query', 'intern'))}&page={page}&sortBy=posted_date&descending=true")
+        js = d.get("jobs") or []
+        for x in js:
+            x = x.get("data", x)
+            rid = x.get("req_id") or x.get("slug")
+            meta = x.get("meta_data") or {}
+            url = x.get("canonical_url") or meta.get("canonical_url") or f"https://{j['host']}/jobs/{rid}"
+            loc = x.get("full_location") or x.get("location_name") or ", ".join(filter(None, (x.get("city"), x.get("country"))))
+            out[rid] = J(f"jb:{j['name']}:{rid}", j["name"], x.get("title"), url, loc, date=to_date(x.get("posted_date")))
+        if len(js) < 10:
+            break
+    return list(out.values())
+
+
+ATS = {"greenhouse": lambda s, n: gh(s, n), "greenhouse_eu": gh_eu, "lever_html": lever_html,
        "lever": lever, "lever_eu": lambda s, n: lever(s, n, True), "ashby": ashby, "workable": workable,
        "smartrecruiters": smartrecruiters, "recruitee": recruitee, "rippling": rippling}
 AUTO_ORDER = ["greenhouse", "ashby", "lever", "greenhouse_eu", "smartrecruiters"]
@@ -361,7 +402,11 @@ def html_links(h):
                 raise
             break
         _html_collect(page, u, pat, out)
-    return [J(f"ht:{h['name']}:{k}", h["name"], t, u) for k, (t, u) in out.items()]
+    return [J(f"ht:{h['name']}:{k}", h["name"], t, u, rest[0] if rest else "") for k, (t, u, *rest) in out.items()]
+
+
+def _clean(h):
+    return htmllib.unescape(re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", h or ""))).strip()
 
 
 def _html_collect(page, base_url, pat, out):
@@ -369,10 +414,13 @@ def _html_collect(page, base_url, pat, out):
         href = urljoin(base_url, htmllib.unescape(m.group(1))).split("#")[0]
         if not pat.search(href):
             continue
-        txt = htmllib.unescape(re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", m.group(2)))).strip()
+        blocks = [_clean(b[1]) for b in re.findall(r"<(h\d|p|div|span)\b[^>]*>(.*?)</\1>", m.group(2), re.S | re.I)]
+        blocks = [b for b in blocks if b and b.lower() not in ("new", "apply", "featured")]
+        txt = blocks[0] if blocks else _clean(m.group(2))
+        loc = blocks[-1] if len(blocks) > 1 and blocks[-1] != txt else ""
         key = href.split("?")[0]
         if key not in out or (len(txt) > 3 and len(out[key][0]) <= 3):
-            out[key] = (txt if len(txt) > 3 else slug_title(href), href)
+            out[key] = (txt if len(txt) > 3 else slug_title(href), href, loc)
 
 
 def sitemap(s):
@@ -712,12 +760,16 @@ def notify():
 
 
 # ------------------------------------------------------------------ collect
+ALL_ROLE_COS, ALL_ROLE_SRC = set(), set()
+
+
 def collect(cfg, st, mode):
     S = {}  # board/source key -> dict(jobs, err, agg, group, res)
 
-    def put(key, jobs, err=None, agg=False, group=None, res="-"):
+    def put(key, jobs, err=None, agg=False, group=None, res="-", all_roles=False):
         for j in jobs:
             j["src"] = key
+            j["all"] = all_roles
         S[key] = {"jobs": jobs, "err": err, "agg": agg, "group": group or key, "res": res}
 
     def run(label, fn, **meta):
@@ -739,6 +791,9 @@ def collect(cfg, st, mode):
                 comp_f.append(pool.submit(fetch_company, c, cached))
             if cfg.get("simplify"):
                 other_f.append(pool.submit(run, "Simplify feed", lambda: simplify(cfg["simplify"]), agg=True))
+            ALL_ROLE_COS.update(c["name"] for c in cfg["companies"] if c.get("all_roles"))
+            for sec in ("feeds", "markdown", "workday", "eightfold", "html", "sitemaps", "jibe", "oracle"):
+                ALL_ROLE_SRC.update(x["name"] for x in cfg.get(sec, []) if x.get("all_roles"))
             for f in cfg.get("feeds", []):
                 other_f.append(pool.submit(run, f["name"], lambda f=f: json_feed(f), agg=True))
             for m in cfg.get("markdown", []):
@@ -753,6 +808,8 @@ def collect(cfg, st, mode):
                 other_f.append(pool.submit(run, h["name"], lambda h=h: html_links(h), pre=h.get("pre")))
             for s in cfg.get("sitemaps", []):
                 other_f.append(pool.submit(run, s["name"], lambda s=s: sitemap(s)))
+            for jb in cfg.get("jibe", []):
+                other_f.append(pool.submit(run, jb["name"], lambda jb=jb: jibe(jb)))
             for o in cfg.get("oracle", []):
                 other_f.append(pool.submit(run, o["name"], lambda o=o: oracle(o)))
             for t in comp_f:
@@ -763,7 +820,7 @@ def collect(cfg, st, mode):
                 else:
                     st["next_try"][name] = (NOW + timedelta(days=1)).strftime("%Y-%m-%d")
                 for key, jobs in boards:
-                    put(key, jobs, None if jobs else "board returned 0 jobs", group=name, res=key.split("|", 1)[1])
+                    put(key, jobs, None, group=name, res=key.split("|", 1)[1], all_roles=name in ALL_ROLE_COS)
                 if fails:
                     put(f"{name}|!", [], "; ".join(fails), group=name)
             for t in other_f:
@@ -771,7 +828,7 @@ def collect(cfg, st, mode):
                 if meta.get("pre"):
                     for j in jobs:
                         j["pre"] = True
-                put(label, jobs, err, agg=bool(meta.get("agg")))
+                put(label, jobs, err, agg=bool(meta.get("agg")), all_roles=label in ALL_ROLE_SRC)
     if mode in ("api", "all") and cfg.get("registry"):
         reg = cfg["registry"]
         skip = set()
@@ -817,8 +874,9 @@ def collect(cfg, st, mode):
                                       "group": "registry", "res": f"{ok}/{len(tasks)} boards answered" + (f", {skipped} deferred to next run (time budget)" if skipped else "")}
     if mode in ("render", "all"):
         agg_r = {r["name"] for r in cfg.get("render", []) if r.get("fallback")}
+        all_r = {r["name"] for r in cfg.get("render", []) if r.get("all_roles")}
         for name, (jobs, err) in render_all(cfg.get("render", [])).items():
-            put(name, jobs, err, agg=name in agg_r)
+            put(name, jobs, err, agg=name in agg_r, all_roles=name in all_r)
     return S
 
 
@@ -838,6 +896,7 @@ def main():
     max_age = cfg.get("max_age_days", 21)
     age_cut = (NOW - timedelta(days=max_age)).strftime("%Y-%m-%d") if max_age else ""
     silent_first = cfg.get("first_run", "silent") == "silent"
+    role_filter = cfg.get("role_filter", "tech")
     S = collect(cfg, st, MODE)
     outbox = load(P["outbox"], {"jobs": [], "notes": []})
     open_roles = load(P["open"], {})
@@ -851,8 +910,8 @@ def main():
         for j in s["jobs"]:
             if not j["pre"] and not kw.search(f"{j['title']} {j['extra']}"):
                 continue
-            if j.get("tech") and not is_tech(j["title"]):
-                continue
+            if role_filter == "tech" and not j.get("all") and not is_tech(j["title"]):
+                continue   # non-quant sources: keep SWE / data / ML / AI / quant / security roles only
             if (ex and ex.search(j["title"])) or (loc and j["loc"] and not loc.search(j["loc"])):
                 continue
             dk = dkey(j)
@@ -896,6 +955,9 @@ def main():
     cutoff = (NOW - timedelta(days=365)).strftime("%Y-%m-%d")
     st["seen"] = {k: v for k, v in seen.items() if k in live or v >= cutoff}
     st["last_run"] = TODAY
+    if MODE in ("api", "all"):
+        rnames = {r["name"] for r in cfg.get("render", [])}
+        st["coverage"] = {k: v for k, v in st["coverage"].items() if k in S or k in rnames}
     if MODE in ("api", "all"):  # drop open-role lists of sources no longer configured/polled by this mode
         keep = set(S) | {r["name"] for r in cfg.get("render", [])}
         open_roles = {k: v for k, v in open_roles.items() if k in keep}
