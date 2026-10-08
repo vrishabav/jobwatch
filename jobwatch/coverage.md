@@ -1,6 +1,14 @@
 # Coverage (auto-generated)
 
-Last API run / render run results per source. Boards are `name|ats:slug`.
+## Recent runs (UTC, newest first)
+
+| Started | Mode | Trigger | Run # | Sources OK | New roles queued |
+|---|---|---|---|---|---|
+| 2026-10-08 08:19 | api | workflow_dispatch | 7 | 3751/3818 | 1 |
+
+## Sources
+
+Boards are `name|ats:slug`.
 
 | Source | Boards | Roles seen | Status |
 |---|---|---|---|
@@ -19,7 +27,7 @@ Last API run / render run results per source. Boards are `name|ats:slug`.
 | Aleph Alpha|ashby:alephalpha | ashby:alephalpha | 1 | OK |
 | Allen Institute for AI|! | - | 0 | NOT COVERED: no board with jobs found (add the right slug under 'boards') |
 | AlphaGrep|greenhouse:alphagrepsecurities | greenhouse:alphagrepsecurities | 15 | OK |
-| Amazon | - | 390 | OK |
+| Amazon | - | 391 | OK |
 | Anduril|greenhouse:andurilindustries | greenhouse:andurilindustries | 2477 | OK |
 | Ansatz Capital|lever:ansatzcapital | lever:ansatzcapital | 5 | OK |
 | Anthropic|greenhouse:anthropic | greenhouse:anthropic | 648 | OK |
@@ -76,7 +84,7 @@ Last API run / render run results per source. Boards are `name|ats:slug`.
 | DRW|greenhouse:drweng | greenhouse:drweng | 179 | OK |
 | DRW|greenhouse:drwuniversityjobs | greenhouse:drwuniversityjobs | 2 | OK |
 | DV Trading|greenhouse:dvtrading | greenhouse:dvtrading | 69 | OK |
-| Databricks|greenhouse:databricks | greenhouse:databricks | 894 | OK |
+| Databricks|greenhouse:databricks | greenhouse:databricks | 895 | OK |
 | Datadog|greenhouse:datadog | greenhouse:datadog | 439 | OK |
 | Decagon|ashby:decagon | ashby:decagon | 145 | OK |
 | Deel|! | - | 0 | NOT COVERED: no board with jobs found (add the right slug under 'boards') |
@@ -175,7 +183,7 @@ Last API run / render run results per source. Boards are `name|ats:slug`.
 | Mercor|ashby:mercor | ashby:mercor | 117 | OK |
 | Mercury|greenhouse:mercury | greenhouse:mercury | 64 | OK |
 | Meta (rendered) | - | 10 | OK |
-| Microsoft | - | 92 | OK |
+| Microsoft | - | 91 | OK |
 | Midjourney|ashby:midjourney | ashby:midjourney | 17 | OK |
 | Mila|! | - | 0 | NOT COVERED: no board with jobs found (add the right slug under 'boards') |
 | Millennium | - | 1 | OK |
@@ -190,7 +198,7 @@ Last API run / render run results per source. Boards are `name|ats:slug`.
 | Nutanix|! | - | 0 | NOT COVERED: no board with jobs found (add the right slug under 'boards') |
 | Nykaa|! | - | 0 | NOT COVERED: no board with jobs found (add the right slug under 'boards') |
 | Observe.AI|greenhouse:observeai | greenhouse:observeai | 12 | OK |
-| Okta|greenhouse:okta | greenhouse:okta | 368 | OK |
+| Okta|greenhouse:okta | greenhouse:okta | 367 | OK |
 | Ola Electric|! | - | 0 | NOT COVERED: no board with jobs found (add the right slug under 'boards') |
 | Old Mission Capital|greenhouse:oldmissioncapital | greenhouse:oldmissioncapital | 38 | OK |
 | OpenAI|ashby:openai | ashby:openai | 816 | OK |
@@ -230,7 +238,7 @@ Last API run / render run results per source. Boards are `name|ats:slug`.
 | Replicate|! | - | 0 | NOT COVERED: no board with jobs found (add the right slug under 'boards') |
 | Replit|ashby:replit | ashby:replit | 71 | OK |
 | Retool|! | - | 0 | NOT COVERED: no board with jobs found (add the right slug under 'boards') |
-| Rippling|rippling:rippling | rippling:rippling | 629 | OK |
+| Rippling|rippling:rippling | rippling:rippling | 628 | OK |
 | Robinhood|greenhouse:robinhood | greenhouse:robinhood | 165 | OK |
 | Roblox|greenhouse:roblox | greenhouse:roblox | 260 | OK |
 | Rokos Capital|! | - | 0 | NOT COVERED: no board with jobs found (add the right slug under 'boards') |
@@ -249,7 +257,7 @@ Last API run / render run results per source. Boards are `name|ats:slug`.
 | Shopify|! | - | 0 | NOT COVERED: no board with jobs found (add the right slug under 'boards') |
 | Sierra|ashby:sierra | ashby:sierra | 198 | OK |
 | Simons Foundation (Flatiron Institute)|! | - | 0 | NOT COVERED: no board with jobs found (add the right slug under 'boards') |
-| Simplify feed | - | 3452 | OK |
+| Simplify feed | - | 3451 | OK |
 | Skild AI|greenhouse:skildai-careers | greenhouse:skildai-careers | 47 | OK |
 | Snorkel AI|greenhouse:snorkelai | greenhouse:snorkelai | 44 | OK |
 | Snowflake|ashby:snowflake | ashby:snowflake | 357 | OK |
@@ -316,4 +324,4 @@ Last API run / render run results per source. Boards are `name|ats:slug`.
 | d-Matrix|ashby:d-matrix | ashby:d-matrix | 36 | OK |
 | upGrad|! | - | 0 | NOT COVERED: no board with jobs found (add the right slug under 'boards') |
 | xAI|greenhouse:xai | greenhouse:xai | 307 | OK |
-| zshah101 registry | 3552/4811 boards answered | 0 | OK |
+| zshah101 registry | 3632/4811 boards answered | 0 | OK |
