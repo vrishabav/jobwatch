@@ -1,7 +1,9 @@
 name: jobwatch
 on:
   schedule:
-    - cron: "37 1 * * *"   # daily 01:37 UTC = 07:07 IST
+    # Cheap "is it due?" check every 4 hours. The real work only runs if the last completed run is 20+ hours old,
+    # so it still runs about once a day, but a late or skipped trigger is simply retried a few hours later.
+    - cron: "11 1,5,9,13,17,21 * * *"
   workflow_dispatch:
 permissions:
   contents: write
@@ -9,16 +11,44 @@ permissions:
 concurrency:
   group: jobwatch-state
   cancel-in-progress: false
+env:
+  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+  SMTP_USER: ${{ secrets.SMTP_USER }}
+  SMTP_PASS: ${{ secrets.SMTP_PASS }}
+  SMTP_TO: ${{ secrets.SMTP_TO }}
 jobs:
+  gate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    outputs:
+      api: ${{ steps.due.outputs.api }}
+      render: ${{ steps.due.outputs.render }}
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          ref: ${{ github.ref_name }}
+          fetch-depth: 80
+      - name: Is a run due? (last completed run older than 20 hours, or you clicked Run workflow)
+        id: due
+        env:
+          EVENT: ${{ github.event_name }}
+        run: |
+          now=$(date +%s)
+          for kind in api render; do
+            last=$(git log -1 --format=%ct --grep="^jobwatch $kind run$" || true)
+            if [ "$EVENT" = "workflow_dispatch" ] || [ -z "$last" ] || [ $((now - last)) -ge 72000 ]; then
+              echo "$kind=true" >> "$GITHUB_OUTPUT"; echo "$kind: due (last run: ${last:-never})"
+            else
+              echo "$kind=false" >> "$GITHUB_OUTPUT"; echo "$kind: skipped, last run $(( (now - last) / 3600 )) h ago"
+            fi
+          done
+
   poll:
+    needs: gate
+    if: ${{ needs.gate.outputs.api == 'true' }}
     runs-on: ubuntu-latest
     timeout-minutes: 120
-    env:
-      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
-      SMTP_USER: ${{ secrets.SMTP_USER }}
-      SMTP_PASS: ${{ secrets.SMTP_PASS }}
-      SMTP_TO: ${{ secrets.SMTP_TO }}
     steps:
       - uses: actions/checkout@v5
         with:
@@ -32,6 +62,37 @@ jobs:
       - name: Save state before alerting, so no alert is ever sent twice
         run: |
           bash jobwatch/save_state.sh "jobwatch api run"
+      - name: Send queued alerts
+        run: |
+          python jobwatch/watch.py --notify
+      - name: Save the cleared outbox
+        if: always()
+        run: |
+          bash jobwatch/save_state.sh "jobwatch alerts sent"
+
+  render:
+    # JS-only career sites (Meta, Google fallback). Same workflow, so it can never be skipped on its own.
+    needs: [gate, poll]
+    if: ${{ !cancelled() && needs.gate.outputs.render == 'true' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          ref: ${{ github.ref_name }}   # includes the state the poll job just pushed
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+      - name: Install headless Chromium
+        run: |
+          pip install playwright
+          playwright install --with-deps chromium
+      - name: Collect new roles into the outbox (nothing is sent yet)
+        run: |
+          python jobwatch/watch.py --mode render
+      - name: Save state before alerting, so no alert is ever sent twice
+        run: |
+          bash jobwatch/save_state.sh "jobwatch render run"
       - name: Send queued alerts
         run: |
           python jobwatch/watch.py --notify

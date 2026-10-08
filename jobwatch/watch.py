@@ -123,7 +123,7 @@ _TECH_INC = re.compile(
     r"devsecops|sre|site reliability|infrastructure engineer|platform engineer|platform engineering|distributed systems|"
     r"operating systems?|compiler|embedded software|firmware|cloud engineer|cloud engineering|database engineer|database developer|"
     r"cybersecurity|application security|information security|infosec|security engineer|security research|"
-    r"data science|data scientist|data engineer|data analytics|analytics engineer|machine learning|ml|deep learning|ai|"
+    r"data science|data scientist|data engineer|machine learning|ml|deep learning|ai|"
     r"artificial intelligence|nlp|computer vision|llm|neural networks?|reinforcement learning|"
     r"research scientist|applied scientist|research engineer|ml engineer|ai engineer|ai research|ml research|"
     r"quant|quantitative|trading|trader|algorithmic|computer science|programming|programmer|coding|"
@@ -135,12 +135,12 @@ _TECH_EXC = re.compile(
     r"accounting|human resources|people operations|talent acquisition|communications|supply chain|business development|"
     r"product design|product designer|ux design|ux research|graphic design|industrial design|tv|television|radio|broadcast|"
     r"technician|clinical|market research|policy|packaging|landfill|nursing|pharmac\w*|agronom\w*|geoscien\w*|"
-    r"advisor|sales engineer|customer|support engineer|tech support)\b", re.I)
+    r"advisor|sales engineer|customer|support engineer|tech support|product management|product manager|program management|project management)\b", re.I)
 _HW_EXC = re.compile(
     r"\b(mechanical|aerospace|aeronautical|propulsion|avionics|naval|civil engineer|chemical|chemistry|biology|biological|"
     r"materials|structural|thermal|manufacturing|industrial engineer|electrical|pcb|analog|photonics|optical|hardware|"
     r"physical design|silicon|semiconductor|vlsi|rtl)\b", re.I)
-_SW_FIRST = re.compile(r"\b(software|developer|swe|devops|sre|embedded|firmware|compiler|security engineer|machine learning|ml|ai|data)\b", re.I)
+_SW_FIRST = re.compile(r"\b(software|developer|swe|devops|sre|embedded|firmware|compiler|security engineer|machine learning)\b", re.I)
 
 
 _STRICT_INTERN = re.compile(r"\b(intern|interns|internship|internships|co[\s-]?op|cooperative education)\b", re.I)
@@ -642,8 +642,12 @@ def save_all(st, outbox, open_roles):
         with open(P[k], "w") as f:
             json.dump(v, f, indent=0 if k != "state" else 1, sort_keys=(k == "state"))
     write_open_md(open_roles)
-    rows = ["# Coverage (auto-generated)", "", "Last API run / render run results per source. Boards are `name|ats:slug`.", "",
-            "| Source | Boards | Roles seen | Status |", "|---|---|---|---|"]
+    rows = ["# Coverage (auto-generated)", "", "## Recent runs (UTC, newest first)", "",
+            "| Started | Mode | Trigger | Run # | Sources OK | New roles queued |", "|---|---|---|---|---|---|"]
+    for r in reversed(st.get("runs", [])[-20:]):
+        rows.append(f"| {r['at']} | {r['mode']} | {r['event']} | {r['run']} | {r['ok']} | {r['new']} |")
+    rows += ["", "## Sources", "", "Boards are `name|ats:slug`.", "",
+             "| Source | Boards | Roles seen | Status |", "|---|---|---|---|"]
     for src in sorted(st["coverage"]):
         c = st["coverage"][src]
         rows.append(f"| {src} | {c['res']} | {c['n']} | {'OK' if c['status'] == 'OK' else 'NOT COVERED: ' + c['status']} |")
@@ -886,10 +890,31 @@ def collect(cfg, st, mode):
     return S
 
 
+_DK_WORDS = re.compile(r"\b(the|intern|interns|internship|internships|co[\s-]?op|summer|winter|spring|fall|autumn|year|program|programme|"
+                       r"placement|undergraduate|graduate|student|us|usa|uk|emea|apac|remote|hybrid|paid|new|grad)\b")
+
+
 def dkey(j):
-    t = re.sub(r"\([^)]*\)|\[[^]]*\]", "", j["title"].lower())
-    t = re.sub(r"\b(summer|winter|spring|fall|autumn)?\s*'?20\d\d(\s*[-/]\s*(20)?\d\d)?\b", "", t)
-    return norm(j["company"])[:5] + "|" + norm(t)
+    """Company + title fingerprint, so the same role from two sources (direct board and an aggregator) collapses."""
+    t = re.sub(r"\([^)]*\)|\[[^]]*\]", " ", j["title"].lower())
+    t = re.sub(r"[-–—|,].*?\b(20\d\d)\b.*$", " ", t) if re.search(r"\b20\d\d\b.*\b(jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)", t) else t
+    t = re.sub(r"'?\b20\d\d(\s*[-/]\s*(20)?\d\d)?\b", " ", t)
+    t = _DK_WORDS.sub(" ", t)
+    comp = re.sub(r"^the\s+", "", j["company"].lower().strip())
+    return norm(comp.split()[0] if comp.split() else comp)[:6] + "|" + norm(t)
+
+
+def ukey(j):
+    """Posting-id fingerprint from the job URL (Amazon id, Workday requisition, Greenhouse gh_jid, Eightfold id, UUID)."""
+    u = (j.get("url") or "").lower()
+    m = re.search(r"amazon\.jobs/.*?/jobs/(\d+)", u) or re.search(r"gh_jid=(\d+)", u) or re.search(r"/job/(\d{9,})", u)
+    comp = re.sub(r"^the\s+", "", j["company"].lower().strip()).split()
+    pre = norm(comp[0] if comp else "")[:6] + ":"
+    if m:
+        return pre + m.group(1)
+    seg = u.split("?")[0].rstrip("/").rsplit("/", 1)[-1]
+    m = re.search(r"[_-]((?:r|jr|req|reqid)?-?\d{4,})(?:-\d)?$", seg) or re.search(r"([0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12})$", seg)
+    return pre + m.group(1).lstrip("-") if m else ""
 
 
 def main():
@@ -909,11 +934,12 @@ def main():
                                    sorted(c["name"] for c in cfg["companies"] if c.get("all_roles"))]).encode()).hexdigest()[:12]
     filters_changed = st.get("filter_sig") != sig and bool(st.get("bootstrapped"))
     recent_cut = (NOW - timedelta(days=2)).strftime("%Y-%m-%d")
+    dka_cut = (NOW - timedelta(days=30)).strftime("%Y-%m-%d")
     S = collect(cfg, st, MODE)
     outbox = load(P["outbox"], {"jobs": [], "notes": []})
     alert_keys = set()
     open_roles = load(P["open"], {})
-    seen, new_jobs, run_dk = st["seen"], [], set()
+    seen, new_jobs, run_dk, run_uk = st["seen"], [], {}, set()
     boot = set(st["bootstrapped"])
 
     for key, s in sorted(S.items(), key=lambda kv: kv[1]["agg"]):  # direct boards first, aggregators last
@@ -929,16 +955,30 @@ def main():
                 continue   # non-quant sources: keep SWE / data / ML / AI / quant / security roles only
             if (ex and ex.search(j["title"])) or (loc and j["loc"] and not loc.search(j["loc"])):
                 continue
-            dk = dkey(j)
-            if s["agg"] and (dk in run_dk or ("dk:" + dk in seen and j["id"] not in seen)):
-                seen.setdefault(j["id"], TODAY)   # same role already known from another source
-                continue
+            dk, uk = dkey(j), ukey(j)
+            if j["id"] not in seen:
+                # Is this the same posting we already know from another source? (never alert twice for one role)
+                known = bool(uk and (uk in run_uk or "uk:" + uk in seen))
+                if s["agg"]:   # same role from a different source (a second location from the same source is a different role)
+                    known = known or (dk in run_dk and run_dk[dk] != key) or ("dk:" + dk in seen and "dks:" + dk + "|" + key not in seen)
+                else:   # a direct board posting a role an aggregator already alerted within the last 30 days
+                    known = known or seen.get("dka:" + dk, "") >= dka_cut
+                if known:
+                    seen[j["id"]] = TODAY
+                    continue
             matched.append({k: j[k] for k in ("company", "title", "url", "loc", "via", "date")})
-            run_dk.add(dk)
+            run_dk.setdefault(dk, key)
+            if uk:
+                run_uk.add(uk)
             if j["id"] in seen:
                 continue
             seen[j["id"]] = TODAY
             seen.setdefault("dk:" + dk, TODAY)
+            seen.setdefault("dks:" + dk + "|" + key, TODAY)
+            if uk:
+                seen.setdefault("uk:" + uk, TODAY)
+            if s["agg"]:
+                seen["dka:" + dk] = TODAY
             if (first and silent_first) or (j["date"] and age_cut and j["date"] < age_cut):
                 continue  # baseline or stale posting: remember silently
             if filters_changed and not (j["date"] and j["date"] >= recent_cut):
@@ -977,6 +1017,11 @@ def main():
     st["seen"] = {k: v for k, v in seen.items() if k in live or v >= cutoff}
     st["last_run"] = TODAY
     st["filter_sig"] = sig
+    ok_n = sum(1 for s_ in S.values() if not s_["err"])
+    runs = st.setdefault("runs", [])
+    runs.append({"at": NOW.strftime("%Y-%m-%d %H:%M"), "mode": MODE, "event": os.environ.get("GITHUB_EVENT_NAME", "local"),
+                 "run": os.environ.get("GITHUB_RUN_NUMBER", ""), "ok": f"{ok_n}/{len(S)}", "new": len(new_jobs)})
+    del runs[:-40]
     if MODE in ("api", "all"):
         rnames = {r["name"] for r in cfg.get("render", [])}
         st["coverage"] = {k: v for k, v in st["coverage"].items() if k in S or k in rnames}
