@@ -15,6 +15,7 @@
   "Akuna Capital|greenhouse:akunacapital",
   "Alan Turing Institute|greenhouse:turing",
   "Aleph Alpha|ashby:alephalpha",
+  "Allen Institute for AI|greenhouse_any:thealleninstitute",
   "AlphaGrep|greenhouse:alphagrepsecurities",
   "Amazon",
   "Anduril",
@@ -35,10 +36,12 @@
   "Asana|greenhouse:asana",
   "AssemblyAI|greenhouse:assemblyai",
   "Atlan|ashby:atlan",
+  "Atlassian",
   "Baseten|ashby:baseten",
   "Belvedere Trading",
   "Belvedere Trading|lever:belvederetrading",
   "Benchling|ashby:benchling",
+  "Bloomberg",
   "Brex",
   "Brex|greenhouse:brex",
   "Bridgewater|greenhouse:bridgewater89",
@@ -197,8 +200,10 @@
   "Microsoft",
   "Midjourney",
   "Midjourney|ashby:midjourney",
+  "Mila|workable:mila-2",
   "Millennium",
   "Mindtickle|lever:mindtickle",
+  "Mistral AI|ashby:mistral.ai",
   "Modal",
   "Modal|ashby:modal",
   "MongoDB",
@@ -246,6 +251,7 @@
   "Radix Trading|greenhouse:radixuniversity",
   "Ramp",
   "Ramp|ashby:ramp",
+  "Razorpay|greenhouse_any:razorpaysoftwareprivatelimited",
   "Recursion|greenhouse:recursionpharmaceuticals",
   "Reddit",
   "Reddit|greenhouse:reddit",
@@ -278,6 +284,7 @@
   "Snorkel AI|greenhouse:snorkelai",
   "Snowflake",
   "Snowflake|ashby:snowflake",
+  "Sourcegraph|greenhouse_any:sourcegraph91",
   "SpaceX",
   "SpaceX|greenhouse:spacex",
   "Speechmatics|greenhouse:speechmatics",
@@ -3064,6 +3071,7 @@
   "reg|workday:bakerhughes",
   "reg|workday:bakertilly",
   "reg|workday:baldwin",
+  "reg|workday:baltimorecity",
   "reg|workday:bankatfirst",
   "reg|workday:bankeasy",
   "reg|workday:bannerhealth",
@@ -3076,6 +3084,7 @@
   "reg|workday:baystatehealth",
   "reg|workday:bb",
   "reg|workday:bbh",
+  "reg|workday:bbinsurance",
   "reg|workday:bbva",
   "reg|workday:bcbsa",
   "reg|workday:bcbsaz",
@@ -3154,6 +3163,7 @@
   "reg|workday:byu",
   "reg|workday:caa",
   "reg|workday:cableone",
+  "reg|workday:caci",
   "reg|workday:cadence",
   "reg|workday:cae",
   "reg|workday:cai",
@@ -3177,16 +3187,19 @@
   "reg|workday:capri",
   "reg|workday:cardinalhealth",
   "reg|workday:cardworks",
+  "reg|workday:caresource",
   "reg|workday:carislifesciences",
   "reg|workday:carmax",
   "reg|workday:cars",
   "reg|workday:cart",
   "reg|workday:cartech",
+  "reg|workday:carters",
   "reg|workday:cat",
   "reg|workday:cbcrc",
   "reg|workday:cboe",
   "reg|workday:cbrands",
   "reg|workday:cc",
+  "reg|workday:cccis",
   "reg|workday:ccf",
   "reg|workday:cdk",
   "reg|workday:cdpq",
@@ -3197,6 +3210,7 @@
   "reg|workday:cenovus",
   "reg|workday:centene",
   "reg|workday:centerstone",
+  "reg|workday:centific",
   "reg|workday:centrica",
   "reg|workday:cerence",
   "reg|workday:ceritypartners",
@@ -3207,6 +3221,7 @@
   "reg|workday:chartermfg",
   "reg|workday:chaucergroup",
   "reg|workday:chemours",
+  "reg|workday:chenmed",
   "reg|workday:chess",
   "reg|workday:chevron",
   "reg|workday:chewy",
@@ -3339,6 +3354,7 @@
   "reg|workday:disney",
   "reg|workday:dlapiper",
   "reg|workday:dmainc",
+  "reg|workday:dollartree",
   "reg|workday:doterra",
   "reg|workday:dow",
   "reg|workday:dowjones",
@@ -3439,6 +3455,7 @@
   "reg|workday:firstquality",
   "reg|workday:firstquantum",
   "reg|workday:fis",
+  "reg|workday:fiserv",
   "reg|workday:fivebelow",
   "reg|workday:flexerasoftware",
   "reg|workday:flextronics",
@@ -4010,6 +4027,7 @@
   "reg|workday:rbs",
   "reg|workday:realtyincome",
   "reg|workday:recar",
+  "reg|workday:regalrexnord",
   "reg|workday:regeneron",
   "reg|workday:regions",
   "reg|workday:rehlko",
@@ -4225,6 +4243,7 @@
   "reg|workday:travelers",
   "reg|workday:treehouse",
   "reg|workday:trekbikes",
+  "reg|workday:trellix",
   "reg|workday:trendmicro",
   "reg|workday:tricentis",
   "reg|workday:trimble",
@@ -4427,7 +4446,7 @@
    "status": "OK"
   },
   "Airbnb|greenhouse:airbnb": {
-   "n": 164,
+   "n": 163,
    "res": "greenhouse:airbnb",
    "status": "OK"
   },
@@ -4451,10 +4470,10 @@
    "res": "ashby:alephalpha",
    "status": "OK"
   },
-  "Allen Institute for AI|!": {
-   "n": 0,
-   "res": "-",
-   "status": "no board with jobs found (add the right slug under 'boards')"
+  "Allen Institute for AI|greenhouse_any:thealleninstitute": {
+   "n": 18,
+   "res": "greenhouse_any:thealleninstitute",
+   "status": "OK"
   },
   "AlphaGrep|greenhouse:alphagrepsecurities": {
    "n": 15,
@@ -4462,7 +4481,7 @@
    "status": "OK"
   },
   "Amazon": {
-   "n": 391,
+   "n": 393,
    "res": "-",
    "status": "OK"
   },
@@ -4522,7 +4541,7 @@
    "status": "OK"
   },
   "Asana|greenhouse:asana": {
-   "n": 102,
+   "n": 103,
    "res": "greenhouse:asana",
    "status": "OK"
   },
@@ -4541,10 +4560,10 @@
    "res": "ashby:atlan",
    "status": "OK"
   },
-  "Atlassian|!": {
-   "n": 0,
+  "Atlassian": {
+   "n": 352,
    "res": "-",
-   "status": "no board with jobs found (add the right slug under 'boards')"
+   "status": "OK"
   },
   "Augment Code|!": {
    "n": 0,
@@ -4579,12 +4598,12 @@
   "Black Forest Labs|!": {
    "n": 0,
    "res": "-",
-   "status": "no board with jobs found (add the right slug under 'boards')"
+   "status": "greenhouse_any:blackforestlabs: HTTP Error 404: Not Found"
   },
-  "Bloomberg|!": {
-   "n": 0,
+  "Bloomberg": {
+   "n": 7,
    "res": "-",
-   "status": "no board with jobs found (add the right slug under 'boards')"
+   "status": "OK"
   },
   "Brex|greenhouse:brex": {
    "n": 281,
@@ -4677,7 +4696,7 @@
    "status": "OK"
   },
   "Cloudflare|greenhouse:cloudflare": {
-   "n": 424,
+   "n": 425,
    "res": "greenhouse:cloudflare",
    "status": "OK"
   },
@@ -4687,7 +4706,7 @@
    "status": "OK"
   },
   "Cohere|ashby:cohere": {
-   "n": 126,
+   "n": 124,
    "res": "ashby:cohere",
    "status": "OK"
   },
@@ -4747,7 +4766,7 @@
    "status": "OK"
   },
   "Databricks|greenhouse:databricks": {
-   "n": 895,
+   "n": 896,
    "res": "greenhouse:databricks",
    "status": "OK"
   },
@@ -4817,7 +4836,7 @@
    "status": "no board with jobs found (add the right slug under 'boards')"
   },
   "Elastic|greenhouse:elastic": {
-   "n": 419,
+   "n": 418,
    "res": "greenhouse:elastic",
    "status": "OK"
   },
@@ -4872,7 +4891,7 @@
    "status": "OK"
   },
   "Flexport|greenhouse:flexport": {
-   "n": 196,
+   "n": 195,
    "res": "greenhouse:flexport",
    "status": "OK"
   },
@@ -4949,7 +4968,7 @@
   "Google DeepMind|!": {
    "n": 0,
    "res": "-",
-   "status": "no board with jobs found (add the right slug under 'boards')"
+   "status": "greenhouse_any:deepmind: HTTP Error 404: Not Found"
   },
   "Graham Capital|greenhouse:grahamcapitalmanagement": {
    "n": 11,
@@ -4969,7 +4988,7 @@
   "Groq|!": {
    "n": 0,
    "res": "-",
-   "status": "no board with jobs found (add the right slug under 'boards')"
+   "status": "greenhouse_any:groq: HTTP Error 404: Not Found"
   },
   "Groww|greenhouse:groww": {
    "n": 8,
@@ -4997,7 +5016,7 @@
    "status": "no board with jobs found (add the right slug under 'boards')"
   },
   "Harvey|ashby:harvey": {
-   "n": 334,
+   "n": 337,
    "res": "ashby:harvey",
    "status": "OK"
   },
@@ -5067,7 +5086,7 @@
    "status": "OK"
   },
   "InMobi|greenhouse:inmobi": {
-   "n": 70,
+   "n": 69,
    "res": "greenhouse:inmobi",
    "status": "OK"
   },
@@ -5167,12 +5186,12 @@
    "status": "OK"
   },
   "Lovable|ashby:lovable": {
-   "n": 81,
+   "n": 82,
    "res": "ashby:lovable",
    "status": "OK"
   },
   "Luma AI|ashby:lumaai": {
-   "n": 28,
+   "n": 29,
    "res": "ashby:lumaai",
    "status": "OK"
   },
@@ -5182,7 +5201,7 @@
    "status": "OK"
   },
   "Man Group|greenhouse_eu:mangroup": {
-   "n": 54,
+   "n": 55,
    "res": "greenhouse_eu:mangroup",
    "status": "OK"
   },
@@ -5242,7 +5261,7 @@
    "status": "OK"
   },
   "Microsoft": {
-   "n": 91,
+   "n": 94,
    "res": "-",
    "status": "OK"
   },
@@ -5251,10 +5270,10 @@
    "res": "ashby:midjourney",
    "status": "OK"
   },
-  "Mila|!": {
-   "n": 0,
-   "res": "-",
-   "status": "no board with jobs found (add the right slug under 'boards')"
+  "Mila|workable:mila-2": {
+   "n": 13,
+   "res": "workable:mila-2",
+   "status": "OK"
   },
   "Millennium": {
    "n": 1,
@@ -5266,10 +5285,10 @@
    "res": "lever:mindtickle",
    "status": "OK"
   },
-  "Mistral AI|!": {
-   "n": 0,
-   "res": "-",
-   "status": "lever_html:mistral: HTTP Error 404: Not Found"
+  "Mistral AI|ashby:mistral.ai": {
+   "n": 207,
+   "res": "ashby:mistral.ai",
+   "status": "OK"
   },
   "Modal|ashby:modal": {
    "n": 41,
@@ -5292,7 +5311,7 @@
    "status": "OK"
   },
   "Notion|ashby:notion": {
-   "n": 134,
+   "n": 135,
    "res": "ashby:notion",
    "status": "OK"
   },
@@ -5317,7 +5336,7 @@
    "status": "OK"
   },
   "Okta|greenhouse:okta": {
-   "n": 367,
+   "n": 363,
    "res": "greenhouse:okta",
    "status": "OK"
   },
@@ -5402,7 +5421,7 @@
    "status": "OK"
   },
   "Pinterest|greenhouse:pinterest": {
-   "n": 179,
+   "n": 180,
    "res": "greenhouse:pinterest",
    "status": "OK"
   },
@@ -5476,10 +5495,10 @@
    "res": "-",
    "status": "no board with jobs found (add the right slug under 'boards')"
   },
-  "Razorpay|!": {
-   "n": 0,
-   "res": "-",
-   "status": "no board with jobs found (add the right slug under 'boards')"
+  "Razorpay|greenhouse_any:razorpaysoftwareprivatelimited": {
+   "n": 29,
+   "res": "greenhouse_any:razorpaysoftwareprivatelimited",
+   "status": "OK"
   },
   "Recursion|greenhouse:recursionpharmaceuticals": {
    "n": 14,
@@ -5517,7 +5536,7 @@
    "status": "no board with jobs found (add the right slug under 'boards')"
   },
   "Rippling|rippling:rippling": {
-   "n": 628,
+   "n": 629,
    "res": "rippling:rippling",
    "status": "OK"
   },
@@ -5527,7 +5546,7 @@
    "status": "OK"
   },
   "Roblox|greenhouse:roblox": {
-   "n": 260,
+   "n": 259,
    "res": "greenhouse:roblox",
    "status": "OK"
   },
@@ -5537,7 +5556,7 @@
    "status": "no board with jobs found (add the right slug under 'boards')"
   },
   "Rubrik|greenhouse:rubrik": {
-   "n": 132,
+   "n": 134,
    "res": "greenhouse:rubrik",
    "status": "OK"
   },
@@ -5612,7 +5631,7 @@
    "status": "no board with jobs found (add the right slug under 'boards')"
   },
   "Simplify feed": {
-   "n": 3451,
+   "n": 3424,
    "res": "-",
    "status": "OK"
   },
@@ -5631,10 +5650,10 @@
    "res": "ashby:snowflake",
    "status": "OK"
   },
-  "Sourcegraph|!": {
-   "n": 0,
-   "res": "-",
-   "status": "no board with jobs found (add the right slug under 'boards')"
+  "Sourcegraph|greenhouse_any:sourcegraph91": {
+   "n": 11,
+   "res": "greenhouse_any:sourcegraph91",
+   "status": "OK"
   },
   "SpaceX|greenhouse:spacex": {
    "n": 2683,
@@ -5687,7 +5706,7 @@
    "status": "OK"
   },
   "Stripe|greenhouse:stripe": {
-   "n": 725,
+   "n": 726,
    "res": "greenhouse:stripe",
    "status": "OK"
   },
@@ -5707,7 +5726,7 @@
    "status": "OK"
   },
   "Swiggy|smartrecruiters:swiggy": {
-   "n": 178,
+   "n": 177,
    "res": "smartrecruiters:swiggy",
    "status": "OK"
   },
@@ -5787,7 +5806,7 @@
    "status": "OK"
   },
   "Twilio|greenhouse:twilio": {
-   "n": 131,
+   "n": 132,
    "res": "greenhouse:twilio",
    "status": "OK"
   },
@@ -5812,7 +5831,7 @@
    "status": "OK"
   },
   "Vanta|ashby:vanta": {
-   "n": 83,
+   "n": 84,
    "res": "ashby:vanta",
    "status": "OK"
   },
@@ -5948,62 +5967,62 @@
   },
   "zshah101 registry": {
    "n": 0,
-   "res": "3632/4811 boards answered",
+   "res": "3996/4811 boards answered",
    "status": "OK"
   }
  },
  "fails": {
   "1X|!": 1,
   "AI21 Labs": 1,
-  "AI21 Labs|!": 5,
-  "Adept|!": 5,
+  "AI21 Labs|!": 6,
+  "Adept|!": 6,
   "Allen Institute for AI|!": 5,
   "AlphaGrep": 1,
   "Applied Intuition": 1,
   "Applied Intuition|!": 1,
-  "Ather Energy|!": 5,
+  "Ather Energy|!": 6,
   "Atlassian|!": 5,
-  "Augment Code|!": 5,
-  "Aurora|!": 5,
+  "Augment Code|!": 6,
+  "Aurora|!": 6,
   "Balyasny": 1,
-  "Balyasny|!": 5,
+  "Balyasny|!": 6,
   "Black Forest Labs": 1,
-  "Black Forest Labs|!": 5,
+  "Black Forest Labs|!": 6,
   "Bloomberg|!": 5,
   "Bridgewater": 1,
-  "BrowserStack|!": 5,
-  "Chargebee|!": 5,
+  "BrowserStack|!": 6,
+  "Chargebee|!": 6,
   "Chicago Trading Company": 1,
-  "Cohesity|!": 5,
-  "Contextual AI|!": 5,
+  "Cohesity|!": 6,
+  "Contextual AI|!": 6,
   "D. E. Shaw": 1,
-  "Deel|!": 5,
-  "Dream11|!": 5,
-  "EMBL|!": 5,
+  "Deel|!": 6,
+  "Dream11|!": 6,
+  "EMBL|!": 6,
   "Eisler Capital": 1,
-  "Eisler Capital|!": 5,
+  "Eisler Capital|!": 6,
   "Figure AI": 1,
   "Fireworks AI|!": 1,
   "Five Rings": 1,
-  "Flipkart|!": 5,
+  "Flipkart|!": 6,
   "Google DeepMind": 1,
-  "Google DeepMind|!": 5,
-  "Grammarly|!": 5,
+  "Google DeepMind|!": 6,
+  "Grammarly|!": 6,
   "Groq": 1,
-  "Groq|!": 5,
-  "Gupshup|!": 5,
+  "Groq|!": 6,
+  "Gupshup|!": 6,
   "Hap Capital": 1,
-  "Hap Capital|!": 5,
+  "Hap Capital|!": 6,
   "HashiCorp": 1,
-  "HashiCorp|!": 5,
+  "HashiCorp|!": 6,
   "Headlands Technologies": 1,
-  "Hebbia|!": 5,
-  "Hippocratic AI|!": 5,
+  "Hebbia|!": 6,
+  "Hippocratic AI|!": 6,
   "Hugging Face": 1,
   "IMC Trading|!": 1,
-  "Juspay|!": 5,
-  "Krutrim|!": 5,
-  "Licious|!": 5,
+  "Juspay|!": 6,
+  "Krutrim|!": 6,
+  "Licious|!": 6,
   "Mako (rendered)": 1,
   "Man Group|!": 1,
   "Marshall Wace": 1,
@@ -6016,68 +6035,67 @@
   "Mistral AI": 1,
   "Mistral AI|!": 5,
   "Mistral AI|lever:mistral": 1,
-  "Nutanix|!": 5,
-  "Nykaa|!": 5,
-  "Ola Electric|!": 5,
+  "Nutanix|!": 6,
+  "Nykaa|!": 6,
+  "Ola Electric|!": 6,
   "Optiver": 1,
-  "PhonePe|!": 5,
-  "PhysicsWallah|!": 5,
-  "Postman|!": 5,
+  "PhonePe|!": 6,
+  "PhysicsWallah|!": 6,
+  "Postman|!": 6,
   "Prop Trading Group (PDT)": 1,
-  "Qdrant|!": 5,
+  "Qdrant|!": 6,
   "Quadeye": 1,
-  "Quadeye|!": 5,
+  "Quadeye|!": 6,
   "Quantlab": 1,
-  "Quantlab|!": 5,
+  "Quantlab|!": 6,
   "Radix Trading": 1,
   "Radix Trading|!": 1,
-  "Rapido|!": 5,
+  "Rapido|!": 6,
   "Razorpay|!": 5,
-  "Replicate|!": 5,
-  "Retool|!": 5,
+  "Replicate|!": 6,
+  "Retool|!": 6,
   "Rippling": 1,
   "Rokos Capital": 1,
-  "Rokos Capital|!": 5,
+  "Rokos Capital|!": 6,
   "SIG": 1,
   "Safe Superintelligence": 1,
-  "Safe Superintelligence|!": 5,
+  "Safe Superintelligence|!": 6,
   "Sakana AI": 1,
-  "Sakana AI|!": 5,
+  "Sakana AI|!": 6,
   "SambaNova": 1,
-  "SambaNova|!": 5,
-  "Sharechat|!": 5,
-  "Shopify|!": 5,
-  "Simons Foundation (Flatiron Institute)|!": 5,
+  "SambaNova|!": 6,
+  "Sharechat|!": 6,
+  "Shopify|!": 6,
+  "Simons Foundation (Flatiron Institute)|!": 6,
   "Sourcegraph|!": 5,
-  "Sprinklr|!": 5,
-  "StackBlitz|!": 5,
-  "Tata 1mg|!": 5,
+  "Sprinklr|!": 6,
+  "StackBlitz|!": 6,
+  "Tata 1mg|!": 6,
   "Temporal|!": 1,
-  "Tesla|!": 5,
-  "ThoughtSpot|!": 5,
+  "Tesla|!": 6,
+  "ThoughtSpot|!": 6,
   "Tibra": 1,
-  "Tibra|!": 5,
+  "Tibra|!": 6,
   "Trillium Trading": 1,
   "Two Sigma (rendered)": 1,
-  "Uniphore|!": 5,
-  "Vector Institute|!": 5,
+  "Uniphore|!": 6,
+  "Vector Institute|!": 6,
   "Wayve|!": 3,
   "Weights & Biases": 1,
-  "Weights & Biases|!": 5,
-  "Windsurf|!": 5,
+  "Weights & Biases|!": 6,
+  "Windsurf|!": 6,
   "Wolverine Trading": 1,
-  "Wolverine Trading|!": 5,
-  "Zepto|!": 5,
-  "Zomato|!": 5,
-  "upGrad|!": 5,
+  "Wolverine Trading|!": 6,
+  "Zepto|!": 6,
+  "Zomato|!": 6,
+  "upGrad|!": 6,
   "xAI": 1
  },
- "filter_sig": "af0794808882",
+ "filter_sig": "9c19bbdaf4bb",
  "last_run": "2026-10-08",
  "next_try": {
   "AI21 Labs": "2026-10-09",
   "Adept": "2026-10-09",
-  "Allen Institute for AI": "2026-10-09",
   "Arrowstreet Capital": "2026-10-08",
   "Ather Energy": "2026-10-09",
   "Atlassian": "2026-10-09",
@@ -6109,9 +6127,7 @@
   "Juspay": "2026-10-09",
   "Krutrim": "2026-10-09",
   "Licious": "2026-10-09",
-  "Mila": "2026-10-09",
   "Millennium": "2026-10-08",
-  "Mistral AI": "2026-10-09",
   "Nutanix": "2026-10-09",
   "Nykaa": "2026-10-09",
   "Ola Electric": "2026-10-09",
@@ -6125,7 +6141,6 @@
   "Quadeye": "2026-10-09",
   "Quantlab": "2026-10-09",
   "Rapido": "2026-10-09",
-  "Razorpay": "2026-10-09",
   "Replicate": "2026-10-09",
   "Retool": "2026-10-09",
   "Rokos Capital": "2026-10-09",
@@ -6135,7 +6150,6 @@
   "Sharechat": "2026-10-09",
   "Shopify": "2026-10-09",
   "Simons Foundation (Flatiron Institute)": "2026-10-09",
-  "Sourcegraph": "2026-10-09",
   "Sprinklr": "2026-10-09",
   "StackBlitz": "2026-10-09",
   "Tata 1mg": "2026-10-09",
@@ -8116,6 +8130,7 @@
   "reg|lever:mendix": "2026-10-08",
   "reg|lever:metergysolutions": "2026-10-08",
   "reg|lever:mirego": "2026-10-08",
+  "reg|lever:mistral": "2026-10-08",
   "reg|lever:modeln": "2026-10-08",
   "reg|lever:moo": "2026-10-08",
   "reg|lever:moonpig": "2026-10-08",
@@ -10764,6 +10779,12 @@
     "alephalpha"
    ]
   ],
+  "Allen Institute for AI": [
+   [
+    "greenhouse_any",
+    "thealleninstitute"
+   ]
+  ],
   "AlphaGrep": [
    [
     "greenhouse",
@@ -11446,6 +11467,12 @@
     "midjourney"
    ]
   ],
+  "Mila": [
+   [
+    "workable",
+    "mila-2"
+   ]
+  ],
   "Mindtickle": [
    [
     "lever",
@@ -11454,8 +11481,8 @@
   ],
   "Mistral AI": [
    [
-    "lever",
-    "mistral"
+    "ashby",
+    "mistral.ai"
    ]
   ],
   "Modal": [
@@ -11608,6 +11635,12 @@
     "ramp"
    ]
   ],
+  "Razorpay": [
+   [
+    "greenhouse_any",
+    "razorpaysoftwareprivatelimited"
+   ]
+  ],
   "Recursion": [
    [
     "greenhouse",
@@ -11720,6 +11753,12 @@
    [
     "ashby",
     "snowflake"
+   ]
+  ],
+  "Sourcegraph": [
+   [
+    "greenhouse_any",
+    "sourcegraph91"
    ]
   ],
   "SpaceX": [
@@ -12011,9 +12050,24 @@
    "new": 0,
    "ok": "2/2",
    "run": "7"
+  },
+  {
+   "at": "2026-10-08 09:47",
+   "event": "workflow_dispatch",
+   "mode": "api",
+   "new": 9,
+   "ok": "4060/4120",
+   "run": "8"
   }
  ],
  "seen": {
+  "Atlassian:26266": "2026-10-08",
+  "Atlassian:26267": "2026-10-08",
+  "Atlassian:26268": "2026-10-08",
+  "Atlassian:26271": "2026-10-08",
+  "Atlassian:26272": "2026-10-08",
+  "Atlassian:26275": "2026-10-08",
+  "Atlassian:26843": "2026-10-08",
   "Intern Engine (zshah101):amazon:amazon:10517567": "2026-10-07",
   "Intern Engine (zshah101):amazon:amazon:10552937": "2026-10-07",
   "Intern Engine (zshah101):amazon:amazon:10553907": "2026-10-08",
@@ -14755,6 +14809,9 @@
   "ab:mercor:e6502490-37c6-471a-9ffb-cf397764c518": "2026-10-07",
   "ab:meshy:00b6328d-8c32-4b91-aafa-51434e965f37": "2026-10-07",
   "ab:meshy:2f60f46a-b2e2-4621-afea-cf1a0c12a315": "2026-10-07",
+  "ab:mistral.ai:60ab6a5e-9b02-4ae7-a0fb-4c7d9ec0fdf8": "2026-10-08",
+  "ab:mistral.ai:de46ba8b-00cb-4618-83df-66e15a78434e": "2026-10-08",
+  "ab:mistral.ai:fcdb8407-20b9-4179-81b6-f2ca2c79a39b": "2026-10-08",
   "ab:modal:38888294-6bc7-4dab-b072-6d0f0c2ed79a": "2026-10-07",
   "ab:n1:298585c3-96b1-4728-8d37-31482f85a064": "2026-10-07",
   "ab:n1:afe7deb5-9cfd-4926-bcb4-058d418592a6": "2026-10-07",
@@ -15972,6 +16029,13 @@
   "dk:atkin|roadwayengineeringintern": "2026-10-07",
   "dk:atkin|waterinfrastructureengineeringintern": "2026-10-07",
   "dk:atkin|waterresourcesengineeringintern": "2026-10-07",
+  "dk:atlass|aidemandintelligenceus": "2026-10-08",
+  "dk:atlass|dataengineerus": "2026-10-08",
+  "dk:atlass|datascientistus": "2026-10-08",
+  "dk:atlass|machinelearningus": "2026-10-08",
+  "dk:atlass|securityengineerus": "2026-10-08",
+  "dk:atlass|softwareengineercanada": "2026-10-08",
+  "dk:atlass|softwareengineerus": "2026-10-08",
   "dk:atomi|infrastructuresoftwareengineeringintern": "2026-10-07",
   "dk:atoms|machinelearningengineerintern": "2026-10-07",
   "dk:atoms|mlphdsoftwareengineerintern": "2026-10-07",
@@ -16160,6 +16224,7 @@
   "dk:bosch|aisecurityresearchintern": "2026-10-07",
   "dk:bosch|commercialprojectmanagementaiinnovationintern": "2026-10-07",
   "dk:bosch|eaaembeddedtestengineerintern": "2026-10-07",
+  "dk:bosch|embeddedsoftwaretestengineer": "2026-10-08",
   "dk:bosch|embeddedtestengineerintern": "2026-10-07",
   "dk:bosch|extracurricularinternshipaiimplementationincorporatequality": "2026-10-07",
   "dk:bosch|facilitiesengineeringintern": "2026-10-07",
@@ -16173,6 +16238,7 @@
   "dk:bosch|multimodalsensingairesearchintern": "2026-10-07",
   "dk:bosch|phoneasakeysoftwareengineeringintern": "2026-10-07",
   "dk:bosch|powertraincontrolssoftwareengineeringintern6monthsfulltime": "2026-10-07",
+  "dk:bosch|powertrainsoftware": "2026-10-08",
   "dk:bosch|radarsensingairesearchintern": "2026-10-07",
   "dk:bosch|rpadeveloperintern": "2026-10-07",
   "dk:bosch|softwaredeveloperintern": "2026-10-08",
@@ -16234,12 +16300,19 @@
   "dk:bruns|transducerengineeringintern": "2026-10-07",
   "dk:busin|businessintelligenceanalystinternship": "2026-10-07",
   "dk:busin|softwareengineeringinternshipjava": "2026-10-07",
+  "dk:caci|aipromptengineerhighschool": "2026-10-08",
   "dk:caci|aipromptengineerhighschoolintern": "2026-10-07",
   "dk:caci|awscloudengineeringintern": "2026-10-07",
   "dk:caci|cyberanalystintern": "2026-10-07",
+  "dk:caci|cybersecurity": "2026-10-08",
   "dk:caci|cybersecurityintern": "2026-10-07",
   "dk:caci|devopssoftwareengineeringintern": "2026-10-07",
+  "dk:caci|networkcybersecurity": "2026-10-08",
   "dk:caci|networkcybersecurityintern": "2026-10-07",
+  "dk:caci|softwaredevelopment": "2026-10-08",
+  "dk:caci|softwaredevelopmentengineer": "2026-10-08",
+  "dk:caci|softwareengineer": "2026-10-08",
+  "dk:caci|softwareengineering": "2026-10-08",
   "dk:caci|softwareengineeringcoop": "2026-10-07",
   "dk:caci|softwareengineeringcoopspring": "2026-10-07",
   "dk:caci|softwareengineeringcoopsummer": "2026-10-07",
@@ -16308,6 +16381,8 @@
   "dk:censy|softwareengineeringintern": "2026-10-07",
   "dk:cente|aienablementintern": "2026-10-07",
   "dk:cente|cybersecurityintern": "2026-10-07",
+  "dk:centif|softwarepen": "2026-10-08",
+  "dk:centif|softwaretestingqavalidation4": "2026-10-08",
   "dk:centr|dataanalyticsintern": "2026-10-08",
   "dk:centr|engineeringintern": "2026-10-07",
   "dk:centr|softwareengineerinterncorporatesystems": "2026-10-07",
@@ -17238,10 +17313,12 @@
   "dk:hbful|engineeringintern": "2026-10-07",
   "dk:hbful|processengineeringintern": "2026-10-07",
   "dk:hcomp|researchscientistinternmodelteamlondon": "2026-10-07",
+  "dk:hcsc|earlycareersautomationprogrammer": "2026-10-08",
   "dk:hcsc|earlycareersdeveloperintern": "2026-10-07",
   "dk:hcsc|earlycareersenterprisedataanalystintern": "2026-10-07",
   "dk:hcsc|earlycareersinfrastructureengineerintern": "2026-10-07",
   "dk:hcsc|earlycareersinfrastructureservicedeliveryintern": "2026-10-07",
+  "dk:hcsc|earlycareersvulnerabilitymanagement": "2026-10-08",
   "dk:hdsup|graduateinternartificialintelligencedatascience": "2026-10-07",
   "dk:healt|earlycareersdeveloperintern": "2026-10-07",
   "dk:hears|softwareengineeringintern": "2026-10-07",
@@ -17464,6 +17541,7 @@
   "dk:intac|softwaredeveloperi4monthsinternshipcoop": "2026-10-07",
   "dk:integ|dataanalystintern": "2026-10-07",
   "dk:integ|datascientistinternphd": "2026-10-07",
+  "dk:intel|aiframeworks": "2026-10-08",
   "dk:intel|aimlsoftwareappdevelopmentintern": "2026-10-07",
   "dk:intel|aisocpowerdeliverypathfindingphdintern": "2026-10-07",
   "dk:intel|aisoftwaretechnicalintern": "2026-10-07",
@@ -17509,6 +17587,7 @@
   "dk:intel|softwaresolutionsphdinternnew": "2026-10-07",
   "dk:intel|systemsoftwareengineeringintern": "2026-10-07",
   "dk:intel|systemsoftwareengineeringphdintern": "2026-10-07",
+  "dk:intel|technical": "2026-10-08",
   "dk:intel|technicalsalesinternbachelors": "2026-10-07",
   "dk:intel|technicalsalesinterngraduate": "2026-10-07",
   "dk:intel|tegequipmentengineeringintern": "2026-10-07",
@@ -17839,6 +17918,7 @@
   "dk:marve|testengineeringinternms": "2026-10-07",
   "dk:marve|testsolutionsengineeringinternbachelorsdegree": "2026-10-07",
   "dk:massg|informationsecurityintern": "2026-10-07",
+  "dk:master|securityengineeringenablementstlouismo": "2026-10-08",
   "dk:maste|dataengineeringinternsanfransciscocaus": "2026-10-07",
   "dk:maste|dataengineerintern": "2026-10-08",
   "dk:maste|devopsengineeringintern": "2026-10-07",
@@ -17914,6 +17994,7 @@
   "dk:mfs|systemsengineeringcloudtechnologiescoop": "2026-10-07",
   "dk:mfs|systemsengineeringcloudtechnologiescoopjanuaryjune": "2026-10-07",
   "dk:miche|internshipprocessengineeringintern": "2026-10-07",
+  "dk:micron|hvmpeephoto": "2026-10-08",
   "dk:micro|accountexecutiveeradainternship": "2026-10-07",
   "dk:micro|accountexecutiveintern": "2026-10-07",
   "dk:micro|accountexecutivetomohapprenticeship": "2026-10-07",
@@ -18014,6 +18095,8 @@
   "dk:mill|systemsengineeringinternfall": "2026-10-07",
   "dk:minde|softwareengineercooponsite": "2026-10-07",
   "dk:minds|softwareengineeringintern": "2026-10-07",
+  "dk:mistra|appliedaiforwarddeployedmachinelearningengineer": "2026-10-08",
+  "dk:mistra|appliedscientist": "2026-10-08",
   "dk:mitel|rdinterniosdevelopment": "2026-10-07",
   "dk:modal|mlresearchintern": "2026-10-07",
   "dk:moder|coopresearchengineeringandaiintegration": "2026-10-07",
@@ -18045,6 +18128,9 @@
   "dk:morse|pythonsoftwareengineercoop": "2026-10-07",
   "dk:morse|pythonsoftwareengineergraduatecoop": "2026-10-07",
   "dk:mosai|artificialintelligencecoopintern": "2026-10-07",
+  "dk:motoro|softwaredeveloperembeddedappliances": "2026-10-08",
+  "dk:motoro|softwaredevelopment": "2026-10-08",
+  "dk:motoro|softwareengineer": "2026-10-08",
   "dk:motor|aidataanalyticsinternsupplyresilienceinternship": "2026-10-07",
   "dk:motor|androidapplicationsdeveloperintern": "2026-10-07",
   "dk:motor|androidplatformsoftwareengineeringintern": "2026-10-07",
@@ -18118,6 +18204,7 @@
   "dk:netic|fullstacksoftwareengineerproductintern": "2026-10-07",
   "dk:netic|softwareengineeragentplatformintern": "2026-10-07",
   "dk:netic|softwareengineerintern": "2026-10-07",
+  "dk:netsma|securityanalystfuture": "2026-10-08",
   "dk:netsm|cloudengineerfuture": "2026-10-07",
   "dk:netsm|cloudengineerfutureinternship": "2026-10-07",
   "dk:netsm|softwareengineerintern": "2026-10-07",
@@ -19300,6 +19387,7 @@
   "dk:thriv|associatesoftwareengineersophomoreintern": "2026-10-07",
   "dk:thyss|tradertraineesteelusa": "2026-10-07",
   "dk:tihin|internshipsoftwareengineering": "2026-10-07",
+  "dk:tiktok|machinelearningengineermonetizationtechnologyadscoreglobal": "2026-10-08",
   "dk:tikto|aifullstackengineerinterntiktokshopseastart": "2026-10-07",
   "dk:tikto|androidsoftwareengineerinterngloballiveplatformstart": "2026-10-07",
   "dk:tikto|backendengineerinterndataplatformglobalecommercestart": "2026-10-07",
@@ -19705,6 +19793,7 @@
   "dk:world|datascienceintern": "2026-10-07",
   "dk:world|quantitativeresearchintern": "2026-10-07",
   "dk:world|softwareengineerintern": "2026-10-07",
+  "dk:wpp|datasciencearchitecture": "2026-10-08",
   "dk:wurl|datascienceintern": "2026-10-07",
   "dk:xaira|aiscientistinterncomputationalproteindesign": "2026-10-07",
   "dk:xai|businessoperationsinternshipcoop": "2026-10-07",
@@ -19759,7 +19848,46 @@
   "dk:zuru|aiintegrationsummerinternship": "2026-10-07",
   "dk:zuru|dataanalystintern": "2026-10-07",
   "dk:zynga|mobiledeveloperinternc": "2026-10-07",
+  "dka:atlass|aidemandintelligenceus": "2026-10-08",
+  "dka:atlass|dataengineerus": "2026-10-08",
+  "dka:atlass|datascientistus": "2026-10-08",
+  "dka:atlass|machinelearningus": "2026-10-08",
+  "dka:atlass|securityengineerus": "2026-10-08",
+  "dka:atlass|softwareengineercanada": "2026-10-08",
+  "dka:atlass|softwareengineerus": "2026-10-08",
+  "dka:tiktok|machinelearningengineermonetizationtechnologyadscoreglobal": "2026-10-08",
   "dks:accent|dataaiaccentureathens|reg|workday:accenture": "2026-10-08",
+  "dks:atlass|aidemandintelligenceus|Atlassian": "2026-10-08",
+  "dks:atlass|dataengineerus|Atlassian": "2026-10-08",
+  "dks:atlass|datascientistus|Atlassian": "2026-10-08",
+  "dks:atlass|machinelearningus|Atlassian": "2026-10-08",
+  "dks:atlass|securityengineerus|Atlassian": "2026-10-08",
+  "dks:atlass|softwareengineercanada|Atlassian": "2026-10-08",
+  "dks:atlass|softwareengineerus|Atlassian": "2026-10-08",
+  "dks:bosch|embeddedsoftwaretestengineer|reg|smartrecruiters:BoschGroup": "2026-10-08",
+  "dks:bosch|powertrainsoftware|reg|smartrecruiters:BoschGroup": "2026-10-08",
+  "dks:caci|aipromptengineerhighschool|reg|workday:caci": "2026-10-08",
+  "dks:caci|cybersecurity|reg|workday:caci": "2026-10-08",
+  "dks:caci|networkcybersecurity|reg|workday:caci": "2026-10-08",
+  "dks:caci|softwaredevelopmentengineer|reg|workday:caci": "2026-10-08",
+  "dks:caci|softwaredevelopment|reg|workday:caci": "2026-10-08",
+  "dks:caci|softwareengineering|reg|workday:caci": "2026-10-08",
+  "dks:caci|softwareengineer|reg|workday:caci": "2026-10-08",
+  "dks:centif|softwarepen|reg|workday:centific": "2026-10-08",
+  "dks:centif|softwaretestingqavalidation4|reg|workday:centific": "2026-10-08",
+  "dks:hcsc|earlycareersautomationprogrammer|reg|workday:hcsc": "2026-10-08",
+  "dks:hcsc|earlycareersvulnerabilitymanagement|reg|workday:hcsc": "2026-10-08",
+  "dks:intel|aiframeworks|Intel": "2026-10-08",
+  "dks:intel|technical|Intel": "2026-10-08",
+  "dks:master|securityengineeringenablementstlouismo|reg|workday:mastercard": "2026-10-08",
+  "dks:micron|hvmpeephoto|reg|workday:micron": "2026-10-08",
+  "dks:mistra|appliedaiforwarddeployedmachinelearningengineer|Mistral AI|ashby:mistral.ai": "2026-10-08",
+  "dks:mistra|appliedscientist|Mistral AI|ashby:mistral.ai": "2026-10-08",
+  "dks:motoro|softwaredeveloperembeddedappliances|reg|workday:motorolasolutions": "2026-10-08",
+  "dks:motoro|softwaredevelopment|reg|workday:motorolasolutions": "2026-10-08",
+  "dks:motoro|softwareengineer|reg|workday:motorolasolutions": "2026-10-08",
+  "dks:netsma|securityanalystfuture|reg|workday:ntst": "2026-10-08",
+  "dks:tiktok|machinelearningengineermonetizationtechnologyadscoreglobal|Simplify feed": "2026-10-08",
   "dks:walt|espnprogrammingbristol|reg|workday:disney": "2026-10-08",
   "dks:wex|aidataplatformengineering|reg|workday:wexinc": "2026-10-08",
   "dks:wex|backendsoftwareengineerccloudsecurityai|reg|workday:wexinc": "2026-10-08",
@@ -19772,6 +19900,7 @@
   "dks:wex|softwareengineeringenterprisedatasystems|reg|workday:wexinc": "2026-10-08",
   "dks:wex|softwareengineering|reg|workday:wexinc": "2026-10-08",
   "dks:wex|sreapplicationservices|reg|workday:wexinc": "2026-10-08",
+  "dks:wpp|datasciencearchitecture|reg|greenhouse:wppmedia": "2026-10-08",
   "dks:zeiss|softwareengineeringagenticsystemsfordigitaltwins|reg|workday:zeissgroup": "2026-10-08",
   "ef:Microsoft:1970393556641091": "2026-10-07",
   "ef:Microsoft:1970393556868271": "2026-10-07",
@@ -20979,6 +21108,7 @@
   "gh:worldquant:4069460006": "2026-10-07",
   "gh:worldquant:4084570006": "2026-10-07",
   "gh:worldquant:4652485006": "2026-10-07",
+  "gh:wppmedia:5447462008": "2026-10-08",
   "gh:wurljobs:4716249006": "2026-10-07",
   "gh:xai:5252108007": "2026-10-07",
   "gh:xai:5255111007": "2026-10-07",
@@ -23947,6 +24077,7 @@
   "sf:5b07d830-b50d-4cff-a64a-555dad0ea478": "2026-10-07",
   "sf:5b1eb0f8-7bed-43e1-8273-c4c58b2eca9e": "2026-10-07",
   "sf:5b23b4bf-a18e-40ed-b036-ccb603c87ef3": "2026-10-07",
+  "sf:5b324f86-93db-4206-a6be-2406d36267e0": "2026-10-08",
   "sf:5b3f08d6-f0e3-41bf-a59f-fd94441f2670": "2026-10-07",
   "sf:5b4ae178-0df3-49c7-af71-0631e6c99728": "2026-10-07",
   "sf:5b5294f8-f9a7-4dbd-ac1b-8ff014939e88": "2026-10-07",
@@ -25588,6 +25719,7 @@
   "sf:d466fdad-f557-4135-b159-963583eb27df": "2026-10-07",
   "sf:d46a978e-6fec-4693-a889-1a07521469e0": "2026-10-07",
   "sf:d473bd44-d390-41bc-b173-144940110b9e": "2026-10-07",
+  "sf:d47ce368-7364-4d14-a6e4-c65887552a1f": "2026-10-08",
   "sf:d4dd7283-a6c1-4f08-a631-ba840bf2b7ef": "2026-10-07",
   "sf:d4e10f5f-fe79-4c2f-bee7-b413db703e65": "2026-10-07",
   "sf:d4e3c76d-f9b8-472c-9d21-a01ad5a58623": "2026-10-08",
@@ -26305,6 +26437,8 @@
   "sr:BoschGroup:744000154012744": "2026-10-07",
   "sr:BoschGroup:744000154070189": "2026-10-07",
   "sr:BoschGroup:744000154236871": "2026-10-08",
+  "sr:BoschGroup:744000154384809": "2026-10-08",
+  "sr:BoschGroup:744000154385425": "2026-10-08",
   "sr:CERN:744000080108845": "2026-10-07",
   "sr:CERN:744000141910971": "2026-10-07",
   "sr:CERN:744000141917339": "2026-10-07",
@@ -26487,6 +26621,32 @@
   "sr:Winsupply1:3743990015046116": "2026-10-07",
   "sr:barkbackLlc:90864007": "2026-10-07",
   "uk:accent:r00284676": "2026-10-08",
+  "uk:caci:332041": "2026-10-08",
+  "uk:caci:332776": "2026-10-08",
+  "uk:caci:332816": "2026-10-08",
+  "uk:caci:332894": "2026-10-08",
+  "uk:caci:333001": "2026-10-08",
+  "uk:caci:333037": "2026-10-08",
+  "uk:caci:333046": "2026-10-08",
+  "uk:caci:333051": "2026-10-08",
+  "uk:caci:333085": "2026-10-08",
+  "uk:centif:jr104025": "2026-10-08",
+  "uk:centif:jr104026": "2026-10-08",
+  "uk:centif:jr104027": "2026-10-08",
+  "uk:centif:jr105755": "2026-10-08",
+  "uk:hcsc:r0059484": "2026-10-08",
+  "uk:hcsc:r0059514": "2026-10-08",
+  "uk:intel:jr0287250": "2026-10-08",
+  "uk:intel:jr0287895": "2026-10-08",
+  "uk:master:r-284927": "2026-10-08",
+  "uk:micron:jr112979": "2026-10-08",
+  "uk:mistra:60ab6a5e-9b02-4ae7-a0fb-4c7d9ec0fdf8": "2026-10-08",
+  "uk:mistra:de46ba8b-00cb-4618-83df-66e15a78434e": "2026-10-08",
+  "uk:mistra:fcdb8407-20b9-4179-81b6-f2ca2c79a39b": "2026-10-08",
+  "uk:motoro:r68576": "2026-10-08",
+  "uk:motoro:r68997": "2026-10-08",
+  "uk:motoro:r69581": "2026-10-08",
+  "uk:netsma:r015669": "2026-10-08",
   "uk:walt:10160482": "2026-10-08",
   "uk:wex:r22494": "2026-10-08",
   "uk:wex:r22543": "2026-10-08",
@@ -26792,6 +26952,15 @@
   "wd:brunswick:/job/Oshkosh-WI/Mercury-Marine--Software-Validation-Intern_JR-051160": "2026-10-07",
   "wd:brunswick:/job/Tulsa-OK/Software-Engineering-Intern_JR-051321": "2026-10-07",
   "wd:brunswick:/job/Tulsa-OK/Transducer-Engineering-Intern_JR-051320": "2026-10-07",
+  "wd:caci:/job/Ashburn-VA-US/AI-Prompt-Engineer-High-School-Intern---Summer-2027_332816-1": "2026-10-08",
+  "wd:caci:/job/Ashburn-VA-US/Software-Development-Intern---Summer-2027_333051": "2026-10-08",
+  "wd:caci:/job/Austin-TX-US/Software-Engineer-Intern---Summer-2027_333037": "2026-10-08",
+  "wd:caci:/job/High-Point-NC-US/Network---Cybersecurity-Intern---Summer-2027_333001": "2026-10-08",
+  "wd:caci:/job/Oklahoma-City-OK-US/Software-Development-Intern---Summer-2027_333085": "2026-10-08",
+  "wd:caci:/job/Omaha-NE-US/Software-Engineer-Intern---Summer-2027_332776": "2026-10-08",
+  "wd:caci:/job/Remote-Any-State/Software-Development-Engineer-Intern---Summer-2027_332894-1": "2026-10-08",
+  "wd:caci:/job/Reston-VA-US/Software-Engineering-Intern---Summer-2027_332041": "2026-10-08",
+  "wd:caci:/job/Springfield-VA-US/Cyber-Security-Intern---Summer-2027_333046": "2026-10-08",
   "wd:cae:/job/Montreal-St-Laurent/Software-Developer-Coop_123904": "2026-10-07",
   "wd:cai:/job/Atlanta-GA-and-surrounding-areas/Exoskeleton-Design-and-Rehabilitation-Engineering-Intern_R8691": "2026-10-07",
   "wd:cai:/job/California/Cybersecurity-Analyst-Intern_R8488": "2026-10-07",
@@ -26824,6 +26993,10 @@
   "wd:cenovus:/job/CA-AB-Calgary/Student--AI-and-Software-Engineering--Calgary--May-2027-_R-411154": "2026-10-07",
   "wd:cenovus:/job/CA-AB-Calgary/Student--IT--Data-Science-and-Software--Calgary--May-2027-_R-411145": "2026-10-07",
   "wd:centene:/job/Remote-MO/AI-Enablement-Intern--Undergraduate---Summer-2027-_1662038": "2026-10-07",
+  "wd:centific:/job/Malaysia-Office--Penang/Software-Testing---QA---Validation-Internship--PEN--4_JR105755-2": "2026-10-08",
+  "wd:centific:/job/Malaysia-Office--Penang/Software-graduate-Internship-PEN_JR104025-2": "2026-10-08",
+  "wd:centific:/job/Malaysia-Office--Penang/Software-graduate-Internship-PEN_JR104026-2": "2026-10-08",
+  "wd:centific:/job/Malaysia-Office--Penang/Software-graduate-Internship-PEN_JR104027": "2026-10-08",
   "wd:cerence:/job/Ulm/Student-worker-Speech-AI-QA-Ulm_R0005935": "2026-10-07",
   "wd:cgg:/job/Crawley-United-Kingdom/Software-Engineering-Intern_JR101336-1": "2026-10-07",
   "wd:cgg:/job/Massy-France/Geoscientist-Researcher---Internship--6-months-_JR101521-2": "2026-10-07",
@@ -27135,10 +27308,12 @@
   "wd:hbfuller:/job/Blue-Ash-Ohio-USA/Engineering-Intern_R26_0000002043": "2026-10-07",
   "wd:hbfuller:/job/Houston-Texas-USA/Process-Engineering-Intern_R26_0000002100": "2026-10-07",
   "wd:hbfuller:/job/South-Bend-Indiana-USA/Engineering-Intern_R26_0000002154": "2026-10-07",
+  "wd:hcsc:/job/IL---Chicago/Early-Careers---Automation-Programmer-Intern_R0059484": "2026-10-08",
   "wd:hcsc:/job/IL---Chicago/Early-Careers---Enterprise-Data-Analyst-Intern_R0059505": "2026-10-07",
   "wd:hcsc:/job/IL---Chicago/Early-Careers---Infrastructure-Engineer-Intern_R0059506": "2026-10-07",
   "wd:hcsc:/job/IL---Chicago/Early-Careers---Infrastructure-Service-Delivery-Intern_R0059507": "2026-10-07",
   "wd:hcsc:/job/Richardson-Texas-HQ-1001-E-Lookout-Drive/Early-Careers---Developer-Intern--Compliance---Health-Quality-_R0059503": "2026-10-07",
+  "wd:hcsc:/job/TX---Richardson/Early-Careers---Vulnerability-Management-Intern_R0059514": "2026-10-08",
   "wd:heinz:/job/Nijmegen/Packaging-Development---Technology--Intern_R-102107": "2026-10-07",
   "wd:hendrick:/job/Hendrick-Motorsports/Design-Engineering-Intern--Spring-Summer-2027-_R-80377": "2026-10-07",
   "wd:highmarkhealth:/job/Erie-PA-16502-232-West-25th-St/Radiology-Tech-Intern---Casual---SVH_J285972": "2026-10-07",
@@ -27231,6 +27406,7 @@
   "wd:intel:/job/Ireland-Leixlip/Intel-NPU-Internship_JR0286890": "2026-10-07",
   "wd:intel:/job/Ireland-Leixlip/Module-Engineer-Internship_JR0287294": "2026-10-07",
   "wd:intel:/job/Ireland-Leixlip/Software-Solutions-Eng-PhD-Intern_JR0286944": "2026-10-07",
+  "wd:intel:/job/Ireland-Leixlip/Undergraduate-Intern-Technical--OpenVINO--Neural-Network-Compression-Tools-_JR0287250": "2026-10-08",
   "wd:intel:/job/Israel-Kiryat-Gat/Practical-Engineering-Student----Kiryat-Gat_JR0281401": "2026-10-07",
   "wd:intel:/job/Malaysia-Kulim/DevOps-and-Software-Engineering-Intern_JR0286934": "2026-10-07",
   "wd:intel:/job/Malaysia-Kulim/Finance-Intern_JR0287472": "2026-10-07",
@@ -27243,6 +27419,7 @@
   "wd:intel:/job/PRC-Chengdu/AI-ML-Software-App-Development-Intern_JR0286946": "2026-10-07",
   "wd:intel:/job/PRC-Shanghai/Firmware-and-Development-Tools-Intern_JR0287536": "2026-10-08",
   "wd:intel:/job/PRC-Shanghai/Operations-Research-Engineer-Intern_JR0286945": "2026-10-08",
+  "wd:intel:/job/Poland-Gdansk/AI-Frameworks-Intern_JR0287895": "2026-10-08",
   "wd:intel:/job/Poland-Gdansk/GPU-Software-Performance-Intern_JR0287884": "2026-10-07",
   "wd:intel:/job/South-Korea-Seoul/Undergrad-Intern-Sales-and-Marketing_JR0287304": "2026-10-07",
   "wd:intel:/job/US-Arizona-Phoenix/Module-Engineering-PhD-Intern_JR0286932": "2026-10-07",
@@ -27378,6 +27555,7 @@
   "wd:marvell:/job/Singapore/Test-Solutions-Engineering-Intern---Bachelor-s-Degree_2604801": "2026-10-07",
   "wd:marvell:/job/Toronto-Canada/Firmware-Engineer-Intern---BS-MS---2027-Co-Op_2604959": "2026-10-07",
   "wd:mastercard:/job/Arlington-Virginia/Security-Infrastructure-Engineering---Architecture-Intern--Summer-2027---Arlington--VA--US_R-284924": "2026-10-07",
+  "wd:mastercard:/job/OFallon-Missouri/Security-Engineering---Enablement-Intern--Summer-2027---St-Louis--MO--US_R-284927": "2026-10-08",
   "wd:mastercard:/job/San-Francisco-California/Data-Engineering-Intern--Summer-2027---San-Franscisco--CA--US_R-285993": "2026-10-07",
   "wd:matthey:/job/London---UK/Cyber-Security-Summer-2027-Intern_R-015569": "2026-10-07",
   "wd:maxar:/job/Remote-United-States/AI-Engineer-Intern_R24605": "2026-10-07",
@@ -27404,6 +27582,7 @@
   "wd:mfs:/job/Boston/Summer-2027-Software-Engineer-Intern--June---August-_MFS-231985": "2026-10-07",
   "wd:michelinhr:/job/FOUNTAIN-INN-SC/Summer-2027-Internship--Process-Engineering-Intern--Fountain-Inn--SC-_R-2026030120": "2026-10-07",
   "wd:micron:/job/Boise-ID---Main-Site/Intern---SMAI-TD-AI-Engineering-Team_JR112991": "2026-10-07",
+  "wd:micron:/job/Fab-10NX-Singapore/Intern---HVM-PEE-Photo--AI-_JR112979": "2026-10-08",
   "wd:micron:/job/Fab-10NX-Singapore/Intern--PIE-RAM--Agentic-AI-_JR112779": "2026-10-07",
   "wd:midlandsb:/job/Effingham-IL/Intern---AI-Solutions-Engineer_JR1461": "2026-10-07",
   "wd:midlandsb:/job/Effingham-IL/Intern---IT-Infrastructure_JR1471": "2026-10-07",
@@ -27436,6 +27615,9 @@
   "wd:motorolasolutions:/job/Penang-Malaysia/Software-Engineer-Intern_R68941": "2026-10-07",
   "wd:motorolasolutions:/job/Plantation-FL/Software-Engineering-Intern---Summer-2027_R69136": "2026-10-07",
   "wd:motorolasolutions:/job/Schaumburg-IL/FPGA-Design-Engineering-Intern---Summer-2027_R68401": "2026-10-07",
+  "wd:motorolasolutions:/job/St-Petersburg-Business-Center/Software-Development-Intern---Summer-2027-Internship_R68576": "2026-10-08",
+  "wd:motorolasolutions:/job/Vancouver-Canada/Software-Developer--Embedded-Appliances-Co-Op_R69581": "2026-10-08",
+  "wd:motorolasolutions:/job/Westminster-CO/Software-Engineer---Summer-2027-Internship_R68997": "2026-10-08",
   "wd:msd:/job/GBR---London---London-Moorgate-WeWork/Student-Placement---IT-Developer-Analyst_R418573": "2026-10-07",
   "wd:munters:/job/Mexico---Apodaca/Engineering-Intern_R12332": "2026-10-07",
   "wd:nasdaq:/job/Canada---St-Johns---Newfoundland--Labrador/Verafin---Information-Security-Student--January-2027-_R0027086": "2026-10-07",
@@ -27470,6 +27652,7 @@
   "wd:nshe:/job/University-of-Nevada-Reno---Main-Campus/Student-Worker---Student-Computer-Science-Engineer--SAGE_R0153576": "2026-10-07",
   "wd:ntrs:/job/Chicago-IL/Technology-Intern---Infrastructure-and-IT-Management_R160872-1": "2026-10-07",
   "wd:ntst:/job/Overland-Park-KS/Cloud-Engineer-Future---Summer-2027-Internship-_R015668": "2026-10-07",
+  "wd:ntst:/job/Overland-Park-KS/Security-Analyst-Future--Summer-2027-Internship-_R015669": "2026-10-08",
   "wd:ntst:/job/Overland-Park-KS/Software-Engineer-Intern--Summer-2027-Internship-_R015667": "2026-10-07",
   "wd:nvidia:/job/China-Shanghai/CUDA-Full-Stack---AI-Test-Dev-Intern---2027_JR2023666-1": "2026-10-07",
   "wd:nvidia:/job/China-Shanghai/Custom-SOC-Intern---2027_JR2024692": "2026-10-07",

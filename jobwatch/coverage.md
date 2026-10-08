@@ -4,6 +4,7 @@
 
 | Started | Mode | Trigger | Run # | Sources OK | New roles queued |
 |---|---|---|---|---|---|
+| 2026-10-08 09:47 | api | workflow_dispatch | 8 | 4060/4120 | 9 |
 | 2026-10-08 08:23 | render | workflow_dispatch | 7 | 2/2 | 0 |
 | 2026-10-08 08:19 | api | workflow_dispatch | 7 | 3751/3818 | 1 |
 
@@ -21,14 +22,14 @@ Boards are `name|ats:slug`.
 | Abridge|ashby:abridge | ashby:abridge | 48 | OK |
 | Adept|! | - | 0 | NOT COVERED: no board with jobs found (add the right slug under 'boards') |
 | Adobe | - | 78 | OK |
-| Airbnb|greenhouse:airbnb | greenhouse:airbnb | 164 | OK |
+| Airbnb|greenhouse:airbnb | greenhouse:airbnb | 163 | OK |
 | Airtable|greenhouse:airtable | greenhouse:airtable | 4 | OK |
 | Akuna Capital|greenhouse:akunacapital | greenhouse:akunacapital | 41 | OK |
 | Alan Turing Institute|greenhouse:turing | greenhouse:turing | 30 | OK |
 | Aleph Alpha|ashby:alephalpha | ashby:alephalpha | 1 | OK |
-| Allen Institute for AI|! | - | 0 | NOT COVERED: no board with jobs found (add the right slug under 'boards') |
+| Allen Institute for AI|greenhouse_any:thealleninstitute | greenhouse_any:thealleninstitute | 18 | OK |
 | AlphaGrep|greenhouse:alphagrepsecurities | greenhouse:alphagrepsecurities | 15 | OK |
-| Amazon | - | 391 | OK |
+| Amazon | - | 393 | OK |
 | Anduril|greenhouse:andurilindustries | greenhouse:andurilindustries | 2477 | OK |
 | Ansatz Capital|lever:ansatzcapital | lever:ansatzcapital | 5 | OK |
 | Anthropic|greenhouse:anthropic | greenhouse:anthropic | 648 | OK |
@@ -40,19 +41,19 @@ Boards are `name|ats:slug`.
 | Arc Institute|greenhouse:arcinstitute | greenhouse:arcinstitute | 22 | OK |
 | Arize AI|greenhouse:arizeai | greenhouse:arizeai | 24 | OK |
 | Arrowstreet Capital | - | 4 | OK |
-| Asana|greenhouse:asana | greenhouse:asana | 102 | OK |
+| Asana|greenhouse:asana | greenhouse:asana | 103 | OK |
 | AssemblyAI|greenhouse:assemblyai | greenhouse:assemblyai | 9 | OK |
 | Ather Energy|! | - | 0 | NOT COVERED: no board with jobs found (add the right slug under 'boards') |
 | Atlan|ashby:atlan | ashby:atlan | 7 | OK |
-| Atlassian|! | - | 0 | NOT COVERED: no board with jobs found (add the right slug under 'boards') |
+| Atlassian | - | 352 | OK |
 | Augment Code|! | - | 0 | NOT COVERED: no board with jobs found (add the right slug under 'boards') |
 | Aurora|! | - | 0 | NOT COVERED: no board with jobs found (add the right slug under 'boards') |
 | Balyasny|! | - | 0 | NOT COVERED: no board with jobs found (add the right slug under 'boards') |
 | Baseten|ashby:baseten | ashby:baseten | 111 | OK |
 | Belvedere Trading|lever:belvederetrading | lever:belvederetrading | 20 | OK |
 | Benchling|ashby:benchling | ashby:benchling | 57 | OK |
-| Black Forest Labs|! | - | 0 | NOT COVERED: no board with jobs found (add the right slug under 'boards') |
-| Bloomberg|! | - | 0 | NOT COVERED: no board with jobs found (add the right slug under 'boards') |
+| Black Forest Labs|! | - | 0 | NOT COVERED: greenhouse_any:blackforestlabs: HTTP Error 404: Not Found |
+| Bloomberg | - | 7 | OK |
 | Brex|greenhouse:brex | greenhouse:brex | 281 | OK |
 | Bridgewater|greenhouse:bridgewater89 | greenhouse:bridgewater89 | 17 | OK |
 | BrowserStack|! | - | 0 | NOT COVERED: no board with jobs found (add the right slug under 'boards') |
@@ -71,9 +72,9 @@ Boards are `name|ats:slug`.
 | Citadel (sitemap) | - | 60 | OK |
 | Citadel Securities (sitemap) | - | 82 | OK |
 | Clay|ashby:claylabs | ashby:claylabs | 57 | OK |
-| Cloudflare|greenhouse:cloudflare | greenhouse:cloudflare | 424 | OK |
+| Cloudflare|greenhouse:cloudflare | greenhouse:cloudflare | 425 | OK |
 | Cognition|ashby:cognition | ashby:cognition | 100 | OK |
-| Cohere|ashby:cohere | ashby:cohere | 126 | OK |
+| Cohere|ashby:cohere | ashby:cohere | 124 | OK |
 | Cohesity|! | - | 0 | NOT COVERED: no board with jobs found (add the right slug under 'boards') |
 | Coinbase|greenhouse:coinbase | greenhouse:coinbase | 223 | OK |
 | Confluent|ashby:confluent | ashby:confluent | 17 | OK |
@@ -85,7 +86,7 @@ Boards are `name|ats:slug`.
 | DRW|greenhouse:drweng | greenhouse:drweng | 179 | OK |
 | DRW|greenhouse:drwuniversityjobs | greenhouse:drwuniversityjobs | 2 | OK |
 | DV Trading|greenhouse:dvtrading | greenhouse:dvtrading | 69 | OK |
-| Databricks|greenhouse:databricks | greenhouse:databricks | 895 | OK |
+| Databricks|greenhouse:databricks | greenhouse:databricks | 896 | OK |
 | Datadog|greenhouse:datadog | greenhouse:datadog | 439 | OK |
 | Decagon|ashby:decagon | ashby:decagon | 145 | OK |
 | Deel|! | - | 0 | NOT COVERED: no board with jobs found (add the right slug under 'boards') |
@@ -99,7 +100,7 @@ Boards are `name|ats:slug`.
 | Duolingo|greenhouse:duolingo | greenhouse:duolingo | 58 | OK |
 | EMBL|! | - | 0 | NOT COVERED: no board with jobs found (add the right slug under 'boards') |
 | Eisler Capital|! | - | 0 | NOT COVERED: no board with jobs found (add the right slug under 'boards') |
-| Elastic|greenhouse:elastic | greenhouse:elastic | 419 | OK |
+| Elastic|greenhouse:elastic | greenhouse:elastic | 418 | OK |
 | ElevenLabs|ashby:elevenlabs | ashby:elevenlabs | 140 | OK |
 | Engineers Gate|greenhouse:engineersgate | greenhouse:engineersgate | 9 | OK |
 | Etched|ashby:etched | ashby:etched | 109 | OK |
@@ -110,7 +111,7 @@ Boards are `name|ats:slug`.
 | Figure AI|greenhouse:figureai | greenhouse:figureai | 92 | OK |
 | Fireworks AI|ashby:fireworks | ashby:fireworks | 83 | OK |
 | Five Rings|greenhouse:fiveringsllc | greenhouse:fiveringsllc | 17 | OK |
-| Flexport|greenhouse:flexport | greenhouse:flexport | 196 | OK |
+| Flexport|greenhouse:flexport | greenhouse:flexport | 195 | OK |
 | Flipkart|! | - | 0 | NOT COVERED: no board with jobs found (add the right slug under 'boards') |
 | Flow Traders|greenhouse:flowtraders | greenhouse:flowtraders | 48 | OK |
 | Freshworks|smartrecruiters:Freshworks | smartrecruiters:Freshworks | 126 | OK |
@@ -125,17 +126,17 @@ Boards are `name|ats:slug`.
 | Glean|smartrecruiters:glean | smartrecruiters:glean | 1 | OK |
 | Google | - | 80 | OK |
 | Google (rendered) | - | 60 | OK |
-| Google DeepMind|! | - | 0 | NOT COVERED: no board with jobs found (add the right slug under 'boards') |
+| Google DeepMind|! | - | 0 | NOT COVERED: greenhouse_any:deepmind: HTTP Error 404: Not Found |
 | Graham Capital|greenhouse:grahamcapitalmanagement | greenhouse:grahamcapitalmanagement | 11 | OK |
 | Grammarly|! | - | 0 | NOT COVERED: no board with jobs found (add the right slug under 'boards') |
 | Graviton Research Capital|greenhouse:gravitonresearchcapital | greenhouse:gravitonresearchcapital | 21 | OK |
-| Groq|! | - | 0 | NOT COVERED: no board with jobs found (add the right slug under 'boards') |
+| Groq|! | - | 0 | NOT COVERED: greenhouse_any:groq: HTTP Error 404: Not Found |
 | Groww|greenhouse:groww | greenhouse:groww | 8 | OK |
 | Gupshup|! | - | 0 | NOT COVERED: no board with jobs found (add the right slug under 'boards') |
 | Gusto|greenhouse:gusto | greenhouse:gusto | 95 | OK |
 | H Company|ashby:hcompany | ashby:hcompany | 26 | OK |
 | Hap Capital|! | - | 0 | NOT COVERED: no board with jobs found (add the right slug under 'boards') |
-| Harvey|ashby:harvey | ashby:harvey | 334 | OK |
+| Harvey|ashby:harvey | ashby:harvey | 337 | OK |
 | HashiCorp|! | - | 0 | NOT COVERED: no board with jobs found (add the right slug under 'boards') |
 | Headlands Technologies|greenhouse:headlandstechnologiesllc | greenhouse:headlandstechnologiesllc | 8 | OK |
 | Hebbia|! | - | 0 | NOT COVERED: no board with jobs found (add the right slug under 'boards') |
@@ -149,7 +150,7 @@ Boards are `name|ats:slug`.
 | IMC Trading|greenhouse:imc | greenhouse:imc | 175 | OK |
 | Ideogram|ashby:ideogram | ashby:ideogram | 2 | OK |
 | Imbue|greenhouse:imbue | greenhouse:imbue | 1 | OK |
-| InMobi|greenhouse:inmobi | greenhouse:inmobi | 70 | OK |
+| InMobi|greenhouse:inmobi | greenhouse:inmobi | 69 | OK |
 | Innovaccer|workable:innovaccer-analytics | workable:innovaccer-analytics | 60 | OK |
 | Instacart|greenhouse:instacart | greenhouse:instacart | 126 | OK |
 | Intel | - | 68 | OK |
@@ -169,10 +170,10 @@ Boards are `name|ats:slug`.
 | Linear|ashby:linear | ashby:linear | 31 | OK |
 | Liquid AI|ashby:liquid | ashby:liquid | 2 | OK |
 | LlamaIndex|ashby:llamaindex | ashby:llamaindex | 9 | OK |
-| Lovable|ashby:lovable | ashby:lovable | 81 | OK |
-| Luma AI|ashby:lumaai | ashby:lumaai | 28 | OK |
+| Lovable|ashby:lovable | ashby:lovable | 82 | OK |
+| Luma AI|ashby:lumaai | ashby:lumaai | 29 | OK |
 | Lyft|greenhouse:lyft | greenhouse:lyft | 191 | OK |
-| Man Group|greenhouse_eu:mangroup | greenhouse_eu:mangroup | 54 | OK |
+| Man Group|greenhouse_eu:mangroup | greenhouse_eu:mangroup | 55 | OK |
 | Marshall Wace|greenhouse:marshallwace | greenhouse:marshallwace | 0 | OK |
 | Marshall Wace|greenhouse:mwam-imperial-placements | greenhouse:mwam-imperial-placements | 0 | OK |
 | Marshall Wace|greenhouse:mwinternshipprogram | greenhouse:mwinternshipprogram | 8 | OK |
@@ -184,22 +185,22 @@ Boards are `name|ats:slug`.
 | Mercor|ashby:mercor | ashby:mercor | 117 | OK |
 | Mercury|greenhouse:mercury | greenhouse:mercury | 64 | OK |
 | Meta (rendered) | - | 10 | OK |
-| Microsoft | - | 91 | OK |
+| Microsoft | - | 94 | OK |
 | Midjourney|ashby:midjourney | ashby:midjourney | 17 | OK |
-| Mila|! | - | 0 | NOT COVERED: no board with jobs found (add the right slug under 'boards') |
+| Mila|workable:mila-2 | workable:mila-2 | 13 | OK |
 | Millennium | - | 1 | OK |
 | Mindtickle|lever:mindtickle | lever:mindtickle | 20 | OK |
-| Mistral AI|! | - | 0 | NOT COVERED: lever_html:mistral: HTTP Error 404: Not Found |
+| Mistral AI|ashby:mistral.ai | ashby:mistral.ai | 207 | OK |
 | Modal|ashby:modal | ashby:modal | 41 | OK |
 | MongoDB|greenhouse:mongodb | greenhouse:mongodb | 392 | OK |
 | NVIDIA | - | 80 | OK |
 | Netflix | - | 3 | OK |
-| Notion|ashby:notion | ashby:notion | 134 | OK |
+| Notion|ashby:notion | ashby:notion | 135 | OK |
 | Nuro|greenhouse:nuro | greenhouse:nuro | 104 | OK |
 | Nutanix|! | - | 0 | NOT COVERED: no board with jobs found (add the right slug under 'boards') |
 | Nykaa|! | - | 0 | NOT COVERED: no board with jobs found (add the right slug under 'boards') |
 | Observe.AI|greenhouse:observeai | greenhouse:observeai | 12 | OK |
-| Okta|greenhouse:okta | greenhouse:okta | 367 | OK |
+| Okta|greenhouse:okta | greenhouse:okta | 363 | OK |
 | Ola Electric|! | - | 0 | NOT COVERED: no board with jobs found (add the right slug under 'boards') |
 | Old Mission Capital|greenhouse:oldmissioncapital | greenhouse:oldmissioncapital | 38 | OK |
 | OpenAI|ashby:openai | ashby:openai | 816 | OK |
@@ -216,7 +217,7 @@ Boards are `name|ats:slug`.
 | PhysicsWallah|! | - | 0 | NOT COVERED: no board with jobs found (add the right slug under 'boards') |
 | Pika|ashby:pika | ashby:pika | 15 | OK |
 | Pinecone|ashby:pinecone | ashby:pinecone | 5 | OK |
-| Pinterest|greenhouse:pinterest | greenhouse:pinterest | 179 | OK |
+| Pinterest|greenhouse:pinterest | greenhouse:pinterest | 180 | OK |
 | Plaid|ashby:plaid | ashby:plaid | 122 | OK |
 | Point72|greenhouse:point72 | greenhouse:point72 | 219 | OK |
 | PolyAI|greenhouse:polyai | greenhouse:polyai | 2 | OK |
@@ -231,7 +232,7 @@ Boards are `name|ats:slug`.
 | Radix Trading|greenhouse:radixuniversity | greenhouse:radixuniversity | 8 | OK |
 | Ramp|ashby:ramp | ashby:ramp | 161 | OK |
 | Rapido|! | - | 0 | NOT COVERED: no board with jobs found (add the right slug under 'boards') |
-| Razorpay|! | - | 0 | NOT COVERED: no board with jobs found (add the right slug under 'boards') |
+| Razorpay|greenhouse_any:razorpaysoftwareprivatelimited | greenhouse_any:razorpaysoftwareprivatelimited | 29 | OK |
 | Recursion|greenhouse:recursionpharmaceuticals | greenhouse:recursionpharmaceuticals | 14 | OK |
 | Reddit|greenhouse:reddit | greenhouse:reddit | 156 | OK |
 | Reflection AI|ashby:reflectionai | ashby:reflectionai | 46 | OK |
@@ -239,11 +240,11 @@ Boards are `name|ats:slug`.
 | Replicate|! | - | 0 | NOT COVERED: no board with jobs found (add the right slug under 'boards') |
 | Replit|ashby:replit | ashby:replit | 71 | OK |
 | Retool|! | - | 0 | NOT COVERED: no board with jobs found (add the right slug under 'boards') |
-| Rippling|rippling:rippling | rippling:rippling | 628 | OK |
+| Rippling|rippling:rippling | rippling:rippling | 629 | OK |
 | Robinhood|greenhouse:robinhood | greenhouse:robinhood | 165 | OK |
-| Roblox|greenhouse:roblox | greenhouse:roblox | 260 | OK |
+| Roblox|greenhouse:roblox | greenhouse:roblox | 259 | OK |
 | Rokos Capital|! | - | 0 | NOT COVERED: no board with jobs found (add the right slug under 'boards') |
-| Rubrik|greenhouse:rubrik | greenhouse:rubrik | 132 | OK |
+| Rubrik|greenhouse:rubrik | greenhouse:rubrik | 134 | OK |
 | Runway|ashby:runway | ashby:runway | 3 | OK |
 | Safe Superintelligence|! | - | 0 | NOT COVERED: no board with jobs found (add the right slug under 'boards') |
 | Sakana AI|! | - | 0 | NOT COVERED: no board with jobs found (add the right slug under 'boards') |
@@ -258,11 +259,11 @@ Boards are `name|ats:slug`.
 | Shopify|! | - | 0 | NOT COVERED: no board with jobs found (add the right slug under 'boards') |
 | Sierra|ashby:sierra | ashby:sierra | 198 | OK |
 | Simons Foundation (Flatiron Institute)|! | - | 0 | NOT COVERED: no board with jobs found (add the right slug under 'boards') |
-| Simplify feed | - | 3451 | OK |
+| Simplify feed | - | 3424 | OK |
 | Skild AI|greenhouse:skildai-careers | greenhouse:skildai-careers | 47 | OK |
 | Snorkel AI|greenhouse:snorkelai | greenhouse:snorkelai | 44 | OK |
 | Snowflake|ashby:snowflake | ashby:snowflake | 357 | OK |
-| Sourcegraph|! | - | 0 | NOT COVERED: no board with jobs found (add the right slug under 'boards') |
+| Sourcegraph|greenhouse_any:sourcegraph91 | greenhouse_any:sourcegraph91 | 11 | OK |
 | SpaceX|greenhouse:spacex | greenhouse:spacex | 2683 | OK |
 | Speechmatics|greenhouse:speechmatics | greenhouse:speechmatics | 14 | OK |
 | SpeedyApply Intl | - | 514 | OK |
@@ -273,11 +274,11 @@ Boards are `name|ats:slug`.
 | Stability AI|greenhouse:stabilityai | greenhouse:stabilityai | 6 | OK |
 | StackBlitz|! | - | 0 | NOT COVERED: slug 'stackblitz' on greenhouse belongs to 'Bolt.new', rejected |
 | Stevens Capital Management|greenhouse:scm | greenhouse:scm | 29 | OK |
-| Stripe|greenhouse:stripe | greenhouse:stripe | 725 | OK |
+| Stripe|greenhouse:stripe | greenhouse:stripe | 726 | OK |
 | Suno|ashby:suno | ashby:suno | 69 | OK |
 | Supabase|ashby:supabase | ashby:supabase | 53 | OK |
 | Surge AI|ashby:surge-ai | ashby:surge-ai | 28 | OK |
-| Swiggy|smartrecruiters:swiggy | smartrecruiters:swiggy | 178 | OK |
+| Swiggy|smartrecruiters:swiggy | smartrecruiters:swiggy | 177 | OK |
 | Synthesia|ashby:synthesia | ashby:synthesia | 45 | OK |
 | Tata 1mg|! | - | 0 | NOT COVERED: no board with jobs found (add the right slug under 'boards') |
 | Tavus|ashby:tavus | ashby:tavus | 15 | OK |
@@ -293,12 +294,12 @@ Boards are `name|ats:slug`.
 | Tower Research Capital|greenhouse:towerresearchcapital | greenhouse:towerresearchcapital | 93 | OK |
 | TransMarket Group|greenhouse:transmarketgroup | greenhouse:transmarketgroup | 18 | OK |
 | Trexquant|workable:trexquant | workable:trexquant | 35 | OK |
-| Twilio|greenhouse:twilio | greenhouse:twilio | 131 | OK |
+| Twilio|greenhouse:twilio | greenhouse:twilio | 132 | OK |
 | Uber|smartrecruiters:uber | smartrecruiters:uber | 1 | OK |
 | Unacademy|smartrecruiters:unacademy | smartrecruiters:unacademy | 3 | OK |
 | Uniphore|! | - | 0 | NOT COVERED: no board with jobs found (add the right slug under 'boards') |
 | Valkyrie Trading|lever:valkyrietrading | lever:valkyrietrading | 6 | OK |
-| Vanta|ashby:vanta | ashby:vanta | 83 | OK |
+| Vanta|ashby:vanta | ashby:vanta | 84 | OK |
 | Vatic Labs|greenhouse:vaticlabs | greenhouse:vaticlabs | 8 | OK |
 | Vector Institute|! | - | 0 | NOT COVERED: no board with jobs found (add the right slug under 'boards') |
 | Vercel|greenhouse:vercel | greenhouse:vercel | 86 | OK |
@@ -325,4 +326,4 @@ Boards are `name|ats:slug`.
 | d-Matrix|ashby:d-matrix | ashby:d-matrix | 36 | OK |
 | upGrad|! | - | 0 | NOT COVERED: no board with jobs found (add the right slug under 'boards') |
 | xAI|greenhouse:xai | greenhouse:xai | 307 | OK |
-| zshah101 registry | 3632/4811 boards answered | 0 | OK |
+| zshah101 registry | 3996/4811 boards answered | 0 | OK |

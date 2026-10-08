@@ -102,16 +102,16 @@
 {
 "company": "Anduril",
 "title": "2027 Software Engineer Intern",
-"url": "https://boards.greenhouse.io/andurilindustries/jobs/5148079007?gh_jid=5148079007",
-"loc": "Atlanta, Georgia, United States; Boston, Massachusetts, United States; Broomfield, Colorado, United States; Colorado Springs, Colorado, United States; Costa Mesa, California, United States; Fort Collins, Colorado, United States; Irvine, California, United States; Reston, Virginia, United States; Seattle, Washington, United States",
+"url": "https://boards.greenhouse.io/andurilindustries/jobs/5255902007?gh_jid=5255902007",
+"loc": "London, England, United Kingdom",
 "via": "",
 "date": null
 },
 {
 "company": "Anduril",
 "title": "2027 Software Engineer Intern",
-"url": "https://boards.greenhouse.io/andurilindustries/jobs/5255902007?gh_jid=5255902007",
-"loc": "London, England, United Kingdom",
+"url": "https://boards.greenhouse.io/andurilindustries/jobs/5148079007?gh_jid=5148079007",
+"loc": "Atlanta, Georgia, United States; Boston, Massachusetts, United States; Broomfield, Colorado, United States; Colorado Springs, Colorado, United States; Costa Mesa, California, United States; Fort Collins, Colorado, United States; Irvine, California, United States; Reston, Virginia, United States; Seattle, Washington, United States",
 "via": "",
 "date": null
 },
@@ -473,16 +473,16 @@
 {
 "company": "Datadog",
 "title": "Software Engineering Intern",
-"url": "https://careers.datadoghq.com/detail/8114186/?gh_jid=8114186",
-"loc": "Paris, France",
+"url": "https://careers.datadoghq.com/detail/8114161/?gh_jid=8114161",
+"loc": "Madrid, Spain",
 "via": "",
 "date": null
 },
 {
 "company": "Datadog",
 "title": "Software Engineering Intern",
-"url": "https://careers.datadoghq.com/detail/8114161/?gh_jid=8114161",
-"loc": "Madrid, Spain",
+"url": "https://careers.datadoghq.com/detail/8114186/?gh_jid=8114186",
+"loc": "Paris, France",
 "via": "",
 "date": null
 },
@@ -619,14 +619,6 @@
 {
 "company": "DRW",
 "title": "Quantitative Trading Analyst Intern",
-"url": "https://job-boards.greenhouse.io/drweng/jobs/7668776",
-"loc": "Chicago, Illinois",
-"via": "",
-"date": null
-},
-{
-"company": "DRW",
-"title": "Quantitative Trading Analyst Intern",
 "url": "https://job-boards.greenhouse.io/drweng/jobs/7957243",
 "loc": "London",
 "via": "",
@@ -634,17 +626,9 @@
 },
 {
 "company": "DRW",
-"title": "Software Developer Intern",
-"url": "https://job-boards.greenhouse.io/drweng/jobs/7942281",
-"loc": "London",
-"via": "",
-"date": null
-},
-{
-"company": "DRW",
-"title": "Software Developer Intern",
-"url": "https://job-boards.greenhouse.io/drweng/jobs/7991196",
-"loc": "Montreal",
+"title": "Quantitative Trading Analyst Intern",
+"url": "https://job-boards.greenhouse.io/drweng/jobs/7668776",
+"loc": "Chicago, Illinois",
 "via": "",
 "date": null
 },
@@ -661,6 +645,22 @@
 "title": "Software Developer Intern",
 "url": "https://job-boards.greenhouse.io/drweng/jobs/8020364",
 "loc": "Amsterdam",
+"via": "",
+"date": null
+},
+{
+"company": "DRW",
+"title": "Software Developer Intern",
+"url": "https://job-boards.greenhouse.io/drweng/jobs/7991196",
+"loc": "Montreal",
+"via": "",
+"date": null
+},
+{
+"company": "DRW",
+"title": "Software Developer Intern",
+"url": "https://job-boards.greenhouse.io/drweng/jobs/7942281",
+"loc": "London",
 "via": "",
 "date": null
 },
@@ -744,16 +744,16 @@
 {
 "company": "DV Trading",
 "title": "Client Platforms Engineer Intern - Summer 2027",
-"url": "https://job-boards.greenhouse.io/dvtrading/jobs/4732697005",
-"loc": "New York",
+"url": "https://job-boards.greenhouse.io/dvtrading/jobs/4732700005",
+"loc": "London",
 "via": "",
 "date": null
 },
 {
 "company": "DV Trading",
 "title": "Client Platforms Engineer Intern - Summer 2027",
-"url": "https://job-boards.greenhouse.io/dvtrading/jobs/4732700005",
-"loc": "London",
+"url": "https://job-boards.greenhouse.io/dvtrading/jobs/4732697005",
+"loc": "New York",
 "via": "",
 "date": null
 },
@@ -848,16 +848,16 @@
 {
 "company": "DV Trading",
 "title": "Trading Intern - Summer 2027 (DV Commodities)",
-"url": "https://job-boards.greenhouse.io/dvtrading/jobs/4719135005",
-"loc": "London",
+"url": "https://job-boards.greenhouse.io/dvtrading/jobs/4719134005",
+"loc": "New York",
 "via": "",
 "date": null
 },
 {
 "company": "DV Trading",
 "title": "Trading Intern - Summer 2027 (DV Commodities)",
-"url": "https://job-boards.greenhouse.io/dvtrading/jobs/4719134005",
-"loc": "New York",
+"url": "https://job-boards.greenhouse.io/dvtrading/jobs/4719135005",
+"loc": "London",
 "via": "",
 "date": null
 }
@@ -1588,16 +1588,16 @@
 {
 "company": "Jump Trading",
 "title": "Campus Data Engineer (Intern)",
-"url": "https://www.jumptrading.com/hr/job?gh_jid=7975008",
-"loc": "London",
+"url": "https://www.jumptrading.com/hr/job?gh_jid=8002998",
+"loc": "Chicago",
 "via": "",
 "date": null
 },
 {
 "company": "Jump Trading",
 "title": "Campus Data Engineer (Intern)",
-"url": "https://www.jumptrading.com/hr/job?gh_jid=8002998",
-"loc": "Chicago",
+"url": "https://www.jumptrading.com/hr/job?gh_jid=7975008",
+"loc": "London",
 "via": "",
 "date": null
 },
@@ -1644,16 +1644,16 @@
 {
 "company": "Jump Trading",
 "title": "Campus Quantitative Researcher (Intern)",
-"url": "https://www.jumptrading.com/hr/job?gh_jid=8027900",
-"loc": "Hong Kong; Shanghai",
+"url": "https://www.jumptrading.com/hr/job?gh_jid=8027939",
+"loc": "Singapore",
 "via": "",
 "date": null
 },
 {
 "company": "Jump Trading",
 "title": "Campus Quantitative Researcher (Intern)",
-"url": "https://www.jumptrading.com/hr/job?gh_jid=8027939",
-"loc": "Singapore",
+"url": "https://www.jumptrading.com/hr/job?gh_jid=8027900",
+"loc": "Hong Kong; Shanghai",
 "via": "",
 "date": null
 },
@@ -1684,22 +1684,6 @@
 {
 "company": "Jump Trading",
 "title": "Campus Quantitative Trader (Intern)",
-"url": "https://www.jumptrading.com/hr/job?gh_jid=7848371",
-"loc": "Chicago; New York",
-"via": "",
-"date": null
-},
-{
-"company": "Jump Trading",
-"title": "Campus Quantitative Trader (Intern)",
-"url": "https://www.jumptrading.com/hr/job?gh_jid=8027922",
-"loc": "Hong Kong; Shanghai",
-"via": "",
-"date": null
-},
-{
-"company": "Jump Trading",
-"title": "Campus Quantitative Trader (Intern)",
 "url": "https://www.jumptrading.com/hr/job?gh_jid=8027941",
 "loc": "Singapore",
 "via": "",
@@ -1708,8 +1692,24 @@
 {
 "company": "Jump Trading",
 "title": "Campus Quantitative Trader (Intern)",
+"url": "https://www.jumptrading.com/hr/job?gh_jid=7848371",
+"loc": "Chicago; New York",
+"via": "",
+"date": null
+},
+{
+"company": "Jump Trading",
+"title": "Campus Quantitative Trader (Intern)",
 "url": "https://www.jumptrading.com/hr/job?gh_jid=8050772",
 "loc": "London; Amsterdam",
+"via": "",
+"date": null
+},
+{
+"company": "Jump Trading",
+"title": "Campus Quantitative Trader (Intern)",
+"url": "https://www.jumptrading.com/hr/job?gh_jid=8027922",
+"loc": "Hong Kong; Shanghai",
 "via": "",
 "date": null
 },
@@ -1732,16 +1732,16 @@
 {
 "company": "Jump Trading",
 "title": "Campus Systems Engineer (Intern)",
-"url": "https://www.jumptrading.com/hr/job?gh_jid=8027952",
-"loc": "Singapore",
+"url": "https://www.jumptrading.com/hr/job?gh_jid=8000323",
+"loc": "London; Amsterdam",
 "via": "",
 "date": null
 },
 {
 "company": "Jump Trading",
 "title": "Campus Systems Engineer (Intern)",
-"url": "https://www.jumptrading.com/hr/job?gh_jid=8000323",
-"loc": "London; Amsterdam",
+"url": "https://www.jumptrading.com/hr/job?gh_jid=8027952",
+"loc": "Singapore",
 "via": "",
 "date": null
 },
@@ -1792,16 +1792,16 @@
 {
 "company": "Lyft",
 "title": "Data Science Intern, Algorithms (Summer 2027 - SF/NYC)",
-"url": "https://app.careerpuck.com/job-board/lyft/job/8767723002?gh_jid=8767723002",
-"loc": "San Francisco, CA",
+"url": "https://app.careerpuck.com/job-board/lyft/job/8796124002?gh_jid=8796124002",
+"loc": "New York, NY",
 "via": "",
 "date": null
 },
 {
 "company": "Lyft",
 "title": "Data Science Intern, Algorithms (Summer 2027 - SF/NYC)",
-"url": "https://app.careerpuck.com/job-board/lyft/job/8796124002?gh_jid=8796124002",
-"loc": "New York, NY",
+"url": "https://app.careerpuck.com/job-board/lyft/job/8767723002?gh_jid=8767723002",
+"loc": "San Francisco, CA",
 "via": "",
 "date": null
 },
@@ -2914,6 +2914,14 @@
 "company": "Rippling",
 "title": "Software Engineer Intern - Backend Focused - Summer 2027",
 "url": "https://ats.rippling.com/rippling/jobs/a07e4e46-3721-4934-b57b-0d58412e22ba",
+"loc": "New York, NY",
+"via": "",
+"date": null
+},
+{
+"company": "Rippling",
+"title": "Software Engineer Intern - Backend Focused - Summer 2027",
+"url": "https://ats.rippling.com/rippling/jobs/a07e4e46-3721-4934-b57b-0d58412e22ba",
 "loc": "San Francisco, CA",
 "via": "",
 "date": null
@@ -2923,14 +2931,6 @@
 "title": "Software Engineer Intern - Backend Focused - Summer 2027",
 "url": "https://ats.rippling.com/rippling/jobs/a07e4e46-3721-4934-b57b-0d58412e22ba",
 "loc": "Seattle, WA",
-"via": "",
-"date": null
-},
-{
-"company": "Rippling",
-"title": "Software Engineer Intern - Backend Focused - Summer 2027",
-"url": "https://ats.rippling.com/rippling/jobs/a07e4e46-3721-4934-b57b-0d58412e22ba",
-"loc": "New York, NY",
 "via": "",
 "date": null
 }
@@ -3093,6 +3093,14 @@
 {
 "company": "Scale",
 "title": "Software Engineering Intern (Summer 2027)",
+"url": "https://job-boards.greenhouse.io/scaleai/jobs/4730845005",
+"loc": "San Francisco, CA",
+"via": "",
+"date": null
+},
+{
+"company": "Scale",
+"title": "Software Engineering Intern (Summer 2027)",
 "url": "https://job-boards.greenhouse.io/scaleai/jobs/4730846005",
 "loc": "London, UK",
 "via": "",
@@ -3103,14 +3111,6 @@
 "title": "Software Engineering Intern (Summer 2027)",
 "url": "https://job-boards.greenhouse.io/scaleai/jobs/4730834005",
 "loc": "Doha, Qatar",
-"via": "",
-"date": null
-},
-{
-"company": "Scale",
-"title": "Software Engineering Intern (Summer 2027)",
-"url": "https://job-boards.greenhouse.io/scaleai/jobs/4730845005",
-"loc": "San Francisco, CA",
 "via": "",
 "date": null
 },
@@ -3215,6 +3215,14 @@
 {
 "company": "Scale AI",
 "title": "Software Engineering Intern (Summer 2027)",
+"url": "https://job-boards.greenhouse.io/scaleai/jobs/4730845005",
+"loc": "San Francisco, CA",
+"via": "",
+"date": null
+},
+{
+"company": "Scale AI",
+"title": "Software Engineering Intern (Summer 2027)",
 "url": "https://job-boards.greenhouse.io/scaleai/jobs/4730846005",
 "loc": "London, UK",
 "via": "",
@@ -3225,14 +3233,6 @@
 "title": "Software Engineering Intern (Summer 2027)",
 "url": "https://job-boards.greenhouse.io/scaleai/jobs/4730834005",
 "loc": "Doha, Qatar",
-"via": "",
-"date": null
-},
-{
-"company": "Scale AI",
-"title": "Software Engineering Intern (Summer 2027)",
-"url": "https://job-boards.greenhouse.io/scaleai/jobs/4730845005",
-"loc": "San Francisco, CA",
 "via": "",
 "date": null
 },
@@ -3498,6 +3498,14 @@
 {
 "company": "Stripe",
 "title": "Software Engineer, Intern",
+"url": "https://stripe.com/jobs/search?gh_jid=8130867",
+"loc": "London",
+"via": "",
+"date": null
+},
+{
+"company": "Stripe",
+"title": "Software Engineer, Intern",
 "url": "https://stripe.com/jobs/search?gh_jid=8130883",
 "loc": "Singapore",
 "via": "",
@@ -3514,24 +3522,8 @@
 {
 "company": "Stripe",
 "title": "Software Engineer, Intern",
-"url": "https://stripe.com/jobs/search?gh_jid=8130867",
-"loc": "London",
-"via": "",
-"date": null
-},
-{
-"company": "Stripe",
-"title": "Software Engineer, Intern",
 "url": "https://stripe.com/jobs/search?gh_jid=8130807",
 "loc": "Bucharest",
-"via": "",
-"date": null
-},
-{
-"company": "Stripe",
-"title": "Software Engineer, Intern (Summer or Winter)",
-"url": "https://stripe.com/jobs/search?gh_jid=8128745",
-"loc": "San Francisco, Seattle, New York City",
 "via": "",
 "date": null
 },
@@ -3548,6 +3540,14 @@
 "title": "Software Engineer, Intern (Summer or Winter)",
 "url": "https://stripe.com/jobs/search?gh_jid=8097801",
 "loc": "Dublin",
+"via": "",
+"date": null
+},
+{
+"company": "Stripe",
+"title": "Software Engineer, Intern (Summer or Winter)",
+"url": "https://stripe.com/jobs/search?gh_jid=8128745",
+"loc": "San Francisco, Seattle, New York City",
 "via": "",
 "date": null
 }
@@ -3922,16 +3922,16 @@
 {
 "company": "Virtu Financial",
 "title": "2027 Internship - Quantitative Trading",
-"url": "https://job-boards.greenhouse.io/virtu/jobs/8624408002",
-"loc": "Austin, TX; Chicago; New York",
+"url": "https://job-boards.greenhouse.io/virtu/jobs/5208637002",
+"loc": "Singapore",
 "via": "",
 "date": null
 },
 {
 "company": "Virtu Financial",
 "title": "2027 Internship - Quantitative Trading",
-"url": "https://job-boards.greenhouse.io/virtu/jobs/5208637002",
-"loc": "Singapore",
+"url": "https://job-boards.greenhouse.io/virtu/jobs/8624408002",
+"loc": "Austin, TX; Chicago; New York",
 "via": "",
 "date": null
 },
@@ -3946,16 +3946,16 @@
 {
 "company": "Virtu Financial",
 "title": "2027 Internship - Software Engineer",
-"url": "https://job-boards.greenhouse.io/virtu/jobs/8624410002",
-"loc": "Austin, TX; New York",
+"url": "https://job-boards.greenhouse.io/virtu/jobs/8551566002",
+"loc": "Dublin, Ireland",
 "via": "",
 "date": null
 },
 {
 "company": "Virtu Financial",
 "title": "2027 Internship - Software Engineer",
-"url": "https://job-boards.greenhouse.io/virtu/jobs/8551566002",
-"loc": "Dublin, Ireland",
+"url": "https://job-boards.greenhouse.io/virtu/jobs/8624410002",
+"loc": "Austin, TX; New York",
 "via": "",
 "date": null
 },
@@ -4705,6 +4705,14 @@
 "Intel": [
 {
 "company": "Intel",
+"title": "AI Frameworks Intern",
+"url": "https://intel.wd1.myworkdayjobs.com/en-US/External/job/Poland-Gdansk/AI-Frameworks-Intern_JR0287895",
+"loc": "Poland, Gdansk",
+"via": "",
+"date": "2026-10-08"
+},
+{
+"company": "Intel",
 "title": "Software Engineering - Intern, Graduate",
 "url": "https://intel.wd1.myworkdayjobs.com/en-US/External/job/US-Oregon-Hillsboro/Software-Engineering---Intern--Graduate_JR0286836",
 "loc": "5 Locations",
@@ -4801,19 +4809,19 @@
 },
 {
 "company": "Intel",
-"title": "AI/ML Software App Development Intern",
-"url": "https://intel.wd1.myworkdayjobs.com/en-US/External/job/PRC-Chengdu/AI-ML-Software-App-Development-Intern_JR0286946",
-"loc": "PRC, Chengdu",
-"via": "",
-"date": null
-},
-{
-"company": "Intel",
 "title": "Firmware Development Undergraduate Engineering Co-op",
 "url": "https://intel.wd1.myworkdayjobs.com/en-US/External/job/Virtual-Canada/Firmware-Development-Undergraduate-Engineering-Co-op_JR0286862",
 "loc": "Virtual Canada",
 "via": "",
 "date": "2026-09-29"
+},
+{
+"company": "Intel",
+"title": "Undergraduate Intern Technical (OpenVINO, Neural Network Compression Tools)",
+"url": "https://intel.wd1.myworkdayjobs.com/en-US/External/job/Ireland-Leixlip/Undergraduate-Intern-Technical--OpenVINO--Neural-Network-Compression-Tools-_JR0287250",
+"loc": "Ireland, Leixlip",
+"via": "",
+"date": "2026-10-08"
 },
 {
 "company": "Intel",
@@ -5015,14 +5023,6 @@
 "title": "Software Engineering Internship Opportunities - CoreAI",
 "url": "https://apply.careers.microsoft.com/careers/job/1970393557021513",
 "loc": "Czech Republic, Prague, Prague",
-"via": "",
-"date": "2026-10-07"
-},
-{
-"company": "Microsoft",
-"title": "Software Engineering Intern",
-"url": "https://apply.careers.microsoft.com/careers/job/1970393557025004",
-"loc": "United Kingdom, London, London",
 "via": "",
 "date": "2026-10-07"
 },
@@ -5341,16 +5341,16 @@
 },
 {
 "company": "Citadel Securities",
-"title": "Fpga Engineer Intern Us",
-"url": "https://www.citadelsecurities.com/careers/details/fpga-engineer-intern-us/",
+"title": "Fpga Engineer Intern Asia",
+"url": "https://www.citadelsecurities.com/careers/details/fpga-engineer-intern-asia/",
 "loc": "",
 "via": "",
 "date": null
 },
 {
 "company": "Citadel Securities",
-"title": "Fpga Engineer Intern Asia",
-"url": "https://www.citadelsecurities.com/careers/details/fpga-engineer-intern-asia/",
+"title": "Fpga Engineer Intern Us",
+"url": "https://www.citadelsecurities.com/careers/details/fpga-engineer-intern-us/",
 "loc": "",
 "via": "",
 "date": null
@@ -5389,8 +5389,8 @@
 },
 {
 "company": "Citadel Securities",
-"title": "Quantitative Trading Intern Australia",
-"url": "https://www.citadelsecurities.com/careers/details/quantitative-trading-intern-australia/",
+"title": "Quantitative Trader Intern Us",
+"url": "https://www.citadelsecurities.com/careers/details/quantitative-trader-intern-us/",
 "loc": "",
 "via": "",
 "date": null
@@ -5405,8 +5405,8 @@
 },
 {
 "company": "Citadel Securities",
-"title": "Quantitative Trader Intern Us",
-"url": "https://www.citadelsecurities.com/careers/details/quantitative-trader-intern-us/",
+"title": "Quantitative Trading Intern Australia",
+"url": "https://www.citadelsecurities.com/careers/details/quantitative-trading-intern-australia/",
 "loc": "",
 "via": "",
 "date": null
@@ -5437,14 +5437,6 @@
 },
 {
 "company": "Citadel Securities",
-"title": "Software Engineer Intern Us",
-"url": "https://www.citadelsecurities.com/careers/details/software-engineer-intern-us/",
-"loc": "",
-"via": "",
-"date": null
-},
-{
-"company": "Citadel Securities",
 "title": "Software Engineer Intern Asia",
 "url": "https://www.citadelsecurities.com/careers/details/software-engineer-intern-asia/",
 "loc": "",
@@ -5461,6 +5453,14 @@
 },
 {
 "company": "Citadel Securities",
+"title": "Software Engineer Intern Us",
+"url": "https://www.citadelsecurities.com/careers/details/software-engineer-intern-us/",
+"loc": "",
+"via": "",
+"date": null
+},
+{
+"company": "Citadel Securities",
 "title": "Trading Fundamental Analyst Intern Us",
 "url": "https://www.citadelsecurities.com/careers/details/trading-fundamental-analyst-intern-us/",
 "loc": "",
@@ -5471,16 +5471,16 @@
 "Citadel (sitemap)": [
 {
 "company": "Citadel",
-"title": "Finance Accounting Intern Us",
-"url": "https://www.citadel.com/careers/details/finance-accounting-intern-us/",
+"title": "Equities Citadel Associate Program Summer Internship",
+"url": "https://www.citadel.com/careers/details/equities-citadel-associate-program-summer-internship-2028/",
 "loc": "",
 "via": "",
 "date": null
 },
 {
 "company": "Citadel",
-"title": "Equities Citadel Associate Program Summer Internship",
-"url": "https://www.citadel.com/careers/details/equities-citadel-associate-program-summer-internship-2028/",
+"title": "Finance Accounting Intern Us",
+"url": "https://www.citadel.com/careers/details/finance-accounting-intern-us/",
 "loc": "",
 "via": "",
 "date": null
@@ -5503,14 +5503,6 @@
 },
 {
 "company": "Citadel",
-"title": "Operations Analyst Intern Europe",
-"url": "https://www.citadel.com/careers/details/operations-analyst-intern-europe/",
-"loc": "",
-"via": "",
-"date": null
-},
-{
-"company": "Citadel",
 "title": "Operations Analyst Intern Us",
 "url": "https://www.citadel.com/careers/details/operations-analyst-intern-us/",
 "loc": "",
@@ -5519,24 +5511,8 @@
 },
 {
 "company": "Citadel",
-"title": "Operations Intern Asia",
-"url": "https://www.citadel.com/careers/details/operations-intern-asia/",
-"loc": "",
-"via": "",
-"date": null
-},
-{
-"company": "Citadel",
-"title": "Quantitative Research Analyst Intern Us",
-"url": "https://www.citadel.com/careers/details/quantitative-research-analyst-intern-us/",
-"loc": "",
-"via": "",
-"date": null
-},
-{
-"company": "Citadel",
-"title": "Quantitative Research Analyst Intern Bs Ms Europe",
-"url": "https://www.citadel.com/careers/details/quantitative-research-analyst-intern-bs-ms-europe/",
+"title": "Operations Analyst Intern Europe",
+"url": "https://www.citadel.com/careers/details/operations-analyst-intern-europe/",
 "loc": "",
 "via": "",
 "date": null
@@ -5551,8 +5527,24 @@
 },
 {
 "company": "Citadel",
-"title": "Sector Data Analyst Intern Asia",
-"url": "https://www.citadel.com/careers/details/sector-data-analyst-intern-asia/",
+"title": "Operations Intern Asia",
+"url": "https://www.citadel.com/careers/details/operations-intern-asia/",
+"loc": "",
+"via": "",
+"date": null
+},
+{
+"company": "Citadel",
+"title": "Quantitative Research Analyst Intern Bs Ms Europe",
+"url": "https://www.citadel.com/careers/details/quantitative-research-analyst-intern-bs-ms-europe/",
+"loc": "",
+"via": "",
+"date": null
+},
+{
+"company": "Citadel",
+"title": "Quantitative Research Analyst Intern Us",
+"url": "https://www.citadel.com/careers/details/quantitative-research-analyst-intern-us/",
 "loc": "",
 "via": "",
 "date": null
@@ -5561,6 +5553,14 @@
 "company": "Citadel",
 "title": "Quantitative Trader Equity Quantitative Research Intern Us",
 "url": "https://www.citadel.com/careers/details/quantitative-trader-equity-quantitative-research-intern-us/",
+"loc": "",
+"via": "",
+"date": null
+},
+{
+"company": "Citadel",
+"title": "Sector Data Analyst Intern Asia",
+"url": "https://www.citadel.com/careers/details/sector-data-analyst-intern-asia/",
 "loc": "",
 "via": "",
 "date": null
@@ -5583,16 +5583,16 @@
 },
 {
 "company": "Citadel",
-"title": "Software Engineer Intern Asia",
-"url": "https://www.citadel.com/careers/details/software-engineer-intern-asia/",
+"title": "Software Engineer Intern Europe",
+"url": "https://www.citadel.com/careers/details/software-engineer-intern-europe/",
 "loc": "",
 "via": "",
 "date": null
 },
 {
 "company": "Citadel",
-"title": "Software Engineer Intern Europe",
-"url": "https://www.citadel.com/careers/details/software-engineer-intern-europe/",
+"title": "Software Engineer Intern Asia",
+"url": "https://www.citadel.com/careers/details/software-engineer-intern-asia/",
 "loc": "",
 "via": "",
 "date": null
@@ -8003,6 +8003,22 @@
 "reg|smartrecruiters:BoschGroup": [
 {
 "company": "Bosch",
+"title": "Powertrain Software Intern",
+"url": "https://jobs.smartrecruiters.com/BoschGroup/744000154385425",
+"loc": "Coventry, gb",
+"via": "",
+"date": "2026-10-08"
+},
+{
+"company": "Bosch",
+"title": "[EAA] Embedded Software Test Engineer Intern (C/C++)",
+"url": "https://jobs.smartrecruiters.com/BoschGroup/744000154384809",
+"loc": "Ho Chi Minh, vn",
+"via": "",
+"date": "2026-10-08"
+},
+{
+"company": "Bosch",
 "title": "[BDO] Software Developer Intern (.NET & Angular)",
 "url": "https://jobs.smartrecruiters.com/BoschGroup/744000154236871",
 "loc": "Ho Chi Minh, vn",
@@ -8204,7 +8220,6 @@
 }
 ],
 "reg|greenhouse:breezecash": [],
-"reg|workday:brenntag": [],
 "reg|workday:brevanhoward": [
 {
 "company": "Brevan Howard",
@@ -9765,16 +9780,16 @@
 {
 "company": "Epic Games",
 "title": "Engine Programmer Intern",
-"url": "https://epicgames.com/careers/jobs/6202659004?gh_jid=6202659004",
-"loc": "Cary,North Carolina,United States",
+"url": "https://epicgames.com/careers/jobs/6147283004?gh_jid=6147283004",
+"loc": "London,England,United Kingdom",
 "via": "",
 "date": null
 },
 {
 "company": "Epic Games",
 "title": "Engine Programmer Intern",
-"url": "https://epicgames.com/careers/jobs/6147283004?gh_jid=6147283004",
-"loc": "London,England,United Kingdom",
+"url": "https://epicgames.com/careers/jobs/6202659004?gh_jid=6202659004",
+"loc": "Cary,North Carolina,United States",
 "via": "",
 "date": null
 },
@@ -9805,16 +9820,16 @@
 {
 "company": "Epic Games",
 "title": "Machine Learning Intern",
-"url": "https://epicgames.com/careers/jobs/6138134004?gh_jid=6138134004",
-"loc": "BLANK,BLANK,Multiple Locations",
+"url": "https://epicgames.com/careers/jobs/5708589004?gh_jid=5708589004",
+"loc": "London,England,United Kingdom",
 "via": "",
 "date": null
 },
 {
 "company": "Epic Games",
 "title": "Machine Learning Intern",
-"url": "https://epicgames.com/careers/jobs/5708589004?gh_jid=5708589004",
-"loc": "London,England,United Kingdom",
+"url": "https://epicgames.com/careers/jobs/6138134004?gh_jid=6138134004",
+"loc": "BLANK,BLANK,Multiple Locations",
 "via": "",
 "date": null
 },
@@ -9845,16 +9860,16 @@
 {
 "company": "Epic Games",
 "title": "Web Engineer Intern",
-"url": "https://epicgames.com/careers/jobs/6163851004?gh_jid=6163851004",
-"loc": "London,England,United Kingdom",
+"url": "https://epicgames.com/careers/jobs/6174265004?gh_jid=6174265004",
+"loc": "Novi Sad,Vojvodina,Serbia",
 "via": "",
 "date": null
 },
 {
 "company": "Epic Games",
 "title": "Web Engineer Intern",
-"url": "https://epicgames.com/careers/jobs/6174265004?gh_jid=6174265004",
-"loc": "Novi Sad,Vojvodina,Serbia",
+"url": "https://epicgames.com/careers/jobs/6163851004?gh_jid=6163851004",
+"loc": "London,England,United Kingdom",
 "via": "",
 "date": null
 }
@@ -10421,7 +10436,16 @@
 "reg|ashby:foxglove": [],
 "reg|rippling:fragile": [],
 "reg|workday:franklintempleton": [],
-"reg|workday:kbr": [],
+"reg|workday:kbr": [
+{
+"company": "KBR",
+"title": "Image Processing Software Engineer Intern",
+"url": "https://kbr.wd5.myworkdayjobs.com/en-US/KBR_Careers/job/Sioux-Falls-South-Dakota/Image-Processing-Software-Engineer-Intern_R2130067",
+"loc": "Sioux Falls, South Dakota",
+"via": "",
+"date": "2026-09-16"
+}
+],
 "reg|ashby:frec": [],
 "reg|rippling:free-market-health": [],
 "reg|greenhouse:freedomconsulting": [],
@@ -10863,7 +10887,6 @@
 "reg|lever:glsllc": [],
 "reg|greenhouse:globalwebindex": [],
 "reg|greenhouse:globalizationpartners": [],
-"reg|workday:globusmedical": [],
 "reg|greenhouse:glydways": [],
 "reg|lever:gmo": [],
 "reg|rippling:gofishdigital": [],
@@ -11811,7 +11834,6 @@
 "reg|ashby:junipersquare": [],
 "reg|greenhouse:justworks": [],
 "reg|greenhouse:juvare": [],
-"reg|lever:kgroupcompanies": [],
 "reg|ashby:k-id": [],
 "reg|greenhouse:k2spacecorporation": [
 {
@@ -12025,24 +12047,7 @@
 "reg|greenhouse:krollbondratingagency": [],
 "reg|workday:ksmcpa": [],
 "reg|ashby:kustomer": [],
-"reg|workday:kyndryl": [
-{
-"company": "Kyndryl",
-"title": "Devops Intern",
-"url": "https://kyndryl.wd5.myworkdayjobs.com/en-US/KyndrylProfessionalCareers/job/Athens-Attiki-Greece/Devops-Intern_R-65079-1",
-"loc": "Athens, Attiki, Greece",
-"via": "",
-"date": "2026-09-15"
-},
-{
-"company": "Kyndryl",
-"title": "Middleware Software Intern",
-"url": "https://kyndryl.wd5.myworkdayjobs.com/en-US/KyndrylProfessionalCareers/job/Athens-Attiki-Greece/Middleware-Software-Intern_R-65081-1",
-"loc": "Athens, Attiki, Greece",
-"via": "",
-"date": "2026-09-15"
-}
-],
+"reg|workday:kyndryl": [],
 "reg|lever:runlaminar": [],
 "reg|greenhouse:landscapeforms": [],
 "reg|greenhouse:laskoproducts": [],
@@ -12992,14 +12997,6 @@
 {
 "company": "National Information Solutions Cooperative (NISC)",
 "title": "Intern - Database Conversion Programming",
-"url": "https://job-boards.greenhouse.io/testnisc/jobs/8191898",
-"loc": "Mandan, ND",
-"via": "",
-"date": null
-},
-{
-"company": "National Information Solutions Cooperative (NISC)",
-"title": "Intern - Database Conversion Programming",
 "url": "https://job-boards.greenhouse.io/testnisc/jobs/8191885",
 "loc": "Lake St. Louis, MO",
 "via": "",
@@ -13007,9 +13004,9 @@
 },
 {
 "company": "National Information Solutions Cooperative (NISC)",
-"title": "Intern - Data Engineer",
-"url": "https://job-boards.greenhouse.io/testnisc/jobs/8167883",
-"loc": "Cedar Rapids, IA",
+"title": "Intern - Database Conversion Programming",
+"url": "https://job-boards.greenhouse.io/testnisc/jobs/8191898",
+"loc": "Mandan, ND",
 "via": "",
 "date": null
 },
@@ -13023,9 +13020,9 @@
 },
 {
 "company": "National Information Solutions Cooperative (NISC)",
-"title": "Intern - Information Security (Cybersecurity)",
-"url": "https://job-boards.greenhouse.io/testnisc/jobs/8191987",
-"loc": "Mandan, ND",
+"title": "Intern - Data Engineer",
+"url": "https://job-boards.greenhouse.io/testnisc/jobs/8167883",
+"loc": "Cedar Rapids, IA",
 "via": "",
 "date": null
 },
@@ -13039,9 +13036,9 @@
 },
 {
 "company": "National Information Solutions Cooperative (NISC)",
-"title": "Intern - Software Development",
-"url": "https://job-boards.greenhouse.io/testnisc/jobs/8174090",
-"loc": "Lake Saint Louis, MO",
+"title": "Intern - Information Security (Cybersecurity)",
+"url": "https://job-boards.greenhouse.io/testnisc/jobs/8191987",
+"loc": "Mandan, ND",
 "via": "",
 "date": null
 },
@@ -13063,9 +13060,9 @@
 },
 {
 "company": "National Information Solutions Cooperative (NISC)",
-"title": "Intern - Software Development (AI Development)",
-"url": "https://job-boards.greenhouse.io/testnisc/jobs/8204156",
-"loc": "Cedar Rapids, IA",
+"title": "Intern - Software Development",
+"url": "https://job-boards.greenhouse.io/testnisc/jobs/8174090",
+"loc": "Lake Saint Louis, MO",
 "via": "",
 "date": null
 },
@@ -13074,6 +13071,14 @@
 "title": "Intern - Software Development (AI Development)",
 "url": "https://job-boards.greenhouse.io/testnisc/jobs/8204161",
 "loc": "Lake Saint Louis, MO",
+"via": "",
+"date": null
+},
+{
+"company": "National Information Solutions Cooperative (NISC)",
+"title": "Intern - Software Development (AI Development)",
+"url": "https://job-boards.greenhouse.io/testnisc/jobs/8204156",
+"loc": "Cedar Rapids, IA",
 "via": "",
 "date": null
 }
@@ -13859,7 +13864,6 @@
 "reg|lever:picklerobot": [],
 "reg|greenhouse:picoquantitativetrading": [],
 "reg|ashby:picogrid": [],
-"reg|workday:pierrefabre": [],
 "reg|lever:pigment": [],
 "reg|smartrecruiters:PilotCompany": [],
 "reg|greenhouse:pingidentity": [],
@@ -14554,8 +14558,8 @@
 {
 "company": "Rocket Lab",
 "title": "Security Analyst Intern Spring 2027",
-"url": "https://job-boards.greenhouse.io/rocketlab/jobs/7986959003",
-"loc": "Wallops Island, VA",
+"url": "https://job-boards.greenhouse.io/rocketlab/jobs/7986954003",
+"loc": "Long Beach, CA",
 "via": "",
 "date": null
 },
@@ -14570,16 +14574,16 @@
 {
 "company": "Rocket Lab",
 "title": "Security Analyst Intern Spring 2027",
-"url": "https://job-boards.greenhouse.io/rocketlab/jobs/7986954003",
-"loc": "Long Beach, CA",
+"url": "https://job-boards.greenhouse.io/rocketlab/jobs/7986872003",
+"loc": "Albuquerque, NM",
 "via": "",
 "date": null
 },
 {
 "company": "Rocket Lab",
 "title": "Security Analyst Intern Spring 2027",
-"url": "https://job-boards.greenhouse.io/rocketlab/jobs/7986872003",
-"loc": "Albuquerque, NM",
+"url": "https://job-boards.greenhouse.io/rocketlab/jobs/7986959003",
+"loc": "Wallops Island, VA",
 "via": "",
 "date": null
 },
@@ -14911,16 +14915,16 @@
 {
 "company": "Sezzle",
 "title": "Data Infrastructure Engineer Intern",
-"url": "https://job-boards.greenhouse.io/sezzle/jobs/7906562003",
-"loc": "Peru",
+"url": "https://job-boards.greenhouse.io/sezzle/jobs/7694238003",
+"loc": "Colombia, Remote",
 "via": "",
 "date": null
 },
 {
 "company": "Sezzle",
 "title": "Data Infrastructure Engineer Intern",
-"url": "https://job-boards.greenhouse.io/sezzle/jobs/7694238003",
-"loc": "Colombia, Remote",
+"url": "https://job-boards.greenhouse.io/sezzle/jobs/7906562003",
+"loc": "Peru",
 "via": "",
 "date": null
 },
@@ -14943,14 +14947,6 @@
 {
 "company": "Sezzle",
 "title": "Software Engineer Intern",
-"url": "https://job-boards.greenhouse.io/sezzle/jobs/6233081003",
-"loc": "Colombia, Remote",
-"via": "",
-"date": null
-},
-{
-"company": "Sezzle",
-"title": "Software Engineer Intern",
 "url": "https://job-boards.greenhouse.io/sezzle/jobs/7906408003",
 "loc": "Peru",
 "via": "",
@@ -14958,9 +14954,9 @@
 },
 {
 "company": "Sezzle",
-"title": "SRE / Platform Infrastructure Engineer Intern",
-"url": "https://job-boards.greenhouse.io/sezzle/jobs/7906453003",
-"loc": "Peru",
+"title": "Software Engineer Intern",
+"url": "https://job-boards.greenhouse.io/sezzle/jobs/6233081003",
+"loc": "Colombia, Remote",
 "via": "",
 "date": null
 },
@@ -14969,6 +14965,14 @@
 "title": "SRE / Platform Infrastructure Engineer Intern",
 "url": "https://job-boards.greenhouse.io/sezzle/jobs/7693478003",
 "loc": "Colombia, Remote",
+"via": "",
+"date": null
+},
+{
+"company": "Sezzle",
+"title": "SRE / Platform Infrastructure Engineer Intern",
+"url": "https://job-boards.greenhouse.io/sezzle/jobs/7906453003",
+"loc": "Peru",
 "via": "",
 "date": null
 }
@@ -15031,14 +15035,6 @@
 {
 "company": "Shift",
 "title": "Data Science internship - Spanish speaker (6months)",
-"url": "https://job-boards.greenhouse.io/shifttechnology/jobs/7676940003",
-"loc": "France - Remote",
-"via": "",
-"date": null
-},
-{
-"company": "Shift",
-"title": "Data Science internship - Spanish speaker (6months)",
 "url": "https://job-boards.greenhouse.io/shifttechnology/jobs/7687752003",
 "loc": "Spain - Madrid",
 "via": "",
@@ -15046,9 +15042,9 @@
 },
 {
 "company": "Shift",
-"title": "Data Scientist Intern (English Speaker)",
-"url": "https://job-boards.greenhouse.io/shifttechnology/jobs/7652429003",
-"loc": "Mexico - Mexico City",
+"title": "Data Science internship - Spanish speaker (6months)",
+"url": "https://job-boards.greenhouse.io/shifttechnology/jobs/7676940003",
+"loc": "France - Remote",
 "via": "",
 "date": null
 },
@@ -15057,6 +15053,14 @@
 "title": "Data Scientist Intern (English Speaker)",
 "url": "https://job-boards.greenhouse.io/shifttechnology/jobs/7794260003",
 "loc": "Brazil - Sao Paulo",
+"via": "",
+"date": null
+},
+{
+"company": "Shift",
+"title": "Data Scientist Intern (English Speaker)",
+"url": "https://job-boards.greenhouse.io/shifttechnology/jobs/7652429003",
+"loc": "Mexico - Mexico City",
 "via": "",
 "date": null
 },
@@ -16088,56 +16092,6 @@
 "reg|workday:rangersmlb": [],
 "reg|smartrecruiters:TexasWaterDevelopmentBoardTWDB": [],
 "reg|ashby:teya": [],
-"reg|workday:thales": [
-{
-"company": "Thales",
-"title": "DevOps Intern",
-"url": "https://thales.wd3.myworkdayjobs.com/en-US/careers/job/Madrid/DevOps-Intern_R0336368-1",
-"loc": "Madrid",
-"via": "",
-"date": null
-},
-{
-"company": "Thales",
-"title": "Software Engineer Intern",
-"url": "https://thales.wd3.myworkdayjobs.com/en-US/careers/job/Singapore/Software-Engineer-Intern_R0339658",
-"loc": "Singapore",
-"via": "",
-"date": "2026-09-09"
-},
-{
-"company": "Thales",
-"title": "Software Engineer Intern (C#)",
-"url": "https://thales.wd3.myworkdayjobs.com/en-US/careers/job/SINGAPORE/Software-Engineer-Intern--C--_R0324316",
-"loc": "SINGAPORE",
-"via": "",
-"date": "2026-10-01"
-},
-{
-"company": "Thales",
-"title": "Software Engineer Intern (Python)",
-"url": "https://thales.wd3.myworkdayjobs.com/en-US/careers/job/SINGAPORE/Software-Engineer-Intern--Python-_R0342044",
-"loc": "SINGAPORE",
-"via": "",
-"date": "2026-10-01"
-},
-{
-"company": "Thales",
-"title": "Software Engineer Intern - Middleware (IBS)",
-"url": "https://thales.wd3.myworkdayjobs.com/en-US/careers/job/Singapore/Software-Engineer-Intern---Middleware--IBS-_R0334782",
-"loc": "Singapore",
-"via": "",
-"date": null
-},
-{
-"company": "Thales",
-"title": "Software Development and Integration Engineer (Intern)",
-"url": "https://thales.wd3.myworkdayjobs.com/en-US/careers/job/Singapore/Software-Development-and-Integration-Engineer--Intern-_R0339158",
-"loc": "Singapore",
-"via": "",
-"date": null
-}
-],
 "reg|workday:theaccessgroup": [],
 "reg|workday:aero": [
 {
@@ -16668,7 +16622,7 @@
 "url": "https://vanderlande.wd3.myworkdayjobs.com/en-US/careers/job/Veghel-Netherlands/Internship--AI-powered-assistant-within-warehouse-execution-systems_JR38256",
 "loc": "Veghel, Netherlands",
 "via": "",
-"date": "2026-10-01"
+"date": "2026-10-08"
 }
 ],
 "reg|workday:vanguard": [
@@ -17225,7 +17179,16 @@
 "reg|smartrecruiters:WorldwideTechServices": [],
 "reg|lever:woven-by-toyota": [],
 "reg|greenhouse:wpp": [],
-"reg|greenhouse:wppmedia": [],
+"reg|greenhouse:wppmedia": [
+{
+"company": "WPP Media",
+"title": "Intern, Data Science & Architecture",
+"url": "https://job-boards.greenhouse.io/wppmedia/jobs/5447462008",
+"loc": "Milan, Italy",
+"via": "",
+"date": null
+}
+],
 "reg|lever:wpromote": [],
 "reg|greenhouse:wurljobs": [
 {
@@ -17277,16 +17240,6 @@
 "loc": "Santa Clara, CA",
 "via": "",
 "date": null
-}
-],
-"reg|lever:xsolla": [
-{
-"company": "Xsolla",
-"title": "AI-First Engineering Intern",
-"url": "https://jobs.lever.co/xsolla/b2615794-a2c1-4224-9d95-46a890f2a125",
-"loc": "Baku",
-"via": "",
-"date": "2026-10-06"
 }
 ],
 "reg|greenhouse:yesenergy": [],
@@ -20068,14 +20021,6 @@
 "date": "2026-07-30"
 },
 {
-"company": "Copart",
-"title": "Software Engineer Intern",
-"url": "https://copart.wd12.myworkdayjobs.com/copart/job/Dallas-TX---Headquarters/Software-Engineering-Intern_JR109965",
-"loc": "Dallas, TX",
-"via": "Simplify",
-"date": "2026-07-30"
-},
-{
 "company": "Helsing",
 "title": "AI Research Intern - 3D Computer Vision",
 "url": "https://helsing.ai/jobs/4941957101?gh_jid=4941957101",
@@ -20877,24 +20822,8 @@
 },
 {
 "company": "Microsoft",
-"title": "Software Engineer: AI/ML & LLM Intern",
-"url": "https://apply.careers.microsoft.com/careers/job/1970393556922929",
-"loc": "Redmond, WA",
-"via": "Simplify",
-"date": "2026-08-04"
-},
-{
-"company": "Microsoft",
 "title": "Software Engineer Intern - Data Platform & Analytics",
 "url": "https://apply.careers.microsoft.com/careers/job/1970393556922931",
-"loc": "Redmond, WA",
-"via": "Simplify",
-"date": "2026-08-04"
-},
-{
-"company": "Microsoft",
-"title": "Full-Stack Product Engineer Intern - Web + Services",
-"url": "https://apply.careers.microsoft.com/careers/job/1970393556922922",
 "loc": "Redmond, WA",
 "via": "Simplify",
 "date": "2026-08-04"
@@ -22128,38 +22057,6 @@
 "title": "Software Engineer Intern",
 "url": "https://jobs.ashbyhq.com/abridge/3f07a457-dc14-4238-bf4e-5c33b5c1f883/application?embed=true",
 "loc": "SF, NYC",
-"via": "Simplify",
-"date": "2026-08-15"
-},
-{
-"company": "Goldman Sachs",
-"title": "Quantitative Strategist Associate Intern - Asset and Wealth Management",
-"url": "https://higher.gs.com/roles/175423?type=students",
-"loc": "London, UK",
-"via": "Simplify",
-"date": "2026-08-15"
-},
-{
-"company": "Goldman Sachs",
-"title": "Quantitative Strategist Associate Intern - The Core Quantitative Strats",
-"url": "https://higher.gs.com/roles/175427?type=students",
-"loc": "London, UK",
-"via": "Simplify",
-"date": "2026-08-15"
-},
-{
-"company": "Goldman Sachs",
-"title": "Quantitative Strategist Associate Intern - The Core Quantitative Strats",
-"url": "https://higher.gs.com/roles/171535?type=students",
-"loc": "NYC",
-"via": "Simplify",
-"date": "2026-08-15"
-},
-{
-"company": "Goldman Sachs",
-"title": "Quantitative Strategist Intern - Multiple Teams",
-"url": "https://higher.gs.com/roles/171563?type=students",
-"loc": "NYC",
 "via": "Simplify",
 "date": "2026-08-15"
 },
@@ -23476,14 +23373,6 @@
 "date": "2026-08-27"
 },
 {
-"company": "Goldman Sachs",
-"title": "Associate Intern - The Core Quantitative Strats",
-"url": "https://higher.gs.com/roles/171546?type=students",
-"loc": "Dallas, TX",
-"via": "Simplify",
-"date": "2026-08-15"
-},
-{
 "company": "Booz Allen",
 "title": "Data Scientist Intern - University",
 "url": "https://bah.wd1.myworkdayjobs.com/bah_jobs/job/San-Diego-CA/University---2027-Summer-Games-Data-Scientist-Intern---San-Diego--CA_R0248045",
@@ -23536,14 +23425,6 @@
 "title": "Computer Vision Scientist Intern - Geometry and 3D Vision",
 "url": "https://jobs.ashbyhq.com/ami/0d7332d8-b8e7-40d3-89b6-dfc02b40bfa2/application?embed=true",
 "loc": "Montreal, QC, Canada, Paris, France, NYC",
-"via": "Simplify",
-"date": "2026-08-27"
-},
-{
-"company": "Leidos",
-"title": "Software Developer Co-op",
-"url": "https://leidos.wd5.myworkdayjobs.com/External/job/Bethesda-MD/Software-Developer-Co-op_R-00190766",
-"loc": "Bethesda, MD",
 "via": "Simplify",
 "date": "2026-08-27"
 },
@@ -25698,78 +25579,6 @@
 "loc": "New Orleans, LA",
 "via": "Simplify",
 "date": "2026-09-03"
-},
-{
-"company": "Goldman Sachs",
-"title": "Quantitative Strategist Intern - Asset and Wealth Management - Quantitative Strats",
-"url": "https://higher.gs.com/roles/175421?type=students",
-"loc": "London, UK",
-"via": "Simplify",
-"date": "2026-08-15"
-},
-{
-"company": "Goldman Sachs",
-"title": "Quantitative Strategist Intern - Americas - The Core Quantitative Strats",
-"url": "https://higher.gs.com/roles/171551?type=students",
-"loc": "Salt Lake City, UT",
-"via": "Simplify",
-"date": "2026-08-15"
-},
-{
-"company": "Goldman Sachs",
-"title": "Quantitative Strats Analyst Intern - Americas - Investment Banking",
-"url": "https://higher.gs.com/roles/171548?type=students",
-"loc": "Dallas, TX",
-"via": "Simplify",
-"date": "2026-08-15"
-},
-{
-"company": "Goldman Sachs",
-"title": "Summer Analyst Intern - The Core Quantitative Strats",
-"url": "https://higher.gs.com/roles/175426?type=students",
-"loc": "London, UK",
-"via": "Simplify",
-"date": "2026-08-15"
-},
-{
-"company": "Goldman Sachs",
-"title": "Quantitative Strategist Intern - Americas",
-"url": "https://higher.gs.com/roles/171532?type=students",
-"loc": "Dallas, TX",
-"via": "Simplify",
-"date": "2026-08-15"
-},
-{
-"company": "Goldman Sachs",
-"title": "Quantitative Strategist Intern - Americas - The Core Quantitative Strats",
-"url": "https://higher.gs.com/roles/171534?type=students",
-"loc": "Dallas, TX",
-"via": "Simplify",
-"date": "2026-08-15"
-},
-{
-"company": "Goldman Sachs",
-"title": "Quantitative Strategist Intern - Investment Banking",
-"url": "https://higher.gs.com/roles/175428?type=students",
-"loc": "London, UK",
-"via": "Simplify",
-"date": "2026-08-15"
-},
-{
-"company": "Goldman Sachs",
-"title": "Quantitative Strategist Intern - Americas - The Core Quantitative Strats",
-"url": "https://higher.gs.com/roles/171533?type=students",
-"loc": "NYC",
-"via": "Simplify",
-"date": "2026-08-15"
-},
-{
-"company": "Goldman Sachs",
-"title": "Summer Analyst Intern - Americas - Investment Banking Quantitative Strats",
-"url": "https://higher.gs.com/roles/171547?type=students",
-"loc": "NYC",
-"via": "Simplify",
-"date": "2026-08-15"
 },
 {
 "company": "Goldman Sachs",
@@ -28004,14 +27813,6 @@
 "date": "2026-09-11"
 },
 {
-"company": "Amgen",
-"title": "Software Engineer Intern - Technology & Medical Organizations",
-"url": "https://amgen.wd1.myworkdayjobs.com/careers/job/United-States---Remote/Undergrad-Intern---Software-Engineer---Amgen-s-Technology---Medical-Organizations--Summer-2027-_R-255719",
-"loc": "Remote in USA",
-"via": "Simplify",
-"date": "2026-09-11"
-},
-{
 "company": "Booz Allen",
 "title": "Software Engineer Intern - Summer 2027",
 "url": "https://bah.wd1.myworkdayjobs.com/bah_jobs/job/Fayetteville-NC/University---Summer-2027--Software-Engineer-Intern_R0249225",
@@ -29428,14 +29229,6 @@
 "date": "2026-09-16"
 },
 {
-"company": "RTX",
-"title": "Software Engineer Intern",
-"url": "https://globalhr.wd5.myworkdayjobs.com/rec_rtx_ext_gateway/job/US-AZ-TUCSON-805--1151-E-Hermans-Rd--BLDG-805/Software-Engineer-Intern_01874282",
-"loc": "Tucson, AZ",
-"via": "Simplify",
-"date": "2026-09-16"
-},
-{
 "company": "Ragle Inc",
 "title": "Software Engineer Intern",
 "url": "https://ragleinc.applytojob.com/apply/lonTfWhOqm/Software-Engineer-Intern",
@@ -30680,14 +30473,6 @@
 "title": "Data Engineer",
 "url": "https://symbotic.wd504.myworkdayjobs.com/Symbotic/job/USA-Wilmington--MA---HQ/Data-Engineer_R7967",
 "loc": "Wilmington, MA",
-"via": "Simplify",
-"date": "2026-09-21"
-},
-{
-"company": "SOTI",
-"title": "Software Developer Intern - Back End",
-"url": "https://soti.wd3.myworkdayjobs.com/SOTI-Next-Gen/job/Mississauga-Canada--Meadowvale-Office-HQ/Software-Developer-Intern--January-2026-12-months-_R10549",
-"loc": "Mississauga, ON, Canada",
 "via": "Simplify",
 "date": "2026-09-21"
 },
@@ -33468,14 +33253,6 @@
 "date": "2026-10-05"
 },
 {
-"company": "Bobyard",
-"title": "Computer Vision Research Engineer Intern",
-"url": "https://jobs.ashbyhq.com/bobyard/ae7aa71b-5ed2-4066-b173-fc0618f2ed8f/application?embed=true",
-"loc": "SF",
-"via": "Simplify",
-"date": "2026-10-05"
-},
-{
 "company": "Royal Bank of Canada",
 "title": "AI Developer Intern - Grm - Innovation & AI Center of Excellence",
 "url": "https://rbc.wd3.myworkdayjobs.com/RBCEARLYTALENT1/job/TORONTO-Ontario-Canada/XMLNAME-2027-Winter---GRM--AI-Developer-Intern---Innovation---AI-Center-of-Excellence--4-Months-_R-0000188001-1",
@@ -34204,14 +33981,6 @@
 "date": "2026-10-06"
 },
 {
-"company": "Chenega",
-"title": "Software Developer Intern",
-"url": "https://careers.chenega.com/jobs/42444?icims=1",
-"loc": "Virginia",
-"via": "Simplify",
-"date": "2026-10-06"
-},
-{
 "company": "McKesson",
 "title": "Java Full Stack Developer Intern",
 "url": "https://mckesson.wd3.myworkdayjobs.com/External_Careers/job/CAN-QC-Montreal-Ville-Saint-Laurent/Stagiaire-Dveloppeur-se--Full-Stack-Java---Java-Developer-Intern----Hiver-Winter-2027_JR0155176",
@@ -34370,14 +34139,6 @@
 "loc": "United States",
 "via": "Simplify",
 "date": "2026-09-28"
-},
-{
-"company": "Microsoft",
-"title": "Software Engineer Intern",
-"url": "https://apply.careers.microsoft.com/careers/job/1970393557025004",
-"loc": "London, UK",
-"via": "Simplify",
-"date": "2026-10-07"
 },
 {
 "company": "Autodesk",
@@ -34706,6 +34467,14 @@
 "loc": "SF",
 "via": "Simplify",
 "date": "2026-08-13"
+},
+{
+"company": "TikTok",
+"title": "Machine Learning Engineer Intern - Monetization Technology - Ads Core Global",
+"url": "https://lifeattiktok.com/search/7687630614472149301",
+"loc": "San Jose, CA",
+"via": "Simplify",
+"date": "2026-10-08"
 }
 ],
 "QuantRoles": [
@@ -61503,8 +61272,6 @@
 "reg|workday:cnoinc": [],
 "reg|workday:columbiasportswearcompany": [],
 "reg|workday:compassion": [],
-"reg|workday:dexcom": [],
-"reg|workday:directv": [],
 "reg|greenhouse:eosfitness": [],
 "reg|workday:everestre": [],
 "reg|workday:ffive": [
@@ -61525,10 +61292,6 @@
 "date": "2026-10-06"
 }
 ],
-"reg|workday:fau": [],
-"reg|workday:formfactor": [],
-"reg|workday:mhs": [],
-"reg|workday:fullsteam": [],
 "reg|workday:goosehead": [],
 "reg|workday:greenheckgroup": [
 {
@@ -61558,7 +61321,6 @@
 "reg|workday:kengarff": [],
 "reg|workday:rakuten": [],
 "reg|workday:learfield": [],
-"reg|workday:lifefitness": [],
 "reg|workday:bcbsla": [
 {
 "company": "Louisiana Blue",
@@ -61856,36 +61618,8 @@
 ],
 "reg|workday:cohesity": [],
 "reg|workday:dtna": [],
-"reg|workday:draftkings": [
-{
-"company": "DraftKings",
-"title": "Data Science Intern (Summer 2027)",
-"url": "https://draftkings.wd1.myworkdayjobs.com/en-US/Campus_Career_Portal/job/Boston-MA/Data-Science-Intern--Summer-2027-_JR14958",
-"loc": "Boston, MA",
-"via": "",
-"date": "2026-09-08"
-},
-{
-"company": "DraftKings",
-"title": "Software Engineer Intern (Summer 2027)",
-"url": "https://draftkings.wd1.myworkdayjobs.com/en-US/Campus_Career_Portal/job/Boston-MA/Software-Engineer-Intern--Summer-2027-_JR14929",
-"loc": "Boston, MA",
-"via": "",
-"date": null
-},
-{
-"company": "DraftKings",
-"title": "Software Engineer Intern (Summer 2027)",
-"url": "https://draftkings.wd1.myworkdayjobs.com/en-US/Campus_Career_Portal/job/Boston-MA/Software-Engineer-Intern--Summer-2027-_JR14928",
-"loc": "Boston, MA",
-"via": "",
-"date": null
-}
-],
-"reg|workday:encore": [],
 "reg|workday:equifax": [],
 "reg|workday:fhlbi": [],
-"reg|workday:fhlbny": [],
 "reg|workday:fifththird": [
 {
 "company": "Fifth Third Bank",
@@ -61914,23 +61648,9 @@
 ],
 "reg|workday:firstquality": [],
 "reg|workday:nphosting": [],
-"reg|workday:fivebelow": [],
-"reg|workday:flexerasoftware": [],
-"reg|workday:flextronics": [
-{
-"company": "Flextronics International",
-"title": "Software Quality Engineer- Internship",
-"url": "https://flextronics.wd1.myworkdayjobs.com/en-US/Careers/job/Italy-Milano/Software-Quality-Engineer_WD230181",
-"loc": "Italy, Milano",
-"via": "",
-"date": "2026-10-05"
-}
-],
 "reg|workday:fgcu": [],
 "reg|workday:floridatech": [],
-"reg|workday:freese": [],
 "reg|workday:gafsgi": [],
-"reg|workday:gartner": [],
 "reg|workday:gentex": [],
 "reg|workday:genpt": [],
 "reg|workday:gnw": [],
@@ -61940,7 +61660,6 @@
 "reg|workday:guidewire": [],
 "reg|workday:hagerty": [],
 "reg|workday:hdsupply": [],
-"reg|workday:healthfirst": [],
 "reg|workday:henryschein": [],
 "reg|workday:hec": [],
 "reg|workday:hcpss": [],
@@ -61982,7 +61701,16 @@
 "reg|workday:livanova": [],
 "reg|workday:livingspaces": [],
 "reg|workday:lsu": [],
-"reg|workday:mastercard": [],
+"reg|workday:mastercard": [
+{
+"company": "Mastercard",
+"title": "Security Engineering & Enablement Intern, Summer 2027 \u2013 St. Louis, MO, US",
+"url": "https://mastercard.wd1.myworkdayjobs.com/en-US/Campus/job/OFallon-Missouri/Security-Engineering---Enablement-Intern--Summer-2027---St-Louis--MO--US_R-284927",
+"loc": "O'Fallon, Missouri",
+"via": "",
+"date": "2026-10-05"
+}
+],
 "reg|workday:medline": [],
 "reg|workday:capri": [],
 "reg|workday:midlandsb": [
@@ -62006,12 +61734,8 @@
 "reg|workday:verawholehealth": [],
 "reg|workday:millerknoll": [],
 "reg|workday:tti": [],
-"reg|workday:mosscm": [],
-"reg|workday:movadogroup": [],
 "reg|workday:multicare": [],
 "reg|workday:nascar": [],
-"reg|workday:nordic": [],
-"reg|workday:nabancard": [],
 "reg|workday:nvent": [],
 "reg|workday:nvidia": [
 {
@@ -62388,11 +62112,9 @@
 "reg|workday:simonsfoundation": [],
 "reg|workday:snapfinance": [],
 "reg|workday:sonoco": [],
-"reg|workday:alsacstjude": [],
 "reg|workday:tdwilliamson": [],
 "reg|workday:taxwell": [],
 "reg|workday:taylor": [],
-"reg|workday:boydgroup": [],
 "reg|workday:rb": [
 {
 "company": "The Federal Reserve System",
@@ -62451,7 +62173,7 @@
 {
 "company": "The Walt Disney Company",
 "title": "ESPN Programming Intern, Bristol, Spring 2027",
-"url": "https://disney.wd5.myworkdayjobs.com/en-US/disneycareer/job/Bristol-CT-USA/ESPN-Programming-Intern--Bristol--Spring-2027_10160482-1",
+"url": "https://disney.wd5.myworkdayjobs.com/en-US/disneycareerdc/job/Bristol-CT-USA/ESPN-Intern--Bristol--Spring-2027_10160482",
 "loc": "Bristol, CT, USA",
 "via": "",
 "date": "2026-10-05"
@@ -62511,40 +62233,9 @@
 }
 ],
 "reg|workday:comfortsystemsusa": [],
-"reg|workday:csiweb": [],
-"reg|workday:conagrabrands": [
-{
-"company": "Conagra Brands",
-"title": "Software Development Internship - Summer 2027",
-"url": "https://conagrabrands.wd1.myworkdayjobs.com/en-US/Careers_US/job/Omaha-Nebraska/Software-Development-Internship---Summer-2027_Req-039787",
-"loc": "Omaha, Nebraska",
-"via": "",
-"date": null
-},
-{
-"company": "Conagra Brands",
-"title": "Cybersecurity Internship - Summer 2027",
-"url": "https://conagrabrands.wd1.myworkdayjobs.com/en-US/Careers_US/job/Omaha-Nebraska/Cybersecurity-Internship---Summer-2027_Req-039965",
-"loc": "Omaha, Nebraska",
-"via": "",
-"date": null
-}
-],
-"reg|workday:conocophillips": [
-{
-"company": "ConocoPhillips",
-"title": "Intern, Trading Analytics 2027",
-"url": "https://conocophillips.wd1.myworkdayjobs.com/en-US/External/job/Houston-TX/Intern--Trading-Analytics-2027_REQ-006429",
-"loc": "Houston, TX",
-"via": "",
-"date": null
-}
-],
 "reg|workday:cbrands": [],
 "reg|workday:clr": [],
-"reg|workday:convatec": [],
 "reg|workday:cooperstandard": [],
-"reg|workday:corebridgefinancial": [],
 "reg|workday:spectrumhealth": [],
 "reg|workday:corteva": [],
 "reg|workday:costar": [],
@@ -62560,25 +62251,19 @@
 ],
 "reg|workday:coxhealth": [],
 "reg|workday:creditacceptance": [],
-"reg|workday:crosscountrymortgage": [],
 "reg|workday:crowdstrike": [],
 "reg|workday:csagroup": [],
 "reg|workday:cubic": [],
 "reg|workday:curriculumassociates": [],
-"reg|workday:curtisswright": [],
 "reg|workday:cw": [],
 "reg|workday:customersbank": [],
 "reg|workday:cvshealth": [],
-"reg|workday:daikinapplied": [],
 "reg|workday:dfwairport": [],
 "reg|workday:deckers": [],
 "reg|workday:rhsc": [],
 "reg|workday:deluxe": [],
 "reg|workday:bydeluxe": [],
-"reg|workday:denver": [],
-"reg|workday:denverhealth": [],
 "reg|workday:etsy": [],
-"reg|workday:dickssportinggoods": [],
 "reg|workday:digikey": [],
 "reg|workday:dimensional": [
 {
@@ -62590,7 +62275,6 @@
 "date": "2026-09-08"
 }
 ],
-"reg|workday:doterra": [],
 "reg|workday:draper": [
 {
 "company": "Draper",
@@ -62604,10 +62288,7 @@
 "reg|workday:earlywarning": [],
 "reg|workday:ebay": [],
 "reg|workday:edwards": [],
-"reg|workday:eisneramper": [],
 "reg|workday:elanco": [],
-"reg|workday:elevancehealth": [],
-"reg|workday:embryriddle": [],
 "reg|workday:emcins": [
 {
 "company": "EMC Insurance",
@@ -62618,7 +62299,6 @@
 "date": "2026-09-22"
 }
 ],
-"reg|workday:encova": [],
 "reg|workday:enovis": [],
 "reg|workday:ensemblehp": [
 {
@@ -62632,69 +62312,11 @@
 ],
 "reg|workday:ebi": [],
 "reg|workday:therapybrands": [],
-"reg|workday:entegris": [
-{
-"company": "Entegris",
-"title": "Cybersecurity Engineer Co-Op",
-"url": "https://entegris.wd1.myworkdayjobs.com/en-US/entegriscareers/job/Chaska-MN/Cybersecurity-Engineer-Co-Op_REQ-14472-1",
-"loc": "Chaska, MN",
-"via": "",
-"date": "2026-09-10"
-}
-],
-"reg|workday:eosenergystorage": [],
 "reg|workday:epicorsoftware": [],
-"reg|workday:equinix": [],
-"reg|workday:ercot": [
-{
-"company": "Ercot",
-"title": "Intern - IT, Enterprise Data & AI Administration",
-"url": "https://ercot.wd1.myworkdayjobs.com/en-US/ercot_careers/job/Taylor-TX/Intern---IT--Enterprise-Data---AI-Administration_R2478",
-"loc": "2 Locations",
-"via": "",
-"date": "2026-09-08"
-}
-],
 "reg|workday:esab": [],
-"reg|workday:essentiahealth": [],
-"reg|workday:evercommerce": [],
-"reg|workday:evergreenix": [],
 "reg|workday:extraspace": [],
-"reg|workday:fanniemae": [
-{
-"company": "Fannie Mae",
-"title": "Campus \u2013 Data Science Intern (Analytics & Modeling Program)",
-"url": "https://fanniemae.wd1.myworkdayjobs.com/en-US/FannieMaeCareers/job/Washington-DC/Campus---Data-Science-Intern--Analytics---Modeling-Program-_JR2815",
-"loc": "Washington, DC",
-"via": "",
-"date": null
-}
-],
 "reg|workday:farmerfocus": [],
-"reg|workday:fenwick": [
-{
-"company": "Fenwick & West",
-"title": "AI Enablement Intern",
-"url": "https://fenwick.wd1.myworkdayjobs.com/en-US/Fenwick_External_Careers/job/Silicon-Valley/AI-Enablement-Intern_R2987-1",
-"loc": "Silicon Valley",
-"via": "",
-"date": "2026-10-06"
-}
-],
 "reg|workday:fermilab": [],
-"reg|workday:fhlbatl": [],
-"reg|workday:fhlbc": [
-{
-"company": "FHLBank Chicago",
-"title": "Summer Internship - AI Intern",
-"url": "https://fhlbc.wd1.myworkdayjobs.com/en-US/search/job/Chicago/Summer-Internship---AI-Intern_R2600477",
-"loc": "Chicago",
-"via": "",
-"date": "2026-10-05"
-}
-],
-"reg|workday:fhlbtopeka": [],
-"reg|workday:fmr": [],
 "reg|workday:bankeasy": [
 {
 "company": "First Bank & Trust",
@@ -62706,8 +62328,6 @@
 }
 ],
 "reg|workday:fei": [],
-"reg|workday:flowserve": [],
-"reg|workday:fox": [],
 "reg|workday:geico": [],
 "reg|workday:gdit": [
 {
@@ -62733,7 +62353,6 @@
 "reg|workday:gi": [],
 "reg|workday:global": [],
 "reg|workday:goucher": [],
-"reg|workday:gsk": [],
 "reg|workday:guardianlife": [
 {
 "company": "Guardian Life",
@@ -62761,23 +62380,11 @@
 }
 ],
 "reg|workday:guidehouse": [],
-"reg|workday:hancockwhitney": [],
 "reg|workday:harbourvest": [],
 "reg|workday:hcad": [],
 "reg|workday:hpinc": [],
 "reg|workday:hendrick": [],
 "reg|workday:bcbsnj": [],
-"reg|workday:hysteryale": [],
-"reg|workday:iatinsurancegroup": [
-{
-"company": "IAT Insurance Group",
-"title": "Cyber Security Internship",
-"url": "https://iatinsurancegroup.wd1.myworkdayjobs.com/en-US/iat/job/Raleigh-NC/Cyber-Security-Internship_JR100410",
-"loc": "Raleigh NC",
-"via": "",
-"date": null
-}
-],
 "reg|workday:igsenergy": [
 {
 "company": "IGS Energy",
@@ -62906,9 +62513,7 @@
 "date": null
 }
 ],
-"reg|workday:lifetime": [],
 "reg|workday:onelineage": [],
-"reg|workday:littelfuse": [],
 "reg|workday:knitwellgroup": [],
 "reg|workday:logitech": [
 {
@@ -63044,7 +62649,6 @@
 }
 ],
 "reg|workday:mgmresorts": [],
-"reg|workday:miamioh": [],
 "reg|workday:microchiphr": [],
 "reg|workday:mimecast": [],
 "reg|workday:mksinst": [],
@@ -63069,8 +62673,6 @@
 }
 ],
 "reg|workday:ncr": [],
-"reg|workday:newbalance": [],
-"reg|workday:newrez": [],
 "reg|workday:northeastern": [],
 "reg|workday:ntrs": [],
 "reg|workday:oldrepublic": [],
@@ -63085,7 +62687,6 @@
 "date": null
 }
 ],
-"reg|workday:oneoncology": [],
 "reg|lever:dnagenotek": [],
 "reg|workday:pimco": [
 {
@@ -63157,7 +62758,6 @@
 "reg|workday:shawinc": [],
 "reg|workday:signetjewelers": [],
 "reg|workday:silabs": [],
-"reg|workday:swa": [],
 "reg|workday:standard": [],
 "reg|workday:sbdinc": [],
 "reg|workday:stewart": [],
@@ -63243,10 +62843,7 @@
 "reg|workday:usventure": [],
 "reg|workday:umusic": [],
 "reg|workday:uasys": [],
-"reg|workday:nshe": [],
 "reg|workday:rochester": [],
-"reg|workday:utaustin": [],
-"reg|workday:unum": [],
 "reg|workday:virtua": [],
 "reg|lever:vitana-pediatric": [],
 "reg|workday:warnerbros": [],
@@ -63373,6 +62970,1867 @@
 "loc": "Milwaukee, WI",
 "via": "",
 "date": "2026-09-28"
+}
+],
+"Mistral AI|ashby:mistral.ai": [
+{
+"company": "Mistral AI",
+"title": "Applied AI, Forward Deployed Machine Learning Engineer - (Internship)",
+"url": "https://jobs.ashbyhq.com/mistral.ai/fcdb8407-20b9-4179-81b6-f2ca2c79a39b",
+"loc": "Paris",
+"via": "",
+"date": "2026-09-14"
+},
+{
+"company": "Mistral AI",
+"title": "Applied Scientist (Internship)",
+"url": "https://jobs.ashbyhq.com/mistral.ai/de46ba8b-00cb-4618-83df-66e15a78434e",
+"loc": "Paris",
+"via": "",
+"date": "2026-07-03"
+},
+{
+"company": "Mistral AI",
+"title": "Applied Scientist (Internship in Paris or London)",
+"url": "https://jobs.ashbyhq.com/mistral.ai/60ab6a5e-9b02-4ae7-a0fb-4c7d9ec0fdf8",
+"loc": "Seoul",
+"via": "",
+"date": "2026-09-18"
+}
+],
+"Razorpay|greenhouse_any:razorpaysoftwareprivatelimited": [],
+"Sourcegraph|greenhouse_any:sourcegraph91": [],
+"Allen Institute for AI|greenhouse_any:thealleninstitute": [],
+"Mila|workable:mila-2": [
+{
+"company": "Mila",
+"title": "Stagiaire de recherche - S\u00e9curit\u00e9 de l'IA / Research Intern - AI Safety",
+"url": "https://apply.workable.com/mila-2/j/1E81635604/",
+"loc": "Montreal, Canada",
+"via": "",
+"date": "2026-10-02"
+}
+],
+"Bloomberg": [],
+"reg|workday:barclays": [
+{
+"company": "Barclays",
+"title": "Trading Analyst Summer Internship Program 2027 Mexico City",
+"url": "https://barclays.wd3.myworkdayjobs.com/en-US/External_Career_Site_Barclays/job/Mexico-City-Avenida-Paseo-de-la-Reforma-505/Trading-Analyst-Summer-Internship-Program-2027-Mexico-City_JR-0000134430",
+"loc": "Mexico City, Avenida Paseo de la Reforma 505",
+"via": "",
+"date": "2026-10-02"
+}
+],
+"reg|workday:basspro": [
+{
+"company": "Bass Pro Shops",
+"title": "Cybersecurity Intern Summer 2027",
+"url": "https://basspro.wd1.myworkdayjobs.com/en-US/careers/job/Springfield-MO-Bass-Pro-Shops-Base-Camp/Cybersecurity-Intern-Summer-2027_R267444",
+"loc": "Springfield, MO (Bass Pro Shops Base Camp)",
+"via": "",
+"date": "2026-09-16"
+},
+{
+"company": "Bass Pro Shops",
+"title": "IT Developer Intern Summer 2027",
+"url": "https://basspro.wd1.myworkdayjobs.com/en-US/careers/job/Springfield-MO-Bass-Pro-Shops-Base-Camp/IT-Developer-Intern-Summer-2027_R267441-1",
+"loc": "Springfield, MO (Bass Pro Shops Base Camp)",
+"via": "",
+"date": "2026-09-16"
+}
+],
+"reg|workday:bilh": [],
+"reg|workday:bjswholesaleclub": [],
+"reg|workday:blackstone": [],
+"reg|workday:bloomenergy": [],
+"reg|workday:bloomberg": [],
+"reg|workday:bcbsks": [
+{
+"company": "Blue Cross and Blue Shield of Kansas",
+"title": "Application Developer - Intern",
+"url": "https://bcbsks.wd1.myworkdayjobs.com/en-US/External/job/Topeka/Application-Developer---Intern_R2026355",
+"loc": "Topeka",
+"via": "",
+"date": "2026-09-21"
+}
+],
+"reg|workday:bcbsri": [],
+"reg|workday:bcbsa": [],
+"reg|workday:bcbsaz": [],
+"reg|workday:nebraskablue": [
+{
+"company": "BlueCross BlueShield of Nebraska",
+"title": "IS Intern: AI & Automation (Managed Services) Summer 2027",
+"url": "https://nebraskablue.wd1.myworkdayjobs.com/en-US/BCBSNE/job/Omaha-NE/IS-Intern--Summer-2027_JR101411",
+"loc": "Omaha, NE",
+"via": "",
+"date": "2026-09-29"
+}
+],
+"reg|workday:bobsdf": [],
+"reg|workday:deseretmanagement": [],
+"reg|workday:bonterra": [],
+"reg|workday:bah": [
+{
+"company": "Booz Allen",
+"title": "University, Applied AI Software Development Intern",
+"url": "https://bah.wd1.myworkdayjobs.com/en-US/Confidential/job/McLean-VA/University--Applied-AI-Software-Development-Intern_R0248854",
+"loc": "McLean, VA",
+"via": "",
+"date": "2026-09-08"
+},
+{
+"company": "Booz Allen",
+"title": "University, Applied AI Intern",
+"url": "https://bah.wd1.myworkdayjobs.com/en-US/Confidential/job/Washington-DC/University--Applied-AI-Intern_R0248853",
+"loc": "Washington, DC",
+"via": "",
+"date": "2026-09-08"
+}
+],
+"reg|workday:bostondynamics": [],
+"reg|workday:bmc": [],
+"reg|workday:boystown": [],
+"reg|workday:byu": [],
+"reg|workday:broadcom": [],
+"reg|workday:broadviewfcu": [],
+"reg|workday:bnl": [],
+"reg|workday:brooksauto": [],
+"reg|workday:bbinsurance": [],
+"reg|workday:brunswick": [
+{
+"company": "Brunswick",
+"title": "Software Engineering Intern",
+"url": "https://brunswick.wd1.myworkdayjobs.com/en-US/search/job/Tulsa-OK/Software-Engineering-Intern_JR-051321",
+"loc": "Tulsa, OK",
+"via": "",
+"date": null
+},
+{
+"company": "Brunswick",
+"title": "Software Engineering Intern",
+"url": "https://brunswick.wd1.myworkdayjobs.com/en-US/search/job/Amsterdam-Netherlands/Software-Engineering-Intern_JR-051328",
+"loc": "Amsterdam, Netherlands",
+"via": "",
+"date": null
+},
+{
+"company": "Brunswick",
+"title": "Data Science Intern",
+"url": "https://brunswick.wd1.myworkdayjobs.com/en-US/search/job/Champaign-IL/Data-Science-Intern_JR-051760",
+"loc": "Champaign, IL",
+"via": "",
+"date": "2026-09-28"
+},
+{
+"company": "Brunswick",
+"title": "Mercury Marine: Software Validation Intern",
+"url": "https://brunswick.wd1.myworkdayjobs.com/en-US/search/job/Oshkosh-WI/Mercury-Marine--Software-Validation-Intern_JR-051160",
+"loc": "Oshkosh, WI",
+"via": "",
+"date": null
+},
+{
+"company": "Brunswick",
+"title": "Mercury Marine: Software Controls Engineering Intern",
+"url": "https://brunswick.wd1.myworkdayjobs.com/en-US/search/job/Fond-du-Lac-WI/Mercury-Marine--Software-Controls-Engineering-Intern_JR-051436",
+"loc": "Fond du Lac, WI",
+"via": "",
+"date": null
+},
+{
+"company": "Brunswick",
+"title": "Mercury Marine - Systems/Software Engineering Co-op",
+"url": "https://brunswick.wd1.myworkdayjobs.com/en-US/search/job/Fond-du-Lac-WI/Mercury-Marine---Systems-Software-Engineering-Co-op_JR-051212",
+"loc": "Fond du Lac, WI",
+"via": "",
+"date": null
+}
+],
+"reg|workday:cswg": [],
+"reg|workday:cableone": [],
+"reg|workday:caci": [
+{
+"company": "CACI",
+"title": "Software Development Intern - Summer 2027",
+"url": "https://caci.wd1.myworkdayjobs.com/en-US/external/job/Oklahoma-City-OK-US/Software-Development-Intern---Summer-2027_333085",
+"loc": "Oklahoma City, OK, US",
+"via": "",
+"date": "2026-10-05"
+},
+{
+"company": "CACI",
+"title": "Software Engineer Intern - Summer 2027",
+"url": "https://caci.wd1.myworkdayjobs.com/en-US/external/job/Austin-TX-US/Software-Engineer-Intern---Summer-2027_333037",
+"loc": "Austin, TX, US",
+"via": "",
+"date": "2026-10-02"
+},
+{
+"company": "CACI",
+"title": "Software Development Intern - Summer 2027",
+"url": "https://caci.wd1.myworkdayjobs.com/en-US/external/job/Ashburn-VA-US/Software-Development-Intern---Summer-2027_333051",
+"loc": "Ashburn, VA, US",
+"via": "",
+"date": "2026-10-02"
+},
+{
+"company": "CACI",
+"title": "Cyber Security Intern - Summer 2027",
+"url": "https://caci.wd1.myworkdayjobs.com/en-US/external/job/Springfield-VA-US/Cyber-Security-Intern---Summer-2027_333046",
+"loc": "Springfield, VA, US",
+"via": "",
+"date": "2026-10-02"
+},
+{
+"company": "CACI",
+"title": "Network / Cybersecurity Intern - Summer 2027",
+"url": "https://caci.wd1.myworkdayjobs.com/en-US/external/job/High-Point-NC-US/Network---Cybersecurity-Intern---Summer-2027_333001",
+"loc": "High Point, NC, US",
+"via": "",
+"date": "2026-10-02"
+},
+{
+"company": "CACI",
+"title": "Software Development/Engineer Intern - Summer 2027",
+"url": "https://caci.wd1.myworkdayjobs.com/en-US/external/job/Remote-Any-State/Software-Development-Engineer-Intern---Summer-2027_332894-1",
+"loc": "Remote (Any State)",
+"via": "",
+"date": "2026-10-01"
+},
+{
+"company": "CACI",
+"title": "AI Prompt Engineer High School Intern - Summer 2027",
+"url": "https://caci.wd1.myworkdayjobs.com/en-US/external/job/Ashburn-VA-US/AI-Prompt-Engineer-High-School-Intern---Summer-2027_332816-1",
+"loc": "Ashburn, VA, US",
+"via": "",
+"date": "2026-10-01"
+},
+{
+"company": "CACI",
+"title": "Software Engineer Intern - Summer 2027",
+"url": "https://caci.wd1.myworkdayjobs.com/en-US/external/job/Omaha-NE-US/Software-Engineer-Intern---Summer-2027_332776",
+"loc": "Omaha, NE, US",
+"via": "",
+"date": "2026-09-29"
+},
+{
+"company": "CACI",
+"title": "Software Engineering Intern - Summer 2027",
+"url": "https://caci.wd1.myworkdayjobs.com/en-US/external/job/Reston-VA-US/Software-Engineering-Intern---Summer-2027_332041",
+"loc": "Reston, VA, US",
+"via": "",
+"date": "2026-09-23"
+}
+],
+"reg|workday:cadence": [],
+"reg|workday:calistacorp": [],
+"reg|workday:calix": [],
+"reg|workday:tcbrands": [],
+"reg|workday:cambiumlearning": [],
+"reg|workday:cambria": [],
+"reg|workday:capgroup": [],
+"reg|workday:capitalhealth": [],
+"reg|workday:cardinalhealth": [],
+"reg|workday:caresource": [],
+"reg|workday:carmax": [],
+"reg|workday:carters": [],
+"reg|workday:cboe": [
+{
+"company": "Cboe",
+"title": "Software Engineer Intern",
+"url": "https://cboe.wd1.myworkdayjobs.com/en-US/External_Career_CBOE/job/Chicago-IL/Software-Engineer-Intern_R-4654",
+"loc": "3 Locations",
+"via": "",
+"date": "2026-10-05"
+},
+{
+"company": "Cboe",
+"title": "Quant & Data Analytics Intern",
+"url": "https://cboe.wd1.myworkdayjobs.com/en-US/External_Career_CBOE/job/Chicago-IL/Quant---Data-Analytics-Intern_R-4708",
+"loc": "Chicago, IL",
+"via": "",
+"date": "2026-10-02"
+}
+],
+"reg|workday:cccis": [],
+"reg|workday:cdk": [],
+"reg|workday:cisecurity": [],
+"reg|workday:centific": [
+{
+"company": "Centific",
+"title": "Software graduate Internship PEN",
+"url": "https://centific.wd1.myworkdayjobs.com/en-US/Centific_Global/job/Malaysia-Office--Penang/Software-graduate-Internship-PEN_JR104027",
+"loc": "Malaysia Office -Penang",
+"via": "",
+"date": null
+},
+{
+"company": "Centific",
+"title": "Software graduate Internship PEN",
+"url": "https://centific.wd1.myworkdayjobs.com/en-US/Centific_Global/job/Malaysia-Office--Penang/Software-graduate-Internship-PEN_JR104026-2",
+"loc": "Malaysia Office -Penang",
+"via": "",
+"date": null
+},
+{
+"company": "Centific",
+"title": "Software graduate Internship PEN",
+"url": "https://centific.wd1.myworkdayjobs.com/en-US/Centific_Global/job/Malaysia-Office--Penang/Software-graduate-Internship-PEN_JR104025-2",
+"loc": "Malaysia Office -Penang",
+"via": "",
+"date": null
+},
+{
+"company": "Centific",
+"title": "Software Testing / QA / Validation Internship (PEN)-4",
+"url": "https://centific.wd1.myworkdayjobs.com/en-US/Centific_Global/job/Malaysia-Office--Penang/Software-Testing---QA---Validation-Internship--PEN--4_JR105755-2",
+"loc": "Malaysia Office -Penang",
+"via": "",
+"date": null
+}
+],
+"reg|workday:chamberlain": [],
+"reg|workday:championx": [],
+"reg|workday:chenmed": [],
+"reg|workday:brambles": [],
+"reg|workday:chewy": [],
+"reg|workday:chipotle": [],
+"reg|workday:choicehotels": [],
+"reg|workday:chordenergy": [],
+"reg|workday:cecentertainment": [],
+"reg|workday:churchdwight": [],
+"reg|workday:ciena": [
+{
+"company": "Ciena",
+"title": "AI Engineer Intern (Winter 2027)",
+"url": "https://ciena.wd5.myworkdayjobs.com/en-US/careers/job/Ottawa/AI-Engineer-Intern--Winter-2027-_R031667",
+"loc": "Ottawa",
+"via": "",
+"date": "2026-09-16"
+},
+{
+"company": "Ciena",
+"title": "WaveLogic Software Intern (Summer 2027)",
+"url": "https://ciena.wd5.myworkdayjobs.com/en-US/careers/job/Atlanta/WaveLogic-Software-Intern--Summer-2027-_R031695",
+"loc": "Atlanta",
+"via": "",
+"date": "2026-09-24"
+},
+{
+"company": "Ciena",
+"title": "WaveLogic Software Intern Spring 2027",
+"url": "https://ciena.wd5.myworkdayjobs.com/en-US/careers/job/Atlanta/WaveLogic-Software-Intern-Spring-2027_R031692",
+"loc": "Atlanta",
+"via": "",
+"date": "2026-09-24"
+},
+{
+"company": "Ciena",
+"title": "AI & Automation Intern - GCN Services Business Operations",
+"url": "https://ciena.wd5.myworkdayjobs.com/en-US/careers/job/Ottawa/AI---Automation-Intern---GCN-Services-Business-Operations_R031664",
+"loc": "Ottawa",
+"via": "",
+"date": "2026-09-16"
+},
+{
+"company": "Ciena",
+"title": "Software Engineering, Optical Transport and IP Networking Intern",
+"url": "https://ciena.wd5.myworkdayjobs.com/en-US/careers/job/Ottawa/Software-Engineering--Optical-Transport-and-IP-Networking-Intern_R031631",
+"loc": "Ottawa",
+"via": "",
+"date": "2026-09-14"
+}
+],
+"reg|workday:cigna": [
+{
+"company": "Cigna Group",
+"title": "Data Scientist Intern- Master's Program (Hybrid: NJ, TX, or MO)",
+"url": "https://cigna.wd5.myworkdayjobs.com/en-US/cignacareers/job/Morris-Plains-NJ/Data-Scientist-Intern--Master-s-Program--Hybrid--NJ--TX--or-MO-_26010876",
+"loc": "3 Locations",
+"via": "",
+"date": "2026-09-18"
+},
+{
+"company": "Cigna Group",
+"title": "The Cigna Group's Technology Development Program - Cybersecurity Track Summer Internship",
+"url": "https://cigna.wd5.myworkdayjobs.com/en-US/cignacareers/job/CT-Bloomfield-900-Cottage-Grove-Rd-Wilde-Bldg/The-Cigna-Group-s-Technology-Development-Program---Cybersecurity-Track-Summer-Internship_26009531",
+"loc": "2 Locations",
+"via": "",
+"date": "2026-09-09"
+},
+{
+"company": "Cigna Group",
+"title": "The Cigna Group's Technology Development Program - AI Engineering Track Summer Internship",
+"url": "https://cigna.wd5.myworkdayjobs.com/en-US/cignacareers/job/TX-Austin-11501-Alterra-Pkwy-STE-500/The-Cigna-Group-s-Technology-Development-Program---AI-Engineering-Track-Summer-Internship_26009535",
+"loc": "TX, Austin, 11501 Alterra Pkwy STE 500",
+"via": "",
+"date": "2026-09-10"
+},
+{
+"company": "Cigna Group",
+"title": "The Cigna Group's Technology Development Program - Software Engineering Track Summer Internship",
+"url": "https://cigna.wd5.myworkdayjobs.com/en-US/cignacareers/job/St-Louis-MO/The-Cigna-Group-s-Technology-Development-Program----Software-Engineering-Track-Summer-Internship_26009527",
+"loc": "4 Locations",
+"via": "",
+"date": "2026-09-10"
+},
+{
+"company": "Cigna Group",
+"title": "The Cigna Group's Technology Development Program - Infrastructure & Cloud Engineering Track Summer Internship",
+"url": "https://cigna.wd5.myworkdayjobs.com/en-US/cignacareers/job/CT-Bloomfield-900-Cottage-Grove-Rd-Wilde-Bldg/The-Cigna-Group-s-Technology-Development-Program-----Infrastructure---Cloud-Engineering-Track_26009529",
+"loc": "CT, Bloomfield, 900 Cottage Grove Rd Wilde Bldg",
+"via": "",
+"date": "2026-09-10"
+}
+],
+"reg|workday:cincinnatichildrens": [],
+"reg|workday:cinemark": [],
+"reg|workday:circle": [],
+"reg|workday:cisco": [
+{
+"company": "Cisco",
+"title": "Software Consulting Engineer I (Intern) United States",
+"url": "https://cisco.wd5.myworkdayjobs.com/en-US/cisco_careers/job/USA-RESEARCH-TRIANGLE-PARK/Software-Consulting-Engineer-I--Intern--United-States_2025180",
+"loc": "USA-RESEARCH TRIANGLE PARK",
+"via": "",
+"date": "2026-10-01"
+},
+{
+"company": "Cisco",
+"title": "Software Engineer II (Co-op) - United States",
+"url": "https://cisco.wd5.myworkdayjobs.com/en-US/cisco_careers/job/Maynard-Massachusetts-US/Software-Engineer-II--Co-op----United-States_2026923",
+"loc": "Maynard, Massachusetts, US",
+"via": "",
+"date": "2026-10-01"
+},
+{
+"company": "Cisco",
+"title": "Software Engineer I (Co-op) - United States",
+"url": "https://cisco.wd5.myworkdayjobs.com/en-US/cisco_careers/job/Maynard-Massachusetts-US/Software-Engineer-I--Co-op----United-States_2026920",
+"loc": "Maynard, Massachusetts, US",
+"via": "",
+"date": "2026-10-01"
+}
+],
+"reg|workday:citi": [],
+"reg|workday:amarillo": [],
+"reg|workday:auroragov": [],
+"reg|workday:austintexas": [],
+"reg|workday:baltimorecity": [],
+"reg|workday:largo": [],
+"reg|workday:cityofvancouver": [],
+"reg|workday:clarioclinical": [],
+"reg|workday:claytonhomes": [],
+"reg|workday:clearesult": [],
+"reg|workday:cmegroup": [
+{
+"company": "CME Group",
+"title": "AI Analyst - Placement year internship",
+"url": "https://cmegroup.wd1.myworkdayjobs.com/en-US/cme_careers/job/Belfast---Millennium-House/AI-Analyst---Placement-year-internship_34865",
+"loc": "Belfast - Millennium House",
+"via": "",
+"date": "2026-10-02"
+},
+{
+"company": "CME Group",
+"title": "Software Engineering Internship - Summer 2027",
+"url": "https://cmegroup.wd1.myworkdayjobs.com/en-US/cme_careers/job/Chicago---20-S-Wacker/Software-Engineering-Internship---Summer-2027_34821",
+"loc": "Chicago - 20 S. Wacker",
+"via": "",
+"date": "2026-09-21"
+}
+],
+"reg|workday:cna": [
+{
+"company": "CNA Insurance",
+"title": "Technology Internship Program (Software Engineering)",
+"url": "https://cna.wd1.myworkdayjobs.com/en-US/CNA_Careers/job/Chicago-IL-USA/Technology-Internship-Program--Software-Engineering-_R-8107",
+"loc": "Chicago, IL, USA",
+"via": "",
+"date": "2026-09-14"
+}
+],
+"reg|workday:cognex": [],
+"reg|workday:collectorsuniverse": [],
+"reg|workday:collegeboard": [],
+"reg|workday:collin": [],
+"reg|workday:colpipe": [],
+"reg|workday:kauai": [],
+"reg|workday:cranecompany": [],
+"reg|workday:cyrusone": [],
+"reg|workday:kiongroup": [
+{
+"company": "KION Group",
+"title": "AI Internships",
+"url": "https://kiongroup.wd3.myworkdayjobs.com/en-US/kiongroup/job/Wauwatosa-WI-United-States/AI-Internships_JR-0088855-1",
+"loc": "Wauwatosa, WI, United States",
+"via": "",
+"date": null
+}
+],
+"reg|workday:dmainc": [
+{
+"company": "Dmainc",
+"title": "Cybersecurity Intern - Summer 2027",
+"url": "https://dmainc.wd5.myworkdayjobs.com/en-US/dma/job/Fort-Wayne-IN/Cybersecurity-Intern---Summer-2027_REQ742",
+"loc": "Fort Wayne, IN",
+"via": "",
+"date": "2026-10-06"
+},
+{
+"company": "Dmainc",
+"title": "Software Development Intern - Spring 2027",
+"url": "https://dmainc.wd5.myworkdayjobs.com/en-US/dma/job/Fort-Wayne-IN/Software-Development-Intern---Spring-2027_REQ634",
+"loc": "2 Locations",
+"via": "",
+"date": null
+},
+{
+"company": "Dmainc",
+"title": "Software Development Intern - Summer 2027",
+"url": "https://dmainc.wd5.myworkdayjobs.com/en-US/dma/job/Fort-Wayne-IN/Software-Development-Intern---Summer-2027_REQ636",
+"loc": "2 Locations",
+"via": "",
+"date": null
+}
+],
+"reg|workday:dollartree": [],
+"reg|workday:meredith": [
+{
+"company": "DotDash Meredith",
+"title": "Cloud Platform Engineering Intern",
+"url": "https://meredith.wd5.myworkdayjobs.com/en-US/EXT/job/Edmonton-AB---10160-103-St-NW/Cloud-Platform-Engineering-Intern_JR15684",
+"loc": "2 Locations",
+"via": "",
+"date": "2026-09-29"
+}
+],
+"reg|workday:mydpr": [],
+"reg|workday:driscolls": [],
+"reg|workday:energynorthwest": [],
+"reg|workday:essex": [],
+"reg|workable:fasanara": [
+{
+"company": "Fasanara",
+"title": "Quant Trading Intern",
+"url": "https://apply.workable.com/fasanara/j/FC82BCC5C5/",
+"loc": "London, United Kingdom",
+"via": "",
+"date": "2026-09-09"
+}
+],
+"reg|workday:fis": [
+{
+"company": "Fidelity National Information Services",
+"title": "Data Analytics & AI Intern Pipeline",
+"url": "https://fis.wd5.myworkdayjobs.com/en-US/searchjobs/job/US-FL-JAX-347/Intern--Data-Analytics-and-AI--FIS-University-Program_JR0309690",
+"loc": "3 Locations",
+"via": "",
+"date": "2026-09-29"
+},
+{
+"company": "Fidelity National Information Services",
+"title": "Software Engineering Intern Pipeline",
+"url": "https://fis.wd5.myworkdayjobs.com/en-US/searchjobs/job/US-FL-JAX-347/Intern--Software-Engineer--FIS-University-Program_JR0309512",
+"loc": "3 Locations",
+"via": "",
+"date": "2026-09-28"
+},
+{
+"company": "Fidelity National Information Services",
+"title": "Intern, Risk and Cybersecurity, FIS University Program",
+"url": "https://fis.wd5.myworkdayjobs.com/en-US/searchjobs/job/US-FL-JAX-347/Intern--Risk-and-Cybersecurity--FIS-University-Program_JR0309680",
+"loc": "3 Locations",
+"via": "",
+"date": "2026-09-17"
+}
+],
+"reg|workable:fifty-five": [
+{
+"company": "Fifty-Five",
+"title": "Data Science Consultant Intern (H/F)",
+"url": "https://apply.workable.com/fifty-five/j/D8F4443694/",
+"loc": "Paris, France",
+"via": "",
+"date": "2026-09-11"
+},
+{
+"company": "Fifty-Five",
+"title": "Data & AI Engineer Intern (H/F)",
+"url": "https://apply.workable.com/fifty-five/j/2807A639B7/",
+"loc": "Paris, France",
+"via": "",
+"date": "2026-07-20"
+}
+],
+"reg|workable:financeit": [],
+"reg|workday:fiserv": [],
+"reg|workable:flexcompute": [],
+"reg|workable:flexion-robotics": [],
+"reg|workable:focus-group": [],
+"reg|workable:fooji": [],
+"reg|workday:freddiemac": [
+{
+"company": "Freddie Mac",
+"title": "Multifamily Graduate Intern - Quantitative - Summer 2027",
+"url": "https://freddiemac.wd5.myworkdayjobs.com/en-US/External/job/McLean-VA/Multifamily-Business-Analysis-Graduate-Intern---Summer-2027_JR17638",
+"loc": "McLean, VA",
+"via": "",
+"date": "2026-09-22"
+},
+{
+"company": "Freddie Mac",
+"title": "Multifamily Software Development Intern \u2013 Summer 2027",
+"url": "https://freddiemac.wd5.myworkdayjobs.com/en-US/External/job/McLean-VA/Multifamily-Software-Development-Intern---Summer-2027_JR17564",
+"loc": "McLean, VA",
+"via": "",
+"date": null
+},
+{
+"company": "Freddie Mac",
+"title": "Risk Management Graduate Intern \u2013 Quantitative Summer 2027",
+"url": "https://freddiemac.wd5.myworkdayjobs.com/en-US/External/job/McLean-VA/Risk-Management-Graduate-Intern---Quantitative-Summer-2027_JR17553",
+"loc": "McLean, VA",
+"via": "",
+"date": null
+},
+{
+"company": "Freddie Mac",
+"title": "Single-Family Software Developer Intern- Summer 2027",
+"url": "https://freddiemac.wd5.myworkdayjobs.com/en-US/External/job/McLean-VA/Single-Family-Software-Developer-Intern--Summer-2027_JR17544",
+"loc": "McLean, VA",
+"via": "",
+"date": null
+}
+],
+"reg|workday:frostbank": [],
+"reg|workable:fuse-integration": [],
+"reg|workable:futureplc": [],
+"reg|workday:gables": [],
+"reg|workday:gapinc": [],
+"reg|workday:geha": [],
+"reg|workday:generac": [
+{
+"company": "Generac",
+"title": "Data Science Intern - Summer 2027",
+"url": "https://generac.wd5.myworkdayjobs.com/en-US/external/job/Waukesha-WI---USA/Data-Science-Intern---Summer-2027_JR17001",
+"loc": "2 Locations",
+"via": "",
+"date": "2026-09-17"
+}
+],
+"reg|workable:generation-west-virginia-1": [],
+"reg|workable:genetec-inc": [],
+"reg|workday:georgetown": [],
+"reg|workable:get-career-site": [],
+"reg|workday:tsys": [],
+"reg|workday:globalfoundries": [
+{
+"company": "GlobalFoundries",
+"title": "2H University Intern, AI-Driven Process Intern (Advanced Process Control)",
+"url": "https://globalfoundries.wd1.myworkdayjobs.com/en-US/External/job/SGP---Woodlands/XMLNAME-2H-University-Intern--AI-Driven-Process-Intern--Advanced-Process-Control-_JR-2502691",
+"loc": "SGP - Woodlands",
+"via": "",
+"date": null
+}
+],
+"reg|workable:go-media": [],
+"reg|workday:goodwinprocter": [],
+"reg|workday:goto": [],
+"reg|workday:gcu": [],
+"reg|workday:granite": [],
+"reg|workday:ukgrantt": [],
+"reg|workday:graybar": [],
+"reg|workable:grayce": [],
+"reg|workday:gtweed": [],
+"reg|workday:greystar": [],
+"reg|workday:group1001wd": [],
+"reg|workday:guggenheiminvestment": [],
+"reg|workday:gundersenhealth": [],
+"reg|workable:halo-industries": [],
+"reg|workable:harlem-childrens-zone": [],
+"reg|workday:hcsc": [
+{
+"company": "HCSC",
+"title": "Early Careers - Automation Programmer Intern",
+"url": "https://hcsc.wd1.myworkdayjobs.com/en-US/HCSC_External/job/IL---Chicago/Early-Careers---Automation-Programmer-Intern_R0059484",
+"loc": "IL - Chicago",
+"via": "",
+"date": "2026-10-05"
+},
+{
+"company": "HCSC",
+"title": "Early Careers - Infrastructure Engineer Intern",
+"url": "https://hcsc.wd1.myworkdayjobs.com/en-US/HCSC_External/job/IL---Chicago/Early-Careers---Infrastructure-Engineer-Intern_R0059506",
+"loc": "2 Locations",
+"via": "",
+"date": "2026-10-02"
+},
+{
+"company": "HCSC",
+"title": "Early Careers - Vulnerability Management Intern",
+"url": "https://hcsc.wd1.myworkdayjobs.com/en-US/HCSC_External/job/TX---Richardson/Early-Careers---Vulnerability-Management-Intern_R0059514",
+"loc": "TX - Richardson",
+"via": "",
+"date": "2026-10-02"
+},
+{
+"company": "HCSC",
+"title": "Early Careers - Developer Intern",
+"url": "https://hcsc.wd1.myworkdayjobs.com/en-US/HCSC_External/job/Richardson-Texas-HQ-1001-E-Lookout-Drive/Early-Careers---Developer-Intern--Compliance---Health-Quality-_R0059503",
+"loc": "Richardson Texas HQ (1001 E. Lookout Drive)",
+"via": "",
+"date": "2026-09-30"
+}
+],
+"reg|workable:healthcorpsorg": [],
+"reg|workday:hpe": [
+{
+"company": "Hewlett Packard Enterprise",
+"title": "Backend Intern",
+"url": "https://hpe.wd5.myworkdayjobs.com/en-US/acjobsite/job/Herzliya-Israel/Backend-Intern_1211019",
+"loc": "Herzliya, Israel",
+"via": "",
+"date": null
+},
+{
+"company": "Hewlett Packard Enterprise",
+"title": "Backend Intern",
+"url": "https://hpe.wd5.myworkdayjobs.com/en-US/acjobsite/job/Herzliya-Israel/Backend-Intern_1211020",
+"loc": "Herzliya, Israel",
+"via": "",
+"date": null
+},
+{
+"company": "Hewlett Packard Enterprise",
+"title": "Software Intern",
+"url": "https://hpe.wd5.myworkdayjobs.com/en-US/acjobsite/job/Aguadilla-Puerto-Rico-Puerto-Rico/Software-Intern_1215275-3",
+"loc": "2 Locations",
+"via": "",
+"date": "2026-09-23"
+},
+{
+"company": "Hewlett Packard Enterprise",
+"title": "Cloud Developer Intern",
+"url": "https://hpe.wd5.myworkdayjobs.com/en-US/acjobsite/job/Aguadilla-Puerto-Rico-Puerto-Rico/Cloud-Developer-Intern_1215274-3",
+"loc": "2 Locations",
+"via": "",
+"date": "2026-09-23"
+}
+],
+"reg|workday:highmarkhealth": [
+{
+"company": "Highmark Health",
+"title": "Summer 2027 Artificial Intelligence (Operations) Undergraduate Intern",
+"url": "https://highmarkhealth.wd1.myworkdayjobs.com/en-US/highmark/job/Pittsburgh-PA-15222-FAP-5th-Avenue-Place/Summer-2027-Artificial-Intelligence--Operations--Undergraduate-Intern_J287476",
+"loc": "Pittsburgh PA, 15222, FAP, 5th Avenue Place",
+"via": "",
+"date": "2026-10-07"
+}
+],
+"reg|workday:hilbgroup": [],
+"reg|workable:hokali": [],
+"reg|workday:hollandhospital": [],
+"reg|workday:holmanautogroup": [],
+"reg|workable:homey": [],
+"reg|workday:horizonmedia": [],
+"reg|workday:hss": [],
+"reg|workday:hl": [],
+"reg|workday:huron": [],
+"reg|workable:hyperlight": [],
+"reg|workday:idexcorp": [],
+"reg|workday:incora": [],
+"reg|workable:indra-uk": [],
+"reg|workable:coldquanta": [],
+"reg|workday:ing": [],
+"reg|workday:ingrammicro": [],
+"reg|workday:inmar": [
+{
+"company": "Inmar Intelligence",
+"title": "Data, Analytics & AI Internships, Summer 2027",
+"url": "https://inmar.wd1.myworkdayjobs.com/en-US/inmarcareers/job/Headquarters-Winston-Salem-NC/Data--Analytics---AI-Internships--Summer-2027_JY2627632",
+"loc": "Headquarters, Winston Salem, NC",
+"via": "",
+"date": "2026-09-15"
+},
+{
+"company": "Inmar Intelligence",
+"title": "Information Security Internships, Summer 2027",
+"url": "https://inmar.wd1.myworkdayjobs.com/en-US/inmarcareers/job/Headquarters-Winston-Salem-NC/Information-Security-Internships--Summer-2027_JY2627635",
+"loc": "Headquarters, Winston Salem, NC",
+"via": "",
+"date": "2026-09-15"
+},
+{
+"company": "Inmar Intelligence",
+"title": "Software Engineering Internships, Summer 2027",
+"url": "https://inmar.wd1.myworkdayjobs.com/en-US/inmarcareers/job/Headquarters-Winston-Salem-NC/Software-Engineering-Internships--Summer-2027_JY2627638",
+"loc": "Headquarters, Winston Salem, NC",
+"via": "",
+"date": "2026-09-15"
+}
+],
+"reg|workday:insulet": [
+{
+"company": "Insulet Corporation",
+"title": "Intern, DevOps Engineer: June-August 2027 (Onsite)",
+"url": "https://insulet.wd5.myworkdayjobs.com/en-US/insuletcareers/job/San-Diego-California/Intern--DevOps-Engineer--June-August-2027--Onsite-_REQ-2026-18202",
+"loc": "San Diego, California",
+"via": "",
+"date": "2026-09-23"
+},
+{
+"company": "Insulet Corporation",
+"title": "Co-op, DevOps Engineer: January - June 2027 (Hybrid)",
+"url": "https://insulet.wd5.myworkdayjobs.com/en-US/insuletcareers/job/Acton-Massachusetts/Co-op--DevOps-Engineer--January---June-2027--Hybrid-_REQ-2026-18027",
+"loc": "Acton, Massachusetts",
+"via": "",
+"date": "2026-09-21"
+},
+{
+"company": "Insulet Corporation",
+"title": "Co-op, Embedded Software Engineering: January-June 2027 (Onsite)",
+"url": "https://insulet.wd5.myworkdayjobs.com/en-US/insuletcareers/job/Acton-Massachusetts/Co-op--Embedded-Software-Engineering--January-June-2027--Onsite-_REQ-2026-17966",
+"loc": "Acton, Massachusetts",
+"via": "",
+"date": "2026-09-15"
+},
+{
+"company": "Insulet Corporation",
+"title": "Co-op, Embedded Software Test Engineering: January-June 2027 (Onsite)",
+"url": "https://insulet.wd5.myworkdayjobs.com/en-US/insuletcareers/job/Acton-Massachusetts/Co-op--Embedded-Software-Test-Engineering--January-June-2027--Onsite-_REQ-2026-17986",
+"loc": "Acton, Massachusetts",
+"via": "",
+"date": "2026-09-15"
+},
+{
+"company": "Insulet Corporation",
+"title": "Co-op, Embedded Software Test Engineering: January - June 2027 (Onsite)",
+"url": "https://insulet.wd5.myworkdayjobs.com/en-US/insuletcareers/job/Acton-Massachusetts/Co-op--Embedded-Software-Test-Engineering--January---June-2027--Onsite-_REQ-2026-18012",
+"loc": "Acton, Massachusetts",
+"via": "",
+"date": "2026-09-16"
+},
+{
+"company": "Insulet Corporation",
+"title": "Co-op, Software Development Engineer in Test: January - June 2027 (Hybrid)",
+"url": "https://insulet.wd5.myworkdayjobs.com/en-US/insuletcareers/job/Acton-Massachusetts/Co-op--Software-Development-Engineer-in-Test--January---June-2027--Hybrid-_REQ-2026-18026",
+"loc": "Acton, Massachusetts",
+"via": "",
+"date": "2026-09-29"
+}
+],
+"reg|workday:intapp": [],
+"reg|workday:integralife": [],
+"reg|workday:intel": [
+{
+"company": "Intel",
+"title": "AI Frameworks Intern",
+"url": "https://intel.wd1.myworkdayjobs.com/en-US/external/job/Poland-Gdansk/AI-Frameworks-Intern_JR0287895",
+"loc": "Poland, Gdansk",
+"via": "",
+"date": "2026-10-08"
+},
+{
+"company": "Intel",
+"title": "Software Engineering - Intern, Graduate",
+"url": "https://intel.wd1.myworkdayjobs.com/en-US/external/job/US-Oregon-Hillsboro/Software-Engineering---Intern--Graduate_JR0286836",
+"loc": "5 Locations",
+"via": "",
+"date": null
+},
+{
+"company": "Intel",
+"title": "Software Engineering - Intern, Bachelor\u2019s",
+"url": "https://intel.wd1.myworkdayjobs.com/en-US/external/job/US-Oregon-Hillsboro/Software-Engineering---Intern--Bachelor-s_JR0286834",
+"loc": "5 Locations",
+"via": "",
+"date": null
+},
+{
+"company": "Intel",
+"title": "Operations Research Engineer Intern",
+"url": "https://intel.wd1.myworkdayjobs.com/en-US/external/job/PRC-Shanghai/Operations-Research-Engineer-Intern_JR0286945",
+"loc": "2 Locations",
+"via": "",
+"date": "2026-10-08"
+},
+{
+"company": "Intel",
+"title": "GPU Software Performance Intern",
+"url": "https://intel.wd1.myworkdayjobs.com/en-US/external/job/Poland-Gdansk/GPU-Software-Performance-Intern_JR0287884",
+"loc": "Poland, Gdansk",
+"via": "",
+"date": "2026-10-07"
+},
+{
+"company": "Intel",
+"title": "Intern System Software Development Engineer",
+"url": "https://intel.wd1.myworkdayjobs.com/en-US/external/job/Malaysia-Kulim/Intern-System-Software-Development-Engineer_JR0286935",
+"loc": "Malaysia, Kulim",
+"via": "",
+"date": null
+},
+{
+"company": "Intel",
+"title": "Intern System Software Development Engineer",
+"url": "https://intel.wd1.myworkdayjobs.com/en-US/external/job/Malaysia-Penang/Intern-System-Software-Development-Engineer_JR0286955",
+"loc": "Malaysia, Penang",
+"via": "",
+"date": null
+},
+{
+"company": "Intel",
+"title": "DevOps and Software Engineering Intern",
+"url": "https://intel.wd1.myworkdayjobs.com/en-US/external/job/Malaysia-Kulim/DevOps-and-Software-Engineering-Intern_JR0286934",
+"loc": "Malaysia, Kulim",
+"via": "",
+"date": "2026-09-08"
+},
+{
+"company": "Intel",
+"title": "Research Scientist Intern - Graphics, ML",
+"url": "https://intel.wd1.myworkdayjobs.com/en-US/external/job/Virtual-US/Research-Scientist-Intern---Graphics--ML_JR0287525",
+"loc": "Virtual US",
+"via": "",
+"date": "2026-09-30"
+},
+{
+"company": "Intel",
+"title": "AI Solution Architect - Graduate Intern",
+"url": "https://intel.wd1.myworkdayjobs.com/en-US/external/job/US-California-Santa-Clara/AI-Solution-Architect---Graduate-Intern_JR0287524",
+"loc": "US, California, Santa Clara",
+"via": "",
+"date": "2026-10-05"
+},
+{
+"company": "Intel",
+"title": "AI Solution Architect Graduate Intern",
+"url": "https://intel.wd1.myworkdayjobs.com/en-US/external/job/US-California-Santa-Clara/AI-Solution-Architect-Graduate-Intern_JR0287530",
+"loc": "US, California, Santa Clara",
+"via": "",
+"date": "2026-10-05"
+},
+{
+"company": "Intel",
+"title": "AI Solution Architect - Undergraduate Intern",
+"url": "https://intel.wd1.myworkdayjobs.com/en-US/external/job/US-Oregon-Hillsboro/AI-Solution-Architect---Undergraduate-Intern_JR0287931",
+"loc": "US, Oregon, Hillsboro",
+"via": "",
+"date": "2026-10-07"
+},
+{
+"company": "Intel",
+"title": "Firmware and Development Tools Intern",
+"url": "https://intel.wd1.myworkdayjobs.com/en-US/external/job/PRC-Shanghai/Firmware-and-Development-Tools-Intern_JR0287536",
+"loc": "2 Locations",
+"via": "",
+"date": "2026-10-08"
+},
+{
+"company": "Intel",
+"title": "Firmware Development Undergraduate Engineering Co-op",
+"url": "https://intel.wd1.myworkdayjobs.com/en-US/external/job/Virtual-Canada/Firmware-Development-Undergraduate-Engineering-Co-op_JR0286862",
+"loc": "Virtual Canada",
+"via": "",
+"date": "2026-09-29"
+},
+{
+"company": "Intel",
+"title": "Undergraduate Intern Technical (OpenVINO, Neural Network Compression Tools)",
+"url": "https://intel.wd1.myworkdayjobs.com/en-US/external/job/Ireland-Leixlip/Undergraduate-Intern-Technical--OpenVINO--Neural-Network-Compression-Tools-_JR0287250",
+"loc": "Ireland, Leixlip",
+"via": "",
+"date": "2026-10-08"
+},
+{
+"company": "Intel",
+"title": "Undergraduate Intern Technical (OpenVINO, Neural Network Compression Tools) (f/m/d)",
+"url": "https://intel.wd1.myworkdayjobs.com/en-US/external/job/Germany-Munich/Undergraduate-Intern-Technical--OpenVINO--Neural-Network-Compression-Tools---f-m-d-_JR0287675",
+"loc": "Germany, Munich",
+"via": "",
+"date": "2026-10-05"
+}
+],
+"reg|workable:interimage": [],
+"reg|workday:theirc": [],
+"reg|workday:interstate": [],
+"reg|workday:intuitive": [],
+"reg|workday:invenergyllc": [],
+"reg|workday:invesco": [],
+"reg|workday:isu": [],
+"reg|workday:iqvia": [],
+"reg|workday:ironmountain": [],
+"reg|workday:jcrew": [],
+"reg|workday:jabil": [],
+"reg|workday:jackson": [],
+"reg|workday:jadeglobal": [],
+"reg|workday:jainglobal": [
+{
+"company": "Jain Global",
+"title": "Quant Modelling Intern",
+"url": "https://jainglobal.wd5.myworkdayjobs.com/en-US/ExternalSite/job/New-York-New-York/Quant-Modelling-Intern_JR100616",
+"loc": "New York, New York",
+"via": "",
+"date": "2026-10-07"
+},
+{
+"company": "Jain Global",
+"title": "Data Engineer Intern",
+"url": "https://jainglobal.wd5.myworkdayjobs.com/en-US/ExternalSite/job/New-York-New-York/Data-Engineer-Intern_JR100605-1",
+"loc": "New York, New York",
+"via": "",
+"date": "2026-10-05"
+},
+{
+"company": "Jain Global",
+"title": "Quant Research Intern, Systematic Trading",
+"url": "https://jainglobal.wd5.myworkdayjobs.com/en-US/ExternalSite/job/New-York-New-York/Quant-Research-Intern--Systematic-Trading_JR100603-1",
+"loc": "New York, New York",
+"via": "",
+"date": "2026-10-05"
+},
+{
+"company": "Jain Global",
+"title": "Risk Quant Modeller - Intern",
+"url": "https://jainglobal.wd5.myworkdayjobs.com/en-US/ExternalSite/job/Hong-Kong-Office/Risk-Quant-Modeller---Intern_JR100472-1",
+"loc": "Hong Kong Office",
+"via": "",
+"date": null
+},
+{
+"company": "Jain Global",
+"title": "AI Research Intern, Singapore",
+"url": "https://jainglobal.wd5.myworkdayjobs.com/en-US/ExternalSite/job/Singapore-Office/AI-Research-Intern--Singapore_JR100475-1",
+"loc": "Singapore Office",
+"via": "",
+"date": null
+},
+{
+"company": "Jain Global",
+"title": "Quant Research Intern (Summer 2026 \u2013 London)",
+"url": "https://jainglobal.wd5.myworkdayjobs.com/en-US/ExternalSite/job/London-Office/Quant-Research-Intern--Summer-2026---London-_JR100353-1",
+"loc": "London Office",
+"via": "",
+"date": null
+}
+],
+"reg|workable:javelin-global-commodities": [
+{
+"company": "Javelin Global Commodities",
+"title": "Summer Intern: Commodities Trading",
+"url": "https://apply.workable.com/javelin-global-commodities/j/22AE8F15CE/",
+"loc": "London, United Kingdom",
+"via": "",
+"date": "2026-09-16"
+},
+{
+"company": "Javelin Global Commodities",
+"title": "Summer Intern: Software Engineering",
+"url": "https://apply.workable.com/javelin-global-commodities/j/C2B7BC10AD/",
+"loc": "London, United Kingdom",
+"via": "",
+"date": "2026-09-16"
+}
+],
+"reg|workable:jcc-greater-boston": [],
+"reg|workday:jeffersonhealth": [],
+"reg|workable:jeffreym-consulting": [],
+"reg|workday:wiley": [],
+"reg|workday:jj": [],
+"reg|workday:jci": [],
+"reg|workday:jll": [],
+"reg|workable:kanbrick": [],
+"reg|workday:kemper": [],
+"reg|workable:kihomac": [],
+"reg|workday:kokosing": [],
+"reg|workday:kbi": [],
+"reg|lever:kpler": [],
+"reg|workday:heinz": [],
+"reg|workday:lazboy": [],
+"reg|workday:landolakes": [],
+"reg|lever:larian": [
+{
+"company": "Larian Studios",
+"title": "Engine Programming Internship",
+"url": "https://jobs.lever.co/larian/0be702b9-092e-4e3d-b876-c35c32157d6b",
+"loc": "Kuala Lumpur",
+"via": "",
+"date": "2026-05-20"
+},
+{
+"company": "Larian Studios",
+"title": "Gameplay Programmer Internship",
+"url": "https://jobs.lever.co/larian/d546d9c3-ab0d-4c77-81d8-8b8388c158ff",
+"loc": "Barcelona",
+"via": "",
+"date": "2026-01-27"
+}
+],
+"reg|workday:lvvwd": [],
+"reg|workday:laticrete": [],
+"reg|workable:leap-legal-software": [],
+"reg|lever:level99": [],
+"reg|lever:longwall": [],
+"reg|workable:longshot-systems-ltd": [],
+"reg|workable:lovey": [],
+"reg|workable:lovingly": [],
+"reg|workday:lowes": [
+{
+"company": "Lowe's",
+"title": "Software Engineer \u2013 Undergrad Internship \u2013 Summer 2027",
+"url": "https://lowes.wd5.myworkdayjobs.com/en-US/LWS_External_CS/job/Lowes-Charlotte-Technology-Hub-3505/Software-Engineer---Undergrad-Internship---Summer-2027_JR-02623576",
+"loc": "Lowe's Charlotte Technology Hub 3505",
+"via": "",
+"date": "2026-09-14"
+},
+{
+"company": "Lowe's",
+"title": "Exploratory Software Engineering - Undergrad Internship - Summer 2027",
+"url": "https://lowes.wd5.myworkdayjobs.com/en-US/LWS_External_CS/job/Lowes-Charlotte-Technology-Hub-3505/Exploratory-Software-Engineering---Undergrad-Internship---Summer-2027_JR-02623542",
+"loc": "Lowe's Charlotte Technology Hub 3505",
+"via": "",
+"date": "2026-09-14"
+}
+],
+"reg|workable:luminance-1": [
+{
+"company": "Luminance",
+"title": "AI Engineering Intern",
+"url": "https://apply.workable.com/luminance-1/j/E045EF5A7A/",
+"loc": "Cambridge, United Kingdom",
+"via": "",
+"date": "2025-06-06"
+}
+],
+"reg|workable:luxium-solutions-llc": [],
+"reg|workday:lytx": [],
+"reg|workday:mgpru": [],
+"reg|workday:magellanhealth": [],
+"reg|workday:markelcorp": [],
+"reg|workday:mmc": [],
+"reg|workday:masco": [],
+"reg|workday:massgeneralbrigham": [],
+"reg|workable:matternet": [],
+"reg|workday:mccoys": [],
+"reg|workable:mealsuite": [],
+"reg|workday:musc": [],
+"reg|workday:micron": [
+{
+"company": "Micron Technology",
+"title": "Intern - HVM PEE Photo (AI)",
+"url": "https://micron.wd1.myworkdayjobs.com/en-US/External/job/Fab-10NX-Singapore/Intern---HVM-PEE-Photo--AI-_JR112979",
+"loc": "Fab 10N/X, Singapore",
+"via": "",
+"date": "2026-10-08"
+},
+{
+"company": "Micron Technology",
+"title": "Intern- PIE RAM (Agentic AI)",
+"url": "https://micron.wd1.myworkdayjobs.com/en-US/External/job/Fab-10NX-Singapore/Intern--PIE-RAM--Agentic-AI-_JR112779",
+"loc": "Fab 10N/X, Singapore",
+"via": "",
+"date": "2026-10-06"
+},
+{
+"company": "Micron Technology",
+"title": "Intern - SMAI TD AI Engineering Team",
+"url": "https://micron.wd1.myworkdayjobs.com/en-US/External/job/Boise-ID---Main-Site/Intern---SMAI-TD-AI-Engineering-Team_JR112991",
+"loc": "Boise, ID - Main Site",
+"via": "",
+"date": "2026-10-05"
+}
+],
+"reg|workable:mindex": [
+{
+"company": "Mindex",
+"title": "Software Engineer Co-Op - On-site",
+"url": "https://apply.workable.com/mindex/j/84B10DB922/",
+"loc": "Rochester, United States",
+"via": "",
+"date": "2026-10-01"
+}
+],
+"reg|workable:mistywest": [],
+"reg|workday:mizuho": [],
+"reg|workday:mjhlifesciences": [],
+"reg|workable:mlabs": [],
+"reg|workday:archwellessentials": [],
+"reg|workday:momentive": [
+{
+"company": "Momentive",
+"title": "Summer 2027 Intern - Software Development",
+"url": "https://momentive.wd1.myworkdayjobs.com/en-US/MC/job/US-NY-Niskayuna/Summer-2027-Intern---Software-Development_R9756",
+"loc": "US NY Niskayuna",
+"via": "",
+"date": null
+},
+{
+"company": "Momentive",
+"title": "Summer 2027 Intern - Enterprise Reporting & Analytics - Data Science",
+"url": "https://momentive.wd1.myworkdayjobs.com/en-US/MC/job/US-NY-Niskayuna/Summer-2027-Intern---Enterprise-Reporting---Analytics---Data-Science_R9807-1",
+"loc": "US NY Niskayuna",
+"via": "",
+"date": null
+}
+],
+"reg|workday:montage": [],
+"reg|workday:ms": [],
+"reg|workable:motia": [],
+"reg|workday:motorolasolutions": [
+{
+"company": "Motorola",
+"title": "Software Engineer Intern",
+"url": "https://motorolasolutions.wd5.myworkdayjobs.com/en-US/Careers/job/Penang-Malaysia/Software-Engineer-Intern_R64760-1",
+"loc": "Penang, Malaysia",
+"via": "",
+"date": null
+},
+{
+"company": "Motorola",
+"title": "Software Engineer Intern",
+"url": "https://motorolasolutions.wd5.myworkdayjobs.com/en-US/Careers/job/Penang-Malaysia/Software-Engineer-Intern_R68790",
+"loc": "Penang, Malaysia",
+"via": "",
+"date": "2026-09-11"
+},
+{
+"company": "Motorola",
+"title": "Software Engineer Intern",
+"url": "https://motorolasolutions.wd5.myworkdayjobs.com/en-US/Careers/job/Penang-Malaysia/Software-Engineer-Intern_R68941",
+"loc": "Penang, Malaysia",
+"via": "",
+"date": "2026-09-22"
+},
+{
+"company": "Motorola",
+"title": "Intern Software Developer (Java)",
+"url": "https://motorolasolutions.wd5.myworkdayjobs.com/en-US/Careers/job/Krakow-Poland/Intern-Software-Developer--Java-_R68285",
+"loc": "Krakow, Poland",
+"via": "",
+"date": "2026-09-10"
+},
+{
+"company": "Motorola",
+"title": "Intern Software Developer (C#)",
+"url": "https://motorolasolutions.wd5.myworkdayjobs.com/en-US/Careers/job/Krakow-Poland/Intern-Software-Developer--C--_R68703",
+"loc": "Krakow, Poland",
+"via": "",
+"date": "2026-09-25"
+},
+{
+"company": "Motorola",
+"title": "Intern Software Developer - Java",
+"url": "https://motorolasolutions.wd5.myworkdayjobs.com/en-US/Careers/job/Krakow-Poland/Intern-Software-Developer---Java_R68799",
+"loc": "Krakow, Poland",
+"via": "",
+"date": "2026-09-25"
+},
+{
+"company": "Motorola",
+"title": "Intern Software Developer (C++)",
+"url": "https://motorolasolutions.wd5.myworkdayjobs.com/en-US/Careers/job/Krakow-Poland/Intern-Software-Developer--C---_R69046",
+"loc": "Krakow, Poland",
+"via": "",
+"date": "2026-09-28"
+},
+{
+"company": "Motorola",
+"title": "Intern Software Developer (Java)",
+"url": "https://motorolasolutions.wd5.myworkdayjobs.com/en-US/Careers/job/Krakow-Poland/Intern-Software-Developer--Java-_R69454",
+"loc": "Krakow, Poland",
+"via": "",
+"date": "2026-10-06"
+},
+{
+"company": "Motorola",
+"title": "Software Engineering Intern - Summer 2027",
+"url": "https://motorolasolutions.wd5.myworkdayjobs.com/en-US/Careers/job/Chicago-IL/Software-Engineering-Intern---Summer-2027_R68388",
+"loc": "Chicago, IL",
+"via": "",
+"date": "2026-09-08"
+},
+{
+"company": "Motorola",
+"title": "Intern Software Developer (React/JS)",
+"url": "https://motorolasolutions.wd5.myworkdayjobs.com/en-US/Careers/job/Krakow-Poland/Intern-Software-Developer--React-JS-_R68879",
+"loc": "Krakow, Poland",
+"via": "",
+"date": "2026-09-23"
+},
+{
+"company": "Motorola",
+"title": "Software Engineering Intern - Summer 2027",
+"url": "https://motorolasolutions.wd5.myworkdayjobs.com/en-US/Careers/job/Plantation-FL/Software-Engineering-Intern---Summer-2027_R69136",
+"loc": "Plantation, FL",
+"via": "",
+"date": "2026-09-29"
+},
+{
+"company": "Motorola",
+"title": "Intern Software Developer (C/C++)",
+"url": "https://motorolasolutions.wd5.myworkdayjobs.com/en-US/Careers/job/Krakow-Poland/Intern-Software-Developer--C-C---_R68901",
+"loc": "Krakow, Poland",
+"via": "",
+"date": "2026-09-29"
+},
+{
+"company": "Motorola",
+"title": "Software Engineer Intern - Summer 2027",
+"url": "https://motorolasolutions.wd5.myworkdayjobs.com/en-US/Careers/job/Greater-Chicago-Area/Software-Engineer-Intern---Summer-2027_R68679",
+"loc": "Greater Chicago Area",
+"via": "",
+"date": "2026-09-25"
+},
+{
+"company": "Motorola",
+"title": "Software Development Intern - Summer 2027 Internship",
+"url": "https://motorolasolutions.wd5.myworkdayjobs.com/en-US/Careers/job/St-Petersburg-Business-Center/Software-Development-Intern---Summer-2027-Internship_R68576",
+"loc": "St. Petersburg Business Center",
+"via": "",
+"date": "2026-10-07"
+},
+{
+"company": "Motorola",
+"title": "AI & Data Analytics Intern - Supply Resilience 2027 internship",
+"url": "https://motorolasolutions.wd5.myworkdayjobs.com/en-US/Careers/job/Greater-Chicago-Area/AI---Data-Analytics-Intern----Supply-Resilience_R68261",
+"loc": "Greater Chicago Area",
+"via": "",
+"date": "2026-09-17"
+},
+{
+"company": "Motorola",
+"title": "Android Applications Developer Intern - Summer 2027",
+"url": "https://motorolasolutions.wd5.myworkdayjobs.com/en-US/Careers/job/Chicago-IL/Android-Applications-Developer-Intern---Summer-2027_R67740",
+"loc": "Chicago, IL",
+"via": "",
+"date": null
+},
+{
+"company": "Motorola",
+"title": "Software Developer, Embedded Appliances Co-Op",
+"url": "https://motorolasolutions.wd5.myworkdayjobs.com/en-US/Careers/job/Vancouver-Canada/Software-Developer--Embedded-Appliances-Co-Op_R69581",
+"loc": "Vancouver, Canada",
+"via": "",
+"date": "2026-10-07"
+},
+{
+"company": "Motorola",
+"title": "Software Engineer - Summer 2027 Internship",
+"url": "https://motorolasolutions.wd5.myworkdayjobs.com/en-US/Careers/job/Westminster-CO/Software-Engineer---Summer-2027-Internship_R68997",
+"loc": "Westminster, CO",
+"via": "",
+"date": "2026-10-07"
+}
+],
+"reg|workday:msiexpress": [],
+"reg|workday:msigna": [],
+"reg|workable:msr-fsr": [],
+"reg|workable:murphy-research": [],
+"reg|workable:mustard-systems": [],
+"reg|workday:namsa": [],
+"reg|workday:nationwide": [],
+"reg|workable:navionsl": [],
+"reg|workday:nebraskamed": [],
+"reg|workday:neighborlybrands": [],
+"reg|workday:nelnet": [
+{
+"company": "Nelnet",
+"title": "Intern - IT Software Engineer .NET (Summer 2027)",
+"url": "https://nelnet.wd1.myworkdayjobs.com/en-US/MyNelnet/job/Lincoln-NE/Intern---IT-Software-Engineer-NET--Summer-2027-_R23198",
+"loc": "Lincoln, NE",
+"via": "",
+"date": "2026-10-02"
+},
+{
+"company": "Nelnet",
+"title": "Intern - UX/UI Front End Engineer - Starting Spring 2027",
+"url": "https://nelnet.wd1.myworkdayjobs.com/en-US/MyNelnet/job/Madison-WI/Intern---UX-UI-Front-End-Engineer_R23118",
+"loc": "3 Locations",
+"via": "",
+"date": "2026-09-28"
+},
+{
+"company": "Nelnet",
+"title": "2026 Summer Intern - IT Software Engineer - .NET/Web - Starting Summer 2027",
+"url": "https://nelnet.wd1.myworkdayjobs.com/en-US/MyNelnet/job/Madison-WI/XMLNAME-2026-Summer-Intern---IT-Software-Engineer---NET-Web_R23106",
+"loc": "2 Locations",
+"via": "",
+"date": "2026-09-28"
+},
+{
+"company": "Nelnet",
+"title": "Intern - Software Engineer - New Ventures - Starting Summer 2027",
+"url": "https://nelnet.wd1.myworkdayjobs.com/en-US/MyNelnet/job/Lincoln-NE/Intern---Software-Engineer---New-Ventures---Starting-Summer-2026_R23098",
+"loc": "Lincoln, NE",
+"via": "",
+"date": "2026-09-28"
+}
+],
+"reg|workday:ntst": [
+{
+"company": "Netsmart",
+"title": "Software Engineer Intern (Summer 2027 Internship)",
+"url": "https://ntst.wd1.myworkdayjobs.com/en-US/careers/job/Overland-Park-KS/Software-Engineer-Intern--Summer-2027-Internship-_R015667",
+"loc": "Overland Park, KS",
+"via": "",
+"date": "2026-09-18"
+},
+{
+"company": "Netsmart",
+"title": "Cloud Engineer Future (Summer 2027 Internship)",
+"url": "https://ntst.wd1.myworkdayjobs.com/en-US/careers/job/Overland-Park-KS/Cloud-Engineer-Future---Summer-2027-Internship-_R015668",
+"loc": "Overland Park, KS",
+"via": "",
+"date": "2026-09-18"
+},
+{
+"company": "Netsmart",
+"title": "Security Analyst Future (Summer 2027 Internship)",
+"url": "https://ntst.wd1.myworkdayjobs.com/en-US/careers/job/Overland-Park-KS/Security-Analyst-Future--Summer-2027-Internship-_R015669",
+"loc": "Overland Park, KS",
+"via": "",
+"date": "2026-09-18"
+}
+],
+"reg|workday:nb": [
+{
+"company": "Neuberger Berman",
+"title": "Quantitative 2027 Summer Intern",
+"url": "https://nb.wd1.myworkdayjobs.com/en-US/NBCareers/job/New-York-NY/Quantitative-2027-Summer-Intern_R0012643",
+"loc": "New York, NY",
+"via": "",
+"date": "2026-09-23"
+}
+],
+"reg|workable:new-flyer": [],
+"reg|workday:dowjones": [],
+"reg|workday:nreca": [],
+"reg|workable:nu-quantum": [],
+"reg|workable:oceancomm": [],
+"reg|workday:ochsner": [],
+"reg|workday:osu": [],
+"reg|workday:okgov": [],
+"reg|workable:onlogic-inc": [
+{
+"company": "OnLogic",
+"title": "Firmware Engineering Co-op",
+"url": "https://apply.workable.com/onlogic-inc/j/10EC1527D8/",
+"loc": "Cary, United States",
+"via": "",
+"date": "2026-09-01"
+}
+],
+"reg|workday:onto": [],
+"reg|workable:onyx-capital-group": [],
+"reg|workable:openworks-engineering": [],
+"reg|workable:optisigns-inc": [],
+"reg|workable:optitrack": [],
+"reg|workable:oxford-quantum-circuits-8": [],
+"reg|workday:paloaltonetworks": [],
+"reg|workday:papajohns": [],
+"reg|workday:parsons": [],
+"reg|workable:paxton-access": [],
+"reg|workday:paypal": [],
+"reg|workday:newperkinelmer": [],
+"reg|workday:pewtrusts": [],
+"reg|workday:pru": [],
+"reg|workday:phinia": [
+{
+"company": "PHINIA",
+"title": "HRIS Intern \u2013 Workday & AI Agent Deployment",
+"url": "https://phinia.wd5.myworkdayjobs.com/en-US/PHINIA_Careers/job/Cinisello---Italy/HRIS-Intern---Workday---AI-Agent-Deployment_R2026-0579",
+"loc": "Cinisello - Italy",
+"via": "",
+"date": "2026-09-10"
+}
+],
+"reg|workday:pillsburylaw": [],
+"reg|workday:pimacounty": [],
+"reg|workday:pinerest": [],
+"reg|workday:pitneybowes": [],
+"reg|workday:pjtpartners": [],
+"reg|workday:plantemoran": [
+{
+"company": "Plante Moran",
+"title": "2027 Cybersecurity Consultant Intern",
+"url": "https://plantemoran.wd1.myworkdayjobs.com/en-US/pmexternalcareers/job/Southfield/XMLNAME-2027-Cybersecurity-Consultant-Intern_JR-03299",
+"loc": "2 Locations",
+"via": "",
+"date": "2026-09-11"
+}
+],
+"reg|workday:plastipak": [],
+"reg|workday:poet": [
+{
+"company": "POET",
+"title": "Software Developer Intern - Summer 2027",
+"url": "https://poet.wd1.myworkdayjobs.com/en-US/POET/job/Sioux-Falls-SD/Software-Developer-Intern_R101786-1",
+"loc": "Sioux Falls, SD",
+"via": "",
+"date": "2026-09-30"
+}
+],
+"reg|workable:pony-dot-ai": [
+{
+"company": "Pony Dot Ai",
+"title": "Research Intern - Deep Learning",
+"url": "https://apply.workable.com/pony-dot-ai/j/4C1F53EF5D/",
+"loc": "Fremont, United States",
+"via": "",
+"date": "2026-09-18"
+}
+],
+"reg|workday:ppg": [],
+"reg|workday:legalshieldcorp": [],
+"reg|workday:premierinc": [
+{
+"company": "Premier",
+"title": "Data Science Intern",
+"url": "https://premierinc.wd1.myworkdayjobs.com/en-US/External_Professional/job/Charlotte-NC/Data-Science-Intern_R0008481",
+"loc": "Charlotte, NC",
+"via": "",
+"date": "2026-09-21"
+},
+{
+"company": "Premier",
+"title": "Software Engineer Intern",
+"url": "https://premierinc.wd1.myworkdayjobs.com/en-US/External_Professional/job/Charlotte-NC/Software-Engineer-Intern_R0008480",
+"loc": "Charlotte, NC",
+"via": "",
+"date": "2026-09-21"
+}
+],
+"reg|workable:prevail": [],
+"reg|workday:primerica": [],
+"reg|workday:primient": [
+{
+"company": "Primient",
+"title": "AI Analyst Intern - Summer 2027",
+"url": "https://primient.wd1.myworkdayjobs.com/en-US/External_Careers/job/Schaumburg-IL/AI-Analyst-Intern---Summer-2027_JREQ7056",
+"loc": "Schaumburg, IL",
+"via": "",
+"date": "2026-10-04"
+}
+],
+"reg|workday:printpack": [],
+"reg|workday:pg": [
+{
+"company": "Procter & Gamble (P&G)",
+"title": "Data Engineer Intern",
+"url": "https://pg.wd5.myworkdayjobs.com/en-US/1000/job/Moscow/Data-Engineer-Intern_R000159290",
+"loc": "Moscow",
+"via": "",
+"date": "2026-09-17"
+}
+],
+"reg|workday:propharmagroup": [],
+"reg|workable:q5-partners": [],
+"reg|workday:qtsdatacenters": [],
+"reg|workable:red-rabbit-robotics": [],
+"reg|workday:regalrexnord": [],
+"reg|workday:regeneron": [],
+"reg|workday:kcura": [],
+"reg|workday:revantage": [],
+"reg|workday:rgare": [
+{
+"company": "RGA Reinsurance Company",
+"title": "Summer Intern - Investments - Structured Credit & Trading",
+"url": "https://rgare.wd1.myworkdayjobs.com/en-US/Careers/job/United-States-Chesterfield-MO-RGA-HQ/Summer-Intern---Investments---Structured-Credit---Trading_J28885",
+"loc": "United States, Chesterfield, MO, RGA HQ",
+"via": "",
+"date": "2026-09-18"
+}
+],
+"reg|workday:ringcentral": [],
+"reg|workable:rokt": [],
+"reg|workday:saputo": [],
+"reg|workday:scgov": [],
+"reg|workday:sarepta": [],
+"reg|workday:sbasite": [],
+"reg|workday:scj": [],
+"reg|workday:schnucks": [],
+"reg|workday:sensata": [],
+"reg|workday:sentara": [],
+"reg|workday:shipt": [],
+"reg|workday:sralab": [],
+"reg|workday:sierraspace": [],
+"reg|workday:sifive": [
+{
+"company": "SiFive",
+"title": "Intern - Design Verification Infrastructure Engineer - Platform",
+"url": "https://sifive.wd1.myworkdayjobs.com/en-US/sifivecareers/job/Santa-Clara-California-United-States/Intern---Design-Verification-Infrastructure-Engineer---Platform_R-101291-1",
+"loc": "4 Locations",
+"via": "",
+"date": null
+},
+{
+"company": "SiFive",
+"title": "Intern - Design Verification Infrastructure Engineer - Platform",
+"url": "https://sifive.wd1.myworkdayjobs.com/en-US/sifivecareers/job/Santa-Clara-California-United-States/Intern---Design-Verification-Infrastructure-Engineer---Platform_R-101292",
+"loc": "4 Locations",
+"via": "",
+"date": null
+}
+],
+"reg|workday:silgancontainers": [],
+"reg|workday:strongtie": [],
+"reg|workday:stblaw": [],
+"reg|workday:situsamc": [],
+"reg|workday:skechers": [],
+"reg|workday:solenis": [],
+"reg|workday:sonos": [
+{
+"company": "Sonos",
+"title": "Software Engineering Co-op (Cloud)",
+"url": "https://sonos.wd1.myworkdayjobs.com/en-US/Sonos/job/Boston-MA/Software-Engineering-Co-op--Cloud-_R2822-2",
+"loc": "Boston, MA",
+"via": "",
+"date": "2026-09-23"
+},
+{
+"company": "Sonos",
+"title": "Software Engineering Co-op (Signal Processing)",
+"url": "https://sonos.wd1.myworkdayjobs.com/en-US/Sonos/job/Boston-MA/Software-Engineering-Co-op--Signal-Processing-_R2821-2",
+"loc": "Boston, MA",
+"via": "",
+"date": "2026-09-23"
+}
+],
+"reg|workday:sonyglobal": [
+{
+"company": "Sony",
+"title": "Firmware Design - Summer Internship",
+"url": "https://sonyglobal.wd1.myworkdayjobs.com/en-US/Sony_Europe_Careers/job/Lysaker/Firmware-Design---Summer-Internship_JR-119579",
+"loc": "Lysaker",
+"via": "",
+"date": "2026-10-01"
+}
+],
+"reg|workday:spe": [],
+"reg|workday:spartannash": [],
+"reg|workday:spectrumcontrol": [],
+"reg|workday:sprinklr": [],
+"reg|workday:stjude": [],
+"reg|workday:sluhn": [],
+"reg|workday:strideinc": [],
+"reg|workday:strsoh": [],
+"reg|workday:swbc": [
+{
+"company": "Swbc",
+"title": "DevOps Intern",
+"url": "https://swbc.wd1.myworkdayjobs.com/en-US/swivel/job/San-Antonio-TX/DevOps-Intern_R0015484",
+"loc": "San Antonio, TX",
+"via": "",
+"date": "2026-09-08"
+},
+{
+"company": "Swbc",
+"title": "Software Engineering Intern",
+"url": "https://swbc.wd1.myworkdayjobs.com/en-US/swivel/job/San-Antonio-TX/Software-Engineering-Intern_R0015482",
+"loc": "San Antonio, TX",
+"via": "",
+"date": "2026-09-08"
+}
+],
+"reg|workday:synechron": [],
+"reg|workday:tmobile": [],
+"reg|workday:univision": [],
+"reg|workday:atlanticmedia": [],
+"reg|workday:tnsi": [],
+"reg|workday:topcon": [],
+"reg|workday:treehouse": [],
+"reg|workday:trellix": [],
+"reg|workday:trimble": [
+{
+"company": "Trimble",
+"title": "Software Engineering Intern",
+"url": "https://trimble.wd1.myworkdayjobs.com/en-US/TrimbleCareers/job/US---CO-Westminster/Software-Engineering-Intern_R57676",
+"loc": "7 Locations",
+"via": "",
+"date": "2026-09-08"
+},
+{
+"company": "Trimble",
+"title": "Hardware/Software Testing Intern",
+"url": "https://trimble.wd1.myworkdayjobs.com/en-US/TrimbleCareers/job/US---CO-Westminster/Hardware-Software-Testing-Intern_R57677-1",
+"loc": "3 Locations",
+"via": "",
+"date": "2026-09-08"
+}
+],
+"reg|workday:tbkbank": [],
+"reg|workday:cpsi": [],
+"reg|workday:trustage": [],
+"reg|workday:tulsacounty": [],
+"reg|workday:uhaul": [],
+"reg|workday:umb": [],
+"reg|workday:unisys": [],
+"reg|workday:hcmportal": [],
+"reg|workday:trumed": [],
+"reg|workday:uchicago": [],
+"reg|workday:kumc": [],
+"reg|workday:ummc": [],
+"reg|workday:usc": [],
+"reg|workday:usnh": [],
+"reg|workday:vumc": [],
+"reg|workday:vantagedc": [],
+"reg|workday:maxar": [
+{
+"company": "Vantor",
+"title": "AI Engineer Intern",
+"url": "https://maxar.wd1.myworkdayjobs.com/en-US/Vantor/job/Remote-United-States/AI-Engineer-Intern_R24605",
+"loc": "Remote (United States)",
+"via": "",
+"date": "2026-10-06"
+}
+],
+"reg|workday:vcuhealth": [],
+"reg|workday:verabradley": [],
+"reg|workday:veralto": [],
+"reg|workday:vermeer": [
+{
+"company": "Vermeer",
+"title": "IT Data Engineer Intern",
+"url": "https://vermeer.wd5.myworkdayjobs.com/en-US/externalcareersite/job/Pella-Iowa-USA---Corporate-Office/IT-Data-Engineer-Intern_REQ-22171",
+"loc": "Pella, Iowa, USA - Corporate Office",
+"via": "",
+"date": "2026-09-16"
+},
+{
+"company": "Vermeer",
+"title": "Embedded Software Engineer Internship Summer 2027",
+"url": "https://vermeer.wd5.myworkdayjobs.com/en-US/externalcareersite/job/Pella-Iowa-USA---Corporate-Office/Embedded-Software-Engineer-Internship-Summer-2027_REQ-22165",
+"loc": "Pella, Iowa, USA - Corporate Office",
+"via": "",
+"date": null
+},
+{
+"company": "Vermeer",
+"title": "IT Software Engineer Internship Summer 2027",
+"url": "https://vermeer.wd5.myworkdayjobs.com/en-US/externalcareersite/job/Pella-Iowa-USA---Corporate-Office/IT-Software-Engineer-Internship-Summer-2027_REQ-22178",
+"loc": "Pella, Iowa, USA - Corporate Office",
+"via": "",
+"date": null
+}
+],
+"reg|workday:vertexinc": [],
+"reg|workday:veteransunited": [
+{
+"company": "Veterans United",
+"title": "Intern - Software Engineer - Summer 2027",
+"url": "https://veteransunited.wd1.myworkdayjobs.com/en-US/VUHL/job/Remote-MO/Intern---Software-Engineer---Summer-2027_R6249",
+"loc": "Remote MO",
+"via": "",
+"date": "2026-10-06"
+}
+],
+"reg|workday:viatris": [],
+"reg|workday:viavisolutions": [
+{
+"company": "Viavi Solutions",
+"title": "Software Engineering Co-Op",
+"url": "https://viavisolutions.wd1.myworkdayjobs.com/en-US/careers/job/Germantown-MD-USA/Software-Engineering-Co-Op_260005140-1",
+"loc": "Germantown, MD USA",
+"via": "",
+"date": "2026-09-14"
+}
+],
+"reg|workday:vsg": [],
+"reg|workday:vst": [],
+"reg|workday:godirect": [],
+"reg|workday:wsu": [],
+"reg|workday:washpost": [],
+"reg|workday:wattswater": [],
+"reg|workday:weldgov": [],
+"reg|workday:wellington": [],
+"reg|workday:wgu": [],
+"reg|workday:westernunion": [],
+"reg|workday:wmeimg": [],
+"reg|workday:williams": [],
+"reg|workday:wk": [],
+"reg|workday:wwwinc": [],
+"reg|workday:woodward": [],
+"reg|workday:wpi": [],
+"reg|workday:wfscorp": [],
+"reg|workday:worldpay": [],
+"reg|workday:woundedwarriorproject": [],
+"reg|workday:wsfsbank": [],
+"reg|workday:wustl": [],
+"reg|workday:wvumedicine": [],
+"reg|workday:xenergy": [],
+"reg|workday:xcelenergy": [
+{
+"company": "Xcel Energy",
+"title": "AI & Automation Intern- CO",
+"url": "https://xcelenergy.wd1.myworkdayjobs.com/en-US/External/job/Denver-CO-80205/AI---Automation-Intern--CO_JR115739-1",
+"loc": "Denver, CO, 80205",
+"via": "",
+"date": null
+}
+],
+"reg|workday:xylem": [],
+"reg|workday:ouryahoo": [],
+"reg|workday:yai": [],
+"reg|workday:zrsmanagement": [],
+"Atlassian": [
+{
+"company": "Atlassian",
+"title": "Software Engineer Intern, 2027 Canada",
+"url": "https://campus-globalcareers-atlassian.icims.com/jobs/26275/software-engineer-intern%2c-2027-canada/job?mode=apply",
+"loc": "Canada -     Canada",
+"via": "Atlassian",
+"date": null
+},
+{
+"company": "Atlassian",
+"title": "Data Engineer Intern, 2027 Summer U.S.",
+"url": "https://campus-americas.icims.com/jobs/26272/data-engineer-intern%2c-2027-summer-u.s./job?mode=apply",
+"loc": "Seattle - United States -   Seattle, Washington  United States, Remote - Remote",
+"via": "Atlassian",
+"date": null
+},
+{
+"company": "Atlassian",
+"title": "Data Scientist Intern, 2027 Summer U.S.",
+"url": "https://campus-americas.icims.com/jobs/26271/data-scientist-intern%2c-2027-summer-u.s./job?mode=apply",
+"loc": "Seattle - United States -   Seattle, Washington  United States",
+"via": "Atlassian",
+"date": null
+},
+{
+"company": "Atlassian",
+"title": "Machine Learning Intern, 2027 Summer U.S.",
+"url": "https://campus-americas.icims.com/jobs/26268/machine-learning-intern%2c-2027-summer-u.s./job?mode=apply",
+"loc": "San Francisco - United States -   San Francisco, California 94104 United States, Seattle - United States -   Seattle, Washington  United States",
+"via": "Atlassian",
+"date": null
+},
+{
+"company": "Atlassian",
+"title": "Security Engineer Intern, 2027 Summer U.S.",
+"url": "https://campus-americas.icims.com/jobs/26267/security-engineer-intern%2c-2027-summer-u.s./job?mode=apply",
+"loc": "Seattle - United States -   Seattle, Washington  United States, San Francisco - United States -   San Francisco, California 94104 United States",
+"via": "Atlassian",
+"date": null
+},
+{
+"company": "Atlassian",
+"title": "AI Demand Intelligence Intern, 2027 Summer U.S.",
+"url": "https://careers-americas.icims.com/jobs/26843/ai-demand-intelligence-intern%2c-2027-summer-u.s./job?mode=apply",
+"loc": "San Francisco - United States -   San Francisco, California 94104 United States, Remote - Remote",
+"via": "Atlassian",
+"date": null
+},
+{
+"company": "Atlassian",
+"title": "Software Engineer Intern, 2027 Summer U.S.",
+"url": "https://careers-americas.icims.com/jobs/26266/software-engineer-intern%2c-2027-summer-u.s./job?mode=apply",
+"loc": "San Francisco - United States -   San Francisco, California 94104 United States, Seattle - United States -   Seattle, Washington  United States",
+"via": "Atlassian",
+"date": null
 }
 ]
 }
