@@ -43,6 +43,10 @@
     "first_seen_at",
     "posted_at"
    ]
+  },
+  {
+   "name": "Atlassian",
+   "url": "https://www.atlassian.com/endpoint/careers/listings"
   }
  ],
  "markdown": [
@@ -147,6 +151,12 @@
    "pages": 5,
    "link_regex": "/details/\\d+",
    "pre": true
+  },
+  {
+   "name": "Bloomberg",
+   "url": "https://bloomberg.avature.net/careers/SearchJobs/internship?jobRecordsPerPage=100",
+   "pages": 1,
+   "link_regex": "/careers/JobDetail/"
   }
  ],
  "sitemaps": [
@@ -355,14 +365,6 @@
    ]
   },
   {
-   "name": "Atlassian",
-   "slugs": [
-    "atlassian",
-    "atlassianai",
-    "atlassianlabs"
-   ]
-  },
-  {
    "name": "Augment Code",
    "slugs": [
     "augmentcode",
@@ -406,17 +408,9 @@
   },
   {
    "name": "Black Forest Labs",
-   "slugs": [
-    "blackforestlabs"
-   ],
-   "all_roles": true
-  },
-  {
-   "name": "Bloomberg",
-   "slugs": [
-    "bloomberg",
-    "bloombergai",
-    "bloomberglabs"
+   "all_roles": true,
+   "boards": [
+    "greenhouse_any:blackforestlabs"
    ]
   },
   {
@@ -805,14 +799,13 @@
   },
   {
    "name": "Google DeepMind",
-   "slugs": [
-    "deepmind",
-    "googledeepmind"
-   ],
    "aliases": [
     "DeepMind"
    ],
-   "all_roles": true
+   "all_roles": true,
+   "boards": [
+    "greenhouse_any:deepmind"
+   ]
   },
   {
    "name": "Graham Capital",
@@ -839,9 +832,10 @@
   },
   {
    "name": "Groq",
-   "slugs": [
-    "groq"
-   ]
+   "boards": [
+    "greenhouse_any:groq"
+   ],
+   "all_roles": true
   },
   {
    "name": "Groww",
@@ -1182,7 +1176,7 @@
   {
    "name": "Mistral AI",
    "boards": [
-    "lever_html:mistral"
+    "ashby:mistral.ai"
    ],
    "all_roles": true
   },
@@ -1437,10 +1431,8 @@
   },
   {
    "name": "Razorpay",
-   "slugs": [
-    "razorpay",
-    "razorpayai",
-    "razorpaylabs"
+   "boards": [
+    "greenhouse_any:razorpaysoftwareprivatelimited"
    ]
   },
   {
@@ -1632,10 +1624,8 @@
   },
   {
    "name": "Sourcegraph",
-   "slugs": [
-    "sourcegraph",
-    "sourcegraphai",
-    "sourcegraphlabs"
+   "boards": [
+    "greenhouse_any:sourcegraph91"
    ]
   },
   {
@@ -2042,16 +2032,14 @@
   },
   {
    "name": "Allen Institute for AI",
-   "slugs": [
-    "allenai",
-    "ai2",
-    "allen-institute-for-ai"
-   ],
    "aliases": [
     "AI2",
     "Allen Institute"
    ],
-   "all_roles": true
+   "all_roles": true,
+   "boards": [
+    "greenhouse_any:thealleninstitute"
+   ]
   },
   {
    "name": "Simons Foundation (Flatiron Institute)",
@@ -2091,9 +2079,10 @@
   },
   {
    "name": "Mila",
-   "slugs": [
-    "mila"
-   ]
+   "boards": [
+    "workable:mila-2"
+   ],
+   "all_roles": true
   },
   {
    "name": "Vector Institute",

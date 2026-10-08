@@ -229,17 +229,33 @@ def rippling(slug, name):
               ((j.get("workLocation") or {}).get("label") or "")) for j in (d if isinstance(d, list) else [])]
 
 
-def gh_eu(slug, name):
-    """EU Greenhouse has no public JSON API; read the embeddable board page (paginated)."""
+def _gh_page(slug, name, host, tag):
     out, pat = {}, re.compile(rf"/{re.escape(slug)}/jobs/(\d+)")
     for page in range(1, 11):
-        html = http(f"https://job-boards.eu.greenhouse.io/embed/job_board?for={slug}&page={page}", text=True)
+        html = http(f"https://{host}/embed/job_board?for={slug}&page={page}", text=True)
         before = len(out)
-        _html_collect(html, "https://job-boards.eu.greenhouse.io/", pat, out)
+        _html_collect(html, f"https://{host}/", pat, out)
         if len(out) == before:
             break
-    return [J(f"gh.eu:{slug}:{pat.search(k).group(1)}", name, t, u, loc) for k, (t, u, *rest) in out.items()
+    return [J(f"{tag}:{slug}:{pat.search(k).group(1)}", name, t, u, loc) for k, (t, u, *rest) in out.items()
             for loc in [rest[0] if rest else ""]]
+
+
+def gh_eu(slug, name):
+    """EU Greenhouse has no public JSON API; read the embeddable board page (paginated)."""
+    return _gh_page(slug, name, "job-boards.eu.greenhouse.io", "gh.eu")
+
+
+def gh_any(slug, name):
+    """Greenhouse US: JSON API, falling back to the public board page when the API returns 404 or nothing
+    (a few boards, e.g. Google DeepMind and Groq, only work that way). Keeps the same job ids as `gh`."""
+    try:
+        js = gh(slug, name)
+        if js:
+            return js
+    except Exception:
+        pass
+    return [dict(j, id=j["id"].replace("gh.us:", "gh:")) for j in _gh_page(slug, name, "job-boards.greenhouse.io", "gh.us")]
 
 
 def lever_html(slug, name):
@@ -267,7 +283,7 @@ def jibe(j):
     return list(out.values())
 
 
-ATS = {"greenhouse": lambda s, n: gh(s, n), "greenhouse_eu": gh_eu, "lever_html": lever_html,
+ATS = {"greenhouse": lambda s, n: gh(s, n), "greenhouse_any": gh_any, "greenhouse_eu": gh_eu, "lever_html": lever_html,
        "lever": lever, "lever_eu": lambda s, n: lever(s, n, True), "ashby": ashby, "workable": workable,
        "smartrecruiters": smartrecruiters, "recruitee": recruitee, "rippling": rippling}
 AUTO_ORDER = ["greenhouse", "ashby", "lever", "greenhouse_eu", "smartrecruiters"]
@@ -302,11 +318,13 @@ def fetch_company(c, cached):
         for ats in opts:
             if (ats, slug) not in cands:
                 cands.append((ats, slug))
-    note = ""
+    note, errs = "", []
     for ats, slug in cands:
         try:
             js = ATS[ats](slug, name)
-        except Exception:
+        except Exception as e:
+            if len(errs) < 3 and not (ats == "greenhouse_eu" or str(e).startswith("HTTP Error 404")):
+                errs.append(f"{ats}:{slug} {str(e)[:40]}")
             continue
         if not js:
             continue
@@ -316,7 +334,7 @@ def fetch_company(c, cached):
                 note = f"slug '{slug}' on {ats} belongs to '{bn}', rejected"
                 continue
         return name, [(f"{name}|{ats}:{slug}", js)], []
-    return name, [], [note or "no board with jobs found (add the right slug under 'boards')"]
+    return name, [], [note or "no board with jobs found (add the right slug under 'boards')" + (f" [errors: {'; '.join(errs)}]" if errs else "")]
 
 
 # ------------------------------------------------------------------ direct career-site adapters
