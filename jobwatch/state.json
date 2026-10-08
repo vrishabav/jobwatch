@@ -12058,6 +12058,14 @@
    "new": 9,
    "ok": "4060/4120",
    "run": "8"
+  },
+  {
+   "at": "2026-10-08 09:52",
+   "event": "workflow_dispatch",
+   "mode": "render",
+   "new": 0,
+   "ok": "2/2",
+   "run": "8"
   }
  ],
  "seen": {
