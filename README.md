@@ -20,7 +20,7 @@ The same role found in two places (company site and an aggregator, in either ord
 
 ## Guarantees
 - **Only new roles.** Every role ID is remembered (for a year, or as long as it stays posted). A role alerts once, ever.
-- **No floods.** A source's first successful run is a silent baseline; adding new firms never spams you with their existing roles. Dated postings older than `max_age_days` (21) never alert. Editing the filters absorbs old roles that newly match silently; only postings from the last 2 days can alert.
+- **No floods.** A source's first successful run is a silent baseline; adding new firms never spams you with their existing roles. Dated postings older than `max_age_days` (21) never alert. Editing the filters absorbs old roles that newly match silently; only postings from the last 7 days can alert.
 - **Safe saves.** Each run checks out the latest state and never auto-merges conflicting state; a conflicting run stops without sending, and the next run redoes the work.
 - **Never twice.** Roles are queued in `outbox.json`, the state is committed and pushed, and only then are alerts sent. If sending fails, they stay queued for the next run.
 - **Automatic.** The `schedule:` in the workflow runs it on GitHub's clock; you never need to click Run. State is committed every run, so GitHub never pauses the schedule for inactivity.

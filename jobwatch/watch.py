@@ -61,6 +61,13 @@ def http(url, data=None, timeout=25, text=False):
             if e.code in (400, 401, 403, 404, 410, 422):
                 raise
             err = e
+            if e.code == 429 and not fast:   # rate limited: wait as asked (capped), then retry
+                try:
+                    wait = min(int(e.headers.get("Retry-After", "0")), 60)
+                except Exception:
+                    wait = 0
+                time.sleep(max(wait, 15 * (attempt + 1)))
+                continue
         except Exception as e:
             err = e
         time.sleep(2 * (attempt + 1))
@@ -125,7 +132,8 @@ _TECH_INC = re.compile(
     r"cybersecurity|application security|information security|infosec|security engineer|security research|"
     r"data science|data scientist|data engineer|machine learning|ml|deep learning|ai|"
     r"artificial intelligence|nlp|computer vision|llm|neural networks?|reinforcement learning|"
-    r"research scientist|applied scientist|research engineer|ml engineer|ai engineer|ai research|ml research|"
+    r"research scientist|applied scientist|applied science|research engineer|ml engineer|ai engineer|ai research|ml research|"
+    r"research intern|research internship|research sciences?|student researcher|researcher|robotics|"
     r"quant|quantitative|trading|trader|algorithmic|computer science|programming|programmer|coding|"
     r"gpu|cuda|hpc|kernel engineer|robotics software|java|python|c\+\+|rust|golang|vulnerability|"
     r"(?:cloud|cyber|network|application|software|product|offensive|ai|systems?) security|security (?:engineer|engineering|research|analyst|intern)|"
@@ -375,30 +383,43 @@ def oracle(o):
 
 
 def eightfold(e):
+    """Eightfold career sites. With "filter" (e.g. "filter_seniority=Intern") the site's own experience-level filter is
+    read first (catches roles whose title doesn't say intern), then the plain keyword search is added on top."""
     base, dom, q = f"https://{e['host']}", e["domain"], e.get("query", "intern")
     out = {}
-    try:  # classic endpoint first (what zshah101 uses), PCSX as fallback
-        for start in range(0, 200, 10):
-            d = http(f"{base}/api/apply/v2/jobs?domain={dom}&query={quote(q)}&start={start}&num=10&sort_by=timestamp")
-            ps = d.get("positions") or []
-            for p in ps:
-                out[p["id"]] = J(f"ef:{e['name']}:{p['id']}", e["name"], p["name"],
-                                 p.get("canonicalPositionUrl") or f"{base}/careers/job/{p['id']}", p.get("location", ""),
-                                 date=to_date(p.get("t_create")))
-            if len(ps) < 10:
-                break
-    except Exception:
-        pass
-    if not out:
-        for start in range(0, 200, 10):
-            d = http(f"{base}/api/pcsx/search?domain={dom}&query={quote(q)}&start={start}&sort_by=timestamp")
+
+    def pcsx(query, extra=""):
+        for start in range(0, 300, 10):
+            d = http(f"{base}/api/pcsx/search?domain={dom}&query={quote(query)}&location=&start={start}&sort_by=timestamp{extra}")
             ps = ((d.get("data") or d).get("positions")) or []
             for p in ps:
                 out[p["id"]] = J(f"ef:{e['name']}:{p['id']}", e["name"], p["name"],
                                  urljoin(base, p.get("positionUrl") or f"/careers/job/{p['id']}"), "; ".join(p.get("locations") or []),
-                                 date=to_date(p.get("postedTs")))
+                                 p.get("department") or "", date=to_date(p.get("postedTs")))
             if len(ps) < 10:
                 break
+            time.sleep(1)   # be gentle: Microsoft rate-limits fast paging (HTTP 429)
+
+    if e.get("filter"):
+        pcsx("", "&" + e["filter"])
+    try:  # classic endpoint (what zshah101 uses), PCSX as fallback
+        got = 0
+        for start in range(0, 200, 10):
+            d = http(f"{base}/api/apply/v2/jobs?domain={dom}&query={quote(q)}&start={start}&num=10&sort_by=timestamp")
+            ps = d.get("positions") or []
+            got += len(ps)
+            for p in ps:
+                out.setdefault(p["id"], J(f"ef:{e['name']}:{p['id']}", e["name"], p["name"],
+                                          p.get("canonicalPositionUrl") or f"{base}/careers/job/{p['id']}", p.get("location", ""),
+                                          p.get("department") or "", date=to_date(p.get("t_create"))))
+            if len(ps) < 10:
+                break
+            time.sleep(1)
+        if not got:
+            raise ValueError("classic endpoint empty")
+    except Exception:
+        if not e.get("filter"):
+            pcsx(q)
     return list(out.values())
 
 
@@ -487,6 +508,8 @@ def json_feed(f):
                 d = d[k]
                 break
     cat = re.compile(f["category_regex"], re.I) if f.get("category_regex") else None
+    # e.g. {"firmType": "hedge_fund|proprietary"}: only these firms get every role; the rest go through the tech filter
+    allf = {k: re.compile(v, re.I) for k, v in (f.get("all_roles_if") or {}).items()}
     out = []
     for j in d if isinstance(d, list) else []:
         if not isinstance(j, dict) or j.get("active") is False or j.get("is_open") is False:
@@ -506,6 +529,8 @@ def json_feed(f):
                      _pick(j, f.get("company_keys") or ["company", "company_name", "firm", "firmName", "firm_name", "employer"]) or f["name"],
                      title, url, _pick(j, ["location", "locations", "city", "office"]), extra, pre=bool(f.get("pre")), agg=True,
                      via=f["name"], date=to_date(_pick(j, f.get("date_keys") or ["date_posted", "posted_at", "datePosted", "date", "posted", "created_at"]))))
+        if allf:
+            out[-1]["all_ok"] = all(p.search(str(j.get(k) or "")) for k, p in allf.items())
     return out
 
 
@@ -797,7 +822,7 @@ def collect(cfg, st, mode):
     def put(key, jobs, err=None, agg=False, group=None, res="-", all_roles=False):
         for j in jobs:
             j["src"] = key
-            j["all"] = all_roles
+            j["all"] = all_roles and j.pop("all_ok", True)
         S[key] = {"jobs": jobs, "err": err, "agg": agg, "group": group or key, "res": res}
 
     def run(label, fn, **meta):
@@ -923,16 +948,23 @@ def dkey(j):
 
 
 def ukey(j):
-    """Posting-id fingerprint from the job URL (Amazon id, Workday requisition, Greenhouse gh_jid, Eightfold id, UUID)."""
-    u = (j.get("url") or "").lower()
-    m = re.search(r"amazon\.jobs/.*?/jobs/(\d+)", u) or re.search(r"gh_jid=(\d+)", u) or re.search(r"/job/(\d{9,})", u)
+    """Posting fingerprint from the job URL: Amazon id, gh_jid, a numeric/requisition id or UUID at the end of the path,
+    else the whole job-specific path. Lets the same posting from two sources (or with a re-issued feed id) alert once."""
+    u = (j.get("url") or "").lower().replace("&amp;", "&")
     comp = re.sub(r"^the\s+", "", j["company"].lower().strip()).split()
     pre = norm(comp[0] if comp else "")[:6] + ":"
+    m = re.search(r"amazon\.jobs/.*?/jobs/(\d+)", u) or re.search(r"gh_jid=(\d+)", u)
     if m:
         return pre + m.group(1)
-    seg = u.split("?")[0].rstrip("/").rsplit("/", 1)[-1]
-    m = re.search(r"[_-]((?:r|jr|req|reqid)?-?\d{4,})(?:-\d)?$", seg) or re.search(r"([0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12})$", seg)
-    return pre + m.group(1).lstrip("-") if m else ""
+    path = re.sub(r"^https?://(www\.)?", "", u.split("?")[0].split("#")[0]).rstrip("/")
+    seg = path.rsplit("/", 1)[-1]
+    m = (re.fullmatch(r"(\d{5,})", seg) or re.search(r"[_-]((?:r|jr|req|reqid)?-?\d{4,})(?:-\d)?$", seg)
+         or re.search(r"([0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12})$", seg))
+    if m:
+        return pre + m.group(1).lstrip("-")
+    if re.search(r"\d{5,}|[0-9a-f]{8}-[0-9a-f]{4}-", path):   # job-specific path (not a generic careers page)
+        return pre + path
+    return ""
 
 
 def main():
@@ -951,12 +983,17 @@ def main():
                                    _TECH_INC.pattern, _TECH_EXC.pattern, _STRICT_INTERN.pattern,
                                    sorted(c["name"] for c in cfg["companies"] if c.get("all_roles"))]).encode()).hexdigest()[:12]
     filters_changed = st.get("filter_sig") != sig and bool(st.get("bootstrapped"))
-    recent_cut = (NOW - timedelta(days=2)).strftime("%Y-%m-%d")
+    recent_cut = (NOW - timedelta(days=7)).strftime("%Y-%m-%d")
     dka_cut = (NOW - timedelta(days=30)).strftime("%Y-%m-%d")
     S = collect(cfg, st, MODE)
     outbox = load(P["outbox"], {"jobs": [], "notes": []})
     alert_keys = set()
     open_roles = load(P["open"], {})
+    for _jobs in open_roles.values():   # every role listed last run is already known, whatever id a feed gives it now
+        for _j in _jobs:
+            _uk = ukey(_j)
+            if _uk:
+                st["seen"].setdefault("uk:" + _uk, TODAY)
     seen, new_jobs, run_dk, run_uk = st["seen"], [], {}, set()
     boot = set(st["bootstrapped"])
 
@@ -983,7 +1020,12 @@ def main():
                     known = known or seen.get("dka:" + dk, "") >= dka_cut
                 if known:
                     seen[j["id"]] = TODAY
+                    if uk and uk not in run_uk:   # same posting under a re-issued id: still list it as open
+                        matched.append({k: j[k] for k in ("company", "title", "url", "loc", "via", "date")})
+                        run_uk.add(uk)
                     continue
+            elif uk and uk in run_uk:
+                continue   # already listed this run from another source
             matched.append({k: j[k] for k in ("company", "title", "url", "loc", "via", "date")})
             run_dk.setdefault(dk, key)
             if uk:

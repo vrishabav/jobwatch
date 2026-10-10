@@ -32,7 +32,10 @@
    "date_keys": [
     "datePosted"
    ],
-   "all_roles": true
+   "all_roles": true,
+   "all_roles_if": {
+    "firmType": "hedge_fund|proprietary"
+   }
   },
   {
    "name": "Intern Engine (zshah101)",
@@ -118,7 +121,8 @@
   {
    "name": "Microsoft",
    "host": "apply.careers.microsoft.com",
-   "domain": "microsoft.com"
+   "domain": "microsoft.com",
+   "filter": "filter_seniority=Intern"
   },
   {
    "name": "Netflix",
@@ -157,6 +161,14 @@
    "url": "https://bloomberg.avature.net/careers/SearchJobs/internship?jobRecordsPerPage=100",
    "pages": 1,
    "link_regex": "/careers/JobDetail/"
+  },
+  {
+   "name": "Google DeepMind",
+   "url": "https://www.google.com/about/careers/applications/jobs/results/?company=DeepMind&target_level=INTERN_AND_APPRENTICE&sort_by=date&page={page}",
+   "pages": 3,
+   "link_regex": "/jobs/results/\\d+",
+   "pre": true,
+   "all_roles": true
   }
  ],
  "sitemaps": [
@@ -409,8 +421,10 @@
   {
    "name": "Black Forest Labs",
    "all_roles": true,
-   "boards": [
-    "greenhouse_any:blackforestlabs"
+   "slugs": [
+    "blackforestlabs",
+    "bfl",
+    "black-forest-labs"
    ]
   },
   {
@@ -798,16 +812,6 @@
    "all_roles": true
   },
   {
-   "name": "Google DeepMind",
-   "aliases": [
-    "DeepMind"
-   ],
-   "all_roles": true,
-   "boards": [
-    "greenhouse_any:deepmind"
-   ]
-  },
-  {
    "name": "Graham Capital",
    "boards": [
     "greenhouse:grahamcapitalmanagement"
@@ -832,10 +836,11 @@
   },
   {
    "name": "Groq",
-   "boards": [
-    "greenhouse_any:groq"
-   ],
-   "all_roles": true
+   "all_roles": true,
+   "slugs": [
+    "groq",
+    "groqinc"
+   ]
   },
   {
    "name": "Groww",
