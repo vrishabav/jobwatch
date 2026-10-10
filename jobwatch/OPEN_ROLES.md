@@ -1,4 +1,4 @@
-# Open intern roles (5932, updated 2026-10-10 07:00 UTC)
+# Open intern roles (5931, updated 2026-10-10 07:06 UTC)
 
 Every currently open role matching your filters across all sources (duplicates merged). Alerts only fire for new ones.
 
@@ -4749,7 +4749,6 @@ Every currently open role matching your filters across all sources (duplicates m
 ### Meta
 - [Data Scientist Intern - Product Analytics](https://www.metacareers.com/jobs/1633096478817942) — Menlo Park, CA, NYC · via Simplify · 2026-10-06
 - [Data Scientist Intern - Product Analytics](https://www.metacareers.com/jobs/929757023499411) — Menlo Park, CA · via Simplify · 2026-10-07
-- [Data Scientist Intern, Product Analytics (Summer 2027)](https://www.metacareers.com/profile/job_details/1633096478817942)
 - [Research Scientist Intern - Audio - Machine Learning and Computer Vision](https://www.metacareers.com/jobs/2211974449401350) — Burlingame, CA, Redmond, WA · via Simplify · 2026-10-09
 - [Research Scientist Intern - Robotics](https://www.metacareers.com/jobs/1940312740718917) — Menlo Park, CA · via Simplify · 2026-10-01
 - [Research Scientist Intern - Spatial Audio Capture and Reproduction](https://www.metacareers.com/jobs/1674394627579563) — Redmond, WA · via Simplify · 2026-10-09
