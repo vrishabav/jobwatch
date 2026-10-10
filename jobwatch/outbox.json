@@ -1,4 +1,719 @@
 {
-"jobs": [],
+"jobs": [
+{
+"company": "Anthropic",
+"title": "Conceptual Reasoning Fellow",
+"url": "https://job-boards.greenhouse.io/anthropic/jobs/5447080008",
+"loc": "Remote-Friendly, United States; San Francisco, CA",
+"via": ""
+},
+{
+"company": "Capstone Investment Advisors",
+"title": "Summer 2027 - Execution Tech Internship",
+"url": "https://job-boards.greenhouse.io/capstoneinvestmentadvisors/jobs/8882130002",
+"loc": "New York, New York",
+"via": ""
+},
+{
+"company": "Faire",
+"title": "Applied AI/ML Scientist, Intern",
+"url": "https://boards.greenhouse.io/faire/jobs/8870975002?gh_jid=8870975002",
+"loc": "San Francisco, CA",
+"via": ""
+},
+{
+"company": "MongoDB",
+"title": "2027 - Software Engineer Intern, Dublin - 6 Month Internship",
+"url": "https://www.mongodb.com/careers/job/?gh_jid=8258279",
+"loc": "Dublin",
+"via": ""
+},
+{
+"company": "Schonfeld",
+"title": "2027 DMFI COO Intern",
+"url": "https://job-boards.greenhouse.io/schonfeld/jobs/8172062",
+"loc": "London, England, United Kingdom",
+"via": ""
+},
+{
+"company": "Schonfeld",
+"title": "2027 Quantitative Developer Intern",
+"url": "https://job-boards.greenhouse.io/schonfeld/jobs/8267092",
+"loc": "Austin, Texas, United States",
+"via": ""
+},
+{
+"company": "Schonfeld",
+"title": "2027 Quantitative Research Intern",
+"url": "https://job-boards.greenhouse.io/schonfeld/jobs/8267120",
+"loc": "Austin, Texas, United States",
+"via": ""
+},
+{
+"company": "Avanade",
+"title": "Internship: Software Engineer Avanade Agentic Engineering Factory",
+"url": "https://accenture.wd103.myworkdayjobs.com/en-US/AvanadeCareers/job/Brussels/Internship--Software-Engineer-Avanade-Agentic-Engineering-Factory_R00363284",
+"loc": "Brussels",
+"via": ""
+},
+{
+"company": "Avanade",
+"title": "Internship: Azure Platform Engineer Avanade Agentic Engineering Factory",
+"url": "https://accenture.wd103.myworkdayjobs.com/en-US/AvanadeCareers/job/Brussels/Internship--Azure-Platform-Engineer-Avanade-Agentic-Engineering-Factory_R00363280",
+"loc": "Brussels",
+"via": ""
+},
+{
+"company": "Arcesium",
+"title": "Infrastructure Engineer Intern",
+"url": "https://job-boards.greenhouse.io/arcesiumllc/jobs/5257199007",
+"loc": "New York",
+"via": ""
+},
+{
+"company": "Arcesium",
+"title": "Software Engineer Intern",
+"url": "https://job-boards.greenhouse.io/arcesiumllc/jobs/5257176007",
+"loc": "New York",
+"via": ""
+},
+{
+"company": "Bosch",
+"title": "Artificial Intelligence / Machine Learning: Foundation Models - Intern",
+"url": "https://jobs.smartrecruiters.com/BoschGroup/744000154759734",
+"loc": "Sunnyvale, us",
+"via": ""
+},
+{
+"company": "Bosch",
+"title": "Information Security and Privacy Intern",
+"url": "https://jobs.smartrecruiters.com/BoschGroup/744000154757409",
+"loc": "Farmington Hills, us",
+"via": ""
+},
+{
+"company": "Bosch",
+"title": "AI & Data Quality Improvement Internship",
+"url": "https://jobs.smartrecruiters.com/BoschGroup/744000154627659",
+"loc": "Beograd, rs",
+"via": ""
+},
+{
+"company": "Buildertrend",
+"title": "Software Engineering Intern",
+"url": "https://buildertrend.wd108.myworkdayjobs.com/en-US/External_Careers/job/Omaha-NE/Software-Engineering-Inter_JR-000467",
+"loc": "Omaha, NE",
+"via": ""
+},
+{
+"company": "Clera",
+"title": "Computer Vision & Robotics Intern",
+"url": "https://jobs.ashbyhq.com/clera/f211c31e-d92a-468e-9da1-3f8f27f0e05b",
+"loc": "San Francisco",
+"via": ""
+},
+{
+"company": "GCM Grosvenor",
+"title": "2027 Software Engineering Summer Intern",
+"url": "https://job-boards.greenhouse.io/gcmgrosvenor/jobs/8015792003",
+"loc": "Chicago, Illinois, United States",
+"via": ""
+},
+{
+"company": "Loram",
+"title": "Machine Learning / Artificial Intelligence (AI) Intern",
+"url": "https://jobs.smartrecruiters.com/Loram1/3743990016031492",
+"loc": "Hamel, us",
+"via": ""
+},
+{
+"company": "Aptiv",
+"title": "Compiler Intern - Compiler Team",
+"url": "https://aptiv.wd5.myworkdayjobs.com/aptiv_careers/job/USA-Walnut-Creek-CA---WR/Intern---Compiler-Team_J000704385",
+"loc": "Walnut Creek, CA",
+"via": "Simplify"
+},
+{
+"company": "Aptiv",
+"title": "Embedded Software Engineer Intern",
+"url": "https://aptiv.wd5.myworkdayjobs.com/aptiv_careers/job/USA-Walnut-Creek-CA---WR/Embedded-Software---Engineering-Intern_J000704386",
+"loc": "Walnut Creek, CA",
+"via": "Simplify"
+},
+{
+"company": "Aptiv",
+"title": "Software Engineer Intern",
+"url": "https://aptiv.wd5.myworkdayjobs.com/aptiv_careers/job/USA-Walnut-Creek-CA---WR/Engineering-Intern_J000704388",
+"loc": "Walnut Creek, CA",
+"via": "Simplify"
+},
+{
+"company": "NVIDIA",
+"title": "CPU Compiler Intern",
+"url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/UK-Cambridge/CPU-Compiler-Intern---2027_JR2027251",
+"loc": "Cambridge, UK",
+"via": "Simplify"
+},
+{
+"company": "WTW",
+"title": "Software Developer Intern",
+"url": "https://eedu.fa.em3.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1003/job/202605435",
+"loc": "Reigate, UK",
+"via": "Simplify"
+},
+{
+"company": "Meta",
+"title": "Research Scientist Intern - Audio - Machine Learning and Computer Vision",
+"url": "https://www.metacareers.com/jobs/2211974449401350",
+"loc": "Burlingame, CA, Redmond, WA",
+"via": "Simplify"
+},
+{
+"company": "Barry-Wehmiller",
+"title": "Software Engineer Intern",
+"url": "https://barrywehmiller.wd1.myworkdayjobs.com/BWConfidential/job/Dallas-TX/Software-Engineering-Intern---DAL_R023133",
+"loc": "Dallas, TX",
+"via": "Simplify"
+},
+{
+"company": "Papa John's",
+"title": "Data Science Intern",
+"url": "https://papajohns.wd1.myworkdayjobs.com/papajohnscareers/job/HQ_Atlanta/XMLNAME-2027-Summer-Intern---Data-Science_R26_0000002157",
+"loc": "Atlanta, GA",
+"via": "Simplify"
+},
+{
+"company": "Parsons",
+"title": "Software Engineer Co-op",
+"url": "https://parsons.wd5.myworkdayjobs.com/en-US/search/job/US---VA-Centreville/Software-Engineer-Co-Op---TS-SCI_R187147",
+"loc": "Centreville, VA",
+"via": "Simplify"
+},
+{
+"company": "DocuSign",
+"title": "Software Engineer Intern",
+"url": "https://careers.docusign.com/jobs/30513?icims=1",
+"loc": "Seattle, WA",
+"via": "Simplify"
+},
+{
+"company": "Daimler Truck",
+"title": "Data Science Intern",
+"url": "https://dtna.wd5.myworkdayjobs.com/dtna_affiliate/job/Portland-OR-US/Data-Science-Intern_DT-20166-1",
+"loc": "Portland, OR",
+"via": "Simplify"
+},
+{
+"company": "DocuSign",
+"title": "Software Engineer Intern",
+"url": "https://careers.docusign.com/jobs/30497?icims=1",
+"loc": "Chicago, IL",
+"via": "Simplify"
+},
+{
+"company": "AMD",
+"title": "AI Agentic Flow for GPU ASIC Design Co-op Intern",
+"url": "https://careers.amd.com/jobs/91341?icims=1",
+"loc": "Orlando, FL",
+"via": "Simplify"
+},
+{
+"company": "Meta",
+"title": "Research Scientist Intern - Spatial Audio Capture and Reproduction",
+"url": "https://www.metacareers.com/jobs/1674394627579563",
+"loc": "Redmond, WA",
+"via": "Simplify"
+},
+{
+"company": "SageSure",
+"title": "Data Scientist Intern",
+"url": "https://www.sagesure.com/careers/current-job-openings/?gh_jid=4719514006",
+"loc": "Jersey City, NJ, Cheshire, CT",
+"via": "Simplify"
+},
+{
+"company": "NVIDIA",
+"title": "Research Intern - World Models and Synthetic Data for Autonomous Driving",
+"url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Research-Intern--World-Models-and-Synthetic-Data-for-Autonomous-Driving---Summer-2027_JR2026839-1",
+"loc": "Santa Clara, CA",
+"via": "Simplify"
+},
+{
+"company": "Loram",
+"title": "Machine Learning / Artificial Intelligence Intern - AI",
+"url": "https://jobs.smartrecruiters.com/Loram1/3743990016031492",
+"loc": "Hamel, Medina, MN",
+"via": "Simplify"
+},
+{
+"company": "Tenet3",
+"title": "Software Developer Intern - Full Stack",
+"url": "https://job-boards.greenhouse.io/tenet3/jobs/8878874002",
+"loc": "Dayton, OH",
+"via": "Simplify"
+},
+{
+"company": "Electronic Arts",
+"title": "Software Engineer Co-op",
+"url": "https://jobs.ea.com/en_US/careers/JobDetail/Software-Engineer-Co-op/216231",
+"loc": "Vancouver, BC, Canada",
+"via": "Simplify"
+},
+{
+"company": "Electronic Arts",
+"title": "Software Engineer Intern",
+"url": "https://jobs.ea.com/en_US/careers/JobDetail/Software-Engineer-Intern-Summer-2027-8-Months-Sports-Technology/216225",
+"loc": "Vancouver, BC, Canada",
+"via": "Simplify"
+},
+{
+"company": "SageSure",
+"title": "Data Science Intern",
+"url": "https://www.sagesure.com/careers/current-job-openings/?gh_jid=4719539006",
+"loc": "Jersey City, NJ",
+"via": "Simplify"
+},
+{
+"company": "Electronic Arts",
+"title": "C++ Software Engineer Intern",
+"url": "https://jobs.ea.com/en_US/careers/JobDetail/Software-Engineer-Intern-Summer-2027-8-months-UFC/216226",
+"loc": "Vancouver, BC, Canada",
+"via": "Simplify"
+},
+{
+"company": "Electronic Arts",
+"title": "Gameplay Software Engineer Co-op",
+"url": "https://jobs.ea.com/en_US/careers/JobDetail/Software-Engineer-Co-op/216230",
+"loc": "Vancouver, BC, Canada",
+"via": "Simplify"
+},
+{
+"company": "General Motors",
+"title": "AI Research Intern - Embodied AI",
+"url": "https://generalmotors.wd5.myworkdayjobs.com/en-CA/Careers_GM/job/Sunnyvale-California-United-States-of-America/XMLNAME-2027-Summer-Intern--AI-Research--Embodied-AI_JR-202622146",
+"loc": "Sunnyvale, CA",
+"via": "Simplify"
+},
+{
+"company": "General Motors",
+"title": "Summer Intern - Onboard Autonomy - Embodied AI",
+"url": "https://generalmotors.wd5.myworkdayjobs.com/en-CA/Careers_GM/job/Sunnyvale-California-United-States-of-America/XMLNAME-2027-Summer-Intern--Onboard-Autonomy--Embodied-AI_JR-202622135",
+"loc": "Sunnyvale, CA",
+"via": "Simplify"
+},
+{
+"company": "General Motors",
+"title": "Data Scaling Intern - Data Scaling - Embodied AI",
+"url": "https://generalmotors.wd5.myworkdayjobs.com/en-CA/Careers_GM/job/Sunnyvale-California-United-States-of-America/XMLNAME-2027-Summer-Intern---Data-Scaling--Embodied-AI_JR-202622132",
+"loc": "Sunnyvale, CA",
+"via": "Simplify"
+},
+{
+"company": "General Motors",
+"title": "Seam Intern - Embodied AI",
+"url": "https://generalmotors.wd5.myworkdayjobs.com/en-CA/Careers_GM/job/Sunnyvale-California-United-States-of-America/XMLNAME-2027-Summer-Intern--SEAM--Embodied-AI_JR-202622143",
+"loc": "Sunnyvale, CA",
+"via": "Simplify"
+},
+{
+"company": "GCM Grosvenor",
+"title": "Software Engineer Intern",
+"url": "https://job-boards.greenhouse.io/gcmgrosvenor/jobs/8015792003",
+"loc": "Chicago, IL",
+"via": "Simplify"
+},
+{
+"company": "SageSure",
+"title": "Software Engineer Intern",
+"url": "https://www.sagesure.com/careers/current-job-openings/?gh_jid=4719536006",
+"loc": "Chicago, IL, Jersey City, NJ, Mountain View, CA",
+"via": "Simplify"
+},
+{
+"company": "GlobalFoundries",
+"title": "Software Engineer Intern",
+"url": "https://globalfoundries.wd1.myworkdayjobs.com/External/job/USA---Texas---Austin/Software-Engineering-Intern--Summer-2027-_JR-2604039",
+"loc": "Austin, TX, Santa Clara, CA",
+"via": "Simplify"
+},
+{
+"company": "TikTok",
+"title": "Machine Learning Engineer Intern - Conversational AI",
+"url": "https://lifeattiktok.com/search/7670689681491364101",
+"loc": "Seattle, WA",
+"via": "Simplify"
+},
+{
+"company": "Workday",
+"title": "Software Development Engineer Intern",
+"url": "https://workday.wd5.myworkdayjobs.com/Workday_Early_Career/job/Canada-BC-Vancouver/Software-Development-Engineer-Intern_JR-0110807",
+"loc": "Vancouver, BC, Canada",
+"via": "Simplify"
+},
+{
+"company": "Micron Technology",
+"title": "IT Software Engineer Intern",
+"url": "https://micron.wd1.myworkdayjobs.com/External/job/Boise-ID---Main-Site/Intern---IT-Software-Engineer_JR113941",
+"loc": "Boise, ID",
+"via": "Simplify"
+},
+{
+"company": "Workday",
+"title": "Machine Learning Engineer Intern",
+"url": "https://workday.wd5.myworkdayjobs.com/Workday_Early_Career/job/Canada-BC-Vancouver/Machine-Learning-Engineer-Intern_JR-0110806",
+"loc": "Toronto, ON, Canada, Vancouver, BC, Canada",
+"via": "Simplify"
+},
+{
+"company": "Workday",
+"title": "Machine Learning Engineer Intern",
+"url": "https://workday.wd5.myworkdayjobs.com/Workday_Early_Career/job/USA-CA-Pleasanton/Machine-Learning-Engineer-Intern_JR-0110812",
+"loc": "Pleasanton, CA",
+"via": "Simplify"
+},
+{
+"company": "Workday",
+"title": "Software Application Development Engineer Intern",
+"url": "https://workday.wd5.myworkdayjobs.com/Workday_Early_Career/job/USA-CA-Pleasanton/Software-Application-Development-Engineer-Intern_JR-0110811",
+"loc": "Pleasanton, CA",
+"via": "Simplify"
+},
+{
+"company": "Workday",
+"title": "Software Engineer Intern",
+"url": "https://workday.wd5.myworkdayjobs.com/Workday_Early_Career/job/USA-CA-Pleasanton/Software-Development-Engineer-Intern_JR-0110810",
+"loc": "Pleasanton, CA",
+"via": "Simplify"
+},
+{
+"company": "Maven Securities",
+"title": "Women in Trading Spring Week 2027",
+"url": "https://job-boards.greenhouse.io/mavensecuritiesholdingltd/jobs/8229982",
+"loc": "London",
+"via": "QuantRoles"
+},
+{
+"company": "T. Rowe Price",
+"title": "2027 Sales & Client Engagement Internship Program",
+"url": "https://troweprice.wd5.myworkdayjobs.com/TRowePrice/job/Baltimore-MD/XMLNAME-2027-Sales---Client-Engagement-Internship-Program_82674",
+"loc": "Baltimore, Owings Mills, Colorado Springs",
+"via": "Kadoa Quant"
+},
+{
+"company": "T. Rowe Price",
+"title": "2027 Corporate Governance Internship Program",
+"url": "https://troweprice.wd5.myworkdayjobs.com/TRowePrice/job/Baltimore-MD/XMLNAME-2027-Corporate-Governance-Internship-Program_83986",
+"loc": "Baltimore",
+"via": "Kadoa Quant"
+},
+{
+"company": "CFM",
+"title": "Internship Front-end - IT Operations",
+"url": "https://jobs.cfm.com/job/Paris-Internship-Front-end-IT-Operations-75/1353071555/",
+"loc": "Paris",
+"via": "Kadoa Quant"
+},
+{
+"company": "CFM",
+"title": "Middle-Office Internship",
+"url": "https://jobs.cfm.com/job/Paris-Middle-Office-Internship-75/1350571555/",
+"loc": "Paris",
+"via": "Kadoa Quant"
+},
+{
+"company": "CFM",
+"title": "INTERNSHIP - Automated Data Quality & News-Driven Outlier Detection",
+"url": "https://jobs.cfm.com/job/Paris-INTERNSHIP-Automated-Data-Quality-&amp;-News-Driven-Outlier-Detection-75/1369182655/",
+"loc": "Paris",
+"via": "Kadoa Quant"
+},
+{
+"company": "CFM",
+"title": "Internship - Web Front-End Developer",
+"url": "https://jobs.cfm.com/job/Paris-Internship-Web-Front-End-Developer-75/1346544455/",
+"loc": "Paris",
+"via": "Kadoa Quant"
+},
+{
+"company": "Verition",
+"title": "2027 Platform Internship, Non-Investment (London)",
+"url": "https://www.verition.com/open-positions?gh_jid=5239347007",
+"loc": "London",
+"via": "Kadoa Quant"
+},
+{
+"company": "Texas Instruments",
+"title": "Software Engineering Intern (Longmont, CO)",
+"url": "https://edbz.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/25012948",
+"loc": "Longmont, CO, United States",
+"via": "Intern Engine (zshah101)"
+},
+{
+"company": "General Dynamics Mission Systems",
+"title": "Software Engineer - Intern Conversion",
+"url": "https://careers-gdms.icims.com/jobs/75159/software-engineer-%e2%80%93-intern-conversion/job",
+"loc": "Ft. Wayne, IN",
+"via": "SpeedyApply US"
+},
+{
+"company": "Peraton",
+"title": "Summer 2027 Software Development Intern- Topeka - KS",
+"url": "https://careers-peraton.icims.com/jobs/172061/summer-2027-software-development-intern--topeka%2c-ks/job",
+"loc": "Topeka, KS",
+"via": "SpeedyApply US"
+},
+{
+"company": "Raytheon",
+"title": "Software Engineering Intern - Summer 2027",
+"url": "https://globalhr.wd5.myworkdayjobs.com/en-US/rec_rtx_ext_gateway/job/US-FL-ST-PETERSBURG-381BD--7401-22nd-Ave-N--BLDG-D/Software-Engineering-Intern--Summer-2027-_01874928",
+"loc": "St. Petersburg, FL",
+"via": "SpeedyApply US"
+},
+{
+"company": "Raytheon",
+"title": "Software Engineering Intern - Summer 2027",
+"url": "https://globalhr.wd5.myworkdayjobs.com/en-US/rec_rtx_ext_gateway/job/US-CA-ANAHEIM-406--160-N-Riverview-Dr--BLDG-406-Ste-150/Software-Engineering-Intern--Summer-2027-_01880755",
+"loc": "Anaheim, CA",
+"via": "SpeedyApply US"
+},
+{
+"company": "Raytheon",
+"title": "Software Engineering Intern - Summer 2027",
+"url": "https://globalhr.wd5.myworkdayjobs.com/en-US/rec_rtx_ext_gateway/job/US-MD-ANNAPOLIS-JUNCTION-339--306-Sentinel-Dr--339-BLDG/Software-Engineering-Intern--Summer-2027-_01880895",
+"loc": "ANNAPOLIS JUNCTION, MD",
+"via": "SpeedyApply US"
+},
+{
+"company": "Raytheon",
+"title": "Software Engineering Intern - Summer 2027",
+"url": "https://globalhr.wd5.myworkdayjobs.com/en-US/rec_rtx_ext_gateway/job/US-VA-STERLING-291--22640-Davis-Dr--DAVIS/Software-Engineering-Intern--Summer-2027-_01877890",
+"loc": "Sterling, VA",
+"via": "SpeedyApply US"
+},
+{
+"company": "Raytheon",
+"title": "Software Engineering Co-op - Spring/Summer 2027",
+"url": "https://globalhr.wd5.myworkdayjobs.com/en-US/rec_rtx_ext_gateway/job/US-IA-CEDAR-RAPIDS-131--5450-C-Ave-NE--BLDG-131/Software-Engineering-Co-op--Spring-Summer-2027-_01878369",
+"loc": "Cedar Rapids, IA",
+"via": "SpeedyApply US"
+},
+{
+"company": "Rugged Robotics",
+"title": "Robotic Software Intern/Co-op - Spring or Summer 2027",
+"url": "https://job-boards.greenhouse.io/ruggedrobotics/jobs/4730908005",
+"loc": "Houston, TX",
+"via": "SpeedyApply US"
+},
+{
+"company": "Entrust",
+"title": "Firmware Engineering Co-op",
+"url": "https://entrust.wd1.myworkdayjobs.com/en-US/entrustcareers/job/United-States---Shakopee-MN-GHQ/Firmware-Engineering-Co-op_R004419",
+"loc": "Shakopee, MN",
+"via": "SpeedyApply US"
+},
+{
+"company": "Innovative Defense Technologies",
+"title": "Software Test Engineer Intern - JobID-0296",
+"url": "https://idtus.pinpointhq.com/en/postings/77cce659-4f96-4cad-81e1-528c7b7ba6df",
+"loc": "San Diego, CA",
+"via": "SpeedyApply US"
+},
+{
+"company": "Iridium Satellite Communications",
+"title": "Iridium Software Engineering Internship - Summer 2027",
+"url": "https://careers-iridium.icims.com/jobs/5136/iridium-software-engineering-internship-%e2%80%93-summer-2027/job",
+"loc": "McLean, VA +3",
+"via": "SpeedyApply US"
+},
+{
+"company": "Bosch",
+"title": "BDO Software Developer Intern - .NET & Angular",
+"url": "https://jobs.smartrecruiters.com/BoschGroup/744000154236871--bdo-software-developer-intern-net-angular-?oga=true",
+"loc": "Ho Chi Minh City, Vietnam",
+"via": "SpeedyApply Intl"
+},
+{
+"company": "Bosch",
+"title": "EAA Embedded Software Test Engineer Intern - C/C++",
+"url": "https://jobs.smartrecruiters.com/BoschGroup/744000154384809--eaa-embedded-software-test-engineer-intern-c-c-?oga=true",
+"loc": "Ho Chi Minh City, Vietnam",
+"via": "SpeedyApply Intl"
+},
+{
+"company": "Cambridge Consultants",
+"title": "Software Engineering Internship - Healthcare - 2027 start",
+"url": "https://job-boards.eu.greenhouse.io/cambridgeconsultantslimited/jobs/4971704101",
+"loc": "United Kingdom",
+"via": "SpeedyApply Intl"
+},
+{
+"company": "iA Financial Group",
+"title": "Intern - Developer",
+"url": "https://ia.wd3.myworkdayjobs.com/en-US/professional/job/Quebec-Quebec/Stagiaire---Dveloppeur-euse-_JR10027630-3",
+"loc": "Qu\u00e9bec, Canada",
+"via": "SpeedyApply Intl"
+},
+{
+"company": "Intel",
+"title": "Software Engineering Undergraduate Intern - f/m/d",
+"url": "https://intel.wd1.myworkdayjobs.com/en-US/external/job/Germany-Munich/Software-Engineering-Undergraduate-Intern--f-m-d-_JR0287923",
+"loc": "Munich, Germany",
+"via": "SpeedyApply Intl"
+},
+{
+"company": "Intel",
+"title": "AI Software Engineering - Workloads Validation Intern",
+"url": "https://intel.wd1.myworkdayjobs.com/en-US/external/job/Poland-Gdansk/AI-Software-Engineering---Workloads-Validation-Intern_JR0287890",
+"loc": "Gda\u0144sk, Poland",
+"via": "SpeedyApply Intl"
+},
+{
+"company": "Intel",
+"title": "Firmware and Development Tools Intern",
+"url": "https://intel.wd1.myworkdayjobs.com/en-US/external/job/PRC-Shanghai/Firmware-and-Development-Tools-Intern_JR0287536",
+"loc": "Shanghai, China +1",
+"via": "SpeedyApply Intl"
+},
+{
+"company": "Lokal App",
+"title": "Backend Intern",
+"url": "https://apply.workable.com/lokal-app/j/0A4E8AFCF3/",
+"loc": "Bengaluru, India",
+"via": "SpeedyApply Intl"
+},
+{
+"company": "NXP Semiconductors",
+"title": "Software Internship - Systems Engineering",
+"url": "https://nxp.wd3.myworkdayjobs.com/en-US/careers/job/Bucharest/Software-Internship---Systems-Engineering_R-10066965",
+"loc": "Bucharest, Romania",
+"via": "SpeedyApply Intl"
+},
+{
+"company": "Philips",
+"title": "Internship: Full Stack Developer in Finance Domain",
+"url": "https://philips.wd3.myworkdayjobs.com/en-US/jobs-and-careers/job/Eindhoven/Internship--Full-Stack-Developer-in-Finance-Domain_592556",
+"loc": "Eindhoven, The Netherlands",
+"via": "SpeedyApply Intl"
+},
+{
+"company": "Raytheon",
+"title": "Stage - Hiver 2027 - D\u00e9veloppement Logiciel Avanc\u00e9 - M\u00e9thodes Num\u00e9riques / Internship - Winter 2027 - Advanced Software Development - Numerical Methods",
+"url": "https://globalhr.wd5.myworkdayjobs.com/en-US/rec_rtx_ext_gateway/job/CA-QC-LONGUEUIL-J01--1000-Blvd-Marie-Victorin--J01-BLDG/Stage---Hiver-2027---Dveloppement-Logiciel-Avanc--Mthodes-Numriques---Internship---Winter-2027---Advanced-Software-Development--Numerical-Methods_01871187",
+"loc": "Longueuil, Canada",
+"via": "SpeedyApply Intl"
+},
+{
+"company": "Red Hat",
+"title": "Software Engineering Intern - Community Linux Engineering - Brno - Czech Republic",
+"url": "https://redhat.wd5.myworkdayjobs.com/en-US/jobs/job/Brno---Tech-Park-Brno---C/Software-Engineering-Intern---Community-Linux-Engineering--Brno--Czech-Republic-_R-059216",
+"loc": "Brno, Czechia",
+"via": "SpeedyApply Intl"
+},
+{
+"company": "Red Hat",
+"title": "Software Engineering Intern - Telco Platform - Brno - Czech Republic",
+"url": "https://redhat.wd5.myworkdayjobs.com/en-US/jobs/job/Brno---Tech-Park-Brno---C/Software-Engineering-Intern---Telco-Platform--Brno--Czech-Republic-_R-059217",
+"loc": "Brno, Czechia",
+"via": "SpeedyApply Intl"
+},
+{
+"company": "Red Hat",
+"title": "Software Developer Intern - Virtualization team - Brno - Czech Republic",
+"url": "https://redhat.wd5.myworkdayjobs.com/en-US/jobs/job/Brno---Tech-Park-Brno---C/Software-Developer-Intern---Virtualization-team---Brno--Czech-Republic-_R-059155",
+"loc": "Brno, Czechia",
+"via": "SpeedyApply Intl"
+},
+{
+"company": "Red Hat",
+"title": "Software Engineering Intern - Developer Hub Security team - Brno - Czech Republic",
+"url": "https://redhat.wd5.myworkdayjobs.com/en-US/jobs/job/Brno---Tech-Park-Brno---C/Software-Engineering-Intern---Developer-Hub-Security-team--Brno--Czech-Republic-_R-059219",
+"loc": "Brno, Czechia",
+"via": "SpeedyApply Intl"
+},
+{
+"company": "Red Hat",
+"title": "Software Engineering Intern - Cloud IDE - Brno - Czech Republic",
+"url": "https://redhat.wd5.myworkdayjobs.com/en-US/jobs/job/Brno---Tech-Park-Brno---C/Software-Engineering-Intern---Cloud-IDE--Brno--Czech-Republic-_R-059218",
+"loc": "Brno, Czechia",
+"via": "SpeedyApply Intl"
+},
+{
+"company": "ABB",
+"title": "Internship - Full Stack Software Developer",
+"url": "https://abb.wd3.myworkdayjobs.com/en-US/external_career_page/job/Genova-Genova-Italy/Internship---Full-Stack-Software-Developer_JR00049311",
+"loc": "Genoa, Italy",
+"via": "SpeedyApply Intl"
+},
+{
+"company": "Autodesk",
+"title": "Intern - Software Engineer - PDMS-DPM-Engineering",
+"url": "https://autodesk.wd1.myworkdayjobs.com/en-US/uni/job/Singapore-SGP/Intern--Software-Engineer--PDMS-DPM-Engineering-_26WD101277",
+"loc": "Singapore, Singapore",
+"via": "SpeedyApply Intl"
+},
+{
+"company": "BorgWarner",
+"title": "Software Integration Intern - M/F/D",
+"url": "https://borgwarner.wd5.myworkdayjobs.com/en-US/borgwarner_careers/job/Viana-do-Castelo-II---Portugal/NVH-Testing-Engineering-Intern_R2026-3130",
+"loc": "Viana, Angola +1",
+"via": "SpeedyApply Intl"
+},
+{
+"company": "Formlabs",
+"title": "Software Engineer Intern - Full stack",
+"url": "https://careers.formlabs.com/job/8260955/apply/?gh_jid=8260955",
+"loc": "Budapest, Hungary",
+"via": "SpeedyApply Intl"
+},
+{
+"company": "Intel",
+"title": "GPU Software Performance Intern",
+"url": "https://intel.wd1.myworkdayjobs.com/en-US/external/job/Poland-Gdansk/GPU-Software-Performance-Intern_JR0287884",
+"loc": "Gda\u0144sk, Poland",
+"via": "SpeedyApply Intl"
+},
+{
+"company": "Shift Technologies",
+"title": "Full stack Engineer Intern - 6 months",
+"url": "https://job-boards.greenhouse.io/shifttechnology/jobs/8014470003",
+"loc": "Paris, France",
+"via": "SpeedyApply Intl"
+},
+{
+"company": "Taktile",
+"title": "Software Engineer Intern",
+"url": "https://jobs.ashbyhq.com/taktile/bce11078-1da2-4826-a70e-7eccfd702dd1",
+"loc": "Ia\u015fi, Romania +1",
+"via": "SpeedyApply Intl"
+},
+{
+"company": "Cirrus Logic",
+"title": "2027 Software Internship",
+"url": "https://jobs.eu.lever.co/cirrus/8a27643f-35d8-44f2-b8f3-2318a3d26d4d",
+"loc": "London, United Kingdom +2",
+"via": "SpeedyApply Intl"
+},
+{
+"company": "Lombard Odier",
+"title": "Internship - Software Engineer - Global Markets Services AI Project",
+"url": "https://lombardodier.wd3.myworkdayjobs.com/en-US/lombard_odier_careers/job/Geneva/Internship---Software-Engineer---Global-Markets-Services-AI-Project_R0007627-1",
+"loc": "Geneva, Switzerland",
+"via": "SpeedyApply Intl"
+},
+{
+"company": "Lombard Odier",
+"title": "Internship - Software engineer - Cash Management Tool Redevelopment",
+"url": "https://lombardodier.wd3.myworkdayjobs.com/en-US/lombard_odier_careers/job/Geneva/Internship---Software-engineer---Cash-Management-Tool-Redevelopment_R0007630",
+"loc": "Geneva, Switzerland",
+"via": "SpeedyApply Intl"
+},
+{
+"company": "Hewlett Packard Enterprise",
+"title": "Software Intern",
+"url": "https://hpe.wd5.myworkdayjobs.com/en-US/acjobsite/job/Aguadilla-Puerto-Rico-Puerto-Rico/Software-Intern_1215275-3",
+"loc": "Aguadilla, Puerto Rico +1",
+"via": "SpeedyApply Intl"
+}
+],
 "notes": []
 }
