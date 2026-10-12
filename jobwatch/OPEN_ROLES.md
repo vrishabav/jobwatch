@@ -1,4 +1,4 @@
-# Open intern roles (4611, updated 2026-10-12 07:18 UTC)
+# Open intern roles (4611, updated 2026-10-12 07:23 UTC)
 
 Every currently open role matching your filters across all sources (duplicates merged). Alerts only fire for new ones.
 
