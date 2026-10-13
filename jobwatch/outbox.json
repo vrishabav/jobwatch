@@ -1,4 +1,698 @@
 {
-"jobs": [],
+"jobs": [
+{
+"company": "Databricks",
+"title": "Software Engineering Intern (2027)",
+"url": "https://databricks.com/company/careers/open-positions/job?gh_jid=6865687002",
+"loc": "Bellevue, Washington; Mountain View, California; San Francisco, California; Vancouver, Canada",
+"via": ""
+},
+{
+"company": "DV Trading",
+"title": "Data Center Engineer Intern - Summer 2027",
+"url": "https://job-boards.greenhouse.io/dvtrading/jobs/4742962005",
+"loc": "Chicago",
+"via": ""
+},
+{
+"company": "Hex",
+"title": "AI Engineer Intern",
+"url": "https://jobs.ashbyhq.com/hex/f2562cd7-abf2-434b-85ff-0a5016fbf0d6",
+"loc": "San Francisco",
+"via": ""
+},
+{
+"company": "Point72",
+"title": "Data Research Fellowship",
+"url": "https://boards.greenhouse.io/point72/jobs/8883820002?gh_jid=8883820002",
+"loc": "New York, NY",
+"via": ""
+},
+{
+"company": "Snowflake",
+"title": "Software Engineer Intern - Zurich (2026)",
+"url": "https://jobs.ashbyhq.com/snowflake/26a0ae52-97a6-4a46-9216-3c382570d89b",
+"loc": "CH-Zurich-Observe",
+"via": ""
+},
+{
+"company": "Tower Research Capital",
+"title": "Venture Capital Intern (Part-time, Fall/Winter)",
+"url": "https://www.tower-research.com/open-positions/?gh_jid=7368106",
+"loc": "New York",
+"via": ""
+},
+{
+"company": "Waymo",
+"title": "2027 Summer Intern, BS/MS, Software Engineering, Commercialization",
+"url": "https://careers.withwaymo.com/jobs?gh_jid=8268204",
+"loc": "Warsaw, Poland",
+"via": ""
+},
+{
+"company": "Amazon",
+"title": "2027 Software Dev Engineer Intern - ZAF",
+"url": "https://www.amazon.jobs/en/jobs/10576864/2027-software-dev-engineer-intern-zaf",
+"loc": "ZA, Cape Town",
+"via": ""
+},
+{
+"company": "Amazon",
+"title": "2027 Business Developer Intern, Amazon Payments",
+"url": "https://www.amazon.jobs/en/jobs/10576785/2027-business-developer-intern-amazon-payments",
+"loc": "ZA, Cape Town",
+"via": ""
+},
+{
+"company": "Microsoft",
+"title": "Software Engineer Internship Opportunities",
+"url": "https://apply.careers.microsoft.com/careers/job/1970393557038773",
+"loc": "Ireland, Dublin, Dublin",
+"via": ""
+},
+{
+"company": "Google",
+"title": "Software Engineering Intern 2027 English",
+"url": "https://www.google.com/about/careers/applications/jobs/results/jobs/results/104489346874122950-software-engineering-intern-2027-english?target_level=INTERN_AND_APPRENTICE&sort_by=date&page=1",
+"loc": "",
+"via": ""
+},
+{
+"company": "Apple",
+"title": "Internship - Machine Learning (Foundation Models)",
+"url": "https://jobs.apple.com/en-us/details/200685035-4170/internship-machine-learning-foundation-models?team=STDNT",
+"loc": "",
+"via": ""
+},
+{
+"company": "7-Eleven",
+"title": "Information Security Intern",
+"url": "https://my7elevenhr.wd12.myworkdayjobs.com/en-US/Careers/job/SSC-Irving-TX/Information-Security-Intern_R26_5976",
+"loc": "",
+"via": ""
+},
+{
+"company": "Acron Aviation",
+"title": "Software Engineer Intern - Phoenix Site",
+"url": "https://jobs.lever.co/acronaviation/17b5f12d-f590-432d-a421-d6f90274ae9a",
+"loc": "Phoenix, AZ",
+"via": ""
+},
+{
+"company": "Airbus",
+"title": "Internship - DCC AI and Automation",
+"url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Bangalore-Area/Internship---DCC-AI-and-Automation_JR10450231",
+"loc": "Bangalore Area",
+"via": ""
+},
+{
+"company": "Aptiv",
+"title": "Software Engineering Intern",
+"url": "https://aptiv.wd5.myworkdayjobs.com/en-US/aptiv_careers/job/CAN-Kanata-2-ON---WR/Software-Engineering-Intern_J000704368-1",
+"loc": "CAN Kanata (2), ON - WR",
+"via": ""
+},
+{
+"company": "Aptiv",
+"title": "Cloud Engineering Intern",
+"url": "https://aptiv.wd5.myworkdayjobs.com/en-US/aptiv_careers/job/CAN-Kanata-2-ON---WR/Cloud-Engineering-Intern_J000704383",
+"loc": "CAN Kanata (2), ON - WR",
+"via": ""
+},
+{
+"company": "Aptiv",
+"title": "Cloud Engineer Intern",
+"url": "https://aptiv.wd5.myworkdayjobs.com/en-US/aptiv_careers/job/CAN-Kanata-2-ON---WR/Cloud-Engineer-Intern_J000704380",
+"loc": "CAN Kanata (2), ON - WR",
+"via": ""
+},
+{
+"company": "Aptiv",
+"title": "Cloud Software Engineer Intern",
+"url": "https://aptiv.wd5.myworkdayjobs.com/en-US/aptiv_careers/job/CAN-Kanata-2-ON---WR/Cloud-Software-Engineer-Intern_J000704375",
+"loc": "CAN Kanata (2), ON - WR",
+"via": ""
+},
+{
+"company": "Astera Labs",
+"title": "CyberSecurity Engineer Intern",
+"url": "https://job-boards.greenhouse.io/asteraearlycareer2027/jobs/4743021005",
+"loc": "San Jose, CA",
+"via": ""
+},
+{
+"company": "Bosch",
+"title": "[EAA] Embedded Test Engineer Intern (C/C++)",
+"url": "https://jobs.smartrecruiters.com/BoschGroup/744000155154629",
+"loc": "Ho Chi Minh, vn",
+"via": ""
+},
+{
+"company": "Bosch",
+"title": "Information Security and Privacy Intern",
+"url": "https://jobs.smartrecruiters.com/BoschGroup/744000155120934",
+"loc": "Farmington Hills, us",
+"via": ""
+},
+{
+"company": "Bosch",
+"title": "Software Function Developer Intern",
+"url": "https://jobs.smartrecruiters.com/BoschGroup/744000155020017",
+"loc": "Budapest, hu",
+"via": ""
+},
+{
+"company": "Bosch",
+"title": "Undergraduate Placement Year 2027 - AI Business Solutions Intern",
+"url": "https://jobs.smartrecruiters.com/BoschGroup/744000154992819",
+"loc": "Coventry, gb",
+"via": ""
+},
+{
+"company": "CAI",
+"title": "Cybersecurity Analyst Intern",
+"url": "https://cai.wd5.myworkdayjobs.com/en-US/computer_aid/job/TX-CLIENT-STATE/Cybersecurity-Analyst-Intern_R8748",
+"loc": "TX-CLIENT-STATE",
+"via": ""
+},
+{
+"company": "CAI",
+"title": "Software Developer Intern",
+"url": "https://cai.wd5.myworkdayjobs.com/en-US/computer_aid/job/PA-CLIENT-STATE/Software-Developer-Intern_R8554",
+"loc": "PA-CLIENT-STATE",
+"via": ""
+},
+{
+"company": "CapTech Consulting",
+"title": "Consulting Internship: Software Engineering (Summer 2027)",
+"url": "https://jobs.smartrecruiters.com/CapTechConsulting/744000155019115",
+"loc": "Richmond, us",
+"via": ""
+},
+{
+"company": "Corewell Health",
+"title": "Digital Services Information Security Internship Summer 2027",
+"url": "https://spectrumhealth.wd5.myworkdayjobs.com/en-US/CorewellHealthCareers/job/Grand-Rapids-MI/Digital-Services-Information-Security-Internship-Summer-2027_R228867",
+"loc": "",
+"via": ""
+},
+{
+"company": "Corewell Health",
+"title": "Digital Services Generative AI Internship Summer 2027",
+"url": "https://spectrumhealth.wd5.myworkdayjobs.com/en-US/CorewellHealthCareers/job/Grand-Rapids-MI/Digital-Services-Generative-AI-Internship-Summer-2027_R229392",
+"loc": "",
+"via": ""
+},
+{
+"company": "Hasbro",
+"title": "2027 Summer IT & Software Internships",
+"url": "https://job-boards.greenhouse.io/hasbro/jobs/4439483009",
+"loc": "Renton, Washington, United States",
+"via": ""
+},
+{
+"company": "Integrity",
+"title": "Research Intern",
+"url": "https://integritymarketing.wd1.myworkdayjobs.com/en-US/Integrity/job/Minneapolis-MN/Research-Intern_JR4284",
+"loc": "Minneapolis, MN",
+"via": ""
+},
+{
+"company": "J.M. Smucker",
+"title": "Sensory and Products Research Intern, Summer 2027",
+"url": "https://smucker.wd5.myworkdayjobs.com/en-US/US_External_Careers/job/Orrville-OH/Sensory-and-Products-Research-Intern--Summer-2027_115677",
+"loc": "Orrville, OH",
+"via": ""
+},
+{
+"company": "Life Fitness",
+"title": "Android Software Intern",
+"url": "https://lifefitness.wd1.myworkdayjobs.com/en-US/searchLFN/job/Schaumburg-IL-60173/Android-Software-Intern_JR-025277",
+"loc": "Schaumburg, IL 60173",
+"via": ""
+},
+{
+"company": "Life Fitness",
+"title": "Embedded Software Intern",
+"url": "https://lifefitness.wd1.myworkdayjobs.com/en-US/searchLFN/job/Schaumburg-IL-60173/Embedded-Software-Intern_JR-025276",
+"loc": "Schaumburg, IL 60173",
+"via": ""
+},
+{
+"company": "Marvell",
+"title": "Intern, Software Engineer",
+"url": "https://marvell.wd1.myworkdayjobs.com/en-US/marvellcareers2/job/Hyderabad/Intern--Software-Engineer_2603879",
+"loc": "Hyderabad",
+"via": ""
+},
+{
+"company": "Marvell",
+"title": "AI Intern",
+"url": "https://marvell.wd1.myworkdayjobs.com/en-US/marvellcareers2/job/Bangalore/AI-Intern_2604445",
+"loc": "Bangalore",
+"via": ""
+},
+{
+"company": "Momentive",
+"title": "Summer 2027 Intern-Research Intern for Polymers",
+"url": "https://momentive.wd1.myworkdayjobs.com/en-US/MC/job/US-NY-Pearl-River/Summer-2027-Intern-Research-Intern-for-Polymers_R9781",
+"loc": "US NY Pearl River",
+"via": ""
+},
+{
+"company": "Nissan",
+"title": "Data Science Intern - Summer 2027 - Franklin, TN",
+"url": "https://alliance.wd3.myworkdayjobs.com/en-US/nissanjobs/job/Franklin-Tennessee---United-States-of-America/Data-Science-Intern---Summer-2027---Franklin--TN_R00214250",
+"loc": "Franklin, Tennessee - United States of America",
+"via": ""
+},
+{
+"company": "Nissan",
+"title": "Data Science Intern - Summer 2027 - Smyrna, TN",
+"url": "https://alliance.wd3.myworkdayjobs.com/en-US/nissanjobs/job/Smyrna-Tennessee---United-States-of-America/Data-Science-Intern---Summer-2027---Smyrna--TN_R00215331",
+"loc": "Smyrna, Tennessee - United States of America",
+"via": ""
+},
+{
+"company": "Nissan",
+"title": "Financial AI Engineering Intern - Summer 2027 - Franklin, TN",
+"url": "https://alliance.wd3.myworkdayjobs.com/en-US/nissanjobs/job/Franklin-Tennessee---United-States-of-America/Financial-AI-Engineering-Intern---Summer-2027---Franklin--TN_R00214241",
+"loc": "Franklin, Tennessee - United States of America",
+"via": ""
+},
+{
+"company": "POET",
+"title": "Research Intern - Summer 2027",
+"url": "https://poet.wd1.myworkdayjobs.com/en-US/POET/job/Sioux-Falls-SD/Research-Intern---Summer-2027_R101732",
+"loc": "Sioux Falls, SD",
+"via": ""
+},
+{
+"company": "PricewaterhouseCoopers (PwC)",
+"title": "Data Engineer Intern",
+"url": "https://pwc.wd3.myworkdayjobs.com/en-US/Global_Campus_Careers/job/Prague/Datov-internship-v-Technology-Consultingu_742242WD-1",
+"loc": "Prague",
+"via": ""
+},
+{
+"company": "PricewaterhouseCoopers (PwC)",
+"title": "Software Engineer Intern - Milano [DIG]",
+"url": "https://pwc.wd3.myworkdayjobs.com/en-US/Global_Campus_Careers/job/Milan/Software-Engineer-Intern---Milano--DIG-_765582WD",
+"loc": "Milan",
+"via": ""
+},
+{
+"company": "PricewaterhouseCoopers (PwC)",
+"title": "Intern - Cyber Security (SOC)",
+"url": "https://pwc.wd3.myworkdayjobs.com/en-US/Global_Campus_Careers/job/Ho-Chi-Minh-City/Intern---Cyber-Security--SOC-_764688WD",
+"loc": "Ho Chi Minh City",
+"via": ""
+},
+{
+"company": "PricewaterhouseCoopers (PwC)",
+"title": "School Internship in Technology & AI (2026-2027)",
+"url": "https://pwc.wd3.myworkdayjobs.com/en-US/Global_Campus_Careers/job/Brussels/School-Internship-in-Technology---AI--2026-2027-_764001WD",
+"loc": "Brussels",
+"via": ""
+},
+{
+"company": "Red Bull",
+"title": "Internship Data Science",
+"url": "https://jobs.smartrecruiters.com/RedBull/744000155050519",
+"loc": "Elsbethen, at",
+"via": ""
+},
+{
+"company": "Schweitzer Engineering Laboratories",
+"title": "Software Engineer Intern",
+"url": "https://selinc.wd1.myworkdayjobs.com/en-US/SEL/job/Idaho---Boise/Software-Engineer-Intern_2026-22958",
+"loc": "Idaho - Boise",
+"via": ""
+},
+{
+"company": "Sia Partners",
+"title": "Final year internship - Data Scientist & AI Consultant",
+"url": "https://jobs.smartrecruiters.com/Sia/744000155061916",
+"loc": "Paris, fr",
+"via": ""
+},
+{
+"company": "Vanderlande Industries",
+"title": "Internship: Building the Future of Work with Low-Code AI Skills for Vanderlande",
+"url": "https://vanderlande.wd3.myworkdayjobs.com/en-US/careers/job/Veghel-Netherlands/Build-the-future-of-work--Create-reusable-AI-skills-for-Vanderlande_JR38184",
+"loc": "Veghel, Netherlands",
+"via": ""
+},
+{
+"company": "Vermeer",
+"title": "Corporate Research Intern",
+"url": "https://vermeer.wd5.myworkdayjobs.com/en-US/externalcareersite/job/Pella-Iowa-USA---Corporate-Office/Data-Analytics-and-Corporate-Strategy-Intern_REQ-22176",
+"loc": "Pella, Iowa, USA - Corporate Office",
+"via": ""
+},
+{
+"company": "World Kinect",
+"title": "AI Finance Internship Program",
+"url": "https://wfscorp.wd5.myworkdayjobs.com/en-US/wfscareers/job/SAN-JOSE-COSTA-RICA/AI-Finance-Internship-Program_R23062",
+"loc": "SAN JOSE, COSTA RICA",
+"via": ""
+},
+{
+"company": "Zeiss",
+"title": "Internship in Computer Vision / Calibration Pipelines (f/m/x)",
+"url": "https://zeissgroup.wd3.myworkdayjobs.com/en-US/External/job/Karlsruhe/Internship-in-Computer-Vision---Calibration-Pipelines--f-m-x-_JR_1053916",
+"loc": "Karlsruhe",
+"via": ""
+},
+{
+"company": "NVIDIA",
+"title": "Research Intern - Electronic Design Automation",
+"url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/PhD-Research-Intern--Electronic-Design-Automation---2027_JR2026471",
+"loc": "Santa Clara, CA",
+"via": "Simplify"
+},
+{
+"company": "Innovative Defense Technologies",
+"title": "Software Engineer Intern",
+"url": "https://idtus.pinpointhq.com/en/postings/20817d1b-bd0e-4aa8-a3d5-78e4614b52a3?ats=pinpointhq",
+"loc": "Mt Laurel Township, NJ",
+"via": "Simplify"
+},
+{
+"company": "Thales",
+"title": "Data Scientist Apprentice - Level 6 Data Scientist",
+"url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Crawley/XMLNAME-2027-Data-Science-Apprentice_R0337752",
+"loc": "Crawley, UK",
+"via": "Simplify"
+},
+{
+"company": "Tencent",
+"title": "LLM & Agent Research Intern",
+"url": "https://tencent.wd1.myworkdayjobs.com/Tencent_Careers/job/United-Kingdom-London/LLM---Agent-Research-Intern_R108173",
+"loc": "London, UK",
+"via": "Simplify"
+},
+{
+"company": "Databricks",
+"title": "Software Engineer Intern",
+"url": "https://boards.greenhouse.io/embed/job_app?token=6865687002",
+"loc": "SF, Bellevue, WA, Mountain View, CA, Vancouver, BC, Canada",
+"via": "Simplify"
+},
+{
+"company": "General Dynamics Information Technology",
+"title": "Software Development Intern",
+"url": "https://gdit.wd5.myworkdayjobs.com/gdit_earlytalent/job/USA-VA-Falls-Church/Summer-2027-Software-Development-Internship_RQ228406-1",
+"loc": "Falls Church, VA",
+"via": "Simplify"
+},
+{
+"company": "AtkinsR\u00e9alis",
+"title": "Software Developer Intern",
+"url": "https://slihrms.wd3.myworkdayjobs.com/careers/job/USCODenver/Software-Developer-Intern---Summer-2027_R-161580-1",
+"loc": "Denver, CO",
+"via": "Simplify"
+},
+{
+"company": "Nissan",
+"title": "AI & Data Analytics Intern",
+"url": "https://alliance.wd3.myworkdayjobs.com/en-US/nissanjobs/job/Franklin-Tennessee---United-States-of-America/AI---Data-Analytics-Intern---Summer-2027---Irving--TX-or-Franklin--TN_R00214223",
+"loc": "Franklin, TN, Irving, TX",
+"via": "Simplify"
+},
+{
+"company": "Ascension",
+"title": "Data Science Intern",
+"url": "https://jobs.ascension.org/us/en/job/2026-465186",
+"loc": "St. Louis, MO",
+"via": "Simplify"
+},
+{
+"company": "Acron Aviation",
+"title": "Software Engineer Intern",
+"url": "https://jobs.lever.co/acronaviation/17b5f12d-f590-432d-a421-d6f90274ae9a/apply",
+"loc": "Phoenix, AZ",
+"via": "Simplify"
+},
+{
+"company": "RTX",
+"title": "Software Engineer Intern",
+"url": "https://globalhr.wd5.myworkdayjobs.com/rec_rtx_ext_gateway/job/US-CA-FULLERTON-675--1801-Hughes-Dr--BLDG-675/Software-Engineering-Intern--Summer-2027-_01879741",
+"loc": "Fullerton, CA",
+"via": "Simplify"
+},
+{
+"company": "Corewell Health",
+"title": "Digital Services Web and Mobile Developer Intern",
+"url": "https://spectrumhealth.wd5.myworkdayjobs.com/CorewellHealthCareers/job/Grand-Rapids-MI/Digital-Services-Web-and-Mobile-Development-Internship-Summer-2027_R224434",
+"loc": "Grand Rapids, MI",
+"via": "Simplify"
+},
+{
+"company": "KLA",
+"title": "AI/ML Software Engineer Intern",
+"url": "https://kla.wd1.myworkdayjobs.com/search/job/Ann-Arbor-MI/AI-ML-Software-Engineer---Intern_2641701-1",
+"loc": "Ann Arbor, MI",
+"via": "Simplify"
+},
+{
+"company": "KLA",
+"title": "Algorithm Engineer Intern - GPU/CUDA",
+"url": "https://kla.wd1.myworkdayjobs.com/UR/job/Milpitas-CA/Algorithm-Engineering-Intern--GPU-CUDA-_2642044-2",
+"loc": "Milpitas, CA",
+"via": "Simplify"
+},
+{
+"company": "General Motors",
+"title": "AI/Machine Learning Intern - Research and Development",
+"url": "https://generalmotors.wd5.myworkdayjobs.com/Careers_GM/job/Mountain-View-California-United-States-of-America/XMLNAME-2027-Summer-Intern---Research-and-Development---AI-Machine-Learning_JR-202621620",
+"loc": "Mountain View, CA",
+"via": "Simplify"
+},
+{
+"company": "Electronic Arts",
+"title": "Data and AI Engineer Intern",
+"url": "https://jobs.ea.com/en_US/careers/JobDetail/Data-AI-Engineering-Intern-Summer-2027/216238",
+"loc": "Austin, TX",
+"via": "Simplify"
+},
+{
+"company": "MEMX",
+"title": "Data Engineer Intern",
+"url": "https://job-boards.greenhouse.io/memx/jobs/5450442008",
+"loc": "NYC",
+"via": "Simplify"
+},
+{
+"company": "General Motors",
+"title": "Machine Learning for Automation Researcher Intern - AI and Machine Learning for Automation Researcher",
+"url": "https://generalmotors.wd5.myworkdayjobs.com/Careers_GM/job/Warren-Michigan-United-States-of-America/Entry-Level---AI-and-Machine-Learning-for-Automation-Researcher_JR-202621769",
+"loc": "Warren, MI",
+"via": "Simplify"
+},
+{
+"company": "General Motors",
+"title": "Summer Intern - Research and Development - Machine Learning for Automation",
+"url": "https://generalmotors.wd5.myworkdayjobs.com/Careers_GM/job/Warren-Michigan-United-States-of-America/XMLNAME-2027-Summer-Intern---Research-and-Development---Machine-Learning-for-Automation_JR-202621724",
+"loc": "Warren, MI",
+"via": "Simplify"
+},
+{
+"company": "American Family Insurance Group",
+"title": "Software Engineering Intern",
+"url": "https://amfam.wd1.myworkdayjobs.com/AmFamGroupInternCareers/job/WI-Madison/Summer-2027-Intern---Software-Engineering--Hybrid-_R39666-1",
+"loc": "Madison, WI, Boston, MA",
+"via": "Simplify"
+},
+{
+"company": "Cboe",
+"title": "Software Engineer Intern - C++",
+"url": "https://cboe.wd1.myworkdayjobs.com/External_Career_CBOE/job/Kansas-City-MO/Software-Engineer-Intern--C---_R-4726",
+"loc": "Kansas City, MO",
+"via": "Simplify"
+},
+{
+"company": "Manulife Financial",
+"title": "Software Engineer Co-op",
+"url": "https://manulife.wd3.myworkdayjobs.com/en-US/MFCJH_adminJobs/job/Toronto-Ontario/Winter-Co-op-2027---Software-Engineering_JR26081663-1",
+"loc": "Toronto, ON, Canada",
+"via": "Simplify"
+},
+{
+"company": "Manulife Financial",
+"title": "Software Engineering Co-op",
+"url": "https://manulife.wd3.myworkdayjobs.com/en-US/MFCJH_adminJobs/job/Toronto-Ontario/Winter-Co-op-2027---Software-Engineering--8-Months-_JR26081664-1",
+"loc": "Toronto, ON, Canada",
+"via": "Simplify"
+},
+{
+"company": "Manulife Financial",
+"title": "AI Co-op",
+"url": "https://manulife.wd3.myworkdayjobs.com/en-US/MFCJH_adminJobs/job/Toronto-Ontario/Winter-Co-op-2027---AI_JR26081677-1",
+"loc": "Toronto, ON, Canada",
+"via": "Simplify"
+},
+{
+"company": "General Dynamics Information Technology",
+"title": "Defense Agencies Intern - AI/ML",
+"url": "https://gdit.wd5.myworkdayjobs.com/gdit_earlytalent/job/USA-VA-Falls-Church/XMLNAME-2027-Summer-Intern---Defense-Angencies--AI-ML-_RQ230275",
+"loc": "Falls Church, VA",
+"via": "Simplify"
+},
+{
+"company": "Meta",
+"title": "Research Scientist Intern - Robotics",
+"url": "https://www.metacareers.com/jobs/2586686598441521",
+"loc": "Redmond, WA",
+"via": "Simplify"
+},
+{
+"company": "GAF",
+"title": "Data Science (AI) Intern",
+"url": "https://gafsgi.wd5.myworkdayjobs.com/GAF_Careers/job/Parsippany-NJ/AI-Intern_26421",
+"loc": "Parsippany-Troy Hills, NJ",
+"via": "Simplify"
+},
+{
+"company": "Meta",
+"title": "Research Scientist Intern - Language and Agents",
+"url": "https://www.metacareers.com/jobs/2168438160696161",
+"loc": "Menlo Park, CA, Bellevue, WA",
+"via": "Simplify"
+},
+{
+"company": "Azul Systems",
+"title": "IT Intern \u2013 AI and Operations",
+"url": "https://jobs.lever.co/azul/8f41ceaf-8835-4fc7-ba57-9384487d59db/apply",
+"loc": "Sunnyvale, CA",
+"via": "Simplify"
+},
+{
+"company": "Microsoft",
+"title": "Research Intern - Agentic Graph Learning",
+"url": "https://apply.careers.microsoft.com/careers/job/1970393557039243",
+"loc": "Redmond, WA",
+"via": "Simplify"
+},
+{
+"company": "NVIDIA",
+"title": "Differentiable Simulation Research Intern",
+"url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Differentiable-Simulation-Research-Intern---Summer-2027_JR2027561",
+"loc": "Santa Clara, CA",
+"via": "Simplify"
+},
+{
+"company": "ExxonMobil",
+"title": "Global Trading Intern - Quantitative Analyst",
+"url": "https://jobs.exxonmobil.com/job/London-Placement-Global-Trading-Quantitative-Analyst-London-2027-LND/1439091600/?ats=successfactors",
+"loc": "London, UK",
+"via": "Simplify"
+},
+{
+"company": "General Dynamics Information Technology",
+"title": "Software Developer Intern - Defense Agencies - Software Development",
+"url": "https://gdit.wd5.myworkdayjobs.com/gdit_earlytalent/job/USA-VA-Falls-Church/XMLNAME-2027-Summer-Intern---Defense-Agencies--SW-DEV-_RQ230270",
+"loc": "Falls Church, VA",
+"via": "Simplify"
+},
+{
+"company": "Aptiv",
+"title": "Software Engineer Intern",
+"url": "https://aptiv.wd5.myworkdayjobs.com/aptiv_careers/job/CAN-Kanata-2-ON---WR/Software-Engineering-Intern_J000704368-1",
+"loc": "Kanata, Ottawa, ON, Canada",
+"via": "Simplify"
+},
+{
+"company": "Capital Fund Management (CFM)",
+"title": "Internship - Agentic Data Quality & News-Driven Outlier Detection",
+"url": "https://jobs.cfm.com/job/Paris-Internship-Agentic-Data-Quality-&-News-Driven-Outlier-Detection-75/1371260755/",
+"loc": "Paris",
+"via": "QuantRoles"
+},
+{
+"company": "Mako Trading",
+"title": "Mako Summer Internship \u2013 Trading",
+"url": "https://job-boards.greenhouse.io/embed/job_app?for=mako&token=8883121002",
+"loc": "London",
+"via": "QuantRoles"
+},
+{
+"company": "Marex",
+"title": "Quantitative Researcher Internship",
+"url": "https://marex.breezy.hr/p/d1bbc6d3ab0a01-quantitative-researcher-internship",
+"loc": "Paris",
+"via": "QuantRoles"
+},
+{
+"company": "Statkraft",
+"title": "Intern - Quantitative Portfolio Management (m/f/d)",
+"url": "https://jobs.smartrecruiters.com/Statkraft1/744000155025589",
+"loc": "D\u00fcsseldorf",
+"via": "QuantRoles"
+},
+{
+"company": "CFM",
+"title": "Internship - Agentic Data Quality & News-Driven Outlier Detection",
+"url": "https://jobs.cfm.com/job/Paris-Internship-Agentic-Data-Quality-&amp;-News-Driven-Outlier-Detection-75/1371260755/",
+"loc": "Paris",
+"via": "Kadoa Quant"
+},
+{
+"company": "Hewlett Packard Enterprise",
+"title": "HPC/AI Systems Service Process Improvement Engineer Intern",
+"url": "https://hpe.wd5.myworkdayjobs.com/Jobsathpe/job/All-Illinois-United-States-of-America/HPC-AI-Systems-Service-Process-Improvement-Engineer-Intern_1213402",
+"loc": "All, Illinois, United States of America",
+"via": "Intern Engine (zshah101)"
+},
+{
+"company": "Hewlett Packard Enterprise",
+"title": "HPC/AI System Admin HW/SW Service Engineer Intern",
+"url": "https://hpe.wd5.myworkdayjobs.com/Jobsathpe/job/All-Tennessee-United-States-of-America/HPC-AI-System-Admin-HW-SW-Service-Engineer-Intern_1213404",
+"loc": "All, Tennessee, United States of America",
+"via": "Intern Engine (zshah101)"
+},
+{
+"company": "RF-SMART",
+"title": "Software Developer Internship- Summer 2027",
+"url": "https://job-boards.greenhouse.io/rfsmart/jobs/5446867008",
+"loc": "Highlands Ranch, Colorado, United States",
+"via": "Intern Engine (zshah101)"
+},
+{
+"company": "General Dynamics Information Technology",
+"title": "2027 Summer Intern - Defense Agencies (Cybersecurity)",
+"url": "https://gdit.wd5.myworkdayjobs.com/gdit_earlytalent/job/USA-VA-Falls-Church/XMLNAME-2027-Summer-Intern---Defense-Agencies--Cybersecurity-_RQ230273",
+"loc": "USA VA Falls Church",
+"via": "Intern Engine (zshah101)"
+},
+{
+"company": "Red Hat",
+"title": "Software Engineering Intern - Pipeline Value Observability - Brno - Czech Republic",
+"url": "https://redhat.wd5.myworkdayjobs.com/en-US/jobs/job/Brno---Tech-Park-Brno---C/Software-Engineering-Intern---Pipeline-Value-Observability----Brno--Czech-Republic-_R-059160",
+"loc": "Brno, Czechia",
+"via": "SpeedyApply Intl"
+},
+{
+"company": "Red Hat",
+"title": "Software Engineering Intern - Trusted Profile Analyzer - Brno - Czech Republic",
+"url": "https://redhat.wd5.myworkdayjobs.com/en-US/jobs/job/Brno---Tech-Park-Brno---C/Software-Engineering-Intern---Trusted-Profile-Analyzer--Brno--Czech-Republic-_R-059157",
+"loc": "Brno, Czechia",
+"via": "SpeedyApply Intl"
+},
+{
+"company": "Red Hat",
+"title": "SecureFlow Foundry Team - Software Engineering Intern - Brno - Czech Republic",
+"url": "https://redhat.wd5.myworkdayjobs.com/en-US/jobs/job/Brno---Tech-Park-Brno---C/SecureFlow-Foundry-Team---Software-Engineering-Intern--Brno--Czech-Republic-_R-059159",
+"loc": "Brno, Czechia",
+"via": "SpeedyApply Intl"
+},
+{
+"company": "Lombard Odier",
+"title": "Internship - AI Engineer - AI-Powered Software Migration Factory",
+"url": "https://lombardodier.wd3.myworkdayjobs.com/en-US/lombard_odier_careers/job/Geneva/Internship---AI-Engineer---AI-Powered-Software-Migration-Factory_R0007636-1",
+"loc": "Geneva, Switzerland",
+"via": "SpeedyApply Intl"
+}
+],
 "notes": []
 }
