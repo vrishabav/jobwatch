@@ -4,6 +4,7 @@
 
 | Started | Mode | Trigger | Run # | Sources OK | New roles queued |
 |---|---|---|---|---|---|
+| 2026-10-14 14:35 | render | schedule | 29 | 2/2 | 0 |
 | 2026-10-14 14:28 | api | schedule | 29 | 3869/3928 | 182 |
 | 2026-10-13 12:46 | render | schedule | 25 | 2/2 | 1 |
 | 2026-10-13 12:39 | api | schedule | 25 | 3844/3904 | 99 |
