@@ -1,4 +1,4 @@
-# Open intern roles (4844, updated 2026-10-16 13:55 UTC)
+# Open intern roles (4844, updated 2026-10-16 14:00 UTC)
 
 Every currently open role matching your filters across all sources (duplicates merged). Alerts only fire for new ones.
 
@@ -2971,7 +2971,7 @@ Every currently open role matching your filters across all sources (duplicates m
 ### Google
 - [Business Data Scientist Intern](https://www.google.com/about/careers/applications/jobs/results/134577198026629830) — Palo Alto, CA, Cambridge, MA, Madison, WI, Seattle, WA, Washington, DC, SF, Austin, TX, LA, San Jose, CA, Irvine, CA, South SF, Redwood City, CA, Raleigh, NC, San Bruno, CA, Redmond, WA, Durham, NC, Ann Arbor, MI, Santa Cruz, CA, Chicago, IL, Goleta, CA, Pittsburgh, PA, Kirkland, WA, Reston, VA, NYC, Bellevue, WA, Sunnyvale, CA, Mountain View, CA, Portland, OR, Boulder, CO, Atlanta, GA, San Diego, CA · via Simplify · 2026-09-14
 - [Learn more about Software Engineering Intern, 2027 (English)](https://www.google.com/about/careers/applications/jobs/results/104489346874122950-software-engineering-intern-2027-english?target_level=INTERN_AND_APPRENTICE&sort_by=date&page=1)
-- [Learn more about Student Researcher, 2027](https://www.google.com/about/careers/applications/jobs/results/120211620121977542-student-researcher-2027?target_level=INTERN_AND_APPRENTICE&sort_by=date&page=2)
+- [Learn more about Software Engineering Intern, Summer 2027](https://www.google.com/about/careers/applications/jobs/results/85430979253936838-software-engineering-intern-summer-2027?target_level=INTERN_AND_APPRENTICE&sort_by=date&page=1)
 - [Part-Time Software Engineering BS/MS Intern - 2027](https://www.google.com/about/careers/applications/jobs/results/103632882076918470) — Tel Aviv, Israel +1 · via SpeedyApply Intl · 2026-09-04
 - [Software Developer Intern](https://www.google.com/about/careers/applications/jobs/results/112518690523488966) — Montreal, QC, Canada, Toronto, ON, Canada, Waterloo, ON, Canada · via Simplify · 2026-08-24
 - [Software Engineer II - Co-op and Marketplaces](https://www.google.com/about/careers/applications/jobs/results/119732976081609414) — Zürich, Switzerland · via SpeedyApply Intl · 2026-10-14
