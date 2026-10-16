@@ -1,4 +1,516 @@
 {
-"jobs": [],
+"jobs": [
+{
+"company": "Duolingo",
+"title": "Data Scientist, Intern",
+"url": "https://careers.duolingo.com/jobs/8888721002?gh_jid=8888721002",
+"loc": "New York, NY; Pittsburgh, PA",
+"via": ""
+},
+{
+"company": "Together AI",
+"title": "Hardware Security Engineer Intern (Summer 2027)",
+"url": "https://job-boards.greenhouse.io/togetherai/jobs/5238469007",
+"loc": "San Francisco",
+"via": ""
+},
+{
+"company": "Tower Research Capital",
+"title": "Machine Learning Intern",
+"url": "https://www.tower-research.com/open-positions/?gh_jid=7077280",
+"loc": "Montreal",
+"via": ""
+},
+{
+"company": "Intel",
+"title": "Compiler Engineering Intern",
+"url": "https://intel.wd1.myworkdayjobs.com/en-US/External/job/Canada-Toronto/Compiler-Engineering-Intern_JR0287934",
+"loc": "Canada, Toronto",
+"via": ""
+},
+{
+"company": "Intel",
+"title": "Software Engineering Intern",
+"url": "https://intel.wd1.myworkdayjobs.com/en-US/External/job/PRC-Shanghai/Software-Engineering-Intern_JR0288193",
+"loc": "PRC, Shanghai",
+"via": ""
+},
+{
+"company": "Intel",
+"title": "AI Application Development Intern",
+"url": "https://intel.wd1.myworkdayjobs.com/en-US/External/job/PRC-Shanghai/AI-Application-Development-Intern_JR0288222-1",
+"loc": "PRC, Shanghai",
+"via": ""
+},
+{
+"company": "Microsoft",
+"title": "Research Sciences INTERN",
+"url": "https://apply.careers.microsoft.com/careers/job/1970393557026573",
+"loc": "Switzerland, Z\u00fcrich, Z\u00fcrich",
+"via": ""
+},
+{
+"company": "Apple",
+"title": "Software Engineering Intern \u2013 AI Tools for Hardware Engineering",
+"url": "https://jobs.apple.com/en-us/details/200688946-3715/software-engineering-intern-ai-tools-for-hardware-engineering?team=STDNT",
+"loc": "",
+"via": ""
+},
+{
+"company": "Apple",
+"title": "Wireless Software & AI/ML Engineer Intern - Beijing",
+"url": "https://jobs.apple.com/en-us/details/200688346-0351/wireless-software-ai-ml-engineer-intern-beijing?team=STDNT",
+"loc": "",
+"via": ""
+},
+{
+"company": "AstraZeneca",
+"title": "AI Business Support Specialist Intern",
+"url": "https://astrazeneca.wd3.myworkdayjobs.com/en-US/Careers/job/Canada---Mississauga/AI-Business-Support-Specialist-Intern_R-261993",
+"loc": "Canada - Mississauga",
+"via": ""
+},
+{
+"company": "Allegion",
+"title": "Summer Intern - Firmware Engineer",
+"url": "https://allegion.wd5.myworkdayjobs.com/en-US/earlytalent_careers/job/Farmington-CT/Firmware-Engineer-Intern_JR37449",
+"loc": "Farmington, CT",
+"via": ""
+},
+{
+"company": "Ardian",
+"title": "Data Scientist Intern - February 2027 | NYC",
+"url": "https://ardian.wd103.myworkdayjobs.com/en-US/ArdianCareers/job/New-York/Data-Scientist-Intern---February-2027---NYC_JR1002271",
+"loc": "New York",
+"via": ""
+},
+{
+"company": "Axiom Space",
+"title": "Software Engineering Intern (Summer 2027)",
+"url": "https://axiomspace.wd5.myworkdayjobs.com/en-US/External_Career_Site/job/Houston/Software-Engineering-Intern--Summer-2027-_JR100767",
+"loc": "Houston",
+"via": ""
+},
+{
+"company": "CIBC",
+"title": "Information Security Analyst Winter 2027 Co-op",
+"url": "https://cibc.wd3.myworkdayjobs.com/en-US/campus/job/Toronto-ON/Information-Security-Analyst-Winter-2027-Co-op_2621159",
+"loc": "Toronto, ON",
+"via": ""
+},
+{
+"company": "Deutsche Bank",
+"title": "Investment Bank - Fixed Income & Currencies Trading Local Intern",
+"url": "https://db.wd3.myworkdayjobs.com/en-US/DBWebsite/job/Shanghai-Two-IFC/Investment-Bank---Fixed-Income---Currencies-Trading-Local-Intern_R0445832",
+"loc": "Shanghai Two IFC",
+"via": ""
+},
+{
+"company": "Duolingo",
+"title": "Data Scientist, Intern",
+"url": "https://job-boards.greenhouse.io/duolingounirecruitment/jobs/8888785002",
+"loc": "Pittsburgh, PA; New York, NY",
+"via": ""
+},
+{
+"company": "General Matter",
+"title": "Summer 2027 Internship - Information Security Engineer",
+"url": "https://job-boards.greenhouse.io/generalmatter/jobs/5448019008",
+"loc": "Los Angeles, CA",
+"via": ""
+},
+{
+"company": "ICF",
+"title": "2027 Summer Intern, Cloud Engineer (AWS/Azure) (Reston, VA)",
+"url": "https://icf.wd5.myworkdayjobs.com/en-US/ICFExternal_Career_Site/job/Reston-VA/XMLNAME-2027-Summer-Intern--Cloud-Engineer--AWS-Azure---Reston--VA-_R2603554",
+"loc": "Reston, VA",
+"via": ""
+},
+{
+"company": "ING",
+"title": "INTERNSHIP SOFTWARE ENGINEER",
+"url": "https://ing.wd3.myworkdayjobs.com/en-US/icsgblcor/job/ACT-Amsterdam---Acanthus/INTERNSHIP-SOFTWARE-ENGINEER_REQ-10119555",
+"loc": "ACT (Amsterdam - Acanthus)",
+"via": ""
+},
+{
+"company": "ING",
+"title": "Machine Learning Engineer Intern",
+"url": "https://ing.wd3.myworkdayjobs.com/en-US/icsgblcor/job/MILAN/Machine-Learning-Engineer-Intern_REQ-10122304",
+"loc": "MILAN",
+"via": ""
+},
+{
+"company": "Inversion Space",
+"title": "Avionics Embedded Software Engineer - Summer Internship 2027",
+"url": "https://job-boards.greenhouse.io/inversionspace/jobs/4744391005",
+"loc": "Playa Vista, California, United States",
+"via": ""
+},
+{
+"company": "Lawrence Livermore National Laboratory (LLNL)",
+"title": "Computing Undergraduate Student Intern: HPC Cluster Engineer Academy Internship Program",
+"url": "https://jobs.smartrecruiters.com/LLNL/3743990016166026",
+"loc": "Livermore, us",
+"via": ""
+},
+{
+"company": "Lawrence Livermore National Laboratory (LLNL)",
+"title": "Cybersecurity Undergraduate Intern - Cyber and Critical Infrastructure Summer Institute - Summer 2027",
+"url": "https://jobs.smartrecruiters.com/LLNL/3743990016165636",
+"loc": "Livermore, us",
+"via": ""
+},
+{
+"company": "Lawrence Livermore National Laboratory (LLNL)",
+"title": "Cybersecurity Graduate Intern - Cyber and Critical Infrastructure Summer Institute - Summer 2027",
+"url": "https://jobs.smartrecruiters.com/LLNL/3743990016165586",
+"loc": "Livermore, us",
+"via": ""
+},
+{
+"company": "Leidos",
+"title": "Performance Enablement AI/ML Intern",
+"url": "https://leidos.wd5.myworkdayjobs.com/en-US/External/job/6314-RemoteTeleworker-US/Performance-Enablement-AI-ML-Intern_R-00194656",
+"loc": "6314 Remote/Teleworker US",
+"via": ""
+},
+{
+"company": "Muon Space",
+"title": "Ground Software Engineering Intern (Summer 2027)",
+"url": "https://job-boards.greenhouse.io/muonspace/jobs/5266679007",
+"loc": "San Jose, CA",
+"via": ""
+},
+{
+"company": "Novartis",
+"title": "Intern AI & Data Science",
+"url": "https://novartis.wd3.myworkdayjobs.com/en-US/Novartis_Careers/job/Hyderabad-Office/Intern-AI---Data-Science_REQ-10089924-1",
+"loc": "Hyderabad (Office)",
+"via": ""
+},
+{
+"company": "OpenGov",
+"title": "Intern, Software Engineer",
+"url": "https://jobs.ashbyhq.com/opengov/35c2d853-b6ab-4ba7-a6f7-ffb4cfc22f7b",
+"loc": "US | Massachusetts | Boston",
+"via": ""
+},
+{
+"company": "OpenSesame",
+"title": "Security Analyst Internship",
+"url": "https://boards.greenhouse.io/opensesame/jobs/8287886?gh_jid=8287886",
+"loc": "Remote",
+"via": ""
+},
+{
+"company": "Papa John's",
+"title": "2027 Summer Intern - Cyber Security",
+"url": "https://papajohns.wd1.myworkdayjobs.com/en-US/papajohnscareers/job/HQ_Atlanta/XMLNAME-2027-Summer-Intern---Cyber-Security_R26_0000002175",
+"loc": "HQ_Atlanta",
+"via": ""
+},
+{
+"company": "TD Bank",
+"title": "TD Asset Management Portfolio Analytics Developer Intern/Co-Op (Winter 2027)",
+"url": "https://td.wd3.myworkdayjobs.com/en-US/TD_Bank_Careers/job/161-Bay-Street-Corporate-Toronto-Ontario/TD-Asset-Management-Portfolio-Analytics-Developer-Intern-Co-Op--Winter-2027-_R_1509223",
+"loc": "161 Bay Street Corporate, Toronto, Ontario",
+"via": ""
+},
+{
+"company": "LSEG",
+"title": "Quant Analyst Intern",
+"url": "https://lseg.wd3.myworkdayjobs.com/en-US/Careers/job/Boston-Massachusetts/Quant-Analyst_R0123224",
+"loc": "Boston, MA",
+"via": "Simplify"
+},
+{
+"company": "Boeing",
+"title": "Data Science Intern",
+"url": "https://boeing.wd1.myworkdayjobs.com/external_subsidiary/job/CAN---Richmond-Canada/Data-Science-Intern_JR2026526159",
+"loc": "Vancouver, BC, Canada, Richmond, BC, Canada",
+"via": "Simplify"
+},
+{
+"company": "Tencent",
+"title": "Game Development Tools Intern - AI Focus",
+"url": "https://tencent.wd1.myworkdayjobs.com/Tencent_Careers/job/United-Kingdom-London/Game-Development-Tools-Intern--AI-Focus-_R108251",
+"loc": "London, UK",
+"via": "Simplify"
+},
+{
+"company": "Deloitte",
+"title": "Audit & Assurance Intern - AI and Data Science",
+"url": "https://apply.deloitte.com/en_US/careers/JobDetail/Audit-Assurance-Intern-AI-and-Data-Science-Winter-2027/361857",
+"loc": "LA",
+"via": "Simplify"
+},
+{
+"company": "NVIDIA",
+"title": "Developer Technology Engineer Intern - Compute Performance",
+"url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/Switzerland-Zurich/Developer-Technology-Engineering-Intern---Compute-Performance_JR2027949",
+"loc": "Bristol, UK, Z\u00fcrich, Switzerland",
+"via": "Simplify"
+},
+{
+"company": "Centene",
+"title": "AI Software Developer Intern",
+"url": "https://centene.wd5.myworkdayjobs.com/Centene_External/job/Remote-MO/AI-Software-Developer-Intern--Undergraduate---Summer-2027-_1667710",
+"loc": "Missouri",
+"via": "Simplify"
+},
+{
+"company": "Northwestern Mutual",
+"title": "Underwriting Research Intern",
+"url": "https://northwesternmutual.wd5.myworkdayjobs.com/corporate-careers/job/Milwaukee-WI-Corporate/Underwriting-Research-Intern--Summer-2027_JR-46209",
+"loc": "Milwaukee, WI",
+"via": "Simplify"
+},
+{
+"company": "National Laboratory of the Rockies",
+"title": "AI/ML for Cybersecurity Intern",
+"url": "https://nrel.wd5.myworkdayjobs.com/NLR/job/Golden-CO/Graduate--10-12-weeks--Intern---AI-ML-for-Cybersecurity_R14563",
+"loc": "Golden, CO",
+"via": "Simplify"
+},
+{
+"company": "RTX",
+"title": "Software Engineer Intern",
+"url": "https://globalhr.wd5.myworkdayjobs.com/rec_rtx_ext_gateway/job/US-VA-STERLING-291--22640-Davis-Dr--DAVIS/Software-Engineering-Intern--Summer-2027-_01882317",
+"loc": "Sterling, VA",
+"via": "Simplify"
+},
+{
+"company": "SPS Commerce",
+"title": "Software Engineer Intern",
+"url": "https://spscommerce.wd108.myworkdayjobs.com/SPS/job/CA-ON-Brampton-Office/Software-Engineer-Intern_R-001353",
+"loc": "Brampton, ON, Canada",
+"via": "Simplify"
+},
+{
+"company": "General Motors",
+"title": "Embodied AI Data Scaling Intern - Data Scaling - Embodied AI",
+"url": "https://generalmotors.wd5.myworkdayjobs.com/Careers_GM/job/Sunnyvale-California-United-States-of-America/XMLNAME-2027-Summer-Intern---Data-Scaling--Embodied-AI--Masters-_JR-202622540",
+"loc": "Sunnyvale, CA",
+"via": "Simplify"
+},
+{
+"company": "Sierra Nevada Corporation",
+"title": "Software Engineer Intern",
+"url": "https://snc.wd1.myworkdayjobs.com/snc_external_career_site/job/Lone-Tree-CO/Software-Engineer-Intern---Summer-2027--For-SNC-Summer-2026-Interns-Only-_R0031098",
+"loc": "Lone Tree, CO",
+"via": "Simplify"
+},
+{
+"company": "General Motors",
+"title": "AI/ML Engineer Intern - Mapping - Masters",
+"url": "https://generalmotors.wd5.myworkdayjobs.com/Careers_GM/job/Warren-Michigan-United-States-of-America/XMLNAME-2027-Summer-Intern--AI-ML-Engineer--Mapping--Masters-_JR-202622539",
+"loc": "Warren, MI",
+"via": "Simplify"
+},
+{
+"company": "General Motors",
+"title": "Embodied AI Research Intern",
+"url": "https://generalmotors.wd5.myworkdayjobs.com/Careers_GM/job/Sunnyvale-California-United-States-of-America/XMLNAME-2027-Summer-Intern--AI-Research--Embodied-AI--Masters-_JR-202622535",
+"loc": "Sunnyvale, CA",
+"via": "Simplify"
+},
+{
+"company": "General Motors",
+"title": "Onboard Autonomy Intern - Embodied AI",
+"url": "https://generalmotors.wd5.myworkdayjobs.com/Careers_GM/job/Sunnyvale-California-United-States-of-America/XMLNAME-2027-Summer-Intern--Onboard-Autonomy--Embodied-AI--Masters-_JR-202622543",
+"loc": "Sunnyvale, CA",
+"via": "Simplify"
+},
+{
+"company": "General Motors",
+"title": "Seam Intern - Embodied AI",
+"url": "https://generalmotors.wd5.myworkdayjobs.com/Careers_GM/job/Sunnyvale-California-United-States-of-America/XMLNAME-2027-Summer-Intern--SEAM--Embodied-AI--Masters-_JR-202622537",
+"loc": "Sunnyvale, CA",
+"via": "Simplify"
+},
+{
+"company": "Rivian",
+"title": "Software Engineer Intern Co-op - Machine Learning Research - Perception",
+"url": "https://careers.rivian.com/jobs/33801?icims=1",
+"loc": "Palo Alto, CA",
+"via": "Simplify"
+},
+{
+"company": "Carrier Global",
+"title": "Software Engineer Intern",
+"url": "https://carrier.wd5.myworkdayjobs.com/jobs/job/CANHQ-CCS-HQ---Syracuse-6304-Carrier-Parkway-East-Syracuse-NY-13057-USA/Software-Engineering-Intern---Summer_30220161",
+"loc": "East Syracuse, NY",
+"via": "Simplify"
+},
+{
+"company": "Healthpeak Properties",
+"title": "Forward Deployed Software Engineer Intern",
+"url": "https://healthpeak.applytojob.com/apply/ss4v1Qi95q/Forward-Deployed-Software-Engineer-Internship",
+"loc": "NYC",
+"via": "Simplify"
+},
+{
+"company": "Healthpeak Properties",
+"title": "Forward Deployed Software Engineer Intern",
+"url": "https://healthpeak.applytojob.com/apply/RTf9TfJE4h/Forward-Deployed-Software-Engineer-Internship",
+"loc": "Irvine, CA",
+"via": "Simplify"
+},
+{
+"company": "T-Mobile",
+"title": "Software Engineer Intern",
+"url": "https://tmobile.wd1.myworkdayjobs.com/External/job/Bellevue-Washington/Summer-2027-Software-Engineering-Intern_REQ368322",
+"loc": "Bellevue, WA",
+"via": "Simplify"
+},
+{
+"company": "TikTok",
+"title": "Software Engineer Intern - Recommendation Performance Efficiency",
+"url": "https://lifeattiktok.com/search/7673636206961641781",
+"loc": "San Jose, CA",
+"via": "Simplify"
+},
+{
+"company": "Microsoft",
+"title": "Research Intern - Efficient AI Software Systems",
+"url": "https://apply.careers.microsoft.com/careers/job/1970393557041731",
+"loc": "Redmond, WA",
+"via": "Simplify"
+},
+{
+"company": "BC Pensions",
+"title": "Application Developer Co-op",
+"url": "https://fa-exby-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1013/job/227",
+"loc": "Victoria, BC, Canada",
+"via": "Simplify"
+},
+{
+"company": "Apple",
+"title": "SoC Machine Learning Software Engineer Intern",
+"url": "https://jobs.apple.com/en-us/details/200689488",
+"loc": "Sunnyvale, CA",
+"via": "Simplify"
+},
+{
+"company": "Hewlett Packard Enterprise",
+"title": "AI & HPC Performance Engineering Intern",
+"url": "https://hpe.wd5.myworkdayjobs.com/jobsathpe/job/Spring-Texas-United-States-of-America/AI---HPC-Performance-Engineering-Intern_1213397",
+"loc": "Spring, TX",
+"via": "Simplify"
+},
+{
+"company": "Field AI",
+"title": "Robotics Research \u2013 Humanoid Manipulation Intern",
+"url": "https://jobs.lever.co/field-ai/40a22216-c73b-4ec1-bfc1-dc0e1938eaba/apply",
+"loc": "Boston, MA",
+"via": "Simplify"
+},
+{
+"company": "Susquehanna International Group (SIG)",
+"title": "Business Analytics AI Co-op with Drexel University",
+"url": "https://careers.sig.com/jobs/11675?lang=en-us",
+"loc": "Bala Cynwyd",
+"via": "QuantRoles"
+},
+{
+"company": "Susquehanna (SIG)",
+"title": "Technology Co-op with Drexel University",
+"url": "https://careers.sig.com/global-susquehanna/jobs/11654?lang=en-us",
+"loc": "Bala Cynwyd (Philadelphia Area)",
+"via": "Kadoa Quant"
+},
+{
+"company": "Brevan Howard",
+"title": "2027 Summer Internship Program \u2013 QIS, London",
+"url": "https://wd3.myworkdaysite.com/recruiting/brevanhoward/BH_ExternalCareers/job/London/XMLNAME-2027-Summer-Internship-Program---QIS--London_JR101633",
+"loc": "London",
+"via": "Kadoa Quant"
+},
+{
+"company": "Susquehanna (SIG)",
+"title": "SGE Venture Capital / Growth Equity Co-op with Drexel University",
+"url": "https://careers.sig.com/global-susquehanna/jobs/11674?lang=en-us",
+"loc": "Bala Cynwyd (Philadelphia Area)",
+"via": "Kadoa Quant"
+},
+{
+"company": "Susquehanna (SIG)",
+"title": "Derivatives Sales Trader Co-op with Drexel University",
+"url": "https://careers.sig.com/global-susquehanna/jobs/11670?lang=en-us",
+"loc": "Bala Cynwyd (Philadelphia Area)",
+"via": "Kadoa Quant"
+},
+{
+"company": "Susquehanna (SIG)",
+"title": "Compliance Co-op with Drexel University",
+"url": "https://careers.sig.com/global-susquehanna/jobs/11669?lang=en-us",
+"loc": "Bala Cynwyd (Philadelphia Area)",
+"via": "Kadoa Quant"
+},
+{
+"company": "Susquehanna (SIG)",
+"title": "ETF Sales + Capital Markets Co-op",
+"url": "https://careers.sig.com/global-susquehanna/jobs/11668?lang=en-us",
+"loc": "Bala Cynwyd (Philadelphia Area)",
+"via": "Kadoa Quant"
+},
+{
+"company": "Susquehanna (SIG)",
+"title": "Trading Operations Co-op with Drexel University",
+"url": "https://careers.sig.com/global-susquehanna/jobs/11666?lang=en-us",
+"loc": "Bala Cynwyd (Philadelphia Area)",
+"via": "Kadoa Quant"
+},
+{
+"company": "Susquehanna (SIG)",
+"title": "Technical Business Analyst Co-op with Drexel University",
+"url": "https://careers.sig.com/global-susquehanna/jobs/11665?lang=en-us",
+"loc": "Bala Cynwyd (Philadelphia Area)",
+"via": "Kadoa Quant"
+},
+{
+"company": "Susquehanna (SIG)",
+"title": "Risk and Controls Co-op with Drexel University",
+"url": "https://careers.sig.com/global-susquehanna/jobs/11663?lang=en-us",
+"loc": "Bala Cynwyd (Philadelphia Area)",
+"via": "Kadoa Quant"
+},
+{
+"company": "Susquehanna (SIG)",
+"title": "Facilities Management Co-op with Drexel University",
+"url": "https://careers.sig.com/global-susquehanna/jobs/11662?lang=en-us",
+"loc": "Bala Cynwyd (Philadelphia Area)",
+"via": "Kadoa Quant"
+},
+{
+"company": "Susquehanna (SIG)",
+"title": "Equity Options Operations Co-op with Drexel University",
+"url": "https://careers.sig.com/global-susquehanna/jobs/11661?lang=en-us",
+"loc": "Bala Cynwyd (Philadelphia Area)",
+"via": "Kadoa Quant"
+},
+{
+"company": "Susquehanna (SIG)",
+"title": "Accounting Co-op with Drexel University",
+"url": "https://careers.sig.com/global-susquehanna/jobs/11660?lang=en-us",
+"loc": "Bala Cynwyd (Philadelphia Area)",
+"via": "Kadoa Quant"
+},
+{
+"company": "EMC Insurance",
+"title": "Cybersecurity Intern",
+"url": "https://emcins.wd5.myworkdayjobs.com/EMC_Careers/job/Iowa/Cybersecurity-Intern_R6590",
+"loc": "Iowa",
+"via": "Intern Engine (zshah101)"
+},
+{
+"company": "Red Hat",
+"title": "SaaS Full Stack Product Engineering Intern - Brno - Czech Republic",
+"url": "https://redhat.wd5.myworkdayjobs.com/en-US/jobs/job/Brno---Tech-Park-Brno---C/SaaS-Full-Stack-Product-Engineering-Intern--Brno--Czech-Republic-_R-059212",
+"loc": "Brno, Czechia",
+"via": "SpeedyApply Intl"
+}
+],
 "notes": []
 }
