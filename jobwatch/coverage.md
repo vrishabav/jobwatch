@@ -4,6 +4,7 @@
 
 | Started | Mode | Trigger | Run # | Sources OK | New roles queued |
 |---|---|---|---|---|---|
+| 2026-10-17 13:00 | render | schedule | 41 | 2/2 | 0 |
 | 2026-10-17 12:55 | api | schedule | 41 | 3509/3568 | 83 |
 | 2026-10-16 14:00 | render | schedule | 37 | 2/2 | 0 |
 | 2026-10-16 13:55 | api | schedule | 37 | 3594/3653 | 73 |
@@ -23,7 +24,6 @@
 | 2026-10-09 07:20 | api | schedule | 11 | 3592/3652 | 99 |
 | 2026-10-08 09:52 | render | workflow_dispatch | 8 | 2/2 | 0 |
 | 2026-10-08 09:47 | api | workflow_dispatch | 8 | 4060/4120 | 9 |
-| 2026-10-08 08:23 | render | workflow_dispatch | 7 | 2/2 | 0 |
 
 ## Sources
 
